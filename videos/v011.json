@@ -1,0 +1,99 @@
+{
+ "title": "Why new launches\n*won't get cheaper*",
+ "tags": "#singaporeproperty #newlaunch #condosg #propertysg #sgproperty #landprice #tinysingapore",
+ "source": "source: URA land sales · developer launch prices",
+ "caption": "You are a developer. You just paid $1,400 psf for land. You can't sell cheap. 🏗️\n\nRule of thumb: launch price is about 2.2 times land price. Sky at Holland and Vela Bay both followed it.\n\nAs a buyer, would you buy now or wait? Comment NOW or WAIT 👇",
+ "lines": [
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "LAND $1,400",
+    "sell": "$?",
+    "mult": "YOU PAID"
+   },
+   "say": "You are a developer. You just paid fourteen hundred psf for land. You can't sell cheap.",
+   "cap": "you are a developer. you paid *$1,400 psf for land*. you can't sell cheap",
+   "stat": ""
+  },
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "LAND",
+    "sell": "LAUNCH",
+    "mult": "× 2.2"
+   },
+   "say": "Rule of thumb. Launch price is about two point two times land price.",
+   "cap": "rule of thumb: launch price ≈ *2.2 × land price*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "land",
+     "label": "LAND",
+     "price": "$1,285"
+    },
+    "r": {
+     "type": "condo",
+     "label": "SKY AT HOLLAND",
+     "price": "~$2,900"
+    },
+    "badge": "× 2.26"
+   },
+   "say": "Sky at Holland. Land at twelve eighty five. Launched near twenty nine hundred.",
+   "cap": "Sky at Holland. land *$1,285*. launched near *$2,900*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "land",
+     "label": "LAND",
+     "price": "$1,388"
+    },
+    "r": {
+     "type": "condo",
+     "label": "VELA BAY",
+     "price": "~$2,886"
+    },
+    "badge": "× 2.08"
+   },
+   "say": "Vela Bay. Land at thirteen eighty eight. Launched near twenty eight eighty six.",
+   "cap": "Vela Bay. land *$1,388*. launched near *$2,886*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1400,
+     1500,
+     3000
+    ],
+    "labels": [
+     "LAND $1.4K",
+     "LAND $1.5K",
+     "LAUNCH ~$3K"
+    ]
+   },
+   "say": "So land at fourteen to fifteen hundred today points to launches near three thousand psf later.",
+   "cap": "land at $1,400 to $1,500 today points to *launches near $3,000*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "NOW",
+    "b": "WAIT",
+    "r": "condo"
+   },
+   "say": "As a buyer, would you buy now, or wait?",
+   "cap": "as a buyer, would you buy now or wait? comment *NOW or WAIT*",
+   "stat": ""
+  }
+ ],
+ "id": "v011",
+ "pill": "NEW LAUNCH"
+}

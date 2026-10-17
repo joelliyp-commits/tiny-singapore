@@ -1,0 +1,90 @@
+{
+ "id": "v020",
+ "title": "An EC site just set\n*a record land price*",
+ "pill": "EC SERIES",
+ "lines": [
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "LAND $825",
+    "sell": "$?",
+    "mult": "RECORD"
+   },
+   "say": "You are an EC buyer. Developers just paid a record price for EC land.",
+   "cap": "you are an EC buyer. developers just paid a *record land price*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "13 BIDS",
+    "bld": "land"
+   },
+   "say": "Canberra Drive drew 13 bids. The top one was eight hundred and twenty five dollars psf ppr. A new record for an EC site.",
+   "cap": "13 bids. top bid *$825 psf ppr*, a new EC record",
+   "stat": "Canberra Drive EC site, 1 Oct 2026"
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "10 YR MOP"
+   },
+   "say": "Why so keen? EC rules changed this year. New ECs now need 10 years before you can sell. But the income ceiling rose to eighteen thousand dollars, so more families qualify.",
+   "cap": "new ECs: *10 years* before you sell. income ceiling now *$18,000*",
+   "stat": "New EC rules, 2026"
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "MORE BUYERS"
+   },
+   "say": "More eligible buyers means more competition for land.",
+   "cap": "more eligible buyers = *more competition for land*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "ec",
+     "label": "EC MEDIAN",
+     "price": "~$1,850"
+    },
+    "r": {
+     "type": "ec",
+     "label": "CANBERRA EC",
+     "price": "~$1,900"
+    }
+   },
+   "say": "Analysts expect this one to launch from around nineteen hundred psf. The median new EC today is about eighteen fifty.",
+   "cap": "expected launch *~$1,900 psf*. median new EC *~$1,850*",
+   "stat": ""
+  },
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "LAND",
+    "sell": "LAUNCH",
+    "mult": "FLOOR"
+   },
+   "say": "Remember the rule. High land prices set a floor for launch prices.",
+   "cap": "high land prices set a *floor for launch prices*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "EC",
+    "b": "CONDO",
+    "l": "ec",
+    "r": "condo"
+   },
+   "say": "With a 10 year wait and EC rules, if a brand new condo sells for the same nineteen hundred psf, which would you go for? Comment EC or condo.",
+   "cap": "same ~$1,900 psf. *EC or brand new condo?* comment below",
+   "stat": "10 year MOP vs no MOP"
+  }
+ ],
+ "source": "EdgeProp · Stacked Homes · URA",
+ "caption": "An EC site just set a record land price: $825 psf ppr, with 13 bids. 🏗️\n\nNew ECs now come with a 10 year MOP, but the income ceiling rose to $18,000, so more families qualify. Analysts expect this launch from around $1,900 psf.\n\nWith a 10 year wait and EC rules, if a brand new condo cost the same, which would you go for? Comment EC or CONDO 👇",
+ "hashtags": "#singaporeproperty #ecsg #executivecondo #condosg #landprice #propertysg #tinysingapore"
+}

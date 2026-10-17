@@ -1,0 +1,121 @@
+{
+ "id": "v013",
+ "title": "Punggol was\n*once a ghost town*",
+ "lines": [
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 1,
+    "mrt": true
+   },
+   "say": "You are a buyer in 2012. Punggol has an MRT, rows of new flats, and not much else. Friends ask why you'd live so far.",
+   "cap": "you are a buyer in 2012. Punggol has an MRT, new flats, *and not much else*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 0
+   },
+   "say": "The plan was announced in 1996. Then the Asian financial crisis hit, and building slowed for years.",
+   "cap": "the plan was announced in 1996. then the *Asian financial crisis* slowed it for years",
+   "stat": "Punggol 21 plan: 1996"
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 1,
+    "mrt": true
+   },
+   "say": "Stage one. The MRT opened in 2003. Flats came first. Shops came much later.",
+   "cap": "stage 1: *the MRT opened in 2003*. flats first, shops much later",
+   "stat": "Stage 1: MRT 2003"
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 2,
+    "mrt": true,
+    "tag": "EC ~$7XX PSF"
+   },
+   "say": "Stage two. The waterway opened in 2011. A year later, an EC launched in Punggol at around seven hundred dollars psf.",
+   "cap": "stage 2: the waterway opened in 2011. a 2012 EC launched at *around $700 psf*",
+   "stat": "Stage 2: waterway 2011"
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 3,
+    "mrt": true
+   },
+   "say": "Stage three. Waterway Point opened in 2016. A second MRT and the Digital District followed in 2024.",
+   "cap": "stage 3: Waterway Point in 2016. *a second MRT and the Digital District in 2024*",
+   "stat": "Stage 3: mall 2016, MRT 2024"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     750,
+     1497
+    ],
+    "labels": [
+     "2012 ~$7XX",
+     "TODAY ~$1,500"
+    ],
+    "cols": [
+     4099722,
+     14710863
+    ]
+   },
+   "say": "Today, that 2012 EC trades around fifteen hundred psf. Roughly double.",
+   "cap": "today that EC trades *around $1,500 psf*. roughly double",
+   "stat": "≈ 2× since launch"
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "ec",
+     "label": "EC 2012",
+     "price": "~$7XX"
+    },
+    "r": {
+     "type": "ec",
+     "label": "EC 2019",
+     "price": "$1,080"
+    },
+    "badge": "PLAN PRICED IN"
+   },
+   "say": "A later EC in 2019 started at about one thousand and eighty dollars psf. By then, the plan was already priced in.",
+   "cap": "a 2019 EC started at about $1,080 psf. *the plan was already priced in*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 2,
+    "mrt": true
+   },
+   "say": "The biggest gains usually go to buyers who enter when the plan is visible, but the amenities aren't built yet. That's stage two.",
+   "cap": "biggest gains usually go to buyers who enter at *stage 2*: plan visible, amenities not built yet",
+   "stat": "Best entry: stage 2"
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "STAGE 2",
+    "b": "STAGE 3",
+    "l": "hdb",
+    "r": "condo"
+   },
+   "say": "Which township do you think is at stage two today? Comment below.",
+   "cap": "which township is at stage 2 today? *comment below*",
+   "stat": ""
+  }
+ ],
+ "source": "Roots.gov.sg · HDB · CDL · Stacked (12 mth avg) · Twin Waterfalls launch ~$7xx psf",
+ "caption": "Punggol was once called a ghost town. 🏝️\n\nAn EC launched there in 2012 at around $700 psf. Today it trades around $1,500 psf. A later EC in 2019 started at $1,080 psf, because by then the plan was priced in.\n\nWhich township is at stage two today? Comment below 👇",
+ "hashtags": "#singaporeproperty #punggol #ecsg #hdbsg #propertysg #sgproperty #tinysingapore",
+ "pill": "TOWNSHIP"
+}

@@ -1,0 +1,523 @@
+{
+ "id": "v030",
+ "map": true,
+ "titleText": "EC or condo? Check these before you choose",
+ "part": "EC VS CONDO",
+ "source": "MAS · HDB · example figures",
+ "lines": [
+  {
+   "say": "You're deciding between an EC and a condo. Same budget. Which one should you pick?",
+   "cap": "EC or condo? *same budget*. which one?",
+   "emoji": "🤔",
+   "beat": {
+    "cam": [
+     540,
+     800,
+     1.05
+    ],
+    "intro": true,
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52
+     },
+     {
+      "x": 540,
+      "y": 560,
+      "t": "?",
+      "at": 2.4,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "q": true
+     }
+    ]
+   }
+  },
+  {
+   "say": "Rules first. An EC is for Singaporean families within the income ceiling. A condo has no income limit.",
+   "cap": "EC: *income ceiling*. condo: *no income limit*",
+   "emoji": "📋",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "INCOME CEILING",
+      "at": 0.4,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 34
+     },
+     {
+      "x": 790,
+      "y": 420,
+      "t": "NO INCOME LIMIT",
+      "at": 2.4,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 34
+     }
+    ]
+   }
+  },
+  {
+   "say": "The loan rules are different too. For a new EC, your mortgage can't take more than 30% of your income. For a condo, the limit is 55%, and that covers all your debts.",
+   "cap": "EC: *30% of income*. condo: *55% for all debts*",
+   "emoji": "🏦",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "MSR 30%",
+      "at": 0.4,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 40
+     },
+     {
+      "x": 790,
+      "y": 420,
+      "t": "TDSR 55%",
+      "at": 2.6,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 40
+     }
+    ]
+   }
+  },
+  {
+   "say": "Say your household earns 16,000 dollars a month. For the EC, the bank can lend about 1 million. For a condo, up to about 1.8 million.",
+   "cap": "on $16K a month: EC loan *~$1M*. condo *~$1.8M*",
+   "emoji": "💰",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "Loan {v}",
+      "at": 1.6,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 36,
+      "count": {
+       "to": 1005414,
+       "fmt": "M",
+       "at": 1.8
+      }
+     },
+     {
+      "x": 790,
+      "y": 420,
+      "t": "Loan {v}",
+      "at": 3.2,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 36,
+      "count": {
+       "to": 1843258,
+       "fmt": "M",
+       "at": 3.4
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "So on a 1.6 million dollar home, the EC needs about 600,000 dollars upfront. The condo needs just the minimum 25%, about 400,000.",
+   "cap": "on a $1.6M home: EC *~$600K upfront*. condo *~$400K*",
+   "emoji": "💸",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 540,
+      "y": 560,
+      "t": "$1.6M HOME",
+      "at": 0.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "Upfront {v}",
+      "at": 1.2,
+      "bg": "#d6312b",
+      "fg": "#fff",
+      "size": 36,
+      "count": {
+       "to": 594586,
+       "fmt": "K",
+       "at": 1.4
+      }
+     },
+     {
+      "x": 790,
+      "y": 420,
+      "t": "Upfront {v}",
+      "at": 2.8,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 36,
+      "count": {
+       "to": 400000,
+       "fmt": "K",
+       "at": 3
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "Holding period: new ECs now have a 10 year minimum occupation period. A condo can be sold any time, with seller's stamp duty if you sell early.",
+   "cap": "new ECs: *10 year MOP*. condo: *sell any time*",
+   "emoji": "⏳",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "10 YEAR MOP",
+      "at": 0.5,
+      "bg": "#d6312b",
+      "fg": "#fff",
+      "size": 38
+     },
+     {
+      "x": 790,
+      "y": 420,
+      "t": "SELL ANY TIME",
+      "at": 2.8,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 38
+     }
+    ]
+   }
+  },
+  {
+   "say": "Location: EC land costs less, so ECs usually sit further out. Condos tend to get the better spots.",
+   "cap": "ECs usually sit *further out*. condos get *better spots*",
+   "emoji": "📍",
+   "beat": {
+    "cam": [
+     600,
+     760,
+     1.08
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "FURTHER OUT",
+      "at": 0.4,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 38
+     },
+     {
+      "x": 830,
+      "y": 780,
+      "t": "NEAR MRT",
+      "at": 1.6,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 38
+     }
+    ]
+   }
+  },
+  {
+   "say": "That's why ECs were traditionally 30 to 40% cheaper, and why most EC owners have made money. They bought in lower.",
+   "cap": "ECs were *30 to 40% cheaper*. most owners *made money*",
+   "emoji": "📈",
+   "beat": {
+    "cam": [
+     540,
+     640,
+     1.15
+    ],
+    "arrows": [
+     {
+      "x1": 300,
+      "y1": 560,
+      "x2": 300,
+      "y2": 440,
+      "col": "#3fae5a",
+      "at": 1.6
+     }
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "30 TO 40% CHEAPER",
+      "at": 0.4,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 34
+     },
+     {
+      "x": 540,
+      "y": 560,
+      "t": "MOST MADE MONEY",
+      "at": 2.6,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 40
+     }
+    ]
+   }
+  },
+  {
+   "say": "But what if a new condo now costs about the same as an EC?",
+   "cap": "but what if they cost *about the same?*",
+   "emoji": "⚖️",
+   "beat": {
+    "cam": [
+     540,
+     640,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "EC",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "CONDO",
+      "at": 0.9,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 52,
+      "keep": true
+     },
+     {
+      "x": 540,
+      "y": 520,
+      "t": "SAME PRICE?",
+      "at": 0.3,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 60
+     }
+    ]
+   }
+  },
+  {
+   "say": "Torn between the two? Comment COMPARE and we'll run both on your income.",
+   "cap": "torn between the two? comment *COMPARE*",
+   "emoji": "👇",
+   "beat": {
+    "cam": [
+     540,
+     700,
+     1.05
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 540,
+      "t": "Comment COMPARE",
+      "at": 0.3,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 56
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "Deciding between an EC and a condo? Check these first. 🏙️\n\nRules: ECs are for Singaporean families within the income ceiling. Loans: new ECs are capped by MSR at 30% of income, condos by TDSR at 55% for all debts. On $16K a month, that's about $1M vs $1.8M of loan. On a $1.6M home: about $600K upfront for the EC vs $400K for the condo.\n\nNew ECs now have a 10 year MOP. ECs usually sit further out, and were traditionally 30 to 40% cheaper, which is why most EC owners made money. But what if a condo now costs about the same?\n\nTorn between the two? Comment COMPARE and we'll run both on your income 👇\n\nIllustration only: 4% stress test, 30 year loan, no other debts. Bank policies vary.",
+ "hashtags": "#singaporeproperty #ecsg #executivecondo #condosg #tdsr #propertysg #tinysingapore"
+}

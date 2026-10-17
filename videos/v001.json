@@ -1,0 +1,58 @@
+{
+ "id": "v001",
+ "title": "Prices up.\nBuyers gone.",
+ "lines": [
+  {
+   "scene": 1,
+   "say": "Singapore home prices just went up again. But almost nobody is buying.",
+   "cap": "home prices just went up again. but *almost nobody is buying*",
+   "stat": "+1.4% in Q3"
+  },
+  {
+   "scene": 2,
+   "say": "New home sales hit their lowest third quarter since nineteen ninety eight.",
+   "cap": "new home sales hit their *lowest Q3 since 1998*",
+   "stat": "~1,100 new homes sold"
+  },
+  {
+   "scene": 3,
+   "say": "So why are prices still going up?",
+   "cap": "so *why are prices still going up?*",
+   "stat": ""
+  },
+  {
+   "scene": 4,
+   "say": "Very few new launches. And seventh month kept buyers away.",
+   "cap": "*very few new launches*. and seventh month kept buyers away",
+   "stat": "launches down 74% y-o-y"
+  },
+  {
+   "scene": 6,
+   "say": "The homes that did sell were big tickets. Over seventy percent above two million.",
+   "cap": "the homes that did sell were big tickets. *over 70%* above $2M",
+   "stat": "71.7% above $2M"
+  },
+  {
+   "scene": 8,
+   "say": "So the index rose because of what sold. Not because everyone rushed in.",
+   "cap": "the index rose because of *what sold*. not because everyone rushed in",
+   "stat": ""
+  },
+  {
+   "scene": 9,
+   "say": "Outside the city centre, prices rose the most. Two point two percent.",
+   "cap": "outside the city centre, *prices rose the most*",
+   "stat": "OCR +2.2%"
+  },
+  {
+   "scene": 11,
+   "say": "If you held an O C R condo right now, would you sell or hold?",
+   "cap": "holding an OCR condo right now. *sell or hold?* tell us why",
+   "stat": ""
+  }
+ ],
+ "source": "source: URA flash estimate, 1 Oct 2026 · Huttons Asia",
+ "caption": "Prices went up. But new home sales just hit a 27 year low. 🤔\n\nHow can both be true? It comes down to what actually sold this quarter.\n\nIf you're holding an OCR condo right now, would you sell or hold? Tell us in the comments 👇",
+ "hashtags": "#singaporeproperty #sgproperty #propertysg #condosg #hdbsg #sgrealestate #tinysingapore",
+ "pill": "MARKET"
+}

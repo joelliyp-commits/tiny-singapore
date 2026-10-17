@@ -1,0 +1,296 @@
+{
+ "id": "v029",
+ "map": true,
+ "titleText": "Before you buy, know who buys from you",
+ "part": "PART 2",
+ "lines": [
+  {
+   "say": "You're about to buy a condo. You've checked the price, the layout and the MRT. Have you checked who will buy it from you?",
+   "cap": "you've checked the price. *who buys it from you?*",
+   "emoji": "🏠",
+   "beat": {
+    "cam": [
+     540,
+     820,
+     1.05
+    ],
+    "intro": true,
+    "tags": [
+     {
+      "x": 300,
+      "y": 400,
+      "t": "YOUR CONDO",
+      "at": 0.8,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40
+     },
+     {
+      "x": 300,
+      "y": 300,
+      "t": "?",
+      "at": 3,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "q": true
+     }
+    ]
+   }
+  },
+  {
+   "say": "Every home you buy, you'll sell one day, and the price you get depends on who's buying.",
+   "cap": "the price you get depends on *who's buying*",
+   "emoji": "💰",
+   "beat": {
+    "cam": [
+     300,
+     720,
+     1.3
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 400,
+      "t": "YOUR CONDO",
+      "at": 0.8,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 490,
+      "t": "NEXT BUYER?",
+      "at": 0.6,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 44
+     }
+    ]
+   }
+  },
+  {
+   "say": "We've found own stay buyers often pay more. They buy with their hearts as well as their heads. The school, the view, the layout.",
+   "cap": "own stay buyers *often pay more*",
+   "emoji": "👨‍👩‍👧",
+   "beat": {
+    "cam": [
+     540,
+     880,
+     1.02
+    ],
+    "buyers": {
+     "side": "A",
+     "at": 0.1,
+     "cols": [
+      "#E0714F",
+      "#E0714F"
+     ]
+    },
+    "tags": [
+     {
+      "x": 300,
+      "y": 400,
+      "t": "YOUR CONDO",
+      "at": 0.8,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 560,
+      "t": "OWN STAY: PAY MORE",
+      "at": 1.8,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 40
+     }
+    ]
+   }
+  },
+  {
+   "say": "Investors usually pay less. They buy on yield, and they negotiate harder.",
+   "cap": "investors buy on yield. *they pay less*",
+   "emoji": "📊",
+   "beat": {
+    "cam": [
+     540,
+     880,
+     1.02
+    ],
+    "buyers": {
+     "side": "A",
+     "at": 0.1,
+     "cols": [
+      "#5b7fd6",
+      "#5b7fd6"
+     ]
+    },
+    "tags": [
+     {
+      "x": 300,
+      "y": 400,
+      "t": "YOUR CONDO",
+      "at": 0.8,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 560,
+      "t": "INVESTORS: PAY LESS",
+      "at": 1.6,
+      "bg": "#d6312b",
+      "fg": "#fff",
+      "size": 40
+     }
+    ]
+   }
+  },
+  {
+   "say": "So a practical 3 bedroom near schools likely has a bigger pool of buyers willing to pay more.",
+   "cap": "a practical 3 bedroom near schools: *bigger buyer pool*",
+   "emoji": "🏫",
+   "beat": {
+    "cam": [
+     540,
+     900,
+     1.0
+    ],
+    "buyers": {
+     "side": "A",
+     "at": 0.1
+    },
+    "lit": true,
+    "tags": [
+     {
+      "x": 300,
+      "y": 400,
+      "t": "YOUR CONDO",
+      "at": 0.8,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 560,
+      "t": "BIGGER BUYER POOL",
+      "at": 1.6,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 40
+     }
+    ]
+   }
+  },
+  {
+   "say": "A unit only investors want can be harder to sell at the price you hope for.",
+   "cap": "investors only? *harder to sell*",
+   "emoji": "📉",
+   "beat": {
+    "cam": [
+     300,
+     700,
+     1.3
+    ],
+    "arrows": [
+     {
+      "x1": 300,
+      "y1": 470,
+      "x2": 300,
+      "y2": 620,
+      "col": "#d6312b",
+      "at": 0.6
+     }
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 400,
+      "t": "INVESTORS ONLY?",
+      "at": 0.3,
+      "bg": "#d6312b",
+      "fg": "#fff",
+      "size": 42
+     }
+    ]
+   }
+  },
+  {
+   "say": "Before you buy, ask yourself. Who is my next buyer, and can they afford it?",
+   "cap": "who is *my next buyer?* can they *afford it?*",
+   "emoji": "🤔",
+   "beat": {
+    "cam": [
+     540,
+     660,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 540,
+      "t": "WHO BUYS FROM YOU?",
+      "at": 0.3,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 48
+     },
+     {
+      "x": 300,
+      "y": 380,
+      "t": "?",
+      "at": 2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "q": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "?",
+      "at": 2.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "q": true
+     }
+    ]
+   }
+  },
+  {
+   "say": "Want us to check who your next buyer is likely to be? Comment exit.",
+   "cap": "who's your next buyer? comment *EXIT*",
+   "emoji": "👇",
+   "beat": {
+    "cam": [
+     540,
+     700,
+     1.05
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 540,
+      "t": "Comment EXIT",
+      "at": 0.3,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 56
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "You've checked the price, the layout and the MRT. Have you checked who will buy it from you? 🏠\n\nEvery home you buy, you'll sell one day. We've found own stay buyers often pay more, while investors buy on yield and negotiate harder. A practical unit that suits families likely has a bigger pool of buyers.\n\nBefore you buy, ask: who is my next buyer, and can they afford it?\n\nWant us to check who your next buyer is likely to be? Comment EXIT 👇\n\nGeneral information only. Every property is different.",
+ "hashtags": "#singaporeproperty #condosg #exitstrategy #homebuying #propertysg #sgproperty #tinysingapore"
+}

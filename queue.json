@@ -1,0 +1,427 @@
+{
+ "note": "Tiny Singapore content queue. status: idea > script_approved > rendered > video_approved > scheduled | RULE: hold approved scripts; build in batches once 3 are approved. | From the 18 Oct batch onwards: set \"motion\": true in every new video spec (animated camera, build-in, word-pop captions) and add \"count\" to lines with key figures. Approved by Joel 16 Oct 2026. | 16 Oct: Joel approved the top-down MAP style (map.html + map_make.py, full 9:16, HDB clusters, PART tags). Next batch: make a few videos in map style (start with v025 full), keep 3D motion for single-property stories. Narration: $ amounts auto-read as \"X dollars\" (saynorm.py). | 17 Oct: map.html is now spec-driven (per-line beat: cam, tags, counts, arrows, buyers). Map specs use map:true + titleText; covers = map frame. | 17 Oct: Earth Studio test done (out/v025_earth_test.mp4; map.html beat.earth + mapr_earth.mjs; account tinyysingapore@gmail.com, project v025_punggol_test). Joel: parked for now, revisit later. Use real-speed clip + hold (minterpolate smears).",
+ "items": [
+  {
+   "id": "v012",
+   "title": "One floor apart. $626K difference",
+   "pillar": "case study",
+   "status": "scheduled",
+   "slot": "Mon 19 Oct 2pm (TikTok, IG, YouTube)"
+  },
+  {
+   "id": "v013",
+   "title": "Punggol was once a ghost town",
+   "pillar": "township",
+   "status": "scheduled",
+   "slot": "Mon 19 Oct 6pm (TikTok, IG, YouTube)"
+  },
+  {
+   "id": "v014",
+   "title": "This MRT stayed closed for 8 years",
+   "pillar": "area history",
+   "status": "scheduled",
+   "slot": "Tue 20 Oct 2pm (TikTok, IG, YouTube)"
+  },
+  {
+   "id": "v015",
+   "title": "Why some units feel breezier",
+   "pillar": "unit selection / URA",
+   "status": "scheduled",
+   "source": "URA Facebook post 21 Sep 2026 (wind corridors)",
+   "todo": "",
+   "slot": "Tue 20 Oct 6pm (TikTok, IG, YouTube)"
+  },
+  {
+   "id": "v016",
+   "title": "You're a civil servant. How do you buy right?",
+   "pillar": "news / buyer playbook",
+   "status": "scheduled",
+   "slot": "Sun 18 Oct 4pm (TikTok, IG, YouTube)",
+   "source": "NBER Sep 2026; Parliament 6 Oct 2026; BT 13 Oct 2026"
+  },
+  {
+   "id": "v017",
+   "title": "What if owners of many homes paid more tax?",
+   "pillar": "news / scenario explainer",
+   "status": "scheduled",
+   "facts": "MPs Elysa Chen & Shawn Loh, Parliament 6 Oct 2026 (suggestions, not policy; govt: beyond scope of Bill). Budget 2022: investment-home property tax 10-20% -> 12-36% by 2024. URA PPI +6.8% 2023, +3.9% 2024.",
+   "script": [
+    "You are hoping for a bargain. Two MPs just suggested higher taxes on owners of many homes. Will they start selling cheap?",
+    "It's only a suggestion, not policy. But Singapore has seen this before.",
+    "In Budget 2022, tax on investment homes rose from up to 20%, to up to 36%.",
+    "Did owners dump their units? No. Private prices kept rising in 2023 and 2024.",
+    "Scenario one, most likely: owners hold, and pass the cost on through higher rents.",
+    "Scenario two: some sell slowly. Mostly smaller units. Small-unit buyers gain a little leverage.",
+    "Scenario three, least likely: everyone sells cheap at once. Owners of many homes can usually afford to wait.",
+    "So don't wait for a policy to hand you a bargain. Motivated sellers already exist, at MOP, at TOP and at slow-selling launches.",
+    "Which scenario do you think happens? Comment HOLD, SELL or RENT UP."
+   ],
+   "slot": "Wed 21 Oct 6pm (TikTok, IG, YouTube)"
+  },
+  {
+   "id": "v018",
+   "title": "Seized luxury condos at auction. Bargain?",
+   "pillar": "news / buyer playbook",
+   "status": "scheduled",
+   "facts": "ST 8 Oct 2026: >80 properties from $3B ML case; 26 auctioned 17 & 23 Sep, 4 sold ($16.28M), 22 withdrawn. Stacked: sold 1.3-7.1% below opening. Bloomberg: Martin Modern 2BR ~$2.08-2.12M close to previous prices. Next auction 28 Oct 2.30pm: 5 Nouvel 18 + 1 New Futura, freehold. Nouvel 18 guide $2,939-$3,558 psf; resales $2,772-$3,544 psf (Stacked). Claim backed by Penrose $1.8M vs $2.0-2.2M, Normanton Park $1.7M vs $2.1M. Do not name convicted individuals.",
+   "script": [
+    "You are a buyer. You hear seized luxury condos are going to auction. You think: bargain.",
+    "These were seized in Singapore's $3 billion money laundering case. More than 80 properties are being sold.",
+    "In September, 26 went under the hammer. Only 4 sold. The rest were withdrawn.",
+    "The ones that sold went for just 1 to 7% below their opening price. Two Martin Modern units sold close to their previous prices.",
+    "Next, on 28 October: six freehold units near Orchard. Nouvel 18's guide prices run from about $2,900 to $3,600 psf.",
+    "Its recent resales? About $2,800 to $3,500 psf. Roughly the same.",
+    "So an auction doesn't mean cheap. Reserve prices are usually set close to valuation.",
+    "The real test never changes. Compare against what that project has already sold for.",
+    "With a dependable framework, we've found units $200,000 to $300,000 below market. No auction needed.",
+    "Want to know how? Comment FIND, or send us a message."
+   ],
+   "caption": "Seized luxury condos from the $3B money laundering case are going to auction. \ud83d\udd28 But in September, only 4 of 26 sold, at just 1 to 7% below opening price. An auction isn't automatically a bargain.\n\nWith a dependable framework, we've found units $200K to $300K below market, without waiting for an auction. Want to know how? Comment FIND or DM us \ud83d\udc47\n\nBased on past transactions. Every unit and situation is different.",
+   "note": "time-sensitive: should post before 28 Oct auction",
+   "slot": "Wed 21 Oct 2pm (TikTok, IG, YouTube)"
+  },
+  {
+   "id": "v019",
+   "title": "HDB prices fell 3 quarters in a row",
+   "pillar": "HDB sellers / news",
+   "status": "scheduled",
+   "slot": "Thu 22 Oct 2pm (TikTok, IG, YouTube)"
+  },
+  {
+   "id": "v020",
+   "title": "An EC site just set a record land price",
+   "pillar": "EC series / news",
+   "status": "scheduled",
+   "slot": "Thu 22 Oct 6pm (TikTok, IG, YouTube)"
+  },
+  {
+   "id": "v021",
+   "title": "350 units sold in a weekend. Should you rush?",
+   "pillar": "new launch / news",
+   "status": "scheduled",
+   "slot": "Fri 23 Oct 2pm | TikTok+IG+YouTube all scheduled (YT 16 Oct)"
+  },
+  {
+   "id": "v022",
+   "title": "Pledge $100K, unlock a $216K loan",
+   "pillar": "home loans / calculator",
+   "status": "scheduled",
+   "facts": "MAS: pledged SGD cash >=4 yrs, 0% haircut, /48 months; TDSR 55%; 4% stress floor. 100000/48=2083; x55%=1145; 25y@4% -> ~$216,900",
+   "slot": "Fri 23 Oct 6pm | TikTok+IG+YouTube all scheduled (YT 16 Oct)"
+  },
+  {
+   "id": "v023",
+   "title": "$4,000 rent. How much do you keep?",
+   "pillar": "landlord / calculator",
+   "status": "scheduled",
+   "facts": "Illustrative: $1.2M condo, $4,000/mth, AV $48K -> NOO ptax $7,440 (IRAS 12/20/28/36%); MCST $4,200; agent ~$2,000/yr; interest $840K@2.5% $21,000; net ~$13,360 (~1.1%)",
+   "slot": "Sat 24 Oct 2pm | TikTok+IG+YouTube all scheduled (YT 16 Oct)"
+  },
+  {
+   "id": "v024",
+   "title": "Refinancing to unlock property value",
+   "pillar": "home loans",
+   "status": "scheduled",
+   "todo": "Joel's example image did not come through; ask to resend",
+   "slot": "Sat 24 Oct 6pm | TikTok+IG+YouTube all scheduled (YT 16 Oct)"
+  },
+  {
+   "id": "p01",
+   "title": "Government signals: why they want more buyers",
+   "pillar": "from presentation",
+   "status": "idea",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "Wait-out removal + income ceiling raise = more buyers; read policy as leading indicators"
+  },
+  {
+   "id": "p02",
+   "title": "Why resale needs to stay high for BTO to sell",
+   "pillar": "from presentation",
+   "status": "idea",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "~55,000 BTO pipeline; resale ~$1M vs BTO ~$600-700K makes BTO attractive (verify)"
+  },
+  {
+   "id": "p04",
+   "title": "Who gained most when EC moved?",
+   "pillar": "from presentation",
+   "status": "idea",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "Old HDB +3%, young HDB +9.87%, resale condo +13%, new launch +53% (Joel's study)"
+  },
+  {
+   "id": "p05",
+   "title": "Next EC wave: land at $700-794 psf ppr",
+   "pillar": "from presentation",
+   "status": "idea",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "EC launches near $2,000 psf; next wave +$100-200 psf"
+  },
+  {
+   "id": "p06",
+   "title": "What if the market crashes? The developer baseline",
+   "pillar": "from presentation",
+   "status": "idea",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "Buy close to developer cost; safer than paying peak premium"
+  },
+  {
+   "id": "p10",
+   "title": "Same condo, one unit type made money, the other didn't",
+   "pillar": "from presentation",
+   "status": "idea",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "3BR vs 2BR Treasure Trove 2021-22; Watertown 1BR vs 3BR (verify)",
+   "note": "Held: unit-type gains not verifiable from 2 public sources; need Joel study data"
+  },
+  {
+   "id": "p11",
+   "title": "New vs nearly-new resale: the gap rule",
+   "pillar": "from presentation",
+   "status": "idea",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "Big gap: resale gets dragged up; small gap: take the new"
+  },
+  {
+   "id": "p12",
+   "title": "Set your walk-away price before you view",
+   "pillar": "from presentation",
+   "status": "idea",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "Price discipline for buyers"
+  },
+  {
+   "id": "p13",
+   "title": "Investor case: HDB to two condos, ~252% in 6 years",
+   "pillar": "from presentation",
+   "status": "idea_ok_by_joel",
+   "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
+   "facts": "Anonymised client case; needs Joel OK + figures"
+  },
+  {
+   "id": "v025",
+   "title": "Two condos, same road. Which one rose faster?",
+   "pillar": "HDB upgraders / affordability gap",
+   "status": "scheduled",
+   "motion": true,
+   "slot": "Sun 25 Oct 2pm | TikTok+IG+YouTube",
+   "source": "Stacked Homes yearly avg psf; 99.co 2026 transactions",
+   "facts": "A Treasure Trove avg psf 2021 $1,115 -> 2026 $1,640 (~47%); Watertown $1,393 -> $1,728 (~24%). 2021 quantum: TT 1,044sqft ~$1.2M, Watertown 1,109sqft ~$1.6M. Upfront 25%+BSD: ~$332K vs ~$445K. 2026: TT 1,044sqft $1.73-1.80M; Watertown 1,109sqft $2.409M (Feb 2026).",
+   "script": [
+    "You're selling your HDB and you'll have about $400,000 in proceeds. Two condos face each other across a road in Punggol. Which one would rise faster?",
+    "One is integrated, sitting above the mall and the MRT. The other is a regular condo across the road.",
+    "In 2021, a 3-bedroom at the regular condo cost about $1.2 million. At the integrated one, about $1.6 million.",
+    "Cash and CPF upfront, including stamp duty: about $332,000 for the first, about $445,000 for the second.",
+    "With $400,000 from your flat, the first is within reach. The second isn't.",
+    "Since 2021, the regular condo's average price has risen about 47%. The integrated one, about 24%.",
+    "Why? More upgraders could afford the cheaper one, so it had more buyers.",
+    "We call it the affordability gap. Before you buy, ask who can afford to buy it from you.",
+    "Want to check the affordability gap for a condo you're eyeing? Comment GAP."
+   ],
+   "note": "Name projects: A Treasure Trove, Watertown. Build with motion + count-ups."
+  },
+  {
+   "id": "v026",
+   "title": "Your tenant is a 200 dollar company. Who pays when rent stops?",
+   "pillar": "Landlords / tenant risk",
+   "status": "scheduled",
+   "motion": true,
+   "slot": "Mon 26 Oct 6pm | TikTok+IG+YouTube",
+   "source": "Mothership 9 Oct 2026; Yahoo/ST 12 Oct 2026 (District Court judgment, DJ Chiah Kok Khun)",
+   "facts": "Lengkong Dua, Kembangan semi-D. Lease signed Apr 2026, 2 yrs from 1 May 2026, $7,500/mth. Deposit $15,000, only $7,500 paid. Only May rent paid. Tenant = company with $200 paid-up capital. Owners in 80s. Oct 2026 District Court: repossession, arrears $22,500+interest, double rent $15,000/mth from 15 Aug, costs $15,000+$2,031.98, commission refund $6,999.14, utilities $813.74, deposit balance; fixed sums total $55,114 (matches headtopics). Not vacated as of 12 Oct. Similar: Jalan Selamat 2019 (5+ months rent free, settled), Burnfoot Terrace 2024 (subsidiary, $1 capital, ~12 months rent free, suit ongoing). Civil only, no convictions. Do NOT name individual or companies. Infographic says High Court: wrong, it was District Court.",
+   "script": [
+    "You own a landed home. A company offers you 7,500 dollars a month on a two year lease. A corporate tenant feels safe.",
+    "They pay half the deposit and the first month's rent. After that, nothing. The family living there doesn't move out.",
+    "This happened in Kembangan this year. The owners are a couple in their 80s, and they had to go to court to get their house back.",
+    "In October the court ruled for them: repossession, double rent until they leave, and more than 55,000 dollars in arrears and costs.",
+    "The catch is that the company had only 200 dollars in paid-up capital. Winning in court and actually getting paid are two very different things.",
+    "Court reports show the same pattern at two other landed homes nearby, in 2019 and 2024.",
+    "What we've found protects landlords: check the company's ACRA profile before you sign, ask the director for a personal guarantee, and collect the full deposit before you hand over the keys.",
+    "Leasing out your home soon? Comment TENANT and we'll send you our landlord checklist."
+   ],
+   "title_card": "Your tenant is a 200 dollar company.\n*Who pays when rent stops?*",
+   "disclaimer": "General information only, not legal advice. Based on public court reports, October 2026.",
+   "note": "3D motion, landed house + family walk-in; count-up 55,000+ on line 4. CTA TENANT. No names."
+  },
+  {
+   "id": "v027",
+   "from": "p03",
+   "title": "Every time the EC rule changed, prices followed",
+   "status": "scheduled",
+   "motion": true,
+   "style": "3D motion, count-ups",
+   "facts": "EC ceiling: $10K->$12K from 15 Aug 2011 (PropertyGuru 2011; Stacked); $14K 2015 (Stacked; D&S); $14K->$16K 11 Sep 2019 (MND; Stacked); $16K->$18K NDR 23 Aug 2026, sites tendered on/after 24 Aug 2026 (EdgeProp; D&S). Median new EC psf: 2015 $794/$797, 2025 $1,754 (Stacked; PropertyNet).",
+   "slot": "Mon 26 Oct 2pm | TikTok+IG+YouTube"
+  },
+  {
+   "id": "v028",
+   "from": "p07",
+   "title": "Own stay, investor, or both?",
+   "status": "scheduled",
+   "motion": true,
+   "style": "3D motion",
+   "facts": "Evergreen, no figures.",
+   "slot": "Tue 27 Oct 2pm | IG+YouTube; TikTok pending (reminder 17 Oct 7pm)"
+  },
+  {
+   "id": "v029",
+   "from": "p08",
+   "title": "Before you buy, know who buys from you",
+   "status": "scheduled",
+   "motion": true,
+   "style": "map",
+   "facts": "Evergreen; Part 2 of v025 affordability gap.",
+   "slot": "Sun 25 Oct 6pm | TikTok+IG+YouTube"
+  },
+  {
+   "id": "v030",
+   "title": "EC or condo? 4 things to check first",
+   "status": "scheduled",
+   "motion": true,
+   "style": "map (EC vs condo side by side)",
+   "facts": "MSR 30% applies to new EC from developer (Redbrick; EdgeProp 8 May 2026). TDSR 55% all. Calc: $16K income, 4% stress, 30y: MSR loan ~$1,005K, TDSR ~$1,843K; $1.6M home LTV 75% = $1.2M; downpayment EC ~$595K vs condo $400K. New EC rules for sites tendered on/after 8 May 2026: MOP 10y (was 5), privatised 15y (was 10), DPS removed, 90% first-timer (EdgeProp; 99.co). EC 30-40% cheaper traditionally per Joel; v007 said condo gap >60% historically. Overlaps v007 (16 Oct) and v020; schedule apart.",
+   "script": [
+    "You're deciding between an EC and a condo. Same budget. Which one should you pick?",
+    "Rules first. An EC is for Singaporean families within the income ceiling. A condo has no income limit.",
+    "The loan rules are different too. For a new EC, your mortgage can't take more than 30% of your income. For a condo, the limit is 55%, and that covers all your debts.",
+    "Say your household earns 16,000 dollars a month. For the EC, the bank can lend about 1 million. For a condo, up to about 1.8 million.",
+    "So on a 1.6 million dollar home, the EC needs about 600,000 dollars upfront. The condo needs just the minimum 25%, about 400,000.",
+    "Holding period: new ECs now have a 10 year minimum occupation period. A condo can be sold any time, with seller's stamp duty if you sell early.",
+    "Location: EC land costs less, so ECs usually sit further out. Condos tend to get the better spots.",
+    "That's why ECs were traditionally 30 to 40% cheaper, and why most EC owners have made money. They bought in lower.",
+    "But what if a new condo now costs about the same as an EC?",
+    "Torn between the two? Comment COMPARE and we'll run both on your income."
+   ],
+   "slot": "Tue 27 Oct 6pm | IG+YouTube; TikTok pending (reminder 17 Oct 7pm)"
+  },
+  {
+   "id": "p15",
+   "title": "Tengah then vs now: the township reveal",
+   "status": "idea",
+   "pillar": "Then vs now reveal",
+   "hook": "\"Punggol in 2005 was a place nobody wanted to live.\" Use Tengah; Punggol done in v013. Hook needs a real figure, not opinion",
+   "visual": "Top down map, empty plot filling with blocks, MRT, waterfront year by year",
+   "cta": "Save this before your next viewing.",
+   "style": "map",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p16",
+   "title": "You have 800K. HDB, EC or resale condo?",
+   "status": "idea",
+   "pillar": "What X dollars buys you",
+   "hook": "\"You have 800,000 dollars. HDB, EC or resale condo?\"",
+   "visual": "Three miniature homes side by side, cash pile splitting under each",
+   "cta": "Comment your flat type and town. We'll tell you which path fits you.",
+   "style": "3D",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p17",
+   "title": "This flat sold for over a million. Here's why",
+   "status": "idea",
+   "pillar": "Million dollar HDB",
+   "hook": "\"This flat sold for over a million. Here is why it's not crazy.\" One real deal, 2 sources, no owner named",
+   "visual": "Single HDB block, zoom into price drivers: MRT, view, lease, scarcity",
+   "cta": "Most people decide this wrongly. Comment WHY to see the mistake.",
+   "style": "3D",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p18",
+   "title": "1.5M condo: the salary you need",
+   "status": "idea",
+   "pillar": "How much must you earn",
+   "hook": "\"You want a 1.5 million dollar condo. This is the salary you need.\" TDSR 55%, 4% stress test",
+   "visual": "Calculator overlay stacking income, TDSR limit and loan quantum (count cards)",
+   "cta": "Comment PLAN and we'll send you the calculator used in this video.",
+   "style": "3D",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p19",
+   "title": "Sold in 2019: what waiting would have meant",
+   "status": "idea",
+   "pillar": "Mistake or regret",
+   "hook": "\"You sold your flat in 2019. Here's what waiting would have meant.\" Past performance disclaimer",
+   "visual": "Split screen, two timelines, two net worth bars (new layout)",
+   "cta": "Send this to the person you're buying with.",
+   "style": "split",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p20",
+   "title": "Two neighbours, same day. One made double",
+   "status": "idea",
+   "pillar": "Mistake or regret / unit selection",
+   "hook": "\"Two neighbours bought on the same day. One made double.\" Needs a real transaction pair; close to v012 and p10",
+   "visual": "Two identical tiny units: stack, facing, floor highlighted",
+   "cta": "Part 2 shows what Neighbour B did differently. Follow so you don't miss it.",
+   "style": "map",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p21",
+   "title": "Rates moved: your monthly instalment",
+   "status": "idea",
+   "pillar": "How much must you earn",
+   "hook": "\"Interest rates moved. Here is what changed in your monthly instalment.\" Post only when rates actually move; overlaps v003",
+   "visual": "Dial turning, instalment ticking up or down",
+   "cta": "Not sure if you're on track? Comment CHECK.",
+   "style": "3D",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p22",
+   "title": "What if BTO MOP were shorter? A simulation",
+   "status": "idea",
+   "pillar": "What if",
+   "hook": "\"What if the government shortened BTO MOP? A simulation.\" FLAGGED: speculative policy; real trend is longer MOP (Plus/Prime 10 yr). Drop or reframe on actual rules",
+   "visual": "Neutral what-if fork, two buyer outcomes",
+   "cta": "Which would you pick? Comment A or B.",
+   "style": "map",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p23",
+   "title": "Your 99 year lease: what happens at year 60?",
+   "status": "idea",
+   "pillar": "Then vs now / lease",
+   "hook": "\"Your 99 year lease. What really happens at year 60?\" Overlaps v006; value claims need firm HDB sources",
+   "visual": "Hourglass over a block, markers at year 30, 60, 90",
+   "cta": "Save this before your next viewing.",
+   "style": "3D",
+   "source": "Joel brief 17 Oct"
+  },
+  {
+   "id": "p24",
+   "title": "Why one 2017 launch outperformed its neighbours (Martin Modern)",
+   "status": "idea",
+   "pillar": "Case study",
+   "hook": "\"Why one 2017 launch outperformed its neighbours.\" Needs land price, entry price and today's prices vs neighbours",
+   "visual": "Top down River Valley map: land price, entry price, today's value lighting up in turn",
+   "cta": "Before you commit, ask yourself this one question. Comment WHY if you want it.",
+   "style": "map",
+   "source": "Joel brief 17 Oct"
+  }
+ ],
+ "cta_system": {
+  "lead": [
+   "Comment your flat type and town. We'll tell you which path fits you.",
+   "Comment PLAN and we'll send you the calculator used in this video.",
+   "Not sure if you're on track? Comment CHECK."
+  ],
+  "engagement": [
+   "Send this to the person you're buying with.",
+   "Save this before your next viewing.",
+   "Part 2 shows what Neighbour B did differently. Follow so you don't miss it."
+  ],
+  "authority": [
+   "Before you commit, ask yourself this one question. Comment WHY if you want it.",
+   "Most people decide this wrongly. Comment WHY to see the mistake."
+  ],
+  "rotation": "Month 1 lean on engagement CTAs for reach; month 2 onwards lead CTAs; case studies use authority CTAs. Applies from 28 Oct slate.",
+  "patterns": "Hook: number or loss in first 2s framed as you. One object transforms on screen. New beat every 3-4s, 30-45s total, reveal near end. FOMO or fear of mistake resolved by clarity. 'What would you do?' only where there is a real choice.",
+  "keyword_freeze": "17 Oct (Joel): no new comment keywords for now. Lead CTAs use only CHECK, PLAN, WHY or 'flat type and town'. Existing ones (FIND, REPORT, PLEDGE, LIST, UNLOCK, GAP, TENANT, ELIGIBLE, EXIT, COMPARE, STAY/INVEST/BOTH) stay live on posted videos."
+ }
+}

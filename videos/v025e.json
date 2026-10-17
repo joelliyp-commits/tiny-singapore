@@ -1,0 +1,448 @@
+{
+ "id": "v025e",
+ "map": true,
+ "titleText": "Two condos, same road. Which one rose faster?",
+ "part": "PART 1",
+ "source": "Stacked Homes \u00b7 99.co",
+ "lines": [
+  {
+   "say": "You're selling your HDB and you'll have about $400,000 in proceeds. Two condos face each other across a road in Punggol. Which one would rise faster?",
+   "cap": "you'll have *$400K* from your flat. which condo rises *faster?*",
+   "emoji": "\ud83c\udfe0",
+   "beat": {
+    "earth": true,
+    "tags": [
+     {
+      "x": 540,
+      "y": 1180,
+      "t": "$400K",
+      "at": 0.3,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52
+     },
+     {
+      "x": 430,
+      "y": 560,
+      "t": "?",
+      "at": 9.2,
+      "q": true
+     }
+    ]
+   }
+  },
+  {
+   "say": "One is integrated, sitting above the mall and the MRT. The other is a regular condo across the road.",
+   "cap": "one is *integrated*. above the mall and *MRT*",
+   "emoji": "\ud83d\ude87",
+   "beat": {
+    "earth": true,
+    "tags": [
+     {
+      "x": 430,
+      "y": 600,
+      "t": "INTEGRATED",
+      "at": 0.4,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 44
+     },
+     {
+      "x": 300,
+      "y": 900,
+      "t": "MALL",
+      "at": 1.9,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40
+     },
+     {
+      "x": 800,
+      "y": 1230,
+      "t": "MRT",
+      "at": 2.5,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40
+     },
+     {
+      "x": 540,
+      "y": 1380,
+      "t": "REGULAR CONDO: ACROSS THE ROAD",
+      "at": 3.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 34
+     }
+    ]
+   }
+  },
+  {
+   "say": "In 2021, a 3-bedroom at the regular condo cost about $1.2 million. At the integrated one, about $1.6 million.",
+   "cap": "in 2021: *$1.2M* vs *$1.6M*",
+   "emoji": "\ud83d\udcb0",
+   "beat": {
+    "cam": [
+     540,
+     630,
+     1.22
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "{v}",
+      "at": 0.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "count": {
+       "to": 1200000.0,
+       "fmt": "M",
+       "at": 0.4
+      }
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "{v}",
+      "at": 0.4,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "count": {
+       "to": 1600000.0,
+       "fmt": "M",
+       "at": 0.6
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "Cash and CPF upfront, including stamp duty: about $332,000 for the first, about $445,000 for the second.",
+   "cap": "upfront with stamp duty: *$332K* vs *$445K*",
+   "emoji": "\ud83d\udcb8",
+   "beat": {
+    "cam": [
+     540,
+     640,
+     1.22
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "{v}",
+      "at": 0.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "count": {
+       "to": 1200000.0,
+       "fmt": "M",
+       "at": 0.4
+      },
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "{v}",
+      "at": 0.4,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "count": {
+       "to": 1600000.0,
+       "fmt": "M",
+       "at": 0.6
+      },
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "Upfront {v}",
+      "at": 0.3,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 34,
+      "count": {
+       "to": 332000.0,
+       "fmt": "K",
+       "at": 0.5
+      }
+     },
+     {
+      "x": 790,
+      "y": 420,
+      "t": "Upfront {v}",
+      "at": 0.5,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 34,
+      "count": {
+       "to": 445000.0,
+       "fmt": "K",
+       "at": 0.7
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "With $400,000 from your flat, the first is within reach. The second isn't.",
+   "cap": "with $400K, the first is *within reach*. the second *isn't*",
+   "emoji": "\ud83d\ude4b",
+   "beat": {
+    "cam": [
+     540,
+     880,
+     1.02
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 380,
+      "t": "{v}",
+      "at": 0.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "count": {
+       "to": 1200000.0,
+       "fmt": "M",
+       "at": 0.4
+      },
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "{v}",
+      "at": 0.4,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 52,
+      "count": {
+       "to": 1600000.0,
+       "fmt": "M",
+       "at": 0.6
+      },
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 470,
+      "t": "Upfront {v}",
+      "at": 0.3,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 34,
+      "count": {
+       "to": 332000.0,
+       "fmt": "K",
+       "at": 0.5
+      },
+      "keep": true
+     },
+     {
+      "x": 790,
+      "y": 420,
+      "t": "Upfront {v}",
+      "at": 0.5,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 34,
+      "count": {
+       "to": 445000.0,
+       "fmt": "K",
+       "at": 0.7
+      },
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 560,
+      "t": "\u2713 WITHIN REACH",
+      "at": 2.6,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 40
+     },
+     {
+      "x": 790,
+      "y": 520,
+      "t": "\u2717 OUT OF REACH",
+      "at": 3,
+      "bg": "#d6312b",
+      "fg": "#fff",
+      "size": 40
+     }
+    ],
+    "buyers": {
+     "block": true,
+     "at": 0.3
+    }
+   }
+  },
+  {
+   "say": "Since 2021, the regular condo's average price has risen about 47%. The integrated one, about 24%.",
+   "cap": "since 2021: *+47%* vs *+24%*",
+   "emoji": "\ud83d\udcc8",
+   "beat": {
+    "cam": [
+     540,
+     620,
+     1.2
+    ],
+    "arrows": [
+     {
+      "x1": 300,
+      "y1": 560,
+      "x2": 300,
+      "y2": 390,
+      "col": "#3fae5a",
+      "at": 0.4
+     },
+     {
+      "x1": 790,
+      "y1": 520,
+      "x2": 790,
+      "y2": 430,
+      "col": "#ebb843",
+      "at": 0.6
+     }
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 330,
+      "t": "{v}",
+      "at": 0.3,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 64,
+      "count": {
+       "to": 47,
+       "fmt": "+%",
+       "at": 0.4,
+       "dur": 1.6
+      }
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "{v}",
+      "at": 0.5,
+      "bg": "#ebb843",
+      "fg": "#24504d",
+      "size": 64,
+      "count": {
+       "to": 24,
+       "fmt": "+%",
+       "at": 0.6,
+       "dur": 1.6
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "Why? More upgraders could afford the cheaper one, so it had more buyers.",
+   "cap": "more upgraders could afford it. *more buyers*",
+   "emoji": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67",
+   "beat": {
+    "cam": [
+     540,
+     880,
+     1.02
+    ],
+    "buyers": {
+     "side": "A",
+     "at": 0.1
+    },
+    "tags": [
+     {
+      "x": 300,
+      "y": 560,
+      "t": "MORE BUYERS",
+      "at": 1.6,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 44
+     }
+    ]
+   }
+  },
+  {
+   "say": "We call it the affordability gap. Before you buy, ask who can afford to buy it from you.",
+   "cap": "the *affordability gap*. who can buy it *from you?*",
+   "emoji": "\ud83e\udd14",
+   "beat": {
+    "cam": [
+     540,
+     660,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 540,
+      "t": "AFFORDABILITY GAP",
+      "at": 0.3,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 48
+     },
+     {
+      "x": 300,
+      "y": 380,
+      "t": "?",
+      "at": 2.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "q": true
+     },
+     {
+      "x": 790,
+      "y": 330,
+      "t": "?",
+      "at": 2.4,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40,
+      "q": true
+     }
+    ]
+   }
+  },
+  {
+   "say": "Want to check the affordability gap for a condo you're eyeing? Comment GAP.",
+   "cap": "check a condo you're eyeing. comment *GAP*",
+   "emoji": "\ud83d\udc47",
+   "beat": {
+    "cam": [
+     540,
+     700,
+     1.05
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 540,
+      "t": "Comment GAP",
+      "at": 0.3,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 56
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "Two condos face each other across a road in Punggol. Which one rose faster? \ud83c\udfd9\ufe0f\n\nIn 2021, a 3-bedroom at the regular condo cost about $1.2M. At the integrated one, about $1.6M. Upfront with stamp duty: about $332K vs $445K. With $400K from an HDB sale, only the first was within reach. Since 2021: about +47% vs +24% in average price.\n\nWe call it the affordability gap. Before you buy, ask who can afford to buy it from you.\n\nWant to check the affordability gap for a condo you're eyeing? Comment GAP \ud83d\udc47\n\nPast performance doesn't guarantee future returns.",
+ "hashtags": "#singaporeproperty #punggol #condosg #hdbupgrade #propertysg #sgproperty #tinysingapore"
+}

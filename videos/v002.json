@@ -1,0 +1,58 @@
+{
+ "id": "v002",
+ "title": "Condo owners\ncan buy HDB now",
+ "lines": [
+  {
+   "scene": "w1",
+   "say": "If you own a condo, the government just removed a fifteen month wait.",
+   "cap": "if you own a condo, the government just *removed a 15 month wait*",
+   "stat": ""
+  },
+  {
+   "scene": "w2",
+   "say": "Before this, you sold your condo. Then waited fifteen months to buy a resale flat.",
+   "cap": "before this, you sold your condo. then *waited 15 months* for a resale flat",
+   "stat": ""
+  },
+  {
+   "scene": "w3",
+   "say": "The rule came in 2022. Cash rich owners were pushing resale prices up.",
+   "cap": "the rule came in 2022. *cash rich owners* were pushing resale prices up",
+   "stat": "resale +10.4% in 2022"
+  },
+  {
+   "scene": "w4",
+   "say": "Now resale growth has cooled. Prices even dipped two quarters in a row.",
+   "cap": "now resale growth has cooled. prices *dipped two quarters in a row*",
+   "stat": "resale +2.9% in 2025"
+  },
+  {
+   "scene": "w5",
+   "say": "So the government opened the tap again.",
+   "cap": "so the government *opened the tap again*",
+   "stat": ""
+  },
+  {
+   "scene": "w6",
+   "say": "More buyers can now chase the same resale flats.",
+   "cap": "*more buyers* can now chase the same resale flats",
+   "stat": ""
+  },
+  {
+   "scene": "w7",
+   "say": "But supply is coming too. Nineteen thousand five hundred flats reach MOP in 2028.",
+   "cap": "but supply is coming too. *19,500 flats* reach MOP in 2028",
+   "stat": "MOP flats: 13.5k → 19.5k"
+  },
+  {
+   "scene": "w8",
+   "say": "If you owned a condo today, would you right size to HDB?",
+   "cap": "if you owned a condo today, *would you right size?* comment YES or NO",
+   "stat": ""
+  }
+ ],
+ "source": "source: MND announcement, 28 Jul 2026 · HDB",
+ "caption": "Condo owners no longer need to wait 15 months to buy an HDB resale flat. 🏠\n\nThe rule came in 2022 to cool resale prices. Now that prices have cooled, the government has opened the tap again.\n\nIf you owned a condo today, would you right size to HDB? Comment YES or NO 👇",
+ "hashtags": "#singaporeproperty #hdbsg #hdbresale #condosg #sgproperty #propertysg #tinysingapore",
+ "pill": "HDB"
+}

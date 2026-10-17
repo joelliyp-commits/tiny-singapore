@@ -1,0 +1,108 @@
+{
+ "title": "Rates are rising.\nShould you *wait?*",
+ "tags": "#singaporeproperty #sgproperty #homeloan #interestrates #sora #propertysg #tinysingapore",
+ "source": "URA flash estimate Q3 2026 · illustration: 30 yr loan at ~2.5%",
+ "caption": "Rates are rising again, and some buyers are pausing. ⏳\n\nBut prices didn't pause. Last quarter they still rose 1.4%. On a $2M home that's $28,000 more. A 0.25% rate rise on a $1.5M loan adds about $200 a month. That $28K is over 11 years of the extra interest.\n\nOn a floating or fixed loan right now? Comment FLOAT or FIXED 👇",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "LOAN ↑",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "You are a buyer on a floating home loan. Your monthly instalment just went up.",
+   "cap": "you are a buyer on a floating loan. your *instalment just went up*",
+   "stat": ""
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "RATES ↑"
+   },
+   "say": "Rates are rising again. And some buyers are pausing.",
+   "cap": "rates are rising again. and *some buyers are pausing*",
+   "stat": ""
+  },
+  {
+   "scene": 1,
+   "say": "But prices didn't pause. Last quarter, they still rose one point four percent.",
+   "cap": "but prices didn't pause. last quarter they *still rose 1.4%*",
+   "stat": "+1.4% in Q3"
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "PRICE +1.4%",
+     "price": "+$28K"
+    },
+    "r": {
+     "type": "condo",
+     "label": "RATE +0.25%",
+     "price": "+$200/mth"
+    }
+   },
+   "say": "On a two million dollar home, that's twenty eight thousand more. A quarter percent rate rise on a one point five million loan? About two hundred dollars a month.",
+   "cap": "$2M home: *+$28K*. +0.25% on a $1.5M loan: *about +$200 a month*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     28,
+     2.4
+    ],
+    "labels": [
+     "$28K",
+     "$2.4K/YR"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "Which costs more? That twenty eight thousand is over eleven years of the extra interest.",
+   "cap": "which costs more? $28K is *over 11 years* of the extra interest",
+   "stat": "$28K ≈ 11+ years of +0.25%"
+  },
+  {
+   "scene": "w2",
+   "say": "So waiting has a cost too.",
+   "cap": "so *waiting has a cost* too",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     3,
+     3.4,
+     3.9
+    ],
+    "labels": [
+     "TODAY",
+     "+0.5%",
+     "+1%"
+    ]
+   },
+   "say": "Smart buyers stress test. Can you still pay if rates rise another one percent?",
+   "cap": "smart buyers stress test. *can you still pay* if rates rise 1% more?",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "FLOAT",
+    "b": "FIXED"
+   },
+   "say": "Floating or fixed right now? Tell us below.",
+   "cap": "floating or fixed right now? comment *FLOAT or FIXED*",
+   "stat": ""
+  }
+ ],
+ "id": "v003",
+ "pill": "RATES"
+}

@@ -1,0 +1,9 @@
+node_modules/
+work/
+out/
+chk/
+stills/
+__pycache__/
+*.log
+*.bak.*
+*.bak.py

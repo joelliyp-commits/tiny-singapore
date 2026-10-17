@@ -1,0 +1,186 @@
+{
+ "id": "v012",
+ "title": "One floor apart.\n*$626K difference*",
+ "lines": [
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "11": "r"
+    },
+    "tags": [
+     {
+      "f": 11,
+      "text": "$3.64M",
+      "col": "r",
+      "side": 1
+     }
+    ]
+   },
+   "say": "You are a buyer at Martin Modern. You bought on the eleventh floor, straight from the developer.",
+   "cap": "you are a buyer at Martin Modern. you bought *floor 11, from the developer*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "11": "r"
+    },
+    "tags": [
+     {
+      "f": 11,
+      "text": "$3.7M",
+      "col": "r",
+      "side": 1
+     }
+    ],
+    "badge": "SOLD · PROFIT ≈ $56K"
+   },
+   "say": "Four years later, you sold for three point seven million. Your profit? About fifty six thousand.",
+   "cap": "four years later you sold for $3.7M. profit? *about $56K*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "10": "g",
+     "11": "r"
+    },
+    "badge": "SAME LAYOUT · SAME SIZE"
+   },
+   "say": "Your neighbour one floor below bought the same layout. Same size. Same developer.",
+   "cap": "your neighbour one floor below. *same layout, same size, same developer*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "10": "g",
+     "11": "r"
+    },
+    "tags": [
+     {
+      "f": 10,
+      "text": "$2.88M",
+      "col": "g",
+      "side": -1
+     },
+     {
+      "f": 11,
+      "text": "$3.64M",
+      "col": "r",
+      "side": 1
+     }
+    ],
+    "badge": "+$766K FOR 1 FLOOR"
+   },
+   "say": "They paid two point eight eight million. You paid three point six four million. That's seven hundred and sixty six thousand more, for one floor.",
+   "cap": "they paid $2.88M. you paid $3.64M. *$766K more for one floor*",
+   "stat": "1 floor = +$766K"
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "10": "g",
+     "11": "r"
+    },
+    "tags": [
+     {
+      "f": 10,
+      "text": "2017",
+      "col": "g",
+      "side": -1
+     },
+     {
+      "f": 11,
+      "text": "2018",
+      "col": "r",
+      "side": 1
+     }
+    ],
+    "badge": "7 MONTHS LATER"
+   },
+   "say": "The difference? They bought in July twenty seventeen. You bought seven months later, after prices went up.",
+   "cap": "they bought July 2017. you bought *7 months later, after prices went up*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "10": "g"
+    },
+    "tags": [
+     {
+      "f": 10,
+      "text": "$3.56M",
+      "col": "g",
+      "side": -1
+     }
+    ],
+    "badge": "SOLD · PROFIT ≈ $682K"
+   },
+   "say": "They sold two months before you, for three point five six million. Their profit was about six hundred and eighty two thousand.",
+   "cap": "they sold 2 months before you, for $3.56M. profit *about $682K*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "10": "g",
+     "11": "r"
+    },
+    "tags": [
+     {
+      "f": 10,
+      "text": "$3.56M",
+      "col": "g",
+      "side": -1
+     },
+     {
+      "f": 11,
+      "text": "$3.7M",
+      "col": "r",
+      "side": 1
+     }
+    ],
+    "badge": "EXIT ≈ SAME"
+   },
+   "say": "Both exits were almost the same. The entry decided everything.",
+   "cap": "both exits were almost the same. *the entry decided everything*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "BUY BELOW",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "So before you buy, find the price the exit has already been tested at. Then buy below it.",
+   "cap": "before you buy, find the *tested exit price*. then buy below it",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "EARLY",
+    "b": "WAIT",
+    "l": "condo",
+    "r": "condo"
+   },
+   "say": "Would you buy early, or wait for a project to prove itself? Comment early, or wait.",
+   "cap": "buy early or wait? comment *EARLY or WAIT*",
+   "stat": ""
+  }
+ ],
+ "source": "URA caveats · Martin Modern unit #08 stack, 1,399 sqft · profits before stamp duty & costs",
+ "caption": "Same project. Same layout. Same developer. One floor apart. 🏢\n\nThe 10th floor buyer made about $682K. The 11th floor buyer made about $56K. Both sold within two months of each other. The difference was the entry price.\n\nWould you buy early, or wait for a project to prove itself? Comment EARLY or WAIT 👇\n\nProfits are before stamp duty and costs. Source: URA transaction data.",
+ "hashtags": "#singaporeproperty #newlaunch #condosg #martinmodern #propertysg #sgproperty #tinysingapore",
+ "pill": "CASE STUDY"
+}

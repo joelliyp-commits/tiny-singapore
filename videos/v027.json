@@ -1,0 +1,136 @@
+{
+ "id": "v027",
+ "motion": true,
+ "title": "Every time the EC rule changed,\n*prices followed*",
+ "pill": "EC",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "ELIGIBLE?",
+    "bld": "ec"
+   },
+   "say": "Your household earns 17,000 dollars a month. Until now, a new EC was out of reach. Soon, it isn't.",
+   "cap": "you earn *$17,000 a month*. soon, a new EC is in reach",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CEILING ↑",
+    "bld": "ec",
+    "dir": "up"
+   },
+   "say": "In August, the EC income ceiling went up from 16,000 to 18,000 dollars, for EC sites sold from now on.",
+   "cap": "the EC income ceiling rose to *$18,000*",
+   "stat": "For EC sites sold from Aug 2026",
+   "count": {
+    "to": 18000,
+    "pre": "$",
+    "label": "new EC income ceiling",
+    "at": 0.3,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     10,
+     12,
+     14,
+     16,
+     18
+    ],
+    "labels": [
+     "PRE-2011",
+     "2011",
+     "2015",
+     "2019",
+     "2026"
+    ]
+   },
+   "say": "It's not the first time. It was 10,000 dollars until 2011. Then 12,000. Then 14,000 in 2015. Then 16,000 in 2019.",
+   "cap": "$10K, $12K, $14K, $16K, *now $18K*",
+   "stat": "EC income ceiling ($K)"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "MORE BUYERS",
+    "bld": "ec",
+    "dir": "up"
+   },
+   "say": "Each change let more families in. And EC prices kept climbing.",
+   "cap": "each change let *more families in*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     797,
+     1754
+    ],
+    "labels": [
+     "2015",
+     "2025"
+    ]
+   },
+   "say": "In 2015, new ECs sold at about 800 dollars per square foot. By 2025, about 1,750 dollars.",
+   "cap": "new ECs: *~$800 psf* to *~$1,750 psf*",
+   "stat": "",
+   "count": {
+    "to": 1754,
+    "pre": "$",
+    "suf2": " psf",
+    "label": "median new EC, 2025",
+    "at": 0.5,
+    "dur": 1.5
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "DEMAND ↑",
+    "bld": "ec",
+    "fam": false
+   },
+   "say": "A higher ceiling doesn't set prices on its own. But more eligible buyers usually means more demand for the same few launches.",
+   "cap": "more eligible buyers, *same few launches*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "ec",
+     "label": "NEW EC",
+     "price": "?"
+    },
+    "r": {
+     "type": "condo",
+     "label": "NEARBY",
+     "price": "?"
+    },
+    "badge": "COMPARE"
+   },
+   "say": "If you've just become eligible, compare the new EC with resale ECs and condos nearby before you choose.",
+   "cap": "compare with *resale ECs and condos nearby*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "ELIGIBLE",
+    "bld": "ec"
+   },
+   "say": "Just became eligible for an EC? Comment eligible, and we'll show you what fits your budget.",
+   "cap": "just became eligible? comment *ELIGIBLE*",
+   "stat": "Past trends, not a forecast"
+  }
+ ],
+ "source": "MND · HDB · Stacked Homes · PropertyNet",
+ "caption": "The EC income ceiling just rose to $18,000. It's not the first time. 📈\n\n$10,000 until 2011, then $12,000, $14,000 in 2015, $16,000 in 2019. Each change let more families in, and new EC prices went from about $800 psf in 2015 to about $1,750 psf in 2025. A higher ceiling doesn't set prices on its own, but more eligible buyers usually means more demand.\n\nJust became eligible? Comment ELIGIBLE and we'll show you what fits your budget 👇\n\nPast trends don't guarantee future prices.",
+ "hashtags": "#singaporeproperty #ecsg #executivecondo #incomeceiling #propertysg #sgproperty #tinysingapore"
+}

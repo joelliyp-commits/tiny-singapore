@@ -1,0 +1,113 @@
+{
+ "id": "v014",
+ "title": "This MRT stayed\n*closed for 8 years*",
+ "lines": [
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 0,
+    "mrt": "closed"
+   },
+   "say": "You are a buyer in 2010. There's a brand new MRT station near Bidadari. But it's closed, and has been since 2003.",
+   "cap": "you are a buyer in 2010. a brand new MRT near Bidadari. *closed since 2003*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 0,
+    "mrt": "closed",
+    "graves": true
+   },
+   "say": "Why? Too few people lived there. The land was an old cemetery, closed in 1972 and cleared by 2006.",
+   "cap": "too few people lived there. *an old cemetery*, closed 1972, cleared by 2006",
+   "stat": "Bidadari: a cemetery"
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 1,
+    "mrt": true
+   },
+   "say": "In 2011, the MRT finally opened. Two years later, the government unveiled the Bidadari estate plan.",
+   "cap": "2011: *the MRT finally opened*. 2013: the Bidadari estate plan",
+   "stat": "MRT 2011 · plan 2013"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "2018 · ~$1,700 PSF",
+    "bld": "condo"
+   },
+   "say": "In 2018, Park Colonial launched beside the MRT at around seventeen hundred dollars psf.",
+   "cap": "2018: Park Colonial launched beside the MRT at *around $1,700 psf*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "2019 · FROM $1,733",
+    "bld": "condo"
+   },
+   "say": "In 2019, The Woodleigh Residences launched above a new mall and bus interchange, from seventeen thirty three psf.",
+   "cap": "2019: The Woodleigh Residences launched *from $1,733 psf*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "PARK COLONIAL",
+     "price": "~$2,350"
+    },
+    "r": {
+     "type": "condo",
+     "label": "WOODLEIGH RES.",
+     "price": "~$2,460"
+    },
+    "badge": "TODAY"
+   },
+   "say": "Today, Park Colonial averages about twenty three fifty psf. Woodleigh Residences is around twenty four sixty.",
+   "cap": "today: Park Colonial *about $2,350 psf*. Woodleigh Residences *around $2,460*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 3,
+    "mrt": true,
+    "park": true
+   },
+   "say": "What changed? Not the land. An MRT came first, then a government plan, then a mall, a park and a bus interchange.",
+   "cap": "what changed? not the land. *an MRT, a plan, a mall and a park*",
+   "stat": "MRT → plan → mall → park"
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 1,
+    "mrt": true
+   },
+   "say": "So when you look at an area, don't ask if it's nice today. Ask what's coming next.",
+   "cap": "don't ask if an area is nice today. *ask what's coming next*",
+   "stat": "What's coming next?"
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "NOW",
+    "b": "NEXT",
+    "l": "hdb",
+    "r": "condo"
+   },
+   "say": "Which area do you think is next? Comment below.",
+   "cap": "which area is next? *comment below*",
+   "stat": ""
+  }
+ ],
+ "source": "LTA / Wikipedia · HDB · NParks · EdgeProp · Stacked (12 mth avg)",
+ "caption": "Woodleigh MRT was built in 2003 and stayed closed until 2011. 🚇\n\nThe land around it was an old cemetery. Today, condos beside it average around $2,350 to $2,460 psf. What changed it: an MRT, a plan, a mall and a park.\n\nWhich area is next? Comment below 👇",
+ "hashtags": "#singaporeproperty #bidadari #condosg #hdbsg #propertysg #sgproperty #tinysingapore",
+ "pill": "AREA HISTORY"
+}

@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:J;src:url(node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:J;src:url(node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-600-normal.woff2);font-weight:600}
+html,body{margin:0;width:1080px;height:1920px;background:transparent;font-family:J,sans-serif;overflow:hidden}
+.hide{display:none!important}
+#cap{position:absolute;left:80px;right:80px;top:1400px;text-align:center;color:#fff;font-weight:800;font-size:64px;line-height:1.45;letter-spacing:-.5px}
+#cap span.l{background:rgba(24,46,44,.80);padding:8px 20px;border-radius:20px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+#cap b{color:#FFD36B}
+#stat{position:absolute;left:50%;transform:translateX(-50%);background:#fffaf0;color:#24504d;font-weight:800;font-size:54px;padding:20px 44px;border-radius:999px;box-shadow:0 10px 0 #d9c7a7,0 18px 40px rgba(0,0,0,.22);white-space:nowrap}
+#stat .up{color:#d9603f}
+#title{position:absolute;left:70px;right:70px;top:170px;text-align:center}
+#title div{display:inline-block;background:#24504d;color:#fff;font-weight:800;font-size:96px;line-height:1.08;letter-spacing:-2px;padding:30px 46px 34px;border-radius:36px;box-shadow:0 12px 0 #163634,0 24px 50px rgba(0,0,0,.25);white-space:pre-line}
+#title div b{color:#FFD36B}
+#src{position:absolute;left:0;right:0;bottom:95px;text-align:center;color:rgba(255,255,255,.92);font-weight:600;font-size:27px;text-shadow:0 2px 6px rgba(0,0,0,.65)}
+#brand{position:absolute;right:46px;top:64px;color:rgba(255,255,255,.95);font-weight:800;font-size:32px;text-shadow:0 2px 8px rgba(0,0,0,.45)}
+#cap .w{display:inline-block;transform-origin:50% 60%;margin:0 4px}
+#cap.chunk{top:1390px;font-size:82px;line-height:1.3}
+#cap.chunk span.l{padding:10px 30px;border-radius:26px}
+#count{position:absolute;left:50%;transform:translateX(-50%);text-align:center;background:#fffaf0;border-radius:44px;padding:18px 56px 22px;box-shadow:0 12px 0 #d9c7a7,0 22px 46px rgba(0,0,0,.25);white-space:nowrap}
+#count .n{color:#24504d;font-weight:800;font-size:132px;line-height:1.05;letter-spacing:-3px}
+#count .n i{font-style:normal;color:#d9603f}
+#count .lb{color:#6b7f7c;font-weight:800;font-size:40px;margin-top:2px}
+</style></head><body>
+<div id="title"><div></div></div><div id="stat"></div><div id="cap"></div><div id="src"></div><div id="count"><div class="n"></div><div class="lb"></div></div><div id="brand"></div>
+<script>
+const $=id=>document.getElementById(id);
+window.draw=(o)=>{for(const id of['title','stat','cap','src','brand','count'])$(id).classList.add('hide');
+ if(o.title){$('title').classList.remove('hide');$('title').firstChild.innerHTML=o.title.replace(/\*(.+?)\*/g,'<b>$1</b>')}
+ if(o.cap){$('cap').classList.remove('hide');$('cap').innerHTML='<span class="l">'+o.cap.replace(/\*(.+?)\*/g,'<b>$1</b>')+'</span>'}
+ if(o.stat){$('stat').classList.remove('hide');$('stat').style.top=(o.statTop||250)+'px';$('stat').innerHTML=o.stat.replace(/([+−-]?\d[\d.,]*%?k?)/,'<span class="up">$1</span>')}
+ if(o.src){$('src').classList.remove('hide');$('src').textContent=o.src}
+ if(o.brand){$('brand').classList.remove('hide');$('brand').textContent=o.brand}
+ if(o.words&&o.words.length){$('cap').classList.remove('hide');$('cap').classList.add('chunk');$('cap').innerHTML='<span class="l">'+o.words.map((w,k)=>{const op=k<o.n?1:0;const sc=(k===o.n-1)?o.pop:1;const t=w.g?'<b>'+w.t+'</b>':w.t;return '<span class="w" style="opacity:'+op+';transform:scale('+sc+')">'+t+'</span>'}).join(' ')+'</span>'}
+ if(o.count){$('count').classList.remove('hide');$('count').style.top=(o.countTop||230)+'px';$('count').style.transform='translateX(-50%) scale('+(o.cpop||1)+')';$('count').querySelector('.n').innerHTML=o.count;$('count').querySelector('.lb').textContent=o.clabel||''}
+ return document.fonts.ready.then(()=>true)};
+</script></body></html>

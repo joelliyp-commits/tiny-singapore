@@ -1,0 +1,78 @@
+{
+ "title": "BTO or resale?\n*Wrong question*",
+ "tags": "#singaporeproperty #hdbsg #hdbresale #bto #propertysg #sgproperty #tinysingapore",
+ "source": "source: HDB · resale transaction data 2026",
+ "caption": "BTO is cheaper but you wait years. Resale is ready now but costs more. 🏠\n\nWhile you wait, you may be paying rent. So the real question isn't price. It's time.\n\nWhich would you choose? Comment BTO or RESALE 👇",
+ "lines": [
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "BTO",
+    "b": "RESALE",
+    "l": "bto",
+    "r": "hdb"
+   },
+   "say": "You are a young couple. BTO is cheaper, but you wait years. Resale is ready, but costs more.",
+   "cap": "BTO is cheaper but *you wait years*. resale is ready but *costs more*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1M+",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "Some resale flats now cross a million dollars.",
+   "cap": "some resale flats now *cross $1 million*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "hdb",
+     "label": "RESALE",
+     "price": "$1M+"
+    },
+    "r": {
+     "type": "bto",
+     "label": "NEW BTO",
+     "price": "FAR LESS"
+    }
+   },
+   "say": "A new BTO in a good location can cost far less.",
+   "cap": "a new BTO in a good location *can cost far less*",
+   "stat": ""
+  },
+  {
+   "tpl": "rent",
+   "p": {
+    "cal": "3-4 YRS"
+   },
+   "say": "But while you wait, you may be paying rent.",
+   "cap": "but while you wait, *you may be paying rent*",
+   "stat": ""
+  },
+  {
+   "scene": "w2",
+   "say": "So the real question isn't price. It's time.",
+   "cap": "so the real question isn't price. *it's time*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "BTO",
+    "b": "RESALE",
+    "l": "bto",
+    "r": "hdb"
+   },
+   "say": "Which would you choose? Tell us below.",
+   "cap": "which would you choose? comment *BTO or RESALE*",
+   "stat": ""
+  }
+ ],
+ "id": "v008",
+ "pill": "BTO VS RESALE"
+}

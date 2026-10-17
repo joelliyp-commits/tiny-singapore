@@ -1,0 +1,62 @@
+{
+ "title": "The HDB seller\n*wave is coming*",
+ "tags": "#singaporeproperty #hdbsg #hdbresale #bto #propertysg #sgproperty #tinysingapore",
+ "source": "source: MND, 28 Jul 2026 (MOP figures)",
+ "caption": "13,500 HDB flats reach MOP this year. By 2028, 19,500. 🌊\n\nMore sellers at once means more competition. Sellers who price right and move early usually do better.\n\nSelling within two years? Save this before you list 📌",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "MOP ✓",
+    "bld": "hdb"
+   },
+   "say": "You just hit your five year MOP. You're thinking of selling.",
+   "cap": "you just hit your 5 year MOP. *you're thinking of selling*",
+   "stat": ""
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "13,500 FLATS"
+   },
+   "say": "So are thousands of others. Thirteen thousand five hundred flats reach MOP this year.",
+   "cap": "so are thousands of others. *13,500 flats* reach MOP this year",
+   "stat": ""
+  },
+  {
+   "scene": "w7",
+   "say": "By twenty twenty eight, nineteen thousand five hundred.",
+   "cap": "by 2028, *19,500*",
+   "stat": "MOP flats: 13.5k → 19.5k"
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "MORE SELLERS"
+   },
+   "bg": 15130059,
+   "say": "More sellers at once means more competition for buyers.",
+   "cap": "more sellers at once means *more competition* for buyers",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PRICE RIGHT",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "Sellers who price right and move early usually do better.",
+   "cap": "sellers who *price right and move early* usually do better",
+   "stat": ""
+  },
+  {
+   "scene": 11,
+   "say": "Selling within two years? Save this before you list.",
+   "cap": "selling within two years? *save this before you list*",
+   "stat": ""
+  }
+ ],
+ "id": "v009",
+ "pill": "HDB SELLERS"
+}

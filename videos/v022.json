@@ -1,0 +1,111 @@
+{
+ "id": "v022",
+ "title": "Pledge $100K,\n*unlock a $216K loan*",
+ "pill": "HOME LOANS",
+ "lines": [
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "INCOME"
+   },
+   "say": "You are a buyer. Your income isn't enough for the loan you need. But you have one hundred thousand dollars in cash.",
+   "cap": "your income isn't enough for the loan. but you have *$100,000 cash*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "PLEDGED"
+   },
+   "say": "Banks can count pledged cash as income. Pledge it for 4 years, and they spread it over 48 months.",
+   "cap": "pledged cash can count as income, *spread over 48 months*",
+   "stat": "Pledged for at least 4 years"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$2,083",
+    "bld": "condo"
+   },
+   "say": "One hundred thousand over 48 months is about two thousand and eighty three dollars a month.",
+   "cap": "$100,000 ÷ 48 = *~$2,083 a month*",
+   "stat": "Counted as monthly income"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     55,
+     45
+    ],
+    "labels": [
+     "LOANS 55%",
+     "REST 45%"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "Under TDSR, up to 55% of income can go to loan repayments. That's about eleven hundred and forty five dollars a month.",
+   "cap": "TDSR: up to 55% of income = *~$1,145 a month*",
+   "stat": "TDSR cap: 55% of income"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     100,
+     216
+    ],
+    "labels": [
+     "PLEDGE $100K",
+     "LOAN $216K"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Banks test that at 4% interest. Over 25 years, eleven forty five a month supports a loan of over two hundred and sixteen thousand dollars.",
+   "cap": "at 4% over 25 years, that supports *over $216,000*",
+   "stat": "4% stress test · 25 year tenure"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "× 2",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "So one hundred thousand pledged can unlock more than double in borrowing.",
+   "cap": "$100K pledged can unlock *more than double*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "CHECK"
+   },
+   "say": "Every bank applies its own policy, and your other debts count too.",
+   "cap": "every bank has its own policy. *other debts count too*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PLEDGE",
+    "bld": "condo"
+   },
+   "say": "Eyeing your dream home, but short of some funds? Now you have one more way to get it. Comment pledge to find out how much you'd need.",
+   "cap": "eyeing your dream home but short of funds? *one more way to get it*. comment *PLEDGE*",
+   "stat": "Illustrative. Bank policies vary."
+  }
+ ],
+ "source": "MAS TDSR guidelines",
+ "caption": "Your income isn't enough for the loan you need, but you have $100,000 in cash. 💰\n\nPledge it for 4 years and banks can count it as income: $100,000 ÷ 48 = about $2,083 a month. At 55% TDSR and a 4% stress test over 25 years, that supports a loan of over $216,000.\n\nEyeing your dream home but short of some funds? Now you have one more way to get it. Comment PLEDGE to find out how much you'd need 👇\n\nIllustrative only. Bank policies and your other debts affect the final amount.",
+ "hashtags": "#singaporeproperty #homeloan #tdsr #condosg #propertysg #sgproperty #tinysingapore"
+}

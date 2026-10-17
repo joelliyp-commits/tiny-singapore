@@ -1,0 +1,111 @@
+{
+ "id": "v016",
+ "title": "You're a civil servant.\n*How do you buy right?*",
+ "pill": "BUYER PLAYBOOK",
+ "lines": [
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "OFF LIMITS"
+   },
+   "say": "You are a civil servant. You want a home that makes money. But you can't use anything you learned at work.",
+   "cap": "you are a civil servant. you want profit, but *nothing from work*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 1,
+    "mrt": true
+   },
+   "say": "This month, eight officers were referred to the police over purchases near future MRT stations. The Minister stressed a referral does not mean wrongdoing.",
+   "cap": "8 officers referred to police. *a referral does not mean wrongdoing*",
+   "stat": "Parliament, 6 Oct 2026"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PUBLIC DATA",
+    "bld": "condo"
+   },
+   "say": "So what's left? The same public data everyone has. Used better.",
+   "cap": "what's left? *the same public data, used better*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 2,
+    "mrt": true
+   },
+   "say": "One. The Master Plan. URA publishes what every area is zoned for, years ahead. Look for areas where the plan is visible, but the amenities aren't built yet.",
+   "cap": "1: the Master Plan. *plan visible, amenities not built yet*",
+   "stat": "1 · Master Plan"
+  },
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "LAND $$$",
+    "sell": "LAUNCH",
+    "mult": "PRICE FLOOR"
+   },
+   "say": "Two. Land prices. When developers pay high for land, future launches can't go cheap. Buy below the next launch.",
+   "cap": "2: land prices. high land cost means *future launches can't go cheap*",
+   "stat": "2 · land prices"
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "MOP / TOP"
+   },
+   "say": "Three. The entry window. When MOP or TOP releases many sellers at once, buyers get leverage.",
+   "cap": "3: the entry window. many sellers at once = *buyer leverage*",
+   "stat": "3 · entry window"
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "10": "g"
+    },
+    "tags": [
+     {
+      "f": 10,
+      "text": "EXIT ✓",
+      "col": "g",
+      "side": -1
+     }
+    ]
+   },
+   "say": "Four. Buy below a tested exit. If similar units have already sold higher, your profit doesn't depend on any announcement.",
+   "cap": "4: buy below a *tested exit*",
+   "stat": "4 · tested exit"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "DISCIPLINE",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "None of this needs inside information. Just discipline.",
+   "cap": "no inside information. *just discipline*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "PLAN · LAND",
+    "b": "WINDOW · EXIT",
+    "l": "hdb",
+    "r": "condo"
+   },
+   "say": "Which would you use first? Comment plan, land, window, or exit.",
+   "cap": "which first? comment *PLAN, LAND, WINDOW or EXIT*",
+   "stat": ""
+  }
+ ],
+ "source": "Parliament, 6 Oct 2026 · URA",
+ "caption": "You're a civil servant. You want your home to make money, but you can't use anything from work. 🏛️\n\nHere are four public signals anyone can read: URA's Master Plan, land sale prices, MOP/TOP seller windows, and buying below a tested exit. None of them need inside information.\n\nWhich would you use first? Comment PLAN, LAND, WINDOW or EXIT 👇",
+ "hashtags": "#singaporeproperty #ura #masterplan #condosg #hdbsg #propertysg #tinysingapore"
+}

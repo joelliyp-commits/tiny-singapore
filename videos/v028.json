@@ -1,0 +1,83 @@
+{
+ "id": "v028",
+ "motion": true,
+ "title": "Own stay, investor or both?\n*It changes what you buy*",
+ "pill": "BUYING",
+ "lines": [
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "WHAT FOR?"
+   },
+   "say": "You're viewing condos this weekend. Before you fall for one, answer this. What is this home for?",
+   "cap": "before you fall for one: *what is this home for?*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "OWN STAY",
+    "bld": "condo"
+   },
+   "say": "Own stay. You're buying for your family. Layout, schools and the commute matter most, and you'll likely hold longer.",
+   "cap": "own stay: *layout, schools, commute*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "INVESTOR",
+    "bld": "condo",
+    "fam": false,
+    "dir": "up"
+   },
+   "say": "Investor. You're buying for returns. Rental yield, entry price, and who will buy from you matter most.",
+   "cap": "investor: *yield, entry price, next buyer*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "BOTH",
+    "bld": "condo"
+   },
+   "say": "Both. You live in it now and sell later. You need a home you like, and a unit the next buyer wants.",
+   "cap": "both: a home you like, *a unit the next buyer wants*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "STAY",
+    "b": "INVEST",
+    "l": "condo",
+    "r": "condo"
+   },
+   "say": "Same budget, three different best buys. Many buyers end up with the wrong one because they never decided.",
+   "cap": "same budget, *three different best buys*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "GOAL + YEARS"
+   },
+   "say": "We've found the easiest first step is to write down your goal, and how long you'll hold, before you view.",
+   "cap": "write down *your goal and holding period* first",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WHICH ONE?",
+    "bld": "condo"
+   },
+   "say": "Which one are you? Comment stay, invest, or both, and we'll tell you what to look for.",
+   "cap": "comment *STAY, INVEST or BOTH*",
+   "stat": ""
+  }
+ ],
+ "caption": "Viewing condos this weekend? First, decide what the home is for. 🏙️\n\nOwn stay: layout, schools and commute matter most. Investor: yield, entry price and your next buyer matter most. Both: a home you like and a unit the next buyer wants. Same budget, three different best buys.\n\nWhich one are you? Comment STAY, INVEST or BOTH and we'll tell you what to look for 👇",
+ "hashtags": "#singaporeproperty #condosg #homebuying #propertyinvestment #propertysg #sgproperty #tinysingapore"
+}

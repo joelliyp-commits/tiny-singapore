@@ -1,0 +1,124 @@
+{
+ "id": "v021",
+ "title": "350 units sold in a weekend.\n*Should you rush?*",
+ "pill": "NEW LAUNCH",
+ "lines": [
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "350 SOLD"
+   },
+   "say": "You are a buyer. A new condo sold 350 units in one weekend. Should you rush?",
+   "cap": "350 units sold in one weekend. *should you rush?*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     350,
+     220
+    ],
+    "labels": [
+     "SOLD",
+     "LEFT"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "Lucerne Grand, next to Lakeside MRT. 61% of 570 units sold, at about twenty four eighty psf on average.",
+   "cap": "*61% of 570 units* sold, avg *~$2,480 psf*",
+   "stat": "Lucerne Grand, 3 & 4 Oct 2026"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "HDB ↑",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "Most buyers were Singaporeans from the west, including HDB upgraders.",
+   "cap": "mostly Singaporeans from the west, *incl. HDB upgraders*",
+   "stat": "~93% Singaporeans"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "DEMAND ✓",
+    "bld": "condo"
+   },
+   "say": "Strong sales show demand. They don't tell you whether your unit is a good buy.",
+   "cap": "strong sales show demand. *not whether your unit is a good buy*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     87.5,
+     62,
+     87.2
+    ],
+    "labels": [
+     "STD 2BR",
+     "3BR",
+     "PREM 4BR"
+    ],
+    "cols": [
+     14710863,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Look at what sold fastest. The standard two bedders and the premium four bedders, both about 87% sold.",
+   "cap": "fastest: *standard 2BR* and *premium 4BR*, ~87% each",
+   "stat": "% sold by unit type, launch weekend"
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "9": "g"
+    },
+    "tags": [
+     {
+      "f": 9,
+      "text": "EXIT ✓",
+      "col": "g",
+      "side": -1
+     }
+    ]
+   },
+   "say": "We've found that what sells fastest at launch usually resells faster later. Your exit starts on day one.",
+   "cap": "what sells fastest at launch *usually resells faster*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CHECK",
+    "bld": "condo"
+   },
+   "say": "Before you book, compare your stack with what's left, and with nearby resale prices.",
+   "cap": "compare your stack with *what's left* and *nearby resale*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "YES",
+    "b": "WAIT",
+    "l": "condo",
+    "r": "hdb"
+   },
+   "say": "Would you buy on launch weekend? Comment yes, or wait.",
+   "cap": "buy on launch weekend? comment *YES or WAIT*",
+   "stat": ""
+  }
+ ],
+ "source": "CDL via EdgeProp · Stacked Homes",
+ "caption": "A new condo sold 350 units in one weekend. Should you rush? 🏙️\n\nLucerne Grand sold 61% of 570 units at about $2,480 psf on average. Strong sales show demand, but they don't tell you if your unit is a good buy. The fastest sellers were standard 2BRs and premium 4BRs.\n\nWould you buy on launch weekend? Comment YES or WAIT 👇",
+ "hashtags": "#singaporeproperty #newlaunch #lucernegrand #condosg #propertysg #sgproperty #tinysingapore"
+}

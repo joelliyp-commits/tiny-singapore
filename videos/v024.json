@@ -1,0 +1,116 @@
+{
+ "id": "v024",
+ "title": "Short of funds?\n*Your home can help*",
+ "pill": "HOME LOANS",
+ "lines": [
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "FUNDS?"
+   },
+   "say": "You own a condo worth two point nine million dollars. You see a good investment opportunity, but you don't have the funds.",
+   "cap": "you see a good investment. *but no funds*",
+   "stat": "Example: $2.9M condo"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "REFINANCE"
+   },
+   "say": "Your home could help. You can refinance, and unlock some of its value as cash.",
+   "cap": "refinance and *unlock some of its value*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     75,
+     25
+    ],
+    "labels": [
+     "LOAN 75%",
+     "EQUITY"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "Banks usually let you borrow up to about 75% of its valuation in total.",
+   "cap": "banks usually cap total borrowing at *~75% of valuation*",
+   "stat": "Total borrowing cap"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "MINUS"
+   },
+   "say": "But it's not all cash in hand. They subtract your existing loan, plus the CPF you used and its accrued interest.",
+   "cap": "minus your *existing loan* and *CPF used + interest*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     2175,
+     800,
+     300,
+     1075
+    ],
+    "labels": [
+     "75% CAP",
+     "LOAN",
+     "CPF",
+     "CASH"
+    ],
+    "cols": [
+     2908253,
+     2908253,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Say you owe eight hundred thousand, and used three hundred thousand of CPF. 75% of two point nine million is two point one seven five million. Take away both, and you could unlock about one point zero seven million.",
+   "cap": "$2.175M minus $800K minus $300K = *~$1.07M*",
+   "stat": "Example figures"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "TDSR 55%"
+   },
+   "say": "Your income still has to pass TDSR. Repayments on all your loans must stay within 55% of your income.",
+   "cap": "your income still has to pass *TDSR 55%*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "GROW ↑",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "We've found it works when the new investment is likely to grow faster than the loan costs. If not, you're just adding debt to your home.",
+   "cap": "works when growth beats *the loan cost*. if not, it's just debt",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "UNLOCK",
+    "bld": "condo"
+   },
+   "say": "Want to see how much your property could unlock? Comment unlock.",
+   "cap": "how much could you unlock? comment *UNLOCK*",
+   "stat": "Bank policies vary"
+  }
+ ],
+ "source": "Bank equity loan guidelines · example figures",
+ "caption": "You own a $2.9M condo and see a good investment, but you don't have the funds. 🔑\n\nYou could refinance and unlock cash. Banks usually cap total borrowing at about 75% of valuation, minus your existing loan and CPF used plus interest. Example: owe $800K, used $300K CPF, unlock about $1.07M. TDSR still applies.\n\nWant to see how much your property could unlock? Comment UNLOCK 👇\n\nExample figures only. Bank policies vary.",
+ "hashtags": "#singaporeproperty #refinancing #homeloan #condosg #propertysg #sgproperty #tinysingapore"
+}

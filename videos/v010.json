@@ -1,0 +1,99 @@
+{
+ "title": "Why the bank\n*said no*",
+ "tags": "#singaporeproperty #homeloan #tdsr #hdbsg #condosg #propertysg #tinysingapore",
+ "source": "source: MAS TDSR & MSR rules",
+ "caption": "You earn $10,000 a month. The bank just said no. 🏦\n\nIt's not your salary. It's your other loans. TDSR caps all repayments at 55% of income, and HDB or EC loans also face a 30% MSR.\n\nKnow someone buying a car and a house? Send this to them 📲",
+ "lines": [
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO"
+   },
+   "say": "You are a buyer earning ten thousand a month. The bank just said no.",
+   "cap": "you earn $10K a month. *the bank just said no*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CAR LOAN",
+    "bld": "car"
+   },
+   "say": "The problem isn't your salary. It's your other loans.",
+   "cap": "the problem isn't your salary. *it's your other loans*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     55,
+     45
+    ],
+    "labels": [
+     "ALL LOANS",
+     "REST"
+    ],
+    "cols": [
+     14709071,
+     4099722
+    ]
+   },
+   "say": "Banks use TDSR. All loan repayments, max fifty five percent of income.",
+   "cap": "banks use TDSR. all repayments, *max 55% of income*",
+   "stat": "TDSR: max 55%"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "ALL COUNT",
+    "bld": "car"
+   },
+   "say": "Car loan. Personal loan. They all count.",
+   "cap": "car loan, personal loan. *they all count*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     30,
+     70
+    ],
+    "labels": [
+     "HOME LOAN",
+     "REST"
+    ],
+    "cols": [
+     14709071,
+     4099722
+    ]
+   },
+   "say": "Buying HDB or EC? Home loan alone, max thirty percent of income.",
+   "cap": "buying HDB or EC? home loan alone, *max 30%*",
+   "stat": "MSR: max 30% (HDB/EC)"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK"
+   },
+   "say": "So clear other loans before you apply.",
+   "cap": "so *clear other loans* before you apply",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "CAR",
+    "b": "HOME",
+    "r": "condo"
+   },
+   "say": "Know someone buying a car and a house? Send this to them.",
+   "cap": "know someone buying a car and a house? *send this to them*",
+   "stat": ""
+  }
+ ],
+ "id": "v010",
+ "pill": "HOME LOANS"
+}

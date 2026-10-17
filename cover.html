@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:J;src:url(node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:J;src:url(node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-600-normal.woff2);font-weight:600}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:J,sans-serif;background:#DCE8E4}
+#bg{position:absolute;inset:0;background-size:cover;background-position:center}
+#shade{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(20,40,38,.05) 0%,rgba(20,40,38,.10) 45%,rgba(20,40,38,.45) 100%)}
+#band{position:absolute;left:0;right:0;top:640px;height:640px;background:linear-gradient(180deg,rgba(220,232,228,0) 0%,rgba(236,242,238,.82) 22%,rgba(236,242,238,.82) 78%,rgba(220,232,228,0) 100%)}
+#box{position:absolute;left:40px;right:40px;top:1020px;display:flex;flex-direction:column;align-items:center}
+#pill{background:#E0714F;color:#fff;font-weight:800;font-size:44px;letter-spacing:4px;padding:14px 34px;border-radius:999px;margin-bottom:34px;box-shadow:0 8px 0 #b4563a}
+#title{background:#24504d;color:#fff;font-weight:800;font-size:124px;line-height:1.04;letter-spacing:-3px;text-align:center;padding:40px 54px 46px;border-radius:44px;box-shadow:0 14px 0 #163634,0 30px 60px rgba(0,0,0,.28);white-space:pre;max-width:none}
+#title b{color:#FFD36B}
+#handle{position:absolute;left:0;right:0;bottom:120px;text-align:center;color:#fff;font-weight:800;font-size:40px;text-shadow:0 3px 12px rgba(0,0,0,.45)}
+</style></head><body><div id="bg"></div><div id="shade"></div>
+<div id="box"><div id="pill"></div><div id="title"></div></div><div id="handle">@tiny_singapore</div>
+<script>
+window.draw=async o=>{document.getElementById('bg').style.backgroundImage=`url(${o.bg})`;
+ const p=document.getElementById('pill');p.textContent=o.pill||'';p.style.display=o.pill?'':'none';
+ document.getElementById('title').innerHTML=o.title.replace(/&/g,'&amp;').replace(/\*(.+?)\*/g,'<b>$1</b>');
+ await document.fonts.ready; const im=new Image(); im.src=o.bg; await im.decode().catch(()=>{});
+ const t=document.getElementById('title'); let fs=132; t.style.fontSize=fs+'px'; while(t.offsetWidth>990){fs-=3;t.style.fontSize=fs+'px';if(fs<64)break;}};
+</script></body></html>

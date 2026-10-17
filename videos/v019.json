@@ -1,0 +1,133 @@
+{
+ "id": "v019",
+ "title": "HDB prices fell\n*3 quarters in a row*",
+ "pill": "HDB SELLERS",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PRICES ↓",
+    "bld": "hdb",
+    "dir": "down",
+    "down": true
+   },
+   "say": "You are an HDB seller. Prices just fell for the third quarter in a row.",
+   "cap": "you are an HDB seller. prices fell *3 quarters in a row*",
+   "stat": "HDB flash estimate, 1 Oct 2026"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     0.1,
+     0.3,
+     0.2
+    ],
+    "labels": [
+     "Q1 ↓0.1%",
+     "Q2 ↓0.3%",
+     "Q3 ↓0.2%"
+    ],
+    "cols": [
+     14710863,
+     14710863,
+     14710863
+    ]
+   },
+   "say": "Down 0.1%, then 0.3%, then 0.2% this year.",
+   "cap": "down *0.1%*, then *0.3%*, then *0.2%*",
+   "stat": "HDB resale price index, 2026"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     6396,
+     7528
+    ],
+    "labels": [
+     "Q2",
+     "Q3"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "But buyers didn't disappear. 7,528 flats changed hands last quarter, up from the quarter before.",
+   "cap": "buyers didn't disappear. *7,528 flats* sold last quarter",
+   "stat": "Q3 2026 resale transactions"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1M+",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "And 597 flats still sold for a million dollars or more.",
+   "cap": "*597 flats* still sold for $1M or more",
+   "stat": "Q3 2026"
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "13,500 MOP"
+   },
+   "say": "So what's going on? About 13,500 flats reach MOP this year. More sellers means more choice for buyers.",
+   "cap": "~13,500 flats reach MOP this year. *more choice for buyers*",
+   "stat": "MOP flats, 2026"
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "10": "g",
+     "4": "r"
+    },
+    "tags": [
+     {
+      "f": 10,
+      "text": "HOLDS",
+      "col": "g",
+      "side": -1
+     },
+     {
+      "f": 4,
+      "text": "DROPS",
+      "col": "r",
+      "side": 1
+     }
+    ]
+   },
+   "say": "When supply rises, we've found the gap usually widens. Well chosen flats hold up. Average ones wait longer.",
+   "cap": "we've found the gap widens. *well chosen flats hold up*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "HOLDS VALUE",
+    "b": "DRAGS DOWN",
+    "l": "hdb",
+    "r": "hdb"
+   },
+   "say": "What matters more is knowing which unit types hold their value, and which ones are driving the drop.",
+   "cap": "know which unit types *hold value*, and which *drive the drop*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "REPORT",
+    "bld": "hdb"
+   },
+   "say": "Want to see where your flat stands? Comment report to get your insight.",
+   "cap": "where does your flat stand? comment *REPORT*",
+   "stat": "Based on past transactions"
+  }
+ ],
+ "source": "HDB flash estimate, 1 Oct 2026 · EdgeProp · Business Today",
+ "caption": "HDB resale prices just fell for the third quarter in a row. 📉 But 7,528 flats still changed hands last quarter, and 597 sold for $1M or more.\n\nWith about 13,500 flats reaching MOP this year, it matters more to know which unit types hold their value, and which are driving the drop.\n\nWant to see where your flat stands? Comment REPORT for your insight 👇",
+ "hashtags": "#singaporeproperty #hdbsg #hdbresale #hdbseller #propertysg #sgproperty #tinysingapore"
+}

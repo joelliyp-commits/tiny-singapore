@@ -1,0 +1,79 @@
+{
+ "id": "v015",
+ "title": "Why some units\n*feel breezier*",
+ "lines": [
+  {
+   "tpl": "wind",
+   "p": {
+    "labels": true
+   },
+   "say": "You are a buyer choosing between two stacks. Same price. One feels breezy. One feels stuffy.",
+   "cap": "two stacks, same price. *one breezy, one stuffy*",
+   "stat": ""
+  },
+  {
+   "tpl": "wind",
+   "p": {},
+   "say": "That's not luck. URA now studies wind flow before deciding where buildings go.",
+   "cap": "not luck. *URA now studies wind flow* before placing buildings",
+   "stat": "URA wind studies"
+  },
+  {
+   "tpl": "wind",
+   "p": {},
+   "say": "Varying building heights guide wind down to street level. Gaps between buildings let it flow through.",
+   "cap": "varying heights guide wind down. *gaps let it flow through*",
+   "stat": "heights + gaps"
+  },
+  {
+   "tpl": "wind",
+   "p": {},
+   "say": "At Lentor Hills, URA used digital tools to test layouts and create wind corridors. At Marina South, wind studies are shaping how buildings are arranged.",
+   "cap": "Lentor Hills and Marina South: *wind corridors planned in*",
+   "stat": "Lentor Hills · Marina South"
+  },
+  {
+   "tpl": "wind",
+   "p": {
+    "labels": true
+   },
+   "say": "The problem? Most buyers only check the view and the floor. Not the gaps around their stack.",
+   "cap": "most buyers check view and floor. *not the gaps around their stack*",
+   "stat": "view? floor? gaps?"
+  },
+  {
+   "tpl": "wind",
+   "p": {
+    "next": true
+   },
+   "say": "So before you pick a unit, study the site plan. Where are the gaps? What could be built next door?",
+   "cap": "study the site plan. *where are the gaps? what's next door?*",
+   "stat": "what could be built next door?"
+  },
+  {
+   "tpl": "wind",
+   "p": {
+    "labels": true
+   },
+   "say": "A future buyer feels that breeze in ten seconds. That feeling is part of your exit.",
+   "cap": "a future buyer feels it in 10 seconds. *that's part of your exit*",
+   "stat": "felt in 10 seconds"
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "BREEZY",
+    "b": "STUFFY",
+    "l": "condo",
+    "r": "condo"
+   },
+   "say": "Would you pay more for a breezier stack? Comment yes, or no.",
+   "cap": "pay more for a breezier stack? comment *YES or NO*",
+   "stat": ""
+  }
+ ],
+ "source": "URA, 21 Sep 2026",
+ "caption": "Two stacks. Same price. One breezy, one stuffy. 🌬️\n\nURA now plans wind corridors using building heights and gaps between blocks, at places like Lentor Hills and Marina South. Before you pick a unit, check the gaps around your stack and what could be built next door.\n\nWould you pay more for a breezier stack? Comment YES or NO 👇",
+ "hashtags": "#singaporeproperty #ura #condosg #hdbsg #propertysg #sgproperty #tinysingapore",
+ "pill": "UNIT SELECTION"
+}

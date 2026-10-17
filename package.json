@@ -1,0 +1,11 @@
+{
+ "name": "tiny-singapore-engine",
+ "private": true,
+ "type": "module",
+ "dependencies": {
+  "playwright": "1.56.0",
+  "three": "0.170.0",
+  "@fontsource/plus-jakarta-sans": "5.1.0",
+  "@fontsource/poppins": "5.1.0"
+ }
+}

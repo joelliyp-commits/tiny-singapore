@@ -1,0 +1,152 @@
+{
+ "id": "v018",
+ "title": "Seized luxury condos at auction.\n*Bargain?*",
+ "pill": "AUCTION",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "AUCTION",
+    "bld": "condo"
+   },
+   "say": "You are a buyer. You hear seized luxury condos are going to auction. You think, bargain.",
+   "cap": "you hear seized condos are going to auction. *bargain?*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "SEIZED"
+   },
+   "say": "These were seized in Singapore's three billion dollar money laundering case. More than 80 properties are being sold.",
+   "cap": "seized in the *$3 billion* money laundering case",
+   "stat": "80+ properties to be sold"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     26,
+     4
+    ],
+    "labels": [
+     "26 OFFERED",
+     "4 SOLD"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "In September, 26 went under the hammer. Only 4 sold. The rest were withdrawn.",
+   "cap": "26 went under the hammer. *only 4 sold*",
+   "stat": "Auctions, 17 & 23 Sep 2026"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     100,
+     96
+    ],
+    "labels": [
+     "OPENING",
+     "SOLD"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "The ones that sold went for just 1 to 7% below their opening price. Two Martin Modern units sold close to their previous prices.",
+   "cap": "sold at just *1 to 7% below* opening price",
+   "stat": "Martin Modern: close to previous prices"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "28 OCT",
+    "bld": "condo"
+   },
+   "say": "Next, on 28 October. Six freehold units near Orchard. Nouvel 18's guide prices run from about twenty nine hundred, to thirty six hundred psf.",
+   "cap": "28 Oct: 6 freehold units. guide *~$2,900 to $3,600 psf*",
+   "stat": "Nouvel 18 guide prices"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     3.25,
+     3.16
+    ],
+    "labels": [
+     "AUCTION GUIDE",
+     "RESALES"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Its recent resales? About twenty eight hundred, to thirty five hundred psf. Roughly the same.",
+   "cap": "recent resales: *~$2,800 to $3,500 psf*. roughly the same",
+   "stat": "psf, Nouvel 18"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "VALUATION"
+   },
+   "say": "So an auction doesn't mean cheap. Reserve prices are usually set close to valuation.",
+   "cap": "auction ≠ cheap. reserves are *usually close to valuation*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "9": "g"
+    },
+    "tags": [
+     {
+      "f": 9,
+      "text": "SOLD ✓",
+      "col": "g",
+      "side": -1
+     }
+    ]
+   },
+   "say": "The real test never changes. Compare against what that project has already sold for.",
+   "cap": "the real test: *what the project already sold for*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$200K TO 300K",
+    "bld": "condo",
+    "dir": "down",
+    "down": true
+   },
+   "say": "With a dependable framework, we've found units two to three hundred thousand dollars below market. No auction needed.",
+   "cap": "we've found units *$200K to $300K below market*",
+   "stat": "no auction needed"
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "COMMENT FIND",
+    "b": "SEND A DM",
+    "l": "condo",
+    "r": "condo"
+   },
+   "say": "Want to know how? Comment find, or send us a message.",
+   "cap": "want to know how? comment *FIND* or DM us",
+   "stat": "Based on past transactions"
+  }
+ ],
+ "source": "ST, 8 Oct 2026 · Stacked Homes · Bloomberg",
+ "caption": "Seized luxury condos from the $3B money laundering case are going to auction. 🔨 But in September, only 4 of 26 sold, at just 1 to 7% below opening price. An auction isn't automatically a bargain.\n\nWith a dependable framework, we've found units $200K to $300K below market, without waiting for an auction. Want to know how? Comment FIND or DM us 👇\n\nBased on past transactions. Every unit and situation is different.",
+ "hashtags": "#singaporeproperty #propertyauction #condosg #freehold #propertysg #sgproperty #tinysingapore"
+}

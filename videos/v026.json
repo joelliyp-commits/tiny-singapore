@@ -1,0 +1,115 @@
+{
+ "id": "v026",
+ "motion": true,
+ "title": "Your tenant is a $200 company.\n*Who pays when rent stops?*",
+ "pill": "LANDLORDS",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$7,500/MTH",
+    "bld": "landed"
+   },
+   "say": "You own a landed home. A company offers you 7,500 dollars a month on a two year lease. A corporate tenant feels safe.",
+   "cap": "a company offers *$7,500 a month* for 2 years",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "UNPAID",
+    "bld": "landed",
+    "dir": "down",
+    "down": true
+   },
+   "say": "They pay half the deposit and the first month's rent. After that, nothing. The family living there doesn't move out.",
+   "cap": "half the deposit, one month's rent. *then nothing*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "COURT",
+    "bld": "landed",
+    "fam": false
+   },
+   "say": "This happened in Kembangan this year. The owners are a couple in their 80s, and they had to go to court to get their house back.",
+   "cap": "the owners, in their 80s, *had to go to court*",
+   "stat": "Kembangan, 2026"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "RULED FOR OWNERS"
+   },
+   "say": "In October the court ruled for them. Repossession, double rent until they leave, and more than 55,000 dollars in arrears and costs.",
+   "cap": "repossession, double rent and *$55,000+ awarded*",
+   "stat": "",
+   "count": {
+    "to": 55000,
+    "pre": "$",
+    "suf": "+",
+    "label": "arrears and costs awarded",
+    "at": 0.6,
+    "dur": 1.6
+   }
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "$200 CAPITAL"
+   },
+   "say": "The catch is that the company had only 200 dollars in paid up capital. Winning in court and actually getting paid are two very different things.",
+   "cap": "the company had *$200 in capital*. winning isn't getting paid",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     5,
+     12,
+     4
+    ],
+    "labels": [
+     "2019",
+     "2024",
+     "2026"
+    ],
+    "cols": [
+     2908253,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Court reports show the same pattern at two other landed homes nearby, in 2019 and 2024.",
+   "cap": "the same pattern at *two other landed homes*",
+   "stat": "Months without rent (at least)"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "CHECK FIRST"
+   },
+   "say": "What we've found protects landlords. Check the company's ACRA profile before you sign, ask the director for a personal guarantee, and collect the full deposit before you hand over the keys.",
+   "cap": "check *ACRA*, get a *personal guarantee*, collect the *full deposit*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "TENANT",
+    "bld": "landed"
+   },
+   "say": "Leasing out your home soon? Comment tenant, and we'll send you our landlord checklist.",
+   "cap": "leasing out soon? comment *TENANT*",
+   "stat": "General info, not legal advice"
+  }
+ ],
+ "source": "Public court reports, Oct 2026",
+ "caption": "A company rented a landed home for $7,500 a month. Then the rent stopped. 🏠\n\nIn Kembangan this year, the owners, a couple in their 80s, had to go to court. In October the court ruled for them: repossession, double rent and more than $55,000 in arrears and costs. But the company had only $200 in paid up capital, and winning isn't the same as getting paid.\n\nBefore you sign: check the company's ACRA profile, ask the director for a personal guarantee, and collect the full deposit.\n\nLeasing out your home soon? Comment TENANT for our landlord checklist 👇\n\nGeneral information only, not legal advice.",
+ "hashtags": "#singaporeproperty #landlordsg #landedproperty #tenancy #propertysg #sgproperty #tinysingapore"
+}

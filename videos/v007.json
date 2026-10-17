@@ -1,0 +1,121 @@
+{
+ "title": "EC or condo?\n*Same price now*",
+ "tags": "#singaporeproperty #ecsg #executivecondo #condosg #hdbsg #sgproperty #tinysingapore",
+ "source": "source: EdgeProp (Rivelle avg $1,893 psf) · launch & transaction data",
+ "caption": "A new EC and a new condo, almost the same price. Which do you pick? 🤔\n\nHistorically the EC to condo gap was over 60%, and EC buyers made more. Today it is around 5%.\n\nEC or condo? Comment your pick 👇",
+ "lines": [
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "EC",
+    "b": "CONDO",
+    "l": "ec",
+    "r": "condo"
+   },
+   "say": "You are a buyer. A new EC and a new condo, almost the same price. Which do you pick?",
+   "cap": "a new EC and a new condo, *almost the same price*. which do you pick?",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "ec",
+     "label": "EC",
+     "price": "$"
+    },
+    "r": {
+     "type": "condo",
+     "label": "CONDO",
+     "price": "$$$"
+    },
+    "badge": "60%+ GAP"
+   },
+   "say": "Historically, the gap between an EC and a condo was over sixty percent.",
+   "cap": "historically, the EC to condo gap was *over 60%*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "ec",
+     "label": "TWIN WATERFALLS",
+     "price": "$750 psf"
+    },
+    "r": {
+     "type": "condo",
+     "label": "LA FIESTA",
+     "price": "$1,250 psf"
+    },
+    "badge": "66% GAP"
+   },
+   "say": "Twin Waterfalls EC, seven fifty psf. La Fiesta condo, twelve fifty.",
+   "cap": "Twin Waterfalls EC *$750 psf*. La Fiesta condo *$1,250*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1.24,
+     0.678
+    ],
+    "labels": [
+     "EC $1.24M",
+     "CONDO $678K"
+    ],
+    "cols": [
+     15448131,
+     4099722
+    ]
+   },
+   "say": "Back then, the EC made more. Up to one point two four million, versus six hundred and seventy eight thousand.",
+   "cap": "back then, *the EC made more*. up to $1.24M vs $678K",
+   "stat": "best profit: EC $1.24M"
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "ec",
+     "label": "RIVELLE EC",
+     "price": "~$1,900 psf"
+    },
+    "r": {
+     "type": "condo",
+     "label": "NEW CONDOS",
+     "price": "~$2,000 psf"
+    },
+    "badge": "~5% GAP"
+   },
+   "say": "Today, Rivelle EC averaged about nineteen hundred psf. New condos today are around two thousand.",
+   "cap": "today, Rivelle EC averaged *about $1,900 psf*. new condos are *around $2,000*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "NO RESTRICTIONS",
+    "bld": "condo"
+   },
+   "say": "When the gap is that small, the condo has no restrictions, for a similar price.",
+   "cap": "when the gap is that small, the condo has *no restrictions* for a similar price",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "EC",
+    "b": "CONDO",
+    "l": "ec",
+    "r": "condo"
+   },
+   "say": "E C, or condo? Tell us your pick.",
+   "cap": "EC or condo? *comment your pick*",
+   "stat": ""
+  }
+ ],
+ "id": "v007",
+ "pill": "EC SERIES"
+}

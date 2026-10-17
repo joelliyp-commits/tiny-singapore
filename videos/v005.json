@@ -1,0 +1,74 @@
+{
+ "title": "Property moves\nlike *dominoes*",
+ "tags": "#singaporeproperty #ecsg #executivecondo #condosg #hdbsg #sgproperty #tinysingapore",
+ "source": "source: MND / HDB announcements, Jul & Aug 2026",
+ "caption": "Singapore property moves like dominoes: HDB, then EC, then private condo. 🁢\n\nThe 15 month wait is gone and the EC income ceiling is now $18,000. Both bring more buyers in.\n\nWhich domino are you watching? Comment HDB, EC or CONDO 👇",
+ "lines": [
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "NEW BTO"
+   },
+   "say": "You are the government. You have thousands of new BTO flats to sell.",
+   "cap": "you are the government. you have *thousands of new BTO flats* to sell",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "hdb",
+     "label": "RESALE",
+     "price": "$1M+"
+    },
+    "r": {
+     "type": "bto",
+     "label": "NEW BTO",
+     "price": "LOWER"
+    }
+   },
+   "say": "If resale flats cost far more, new BTOs look like a bargain.",
+   "cap": "if resale costs far more, *new BTOs look like a bargain*",
+   "stat": ""
+  },
+  {
+   "tpl": "dominoes",
+   "p": {},
+   "say": "And when HDB moves, ECs follow. Then private condos.",
+   "cap": "when HDB moves, *ECs follow*. then private condos",
+   "stat": ""
+  },
+  {
+   "tpl": "dominoes",
+   "p": {},
+   "bg": 15130059,
+   "say": "HDB, then EC, then condo. That's the domino effect.",
+   "cap": "HDB, then EC, then condo. *the domino effect*",
+   "stat": ""
+  },
+  {
+   "scene": "w1",
+   "say": "Recent moves. The fifteen month wait, scrapped. The EC income ceiling, raised to eighteen thousand.",
+   "cap": "15 month wait *scrapped*. EC income ceiling *raised to $18,000*",
+   "stat": "EC ceiling $16K → $18K"
+  },
+  {
+   "scene": "w6",
+   "say": "Both bring more buyers in.",
+   "cap": "both bring *more buyers* in",
+   "stat": ""
+  },
+  {
+   "tpl": "dominoes",
+   "p": {
+    "fall": false,
+    "q": true
+   },
+   "say": "Which domino are you watching? Tell us below.",
+   "cap": "which domino are you watching? comment *HDB, EC or CONDO*",
+   "stat": ""
+  }
+ ],
+ "id": "v005",
+ "pill": "MARKET"
+}

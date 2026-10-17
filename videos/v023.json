@@ -1,0 +1,121 @@
+{
+ "id": "v023",
+ "title": "$4,000 rent.\n*How much do you keep?*",
+ "pill": "LANDLORD",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$4,000",
+    "bld": "condo"
+   },
+   "say": "You are a landlord. Your tenant pays four thousand dollars a month. But how much do you actually keep?",
+   "cap": "your tenant pays *$4,000 a month*. how much do you keep?",
+   "stat": "Example: $1.2M condo"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$48K",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "Gross rent is forty eight thousand dollars a year.",
+   "cap": "gross rent: *$48,000 a year*",
+   "stat": "Gross rent"
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "TAX"
+   },
+   "say": "Property tax for a non owner occupied home, about seventy four hundred dollars.",
+   "cap": "property tax, non owner occupied: *~$7,400*",
+   "stat": "Property tax ~$7,400"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     4200,
+     2000
+    ],
+    "labels": [
+     "MCST",
+     "AGENT"
+    ],
+    "cols": [
+     2908253,
+     2908253
+    ]
+   },
+   "say": "Maintenance fees, about forty two hundred. Agent fee, about two thousand a year.",
+   "cap": "maintenance *~$4,200*. agent fee *~$2,000 a year*",
+   "stat": "Maintenance + agent fees"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "$21K"
+   },
+   "say": "Mortgage interest on an eight hundred and forty thousand dollar loan at 2.5%, about twenty one thousand dollars.",
+   "cap": "interest on $840K at 2.5%: *~$21,000*",
+   "stat": "$840K loan at 2.5%"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     48000,
+     13360
+    ],
+    "labels": [
+     "GROSS",
+     "NETT"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "What's left is about thirteen thousand dollars a year. Roughly eleven hundred a month, before income tax and repairs.",
+   "cap": "left: *~$13,000 a year*, ~$1,100 a month",
+   "stat": "Before income tax and repairs"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     4,
+     1.1
+    ],
+    "labels": [
+     "GROSS 4%",
+     "NETT ~1%"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "That's a 4% gross yield, but closer to 1% nett. Is that return worth it?",
+   "cap": "4% gross, *~1% nett*. is that worth it?",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "LIST",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "Look for higher rental yield. Comment list for a list of high yield properties.",
+   "cap": "look for higher yield. comment *LIST*",
+   "stat": "Example figures only"
+  }
+ ],
+ "source": "IRAS property tax rates · example figures",
+ "caption": "Your tenant pays $4,000 a month. How much do you actually keep? 🏠\n\nExample: $1.2M condo. Gross rent $48,000. Minus property tax (~$7,400), maintenance (~$4,200), agent fee (~$2,000) and interest on an $840K loan (~$21,000). About $13,000 left a year. 4% gross, closer to 1% nett.\n\nIs that return worth it? Look for higher rental yield. Comment LIST for a list of high yield properties 👇\n\nExample figures only. Every unit is different.",
+ "hashtags": "#singaporeproperty #rentalyield #landlordsg #condosg #propertysg #sgproperty #tinysingapore"
+}

@@ -1,0 +1,85 @@
+{
+ "title": "Your flat has a\n*hidden clock*",
+ "tags": "#singaporeproperty #hdbsg #hdbresale #bto #propertysg #sgproperty #tinysingapore",
+ "source": "source: CPF & HDB rules on lease and CPF usage (2019)",
+ "caption": "You own an older HDB and want to sell. But your buyer can't borrow enough. ⏰\n\nBuyers can only use CPF fully if the lease covers them to age 95. If not, CPF use is cut and loans can shrink too.\n\nHow many years are left on your lease? Tell us below 👇",
+ "lines": [
+  {
+   "tpl": "lease",
+   "p": {
+    "yrs": "54 YRS LEFT"
+   },
+   "say": "You own a forty five year old HDB. You want to sell. But your buyer can't borrow enough.",
+   "cap": "you own a 45 year old HDB. but *your buyer can't borrow enough*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "LOAN CUT"
+   },
+   "say": "The reason? Lease rules.",
+   "cap": "the reason? *lease rules*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "AGE 95",
+    "bld": "hdb"
+   },
+   "say": "Buyers can use CPF fully only if the lease covers them to age ninety five.",
+   "cap": "buyers use CPF fully *only if the lease covers them to age 95*",
+   "stat": "lease must cover buyer to 95"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     4,
+     2.4
+    ],
+    "labels": [
+     "FULL CPF",
+     "CUT"
+    ]
+   },
+   "say": "If not, CPF use is cut. Loans can shrink too.",
+   "cap": "if not, *CPF use is cut*. loans can shrink too",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PRICE",
+    "bld": "hdb",
+    "dir": "down",
+    "down": true
+   },
+   "say": "Fewer buyers can afford your flat. That pressures your price.",
+   "cap": "fewer buyers can afford it. *that pressures your price*",
+   "stat": ""
+  },
+  {
+   "tpl": "lease",
+   "p": {
+    "yrs": "YOUR LEASE"
+   },
+   "say": "The clock that matters isn't your age. It's your lease.",
+   "cap": "the clock that matters isn't your age. *it's your lease*",
+   "stat": ""
+  },
+  {
+   "tpl": "lease",
+   "p": {
+    "yrs": "? YRS LEFT"
+   },
+   "say": "How many years are left on your lease? Tell us below.",
+   "cap": "how many years are *left on your lease?* tell us below",
+   "stat": ""
+  }
+ ],
+ "id": "v006",
+ "pill": "HDB LEASE"
+}

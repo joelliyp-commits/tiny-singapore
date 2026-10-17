@@ -1,0 +1,113 @@
+{
+ "title": "Your CPF wants\nits *money back*",
+ "tags": "#singaporeproperty #cpf #hdbsg #hdbresale #propertysg #sgproperty #tinysingapore",
+ "source": "source: CPF Board rules on accrued interest (2.5% p.a.)",
+ "caption": "You sell your HDB for $800,000. But far less cash lands in your bank. 🏦\n\nEvery CPF dollar you used goes back to your CPF, plus 2.5% a year compounded. Used $300K 15 years ago? That's about $435K back to CPF, a $135K difference in your cash proceeds.\n\nCash or CPF to service your mortgage? Comment CASH or CPF 👇",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SOLD $800K",
+    "bld": "hdb"
+   },
+   "say": "You are selling your HDB for eight hundred thousand dollars. But far less cash lands in your bank.",
+   "cap": "you sell your HDB for $800K. but *far less cash* lands in your bank",
+   "stat": ""
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "SOLD",
+    "label": "CPF"
+   },
+   "say": "The reason? CPF accrued interest.",
+   "cap": "the reason? *CPF accrued interest*",
+   "stat": ""
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "YOUR HDB",
+    "label": "YOUR CPF"
+   },
+   "say": "Every CPF dollar used for your home goes back to your CPF.",
+   "cap": "every CPF dollar used for your home *goes back to your CPF*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1,
+     1.08,
+     1.16,
+     1.25,
+     1.34,
+     1.45
+    ],
+    "labels": [
+     "YR 0",
+     "3",
+     "6",
+     "9",
+     "12",
+     "15"
+    ]
+   },
+   "say": "Plus two and a half percent a year, compounded.",
+   "cap": "plus *2.5% a year*, compounded",
+   "stat": "2.5% p.a. compounded"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     300,
+     435
+    ],
+    "labels": [
+     "USED $300K",
+     "REFUND $435K"
+    ]
+   },
+   "say": "Used three hundred thousand upfront, fifteen years ago? You refund about four hundred and thirty five thousand.",
+   "cap": "used $300K upfront 15 years ago? you *refund about $435K*",
+   "stat": "$300K → ~$435K"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "−$135K CASH",
+    "bld": "hdb",
+    "dir": "down"
+   },
+   "say": "That's a one hundred and thirty five thousand dollar difference in your cash proceeds.",
+   "cap": "that's a *$135K difference* in your cash proceeds",
+   "stat": "$435K − $300K = $135K"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CASH ✓",
+    "bld": "condo"
+   },
+   "say": "So plan your next home on cash proceeds. Not the sale price.",
+   "cap": "so plan your next home on *cash proceeds*, not sale price",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "CASH",
+    "b": "CPF",
+    "l": "hdb",
+    "r": "condo"
+   },
+   "say": "So, do you prefer cash or CPF to service your mortgage? Comment below.",
+   "cap": "cash or CPF for your mortgage? comment *CASH or CPF*",
+   "stat": ""
+  }
+ ],
+ "id": "v004",
+ "pill": "CPF"
+}
