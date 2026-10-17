@@ -406,13 +406,13 @@
   },
   {
    "id": "v031",
-   "title": "Lost your job a year after buying? Two buffers to set up now",
+   "title": "Two salaries, one condo. What if one stops?",
    "status": "script_pending",
-   "pillar": "Mistake or regret / rainy day",
+   "pillar": "Mistake or regret / income shock",
    "style": "3D motion",
-   "source": "Joel 17 Oct (Stephen Chong carousel as inspiration only)",
-   "facts": "SSD 12% in year 2 for purchases from 4 Jul 2025 (MOF); 12% x $2.1M = $252K. Loan 75% $1.575M, 30y at ~1.5% = ~$5,436/mo (rates ~1.3-1.4% Jul 2026, propertynet). CPF extra 1% on first $60K combined, up to $20K from OA, below 55; OA base 2.5% (CPF Board). $40K covers ~7 months. Room rent median ~$1,550 (Cove Apr 2026) - needs second source.",
-   "cta": "Send this to the person you're buying with."
+   "source": "Joel 17 Oct; rewritten as original angle (income shock test), not based on the reference carousel's story",
+   "facts": "SSD 16% in year 1 for purchases from 4 Jul 2025 (MOF); 16% x $1.8M = $288K. Loan 75% $1.35M, 30y at ~1.5% = ~$4,659/mo (rates ~1.3-1.4% Jul 2026). 6 months = ~$28K. CPF OA can service monthly housing loan instalments (CPF Board).",
+   "cta": "Not sure if you're on track? Comment CHECK."
   }
  ],
  "cta_system": {
