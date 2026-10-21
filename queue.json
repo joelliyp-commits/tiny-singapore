@@ -1,5 +1,5 @@
 {
- "note": "Tiny Singapore content queue. status: idea > script_approved > rendered > video_approved > scheduled | RULE: hold approved scripts; build in batches once 3 are approved. | From the 18 Oct batch onwards: set \"motion\": true in every new video spec (animated camera, build-in, word-pop captions) and add \"count\" to lines with key figures. Approved by Joel 16 Oct 2026. | 16 Oct: Joel approved the top-down MAP style (map.html + map_make.py, full 9:16, HDB clusters, PART tags). Next batch: make a few videos in map style (start with v025 full), keep 3D motion for single-property stories. Narration: $ amounts auto-read as \"X dollars\" (saynorm.py). | 17 Oct: map.html is now spec-driven (per-line beat: cam, tags, counts, arrows, buyers). Map specs use map:true + titleText; covers = map frame. | 17 Oct: Earth Studio test done (out/v025_earth_test.mp4; map.html beat.earth + mapr_earth.mjs; account tinyysingapore@gmail.com, project v025_punggol_test). Joel: parked for now, revisit later. Use real-speed clip + hold (minterpolate smears). | 17 Oct (Joel): no need to keep finished videos; delete a video's out/ and work/ files only after it has actually gone live (not when scheduled). Engine lives in GitHub joelliyp-commits/tiny-singapore; commit and push after every change. | 21 Oct: realsmart.sg review: specific project + single unit view and one dollar question per video perform best; app demos flop.",
+ "note": "Tiny Singapore content queue. status: idea > script_approved > rendered > video_approved > scheduled | RULE: hold approved scripts; build in batches once 3 are approved. | From the 18 Oct batch onwards: set \"motion\": true in every new video spec (animated camera, build-in, word-pop captions) and add \"count\" to lines with key figures. Approved by Joel 16 Oct 2026. | 16 Oct: Joel approved the top-down MAP style (map.html + map_make.py, full 9:16, HDB clusters, PART tags). Next batch: make a few videos in map style (start with v025 full), keep 3D motion for single-property stories. Narration: $ amounts auto-read as \"X dollars\" (saynorm.py). | 17 Oct: map.html is now spec-driven (per-line beat: cam, tags, counts, arrows, buyers). Map specs use map:true + titleText; covers = map frame. | 17 Oct: Earth Studio test done (out/v025_earth_test.mp4; map.html beat.earth + mapr_earth.mjs; account tinyysingapore@gmail.com, project v025_punggol_test). Joel: parked for now, revisit later. Use real-speed clip + hold (minterpolate smears). | 17 Oct (Joel): no need to keep finished videos; delete a video's out/ and work/ files only after it has actually gone live (not when scheduled). Engine lives in GitHub joelliyp-commits/tiny-singapore; commit and push after every change. | 21 Oct: realsmart.sg review: specific project + single unit view and one dollar question per video perform best; app demos flop. | 21 Oct: YouTube daily upload limit hit after 7 uploads (unverified channel). Phone verification in YouTube lifts it (Joel must do it).",
  "items": [
   {
    "id": "v012",
@@ -465,65 +465,65 @@
   {
    "id": "v035",
    "title": "1.5M condo: the salary you need",
-   "status": "rendered",
-   "slot_plan": "Fri 30 Oct 2pm",
-   "from": "p18"
+   "status": "scheduled",
+   "from": "p18",
+   "slot": "Fri 30 Oct 2pm | TikTok+IG+YouTube"
   },
   {
    "id": "v036",
    "title": "Same condo, not every block is within 1km",
-   "status": "rendered",
-   "slot_plan": "Fri 30 Oct 6pm",
-   "from": "p25"
+   "status": "scheduled",
+   "from": "p25",
+   "slot": "Fri 30 Oct 6pm | TikTok+IG+YouTube"
   },
   {
    "id": "v037",
    "title": "Who holds the power at a new launch?",
-   "status": "rendered",
-   "slot_plan": "Sat 31 Oct 2pm",
-   "from": "p26"
+   "status": "scheduled",
+   "from": "p26",
+   "slot": "Sat 31 Oct 2pm | TikTok+IG+YouTube"
   },
   {
    "id": "v038",
    "title": "You waited to upgrade. Did the gap shrink?",
-   "status": "rendered",
-   "slot_plan": "Sat 31 Oct 6pm",
-   "from": "p19"
+   "status": "scheduled",
+   "from": "p19",
+   "slot": "Sat 31 Oct 6pm | TikTok+IG+YouTube"
   },
   {
    "id": "v039",
    "title": "Flats hitting 50: your lease, your CPF",
-   "status": "rendered",
-   "slot_plan": "Sun 1 Nov 2pm",
-   "from": "p23"
+   "status": "scheduled",
+   "from": "p23",
+   "slot": "Sun 1 Nov 2pm | IG+YouTube; TikTok pending"
   },
   {
    "id": "v040",
    "title": "Tengah: then and now",
-   "status": "rendered",
-   "slot_plan": "Sun 1 Nov 6pm",
-   "from": "p15"
+   "status": "scheduled",
+   "from": "p15",
+   "slot": "Sun 1 Nov 6pm | IG+YouTube; TikTok pending"
   },
   {
    "id": "v041",
    "title": "Set your walk-away price before you view",
-   "status": "rendered",
-   "slot_plan": "Mon 2 Nov 2pm",
-   "from": "p12"
+   "status": "scheduled",
+   "from": "p12",
+   "slot": "Mon 2 Nov 2pm | IG+YouTube; TikTok pending"
   },
   {
    "id": "v042",
    "title": "New launch or nearly new? Check the gap",
-   "status": "rendered",
-   "slot_plan": "Mon 2 Nov 6pm",
-   "from": "p11"
+   "status": "scheduled",
+   "from": "p11",
+   "slot": "Mon 2 Nov 6pm | IG; TikTok+YouTube pending (YT daily limit)"
   },
   {
    "id": "v043",
    "title": "The 0.29 rule: what you need upfront",
-   "status": "rendered",
-   "slot_plan": "Tue 3 Nov 2pm",
-   "from": "new"
+   "status": "scheduled",
+   "from": "new",
+   "slot": "Tue 3 Nov 2pm | IG; TikTok+YouTube pending (YT daily limit)"
   },
   {
    "id": "v044",
@@ -535,9 +535,9 @@
   {
    "id": "v045",
    "title": "Selling and buying? Exercise date to exercise date",
-   "status": "rendered",
-   "slot_plan": "Tue 3 Nov 6pm",
-   "from": "Joel 21 Oct"
+   "status": "scheduled",
+   "from": "Joel 21 Oct",
+   "slot": "Tue 3 Nov 6pm | IG; TikTok+YouTube pending (YT daily limit)"
   }
  ],
  "cta_system": {
