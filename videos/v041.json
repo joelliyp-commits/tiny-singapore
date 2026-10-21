@@ -78,16 +78,16 @@
   {
    "tpl": "tag",
    "p": {
-    "text": "CHECK",
+    "text": "SAVE",
     "bld": "condo"
    },
-   "say": "Not sure if you're on track? Comment check.",
-   "cap": "on track? comment *CHECK*",
+   "say": "Save this before your next viewing.",
+   "cap": "*save* this before your viewing",
    "stat": ""
   }
  ],
  "source": "Tiny Singapore",
- "caption": "Viewing a condo this weekend? Set your walk-away price before you go. 🏙️\n\nStart with what the bank will lend and what you can pay without touching your emergency buffer. Check recent sales of similar units in the same project. Then write down one number: the most you'll pay.\n\nAt the viewing, the pressure feels real. With your number set, you decide calmly.\n\nNot sure if you're on track? Comment CHECK 👇",
+ "caption": "Viewing a condo this weekend? Set your walk-away price before you go. 🏙️\n\nStart with what the bank will lend and what you can pay without touching your emergency buffer. Check recent sales of similar units in the same project. Then write down one number: the most you'll pay.\n\nAt the viewing, the pressure feels real. With your number set, you decide calmly.\n\nSave this before your next viewing 👇",
  "hashtags": "#singaporeproperty #condosg #homebuying #propertyviewing #propertysg #sgproperty #tinysingapore",
  "motion": true
 }

@@ -105,16 +105,16 @@
   {
    "tpl": "tag",
    "p": {
-    "text": "PLAN",
+    "text": "SAVE",
     "bld": "condo"
    },
-   "say": "Comment plan and we'll send you the calculator used in this video.",
-   "cap": "comment *PLAN* for the calculator",
+   "say": "Save this before you start house hunting.",
+   "cap": "*save* this before you start",
    "stat": "Illustration: 30 years, no other debts"
   }
  ],
  "source": "MAS, IRAS, bank rates Oct 2026",
- "caption": "Want a $1.5M condo? Here's the salary the bank needs to see. 🏙️\n\nWith a 75% loan you borrow about $1.125M. Banks test the loan at 4% interest, not today's rate: about $5,400 a month over 30 years. Total debts can't exceed 55% of income, so you need about $9,800 a month with no other loans. A car loan raises that number.\n\nUpfront: 25% down (at least 5% in cash) plus about $44,600 in buyer's stamp duty.\n\nComment PLAN and we'll send you the calculator used in this video 👇\n\nIllustration only: 30 year loan, no other debts. Bank policies vary.",
+ "caption": "Want a $1.5M condo? Here's the salary the bank needs to see. 🏙️\n\nWith a 75% loan you borrow about $1.125M. Banks test the loan at 4% interest, not today's rate: about $5,400 a month over 30 years. Total debts can't exceed 55% of income, so you need about $9,800 a month with no other loans. A car loan raises that number.\n\nUpfront: 25% down (at least 5% in cash) plus about $44,600 in buyer's stamp duty.\n\nSave this before you start house hunting 👇\n\nIllustration only: 30 year loan, no other debts. Bank policies vary.",
  "hashtags": "#singaporeproperty #condosg #tdsr #homeloan #propertysg #sgproperty #tinysingapore",
  "motion": true
 }

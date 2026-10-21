@@ -559,6 +559,7 @@
   "patterns": "Hook: number or loss in first 2s framed as you. One object transforms on screen. New beat every 3-4s, 30-45s total, reveal near end. FOMO or fear of mistake resolved by clarity. 'What would you do?' only where there is a real choice.",
   "keyword_freeze": "17 Oct (Joel): no new comment keywords for now. Lead CTAs use only CHECK, PLAN, WHY or 'flat type and town'. Existing ones (FIND, REPORT, PLEDGE, LIST, UNLOCK, GAP, TENANT, ELIGIBLE, EXIT, COMPARE, STAY/INVEST/BOTH) stay live on posted videos.",
   "default_end": "Useful info? Follow for more.",
-  "mid_follow": "Every 1 in 5 videos (v039, v044, v049, ...): add a mid-video line 'Useful so far? Follow for more.' End those with a different CTA."
+  "mid_follow": "Every 1 in 5 videos (v039, v044, v049, ...): add a mid-video line 'Useful so far? Follow for more.' End those with a different CTA.",
+  "rule_by_type": "21 Oct (Joel): how-to / calculation / skill videos end with 'Useful info? Follow for more.' or 'Save this.' Market insight videos end with a Comment KEYWORD CTA (existing keywords only)."
  }
 }

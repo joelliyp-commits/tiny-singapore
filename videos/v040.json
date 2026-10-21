@@ -61,16 +61,16 @@
   {
    "tpl": "tag",
    "p": {
-    "text": "FOLLOW",
+    "text": "YOUR TOWN",
     "bld": "hdb"
    },
-   "say": "Useful info? Follow for more.",
-   "cap": "useful? *follow* for more",
+   "say": "Wondering if a new town fits your plans? Comment your flat type and town.",
+   "cap": "comment your *flat type and town*",
    "stat": "Source: HDB, LTA"
   }
  ],
  "source": "HDB, LTA",
- "caption": "Thinking about Tengah? Here's how it changed. 🌳\n\nIn 2018 it was mostly forest. The first BTO, Plantation Grove, launched that year with 1,620 flats, and the first residents moved in from 2023. The plan includes Singapore's first car-free town centre, and the Jurong Region Line is planned to open its Tengah stations in 2028.\n\nNew towns can feel empty before the trains and malls arrive. That's often when prices are lowest.\n\nUseful info? Follow for more 👇",
+ "caption": "Thinking about Tengah? Here's how it changed. 🌳\n\nIn 2018 it was mostly forest. The first BTO, Plantation Grove, launched that year with 1,620 flats, and the first residents moved in from 2023. The plan includes Singapore's first car-free town centre, and the Jurong Region Line is planned to open its Tengah stations in 2028.\n\nNew towns can feel empty before the trains and malls arrive. That's often when prices are lowest.\n\nWondering if a new town fits your plans? Comment your flat type and town 👇",
  "hashtags": "#singaporeproperty #tengah #hdbbto #newtown #propertysg #sgproperty #tinysingapore",
  "motion": true
 }

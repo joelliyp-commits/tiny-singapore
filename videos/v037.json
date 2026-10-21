@@ -70,16 +70,16 @@
   {
    "tpl": "tag",
    "p": {
-    "text": "FOLLOW",
+    "text": "CHECK",
     "bld": "condo"
    },
-   "say": "Useful info? Follow for more.",
-   "cap": "useful? *follow* for more",
+   "say": "Want to know how many units are left at the launch you're eyeing? Comment check.",
+   "cap": "units left? comment *CHECK*",
    "stat": "Source: IRAS, MOF Budget 2024"
   }
  ],
  "source": "IRAS, MOF Budget 2024",
- "caption": "At a new launch and told prices go up next phase? Here's who really holds the power. 🏗️\n\nMost developers must sell every unit within five years of buying the land. Miss it, and they can lose a stamp duty remission worth up to 35% of the land price, plus interest. That's why unsold units near the deadline can come with better deals, while early phases are often priced to build momentum.\n\nBefore you commit, ask: how many units are left, and how long until their deadline?\n\nUseful info? Follow for more 👇",
+ "caption": "At a new launch and told prices go up next phase? Here's who really holds the power. 🏗️\n\nMost developers must sell every unit within five years of buying the land. Miss it, and they can lose a stamp duty remission worth up to 35% of the land price, plus interest. That's why unsold units near the deadline can come with better deals, while early phases are often priced to build momentum.\n\nBefore you commit, ask: how many units are left, and how long until their deadline?\n\nWant to know how many units are left at the launch you're eyeing? Comment CHECK 👇",
  "hashtags": "#singaporeproperty #newlaunch #condosg #developer #propertysg #sgproperty #tinysingapore",
  "motion": true
 }
