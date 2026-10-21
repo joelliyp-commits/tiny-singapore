@@ -1,7 +1,7 @@
 {
  "id": "v031",
  "motion": true,
- "title": "CASE STUDY: Just bought.\n*Just lost your job*",
+ "title": "Just bought a condo.\n*Then you lost your job*",
  "pill": "CASE STUDY",
  "lines": [
   {
@@ -108,7 +108,7 @@
    },
    "say": "Not sure if you're on track? Comment check.",
    "cap": "comment *CHECK*",
-   "stat": "Illustration only. Loan at about 1.5% over 30 years. Your bank's terms may differ."
+   "stat": "Illustration: 1.5% loan, 30 years"
   }
  ],
  "source": "MOF, CPF Board, bank rates Oct 2026",
