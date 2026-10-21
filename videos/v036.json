@@ -16,7 +16,7 @@
   {
    "tpl": "gov",
    "p": {
-    "text": "SCHOOL BOUNDARY"
+    "text": "BOUNDARY"
    },
    "say": "MOE measures from the school's boundary to the outline of your building.",
    "cap": "from the *school boundary* to your *building*",

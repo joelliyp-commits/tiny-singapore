@@ -6,7 +6,7 @@
   {
    "tpl": "hesitate",
    "p": {
-    "text": "PRICE UP NEXT?"
+    "text": "PRICE UP?"
    },
    "say": "You're at a new launch, and you're told prices go up next phase. Who really holds the power?",
    "cap": "prices up next phase? *who holds the power?*",
