@@ -407,7 +407,7 @@
   {
    "id": "v031",
    "title": "Just bought a $1.8M condo. Then you lost your job",
-   "status": "building",
+   "status": "rendered",
    "pillar": "Case study / rainy day",
    "style": "3D motion",
    "source": "Joel 17 Oct; rewritten as original angle (income shock test), not based on the reference carousel's story",
@@ -417,7 +417,7 @@
   {
    "id": "v032",
    "title": "209 HDB flats sold for over $1M in September",
-   "status": "building",
+   "status": "rendered",
    "pillar": "Million dollar HDB (timely, p17)",
    "style": "3D motion",
    "facts": "Sept 2026: 209 million-dollar resales (record, Aug 201), 9.3% of 2,248 resales; Toa Payoh 33, Queenstown 28, Bedok 20; top Pinnacle@Duxton 5-room $1.72M (SRX/99.co; Malay Mail 7 Oct)",
@@ -436,7 +436,7 @@
   {
    "id": "v034",
    "title": "Condo owners: the 15-month HDB wait is gone",
-   "status": "building",
+   "status": "rendered",
    "pillar": "Policy explainer",
    "style": "3D motion",
    "facts": "Removed 28 Jul 2026 with immediate effect (HDB/MND; EdgeProp, ERA). Applies to non-subsidised resale without HDB loan; need HFE letter; dispose all private property (SG and overseas) within 6 months of resale completion. 30-month wait remains for subsidised flats, resale with grants, new EC, HDB loan.",
