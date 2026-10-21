@@ -1,0 +1,100 @@
+{
+ "id": "v042",
+ "title": "New launch or nearly new?\n*Check the gap*",
+ "pill": "NEW VS RESALE",
+ "lines": [
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "NEW LAUNCH",
+     "price": "?"
+    },
+    "r": {
+     "type": "condo",
+     "label": "5 YEARS OLD",
+     "price": "?"
+    }
+   },
+   "say": "You're choosing between a new launch and a nearly new condo next door. Check the gap first.",
+   "cap": "new or *nearly new*? check the *gap*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "NEW",
+     "price": "$2,400 PSF"
+    },
+    "r": {
+     "type": "condo",
+     "label": "5 YEARS",
+     "price": "$1,800 PSF"
+    },
+    "badge": "$600 GAP"
+   },
+   "say": "Say the new launch is 2,400 dollars per square foot, and the five year old condo is 1,800.",
+   "cap": "*$2,400* vs *$1,800* psf",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PULLED UP",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "A big gap like that often pulls the older one up over time, as buyers priced out of the new project look next door.",
+   "cap": "a big gap often *pulls it up*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "NEW",
+     "price": "$2,400 PSF"
+    },
+    "r": {
+     "type": "condo",
+     "label": "5 YEARS",
+     "price": "$2,250 PSF"
+    },
+    "badge": "$150 GAP"
+   },
+   "say": "But if the gap is small, say 2,400 against 2,250, the newer one usually gives more for your money.",
+   "cap": "small gap? the *newer one* often wins",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "BIG GAP",
+    "b": "SMALL GAP",
+    "l": "condo",
+    "r": "condo"
+   },
+   "say": "Same street, different answer. It depends on the gap.",
+   "cap": "same street. *different answer*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WHY",
+    "bld": "condo"
+   },
+   "say": "Most people decide this wrongly. Comment why to see the mistake.",
+   "cap": "comment *WHY* to see the mistake",
+   "stat": "Illustrative figures"
+  }
+ ],
+ "source": "Tiny Singapore",
+ "caption": "New launch or nearly new condo next door? Check the gap first. 🏙️\n\nSay the new launch is $2,400 psf and the five year old condo is $1,800. A big gap like that often pulls the older one up over time, as buyers priced out of the new project look next door. If the gap is small, say $2,400 vs $2,250, the newer one usually gives more for your money.\n\nMost people decide this wrongly. Comment WHY to see the mistake 👇\n\nIllustrative figures only.",
+ "hashtags": "#singaporeproperty #newlaunch #condosg #resalecondo #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}

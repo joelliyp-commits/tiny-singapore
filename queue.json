@@ -465,63 +465,63 @@
   {
    "id": "v035",
    "title": "1.5M condo: the salary you need",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Fri 30 Oct 2pm",
    "from": "p18"
   },
   {
    "id": "v036",
    "title": "Same condo, not every block is within 1km",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Fri 30 Oct 6pm",
    "from": "p25"
   },
   {
    "id": "v037",
    "title": "Who holds the power at a new launch?",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Sat 31 Oct 2pm",
    "from": "p26"
   },
   {
    "id": "v038",
    "title": "You waited to upgrade. Did the gap shrink?",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Sat 31 Oct 6pm",
    "from": "p19"
   },
   {
    "id": "v039",
    "title": "Flats hitting 50: your lease, your CPF",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Sun 1 Nov 2pm",
    "from": "p23"
   },
   {
    "id": "v040",
    "title": "Tengah: then and now",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Sun 1 Nov 6pm",
    "from": "p15"
   },
   {
    "id": "v041",
    "title": "Set your walk-away price before you view",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Mon 2 Nov 2pm",
    "from": "p12"
   },
   {
    "id": "v042",
    "title": "New launch or nearly new? Check the gap",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Mon 2 Nov 6pm",
    "from": "p11"
   },
   {
    "id": "v043",
    "title": "The 0.29 rule: what you need upfront",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Tue 3 Nov 2pm",
    "from": "new"
   },
@@ -535,7 +535,7 @@
   {
    "id": "v045",
    "title": "Selling and buying? Exercise date to exercise date",
-   "status": "script_pending",
+   "status": "building",
    "slot_plan": "Tue 3 Nov 6pm",
    "from": "Joel 21 Oct"
   }

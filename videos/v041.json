@@ -1,0 +1,93 @@
+{
+ "id": "v041",
+ "title": "Viewing this weekend?\n*Set your walk-away price*",
+ "pill": "VIEWING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WALK-AWAY $",
+    "bld": "condo"
+   },
+   "say": "You're viewing a condo this weekend. Before you go, set your walk-away price.",
+   "cap": "set your *walk-away price* first",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "LOAN + BUFFER"
+   },
+   "say": "Start with what the bank will lend, and what you can pay without touching your emergency buffer.",
+   "cap": "the loan, and *keep your buffer*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     100,
+     104,
+     98
+    ],
+    "labels": [
+     "UNIT A",
+     "UNIT B",
+     "UNIT C"
+    ],
+    "cols": [
+     2908253,
+     2908253,
+     2908253
+    ]
+   },
+   "say": "Then check recent sales of similar units in the same project.",
+   "cap": "check *recent sales* in the project",
+   "stat": "Recent sales, same project"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "ONE NUMBER",
+    "bld": "condo"
+   },
+   "say": "Write down one number. That's the most you'll pay.",
+   "cap": "write down *one number*",
+   "stat": ""
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "LAST UNIT!"
+   },
+   "say": "At the viewing, the pressure feels real: other buyers, a deadline, a last unit.",
+   "cap": "other buyers. deadlines. *last unit*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "DECIDE CALMLY"
+   },
+   "say": "With your number already set, you decide calmly.",
+   "cap": "number set. decide *calmly*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CHECK",
+    "bld": "condo"
+   },
+   "say": "Not sure if you're on track? Comment check.",
+   "cap": "on track? comment *CHECK*",
+   "stat": ""
+  }
+ ],
+ "source": "Tiny Singapore",
+ "caption": "Viewing a condo this weekend? Set your walk-away price before you go. 🏙️\n\nStart with what the bank will lend and what you can pay without touching your emergency buffer. Check recent sales of similar units in the same project. Then write down one number: the most you'll pay.\n\nAt the viewing, the pressure feels real. With your number set, you decide calmly.\n\nNot sure if you're on track? Comment CHECK 👇",
+ "hashtags": "#singaporeproperty #condosg #homebuying #propertyviewing #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}

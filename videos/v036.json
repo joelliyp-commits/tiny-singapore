@@ -1,0 +1,77 @@
+{
+ "id": "v036",
+ "title": "Same condo.\n*Not every block is within 1km*",
+ "pill": "PARENTS",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "1KM?",
+    "bld": "condo"
+   },
+   "say": "You're buying a condo for the primary school nearby. But not every block in the same condo may be within 1km.",
+   "cap": "same condo. *not every block* within 1km",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "SCHOOL BOUNDARY"
+   },
+   "say": "MOE measures from the school's boundary to the outline of your building.",
+   "cap": "from the *school boundary* to your *building*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "BLOCK A",
+     "price": "IN 1KM"
+    },
+    "r": {
+     "type": "condo",
+     "label": "BLOCK B",
+     "price": "OUTSIDE"
+    }
+   },
+   "say": "So in a big condo, one block can fall inside 1km, while the block across the pool falls outside.",
+   "cap": "one block *in*. one block *out*",
+   "stat": ""
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "CAN CHANGE"
+   },
+   "say": "The category can also change from year to year, if school boundaries or building plans change.",
+   "cap": "it can *change* year to year",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "CHECK ONEMAP"
+   },
+   "say": "Before you pick a unit, check the exact block on OneMap's school query, in the year you register.",
+   "cap": "check the *exact block* on OneMap",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "condo"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow* for more",
+   "stat": "Source: MOE, SLA OneMap"
+  }
+ ],
+ "source": "MOE, SLA OneMap",
+ "caption": "Buying a condo for the primary school nearby? Not every block in the same condo may be within 1km. 🏫\n\nMOE measures from the school's boundary to the outline of your building. In a big condo, one block can fall inside 1km while another falls outside. The category can also change from year to year.\n\nBefore you pick a unit, check the exact block on OneMap's school query in the year you register.\n\nUseful info? Follow for more 👇",
+ "hashtags": "#singaporeproperty #primaryschool #p1registration #condosg #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}

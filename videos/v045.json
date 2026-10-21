@@ -1,0 +1,89 @@
+{
+ "id": "v045",
+ "title": "Selling and buying?\n*Exercise to exercise*",
+ "pill": "SELL + BUY",
+ "lines": [
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "SELL",
+    "b": "BUY",
+    "l": "hdb",
+    "r": "condo"
+   },
+   "say": "You're placing a deposit on a new home, but you haven't sold your current one. One wrong move can cost you 20% of the new home's price.",
+   "cap": "one wrong move: *20%* of the price",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "ABSD 20%"
+   },
+   "say": "That's Additional Buyer's Stamp Duty. On a 1.5 million dollar condo, it's 300,000 dollars.",
+   "cap": "on $1.5M: *$300,000*",
+   "stat": "",
+   "count": {
+    "to": 300000,
+    "pre": "$",
+    "label": "ABSD on a $1.5M home",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "1. BUYER EXERCISES",
+    "bld": "hdb"
+   },
+   "say": "The key is timing. Your buyer must exercise the option on your current home first.",
+   "cap": "your buyer *exercises first*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "2. YOU EXERCISE",
+    "bld": "condo"
+   },
+   "say": "Only then do you exercise the option on your new home.",
+   "cap": "then *you exercise* yours",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "EXERCISE TO EXERCISE"
+   },
+   "say": "Not the option date. Not completion. Exercise date to exercise date.",
+   "cap": "*exercise date* to *exercise date*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "NO ABSD"
+   },
+   "say": "Get the order right, and you buy as a first-home owner, with no ABSD for citizens.",
+   "cap": "right order: *no ABSD*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE",
+    "bld": "condo"
+   },
+   "say": "Save this.",
+   "cap": "*save* this",
+   "stat": "General info. Confirm with your lawyer"
+  }
+ ],
+ "source": "IRAS",
+ "caption": "Placing a deposit on a new home before your current one is sold? One wrong move can cost you 20% of the new home's price. ⚠️\n\nThat's Additional Buyer's Stamp Duty: $300,000 on a $1.5M condo. The key is timing. Your buyer must exercise the option on your current home first. Only then do you exercise the option on your new home.\n\nNot the option date. Not completion. Exercise date to exercise date.\n\nSave this 👇\n\nGeneral information only. Confirm the timing with your conveyancing lawyer.",
+ "hashtags": "#singaporeproperty #absd #stampduty #hdbupgrade #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}

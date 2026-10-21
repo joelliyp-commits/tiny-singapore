@@ -1,0 +1,76 @@
+{
+ "id": "v040",
+ "title": "Tengah:\n*Then and now*",
+ "pill": "TOWNSHIP",
+ "lines": [
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 0
+   },
+   "say": "You're thinking about Tengah. In 2018, it was mostly forest.",
+   "cap": "2018: *mostly forest*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 1
+   },
+   "say": "The first BTO launched that year: Plantation Grove, with 1,620 flats.",
+   "cap": "first BTO: *1,620 flats*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 2
+   },
+   "say": "The first residents moved in from 2023.",
+   "cap": "first residents: *2023*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 2
+   },
+   "say": "The plan includes Singapore's first car-free town centre, with roads running underground.",
+   "cap": "a *car-free* town centre",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 3,
+    "mrt": true
+   },
+   "say": "The Jurong Region Line is planned to open its Tengah stations in 2028.",
+   "cap": "JRL stations planned: *2028*",
+   "stat": ""
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "TOO EARLY?"
+   },
+   "say": "New towns can feel empty before the trains and malls arrive. That's often when prices are lowest.",
+   "cap": "empty early. often *cheapest* early",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow* for more",
+   "stat": "Source: HDB, LTA"
+  }
+ ],
+ "source": "HDB, LTA",
+ "caption": "Thinking about Tengah? Here's how it changed. 🌳\n\nIn 2018 it was mostly forest. The first BTO, Plantation Grove, launched that year with 1,620 flats, and the first residents moved in from 2023. The plan includes Singapore's first car-free town centre, and the Jurong Region Line is planned to open its Tengah stations in 2028.\n\nNew towns can feel empty before the trains and malls arrive. That's often when prices are lowest.\n\nUseful info? Follow for more 👇",
+ "hashtags": "#singaporeproperty #tengah #hdbbto #newtown #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}

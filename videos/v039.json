@@ -1,0 +1,88 @@
+{
+ "id": "v039",
+ "title": "Flats hitting 50:\n*Your lease, your CPF*",
+ "pill": "HDB RESALE",
+ "lines": [
+  {
+   "tpl": "lease",
+   "p": {
+    "yrs": "49 YRS LEFT"
+   },
+   "say": "More HDB flats are crossing the 50 year mark. Buying one with 49 years left? Check your CPF first.",
+   "cap": "*49 years* left? check your *CPF*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "AGE 95 TEST"
+   },
+   "say": "It comes down to one test: does the lease cover the youngest buyer until age 95?",
+   "cap": "does it cover you to *age 95*?",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "AGE 46+",
+    "bld": "hdb"
+   },
+   "say": "With 49 years left, the youngest buyer needs to be 46 or older.",
+   "cap": "youngest buyer: *46 or older*",
+   "stat": ""
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "LOAN",
+    "label": "CPF CUT"
+   },
+   "say": "Younger than that? Your CPF use is cut in proportion, and so is your HDB loan.",
+   "cap": "younger? CPF and loan *cut*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "UNDER 20 YRS"
+   },
+   "say": "Less than 20 years left? No CPF at all.",
+   "cap": "under 20 years: *no CPF*",
+   "stat": ""
+  },
+  {
+   "tpl": "lease",
+   "p": {
+    "yrs": "CHECK FIRST"
+   },
+   "say": "Older flats can be cheaper for a reason. Check the lease against your age first.",
+   "cap": "check the lease *against your age*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE",
+    "bld": "hdb"
+   },
+   "say": "Save this before your next viewing.",
+   "cap": "*save* this before your viewing",
+   "stat": "Source: MND, CPF Board"
+  }
+ ],
+ "source": "MND, CPF Board",
+ "caption": "More HDB flats are crossing the 50 year mark. Buying one with 49 years left? Check your CPF first. 🏢\n\nThe test: does the remaining lease cover the youngest buyer until age 95? With 49 years left, the youngest buyer needs to be 46 or older. If not, your CPF use and HDB loan are cut in proportion. Less than 20 years left means no CPF at all.\n\nOlder flats can be cheaper for a reason. Check the lease against your age first.\n\nSave this before your next viewing 👇",
+ "hashtags": "#singaporeproperty #hdbresale #cpf #hdblease #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}

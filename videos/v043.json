@@ -1,0 +1,100 @@
+{
+ "id": "v043",
+ "title": "The 0.29 rule:\n*What you need upfront*",
+ "pill": "BUYING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1.5M",
+    "bld": "condo"
+   },
+   "say": "You found a 1.5 million dollar condo. How much cash and CPF do you need upfront?",
+   "cap": "how much do you need *upfront*?",
+   "stat": ""
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "× 0.29"
+   },
+   "say": "A quick rule: take the price, times 0.29.",
+   "cap": "price *× 0.29*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "BALLPARK"
+   },
+   "say": "For 1.5 million, that's about 435,000 dollars.",
+   "cap": "about *$435,000*",
+   "stat": "",
+   "count": {
+    "to": 435000,
+    "pre": "$",
+    "label": "upfront, ballpark",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     25,
+     3,
+     1
+    ],
+    "labels": [
+     "25% DOWN",
+     "STAMP DUTY",
+     "FEES"
+    ],
+    "cols": [
+     2908253,
+     14710863,
+     14710863
+    ]
+   },
+   "say": "It covers the 25% downpayment when you take a 75% loan, plus stamp duty, legal fees and valuation.",
+   "cap": "downpayment, *stamp duty* and fees",
+   "stat": "With a 75% loan"
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "5% CASH",
+    "label": "CPF"
+   },
+   "say": "At least 5% of the price must be in cash.",
+   "cap": "at least *5% in cash*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "NO SHORTFALL"
+   },
+   "say": "It's a ballpark, not a quote. But it stops you falling short at signing.",
+   "cap": "so you *don't fall short*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "condo"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow* for more",
+   "stat": "Ballpark only. Actual costs vary"
+  }
+ ],
+ "source": "IRAS, MAS",
+ "caption": "Found a $1.5M condo? Here's a quick way to know what you need upfront. 🏙️\n\nTake the price × 0.29. For $1.5M, that's about $435,000. It covers the 25% downpayment when you take a 75% loan, plus stamp duty, legal fees and valuation. At least 5% of the price must be in cash.\n\nIt's a ballpark, not a quote, but it stops you falling short at signing.\n\nUseful info? Follow for more 👇\n\nBallpark only. Actual costs vary.",
+ "hashtags": "#singaporeproperty #condosg #downpayment #stampduty #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}

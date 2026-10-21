@@ -1,0 +1,138 @@
+{
+ "id": "v038",
+ "title": "You waited to upgrade.\n*Did the gap shrink?*",
+ "pill": "UPGRADERS",
+ "lines": [
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "hdb",
+     "label": "YOUR FLAT",
+     "price": "$450K"
+    },
+    "r": {
+     "type": "condo",
+     "label": "THE CONDO",
+     "price": "$1.5M"
+    }
+   },
+   "say": "It's 2019. Your HDB flat is worth 450,000 dollars, and you're eyeing a 1.5 million dollar condo. You decide to wait.",
+   "cap": "2019: flat *$450K*. condo *$1.5M*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     45,
+     150
+    ],
+    "labels": [
+     "HDB",
+     "CONDO"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "The gap back then: about 1.05 million dollars.",
+   "cap": "the gap: *$1.05M*",
+   "stat": "",
+   "count": {
+    "to": 1050000,
+    "pre": "$",
+    "label": "the gap in 2019",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "+54%",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "Since then, HDB resale prices rose about 54%. Your flat would now be worth about 690,000 dollars.",
+   "cap": "your flat: about *$690K*",
+   "stat": "",
+   "count": {
+    "to": 690000,
+    "pre": "$",
+    "label": "your flat today",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "+41%",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "But condo prices rose about 41%. That condo would now be about 2.1 million, over 600,000 dollars more.",
+   "cap": "the condo: about *$2.1M*",
+   "stat": "",
+   "count": {
+    "to": 2100000,
+    "pre": "$",
+    "label": "the condo today",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     105,
+     142
+    ],
+    "labels": [
+     "2019 GAP",
+     "2026 GAP"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "So your gap grew to about 1.4 million. Your flat gained 240,000. The gap grew 370,000.",
+   "cap": "the gap grew *$370K*",
+   "stat": "",
+   "count": {
+    "to": 370000,
+    "pre": "$",
+    "label": "more to chase",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "WAIT?"
+   },
+   "say": "Waiting made your flat worth more, but the upgrade harder to reach.",
+   "cap": "flat worth more. upgrade *harder*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "GAP",
+    "bld": "condo"
+   },
+   "say": "Want to know if the home you're going for is within reach? Comment gap and we can help you.",
+   "cap": "within reach? comment *GAP*",
+   "stat": "HDB RPI, URA PPI. Past trends"
+  }
+ ],
+ "source": "HDB RPI, URA PPI",
+ "caption": "You waited to upgrade. Did the gap shrink? 🏙️\n\nIn 2019, your HDB flat was worth $450K and the condo you wanted was $1.5M. A gap of about $1.05M.\n\nSince then, HDB resale prices rose about 54%, so your flat would be worth about $690K. But condo prices rose about 41%, so that condo would be about $2.1M. Your flat gained $240K. The gap grew $370K.\n\nWant to know if the home you're going for is within reach? Comment GAP and we can help you 👇\n\nBased on HDB RPI (4Q19 to 3Q26) and URA non-landed PPI (4Q19 to 2Q26). Past trends, not a forecast.",
+ "hashtags": "#singaporeproperty #hdbupgrade #condosg #hdbresale #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}

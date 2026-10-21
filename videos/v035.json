@@ -1,0 +1,120 @@
+{
+ "id": "v035",
+ "title": "$1.5M condo:\n*The salary you need*",
+ "pill": "BUYING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1.5M",
+    "bld": "condo"
+   },
+   "say": "You want a 1.5 million dollar condo. Here's the salary the bank needs to see.",
+   "cap": "*$1.5M* condo. what *salary*?",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "75% LOAN"
+   },
+   "say": "With a 75% loan, you borrow about 1.125 million dollars.",
+   "cap": "borrow about *$1.125M*",
+   "stat": "",
+   "count": {
+    "to": 1125000,
+    "pre": "$",
+    "label": "loan at 75%",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "TESTED AT 4%"
+   },
+   "say": "Banks test your loan at 4% interest, not today's rate. Over 30 years, that's about 5,400 dollars a month.",
+   "cap": "tested at *4%*: about *$5,400* a month",
+   "stat": "",
+   "count": {
+    "to": 5400,
+    "pre": "$",
+    "label": "monthly, at the 4% test",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     55,
+     45
+    ],
+    "labels": [
+     "DEBTS 55%",
+     "THE REST"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "Your total debts can't go above 55% of your income. So you need about 9,800 dollars a month, with no other loans.",
+   "cap": "you need about *$9,800* a month",
+   "stat": "",
+   "count": {
+    "to": 9800,
+    "pre": "$",
+    "label": "monthly income needed",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CAR LOAN",
+    "bld": "car",
+    "dir": "up"
+   },
+   "say": "Got a car loan? Every dollar of it raises that number.",
+   "cap": "a car loan *raises* it",
+   "stat": ""
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "25% DOWN",
+    "label": "CPF"
+   },
+   "say": "Then the upfront: 25% down, at least 5% in cash, plus about 44,600 dollars in stamp duty.",
+   "cap": "25% down, *5% cash*, plus *$44,600* duty",
+   "stat": "",
+   "count": {
+    "to": 44600,
+    "pre": "$",
+    "label": "buyer's stamp duty",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PLAN",
+    "bld": "condo"
+   },
+   "say": "Comment plan and we'll send you the calculator used in this video.",
+   "cap": "comment *PLAN* for the calculator",
+   "stat": "Illustration: 30 years, no other debts"
+  }
+ ],
+ "source": "MAS, IRAS, bank rates Oct 2026",
+ "caption": "Want a $1.5M condo? Here's the salary the bank needs to see. 🏙️\n\nWith a 75% loan you borrow about $1.125M. Banks test the loan at 4% interest, not today's rate: about $5,400 a month over 30 years. Total debts can't exceed 55% of income, so you need about $9,800 a month with no other loans. A car loan raises that number.\n\nUpfront: 25% down (at least 5% in cash) plus about $44,600 in buyer's stamp duty.\n\nComment PLAN and we'll send you the calculator used in this video 👇\n\nIllustration only: 30 year loan, no other debts. Bank policies vary.",
+ "hashtags": "#singaporeproperty #condosg #tdsr #homeloan #propertysg #sgproperty #tinysingapore",
+ "motion": true
+}
