@@ -1,0 +1,121 @@
+{
+ "id": "v032",
+ "motion": true,
+ "title": "209 HDB flats.\n*Over $1M each*",
+ "pill": "HDB RESALE",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1M+",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "You're selling your HDB flat. In September, 209 flats sold for over 1 million dollars. A new record.",
+   "cap": "*209* flats. over *$1M* each",
+   "stat": "",
+   "count": {
+    "to": 209,
+    "label": "million dollar resales, Sept 2026",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     9.3,
+     90.7
+    ],
+    "labels": [
+     "$1M+",
+     "THE REST"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "That's about 1 in every 11 resale flats.",
+   "cap": "about *1 in 11* resale flats",
+   "stat": "Share of Sept 2026 resales"
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     33,
+     28,
+     20
+    ],
+    "labels": [
+     "TOA PAYOH",
+     "QUEENSTOWN",
+     "BEDOK"
+    ],
+    "cols": [
+     14710863,
+     2908253,
+     2908253
+    ]
+   },
+   "say": "Most were in mature towns. Toa Payoh had 33, Queenstown 28, Bedok 20.",
+   "cap": "Toa Payoh *33*. Queenstown *28*. Bedok *20*",
+   "stat": "Million dollar flats, Sept 2026"
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1.72M",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "The top sale: a five-room flat at The Pinnacle at Duxton, for 1.72 million dollars.",
+   "cap": "top sale: *$1.72M* at Pinnacle@Duxton",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "BIG · MRT · VIEW",
+    "bld": "hdb",
+    "fam": false
+   },
+   "say": "We've found they tend to share a few things: a big flat, near an MRT, a long lease left and a view that stays open.",
+   "cap": "big flat, near *MRT*, long lease, open *view*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "hdb",
+     "label": "NEXT DOOR",
+     "price": "$1M"
+    },
+    "r": {
+     "type": "hdb",
+     "label": "YOURS",
+     "price": "$?"
+    }
+   },
+   "say": "But a million-dollar flat nearby doesn't mean yours is worth the same.",
+   "cap": "next door's price *isn't yours*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WHY",
+    "bld": "hdb"
+   },
+   "say": "Most people decide this wrongly. Comment why to see the mistake.",
+   "cap": "comment *WHY* to see the mistake",
+   "stat": "Source: SRX, 99.co. Sept 2026 data"
+  }
+ ],
+ "source": "SRX, 99.co, Sept 2026",
+ "caption": "209 HDB flats sold for over $1M in September. A new monthly record. 🏙️\n\nThat's about 1 in every 11 resale flats. Toa Payoh had 33, Queenstown 28 and Bedok 20. The top sale was a five-room flat at The Pinnacle@Duxton for $1.72M.\n\nWe've found they tend to share a few things: a big flat, near an MRT, a long lease left and an open view. But a million-dollar flat nearby doesn't mean yours is worth the same.\n\nMost people decide this wrongly. Comment WHY to see the mistake 👇\n\nSource: SRX, 99.co (Sept 2026). Past transactions, not a valuation.",
+ "hashtags": "#singaporeproperty #hdbresale #hdbsg #milliondollarhdb #propertysg #sgproperty #tinysingapore"
+}

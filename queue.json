@@ -407,7 +407,7 @@
   {
    "id": "v031",
    "title": "Just bought a $1.8M condo. Then you lost your job",
-   "status": "script_approved",
+   "status": "building",
    "pillar": "Case study / rainy day",
    "style": "3D motion",
    "source": "Joel 17 Oct; rewritten as original angle (income shock test), not based on the reference carousel's story",
@@ -417,7 +417,7 @@
   {
    "id": "v032",
    "title": "209 HDB flats sold for over $1M in September",
-   "status": "script_pending",
+   "status": "building",
    "pillar": "Million dollar HDB (timely, p17)",
    "style": "3D motion",
    "facts": "Sept 2026: 209 million-dollar resales (record, Aug 201), 9.3% of 2,248 resales; Toa Payoh 33, Queenstown 28, Bedok 20; top Pinnacle@Duxton 5-room $1.72M (SRX/99.co; Malay Mail 7 Oct)",
@@ -426,16 +426,17 @@
   {
    "id": "v033",
    "title": "Condo prices rose. Sales hit a 28-year low",
-   "status": "script_pending",
+   "status": "script_approved",
    "pillar": "Timely market",
    "style": "map",
    "facts": "URA flash Q3 2026 +1.4% (Q2 +0.5%), OCR +2.2%, landed +2.8%; fastest since 4Q2024 (EdgeProp, Real Estate Asia). Huttons ~1,100 new homes sold, lowest Q3 since 1998; ~1,100 units launched, -38.3% QoQ (EdgeProp; needs 2nd source). URA final figures 23 Oct: update before posting.",
-   "cta": "Save this before your next viewing."
+   "cta": "Save this before your next viewing.",
+   "note": "Build after URA final Q3 figures (23 Oct); update numbers first."
   },
   {
    "id": "v034",
    "title": "Condo owners: the 15-month HDB wait is gone",
-   "status": "script_approved",
+   "status": "building",
    "pillar": "Policy explainer",
    "style": "3D motion",
    "facts": "Removed 28 Jul 2026 with immediate effect (HDB/MND; EdgeProp, ERA). Applies to non-subsidised resale without HDB loan; need HFE letter; dispose all private property (SG and overseas) within 6 months of resale completion. 30-month wait remains for subsidised flats, resale with grants, new EC, HDB loan.",

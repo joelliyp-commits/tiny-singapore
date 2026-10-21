@@ -1,0 +1,117 @@
+{
+ "id": "v031",
+ "motion": true,
+ "title": "CASE STUDY: Just bought.\n*Just lost your job*",
+ "pill": "CASE STUDY",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "JOB LOST",
+    "bld": "condo",
+    "dir": "down",
+    "down": true
+   },
+   "say": "You just bought a 1.8 million dollar resale condo. Now you've lost your job.",
+   "cap": "just bought *$1.8M*. just lost your *job*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$4,700/MTH",
+    "bld": "condo",
+    "fam": false
+   },
+   "say": "Your loan is about 4,700 dollars a month. What do you do first?",
+   "cap": "*$4,700* due every month",
+   "stat": "",
+   "count": {
+    "to": 4700,
+    "pre": "$",
+    "label": "monthly instalment",
+    "at": 0.4,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SSD 16%",
+    "bld": "condo",
+    "dir": "down"
+   },
+   "say": "Don't rush to sell. In year one, Seller's Stamp Duty is 16%. That's about 288,000 dollars.",
+   "cap": "selling now costs *$288K*",
+   "stat": "",
+   "count": {
+    "to": 288000,
+    "pre": "$",
+    "label": "SSD if you sell in year one",
+    "at": 0.8,
+    "dur": 1.6
+   }
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "CALL THE BANK"
+   },
+   "say": "Step one: call your bank before you miss a payment. A missed payment can show up on your credit report.",
+   "cap": "call the bank *first*",
+   "stat": ""
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "LOAN",
+    "label": "CPF"
+   },
+   "say": "Step two: check your CPF Ordinary Account. It can pay the monthly loan. 30,000 dollars covers about six months.",
+   "cap": "CPF buys you *6 months*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOR RENT",
+    "bld": "condo",
+    "fam": false
+   },
+   "say": "Step three: if it's still tight, rent out the whole unit and move somewhere cheaper until you're back on your feet.",
+   "cap": "rent it out. *regroup*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "6 MONTHS SET ASIDE"
+   },
+   "say": "The lesson: before you buy, set aside six months of instalments. Here, about 28,000 dollars.",
+   "cap": "*6 months* before you sign",
+   "stat": "",
+   "count": {
+    "to": 28000,
+    "pre": "$",
+    "label": "six months of instalments",
+    "at": 0.8,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CHECK",
+    "bld": "condo"
+   },
+   "say": "Not sure if you're on track? Comment check.",
+   "cap": "comment *CHECK*",
+   "stat": "Illustration only. Loan at about 1.5% over 30 years. Your bank's terms may differ."
+  }
+ ],
+ "source": "MOF, CPF Board, bank rates Oct 2026",
+ "caption": "You just bought a $1.8M resale condo. Then you lost your job. What now? 🏙️\n\nYour loan is about $4,700 a month, and selling in year one means 16% Seller's Stamp Duty, about $288K. So don't rush to sell.\n\n1. Call your bank before you miss a payment.\n2. Check your CPF Ordinary Account. It can pay the monthly loan while you find work.\n3. If it's still tight, rent out the unit and move somewhere cheaper for now.\n\nThe lesson: set aside six months of instalments before you sign.\n\nNot sure if you're on track? Comment CHECK 👇\n\nIllustration only. Loan at about 1.5% over 30 years. Your bank's terms may differ.",
+ "hashtags": "#singaporeproperty #condosg #homeloan #cpf #propertysg #sgproperty #tinysingapore"
+}

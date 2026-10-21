@@ -1,0 +1,93 @@
+{
+ "id": "v034",
+ "motion": true,
+ "title": "Condo owners:\n*The 15 month HDB wait is gone*",
+ "pill": "RIGHT SIZING",
+ "lines": [
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "CONDO",
+    "b": "HDB",
+    "l": "condo",
+    "r": "hdb"
+   },
+   "say": "You own a condo and want to move to an HDB resale flat. You no longer have to wait 15 months.",
+   "cap": "condo to HDB. *no more 15 month wait*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "WAIT REMOVED"
+   },
+   "say": "Since 28 July, the wait is gone for private owners buying a resale flat without an HDB loan.",
+   "cap": "gone since *28 July*",
+   "stat": "HDB, 28 Jul 2026"
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "3 RULES"
+   },
+   "say": "But three rules still apply.",
+   "cap": "but *3 rules* still apply",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "NO HDB LOAN"
+   },
+   "say": "One: no HDB loan. Pay with a bank loan, cash or CPF.",
+   "cap": "1. *no HDB loan*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "HFE LETTER"
+   },
+   "say": "Two: get your HDB Flat Eligibility letter first.",
+   "cap": "2. get your *HFE letter* first",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SELL IN 6 MONTHS",
+    "bld": "condo",
+    "dir": "down"
+   },
+   "say": "Three: sell all your private homes, in Singapore and overseas, within six months of buying the flat.",
+   "cap": "3. sell private homes within *6 months*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "30 MONTH WAIT",
+    "bld": "hdb",
+    "fam": false
+   },
+   "say": "Using a grant or an HDB loan? The 30 month wait still applies.",
+   "cap": "grant or HDB loan? *30 months* still",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "YOUR PATH",
+    "bld": "hdb"
+   },
+   "say": "Comment your flat type and town. We'll tell you which path fits you.",
+   "cap": "comment your *flat type and town*",
+   "stat": "General info. Check your eligibility with HDB"
+  }
+ ],
+ "source": "HDB, MND, Jul 2026",
+ "caption": "Own a condo and want to move to an HDB resale flat? The 15 month wait is gone. 🏙️\n\nSince 28 July 2026, private property owners can buy a non-subsidised HDB resale flat straight away, as long as:\n1. You don't take an HDB loan (bank loan, cash or CPF is fine).\n2. You get your HDB Flat Eligibility letter first.\n3. You sell all your private homes, in Singapore and overseas, within six months of buying the flat.\n\nUsing a grant or an HDB loan? The 30 month wait still applies.\n\nComment your flat type and town, and we'll tell you which path fits you 👇\n\nGeneral information only. Check your eligibility with HDB.",
+ "hashtags": "#singaporeproperty #hdbresale #rightsizing #condosg #propertysg #sgproperty #tinysingapore"
+}
