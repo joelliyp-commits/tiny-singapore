@@ -38,7 +38,7 @@
    },
    "say": "Say the new launch is 2,400 dollars per square foot, and the five year old condo is 1,800.",
    "cap": "*$2,400* vs *$1,800* psf",
-   "stat": "Price per sq ft"
+   "stat": ""
   },
   {
    "tpl": "tag",
@@ -68,7 +68,7 @@
    },
    "say": "But if the gap is small, say 2,400 against 2,250, the newer one usually gives more for your money.",
    "cap": "small gap? the *newer one* often wins",
-   "stat": "Price per sq ft"
+   "stat": ""
   },
   {
    "tpl": "signpost",
