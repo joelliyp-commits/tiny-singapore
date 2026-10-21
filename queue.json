@@ -178,7 +178,7 @@
    "id": "p11",
    "title": "New vs nearly-new resale: the gap rule",
    "pillar": "from presentation",
-   "status": "idea",
+   "status": "scripted as v042",
    "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
    "facts": "Big gap: resale gets dragged up; small gap: take the new"
   },
@@ -186,7 +186,7 @@
    "id": "p12",
    "title": "Set your walk-away price before you view",
    "pillar": "from presentation",
-   "status": "idea",
+   "status": "scripted as v041",
    "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
    "facts": "Price discipline for buyers"
   },
@@ -297,7 +297,7 @@
   {
    "id": "p15",
    "title": "Tengah then vs now: the township reveal",
-   "status": "idea",
+   "status": "scripted as v040",
    "pillar": "Then vs now reveal",
    "hook": "\"Punggol in 2005 was a place nobody wanted to live.\" Use Tengah; Punggol done in v013. Hook needs a real figure, not opinion",
    "visual": "Top down map, empty plot filling with blocks, MRT, waterfront year by year",
@@ -330,7 +330,7 @@
   {
    "id": "p18",
    "title": "1.5M condo: the salary you need",
-   "status": "idea",
+   "status": "scripted as v035",
    "pillar": "How much must you earn",
    "hook": "\"You want a 1.5 million dollar condo. This is the salary you need.\" TDSR 55%, 4% stress test",
    "visual": "Calculator overlay stacking income, TDSR limit and loan quantum (count cards)",
@@ -341,7 +341,7 @@
   {
    "id": "p19",
    "title": "Sold in 2019: what waiting would have meant",
-   "status": "idea",
+   "status": "scripted as v038",
    "pillar": "Mistake or regret",
    "hook": "\"You sold your flat in 2019. Here's what waiting would have meant.\" Past performance disclaimer",
    "visual": "Split screen, two timelines, two net worth bars (new layout)",
@@ -385,7 +385,7 @@
   {
    "id": "p23",
    "title": "Your 99 year lease: what happens at year 60?",
-   "status": "idea",
+   "status": "scripted as v039",
    "pillar": "Then vs now / lease",
    "hook": "\"Your 99 year lease. What really happens at year 60?\" Overlaps v006; value claims need firm HDB sources",
    "visual": "Hourglass over a block, markers at year 30, 60, 90",
@@ -448,7 +448,7 @@
   {
    "id": "p25",
    "title": "Same condo, but not every block is within 1km of the school",
-   "status": "idea",
+   "status": "scripted as v036",
    "pillar": "Practical check (parents)",
    "style": "map",
    "cta": "Not sure if you're on track? Comment CHECK.",
@@ -457,10 +457,80 @@
   {
    "id": "p26",
    "title": "Who holds the power at a new launch?",
-   "status": "idea",
+   "status": "scripted as v037",
    "pillar": "Buyer vs developer, facts only",
    "style": "3D motion",
    "source": "Adapted from realsmart.sg pattern review 21 Oct"
+  },
+  {
+   "id": "v035",
+   "title": "1.5M condo: the salary you need",
+   "status": "script_pending",
+   "slot_plan": "Fri 30 Oct 2pm",
+   "from": "p18"
+  },
+  {
+   "id": "v036",
+   "title": "Same condo, not every block is within 1km",
+   "status": "script_pending",
+   "slot_plan": "Fri 30 Oct 6pm",
+   "from": "p25"
+  },
+  {
+   "id": "v037",
+   "title": "Who holds the power at a new launch?",
+   "status": "script_pending",
+   "slot_plan": "Sat 31 Oct 2pm",
+   "from": "p26"
+  },
+  {
+   "id": "v038",
+   "title": "Sold in 2019: what waiting would have meant",
+   "status": "script_pending",
+   "slot_plan": "Sat 31 Oct 6pm",
+   "from": "p19"
+  },
+  {
+   "id": "v039",
+   "title": "Your lease, your CPF: the age 95 rule",
+   "status": "script_pending",
+   "slot_plan": "Sun 1 Nov 2pm",
+   "from": "p23"
+  },
+  {
+   "id": "v040",
+   "title": "Tengah: then and now",
+   "status": "script_pending",
+   "slot_plan": "Sun 1 Nov 6pm",
+   "from": "p15"
+  },
+  {
+   "id": "v041",
+   "title": "Set your walk-away price before you view",
+   "status": "script_pending",
+   "slot_plan": "Mon 2 Nov 2pm",
+   "from": "p12"
+  },
+  {
+   "id": "v042",
+   "title": "New launch or nearly new? Check the gap",
+   "status": "script_pending",
+   "slot_plan": "Mon 2 Nov 6pm",
+   "from": "p11"
+  },
+  {
+   "id": "v043",
+   "title": "$1.5M condo: the stamp duty on top",
+   "status": "script_pending",
+   "slot_plan": "Tue 3 Nov 2pm",
+   "from": "new"
+  },
+  {
+   "id": "v044",
+   "title": "Second home first? The 20% you didn't plan for",
+   "status": "script_pending",
+   "slot_plan": "Tue 3 Nov 6pm",
+   "from": "new"
   }
  ],
  "cta_system": {
