@@ -27,18 +27,18 @@
     "l": {
      "type": "condo",
      "label": "NEW",
-     "price": "$2,400 PSF"
+     "price": "$2,400"
     },
     "r": {
      "type": "condo",
-     "label": "5 YEARS",
-     "price": "$1,800 PSF"
+     "label": "5 YRS",
+     "price": "$1,800"
     },
     "badge": "$600 GAP"
    },
    "say": "Say the new launch is 2,400 dollars per square foot, and the five year old condo is 1,800.",
    "cap": "*$2,400* vs *$1,800* psf",
-   "stat": ""
+   "stat": "Price per sq ft"
   },
   {
    "tpl": "tag",
@@ -57,18 +57,18 @@
     "l": {
      "type": "condo",
      "label": "NEW",
-     "price": "$2,400 PSF"
+     "price": "$2,400"
     },
     "r": {
      "type": "condo",
-     "label": "5 YEARS",
-     "price": "$2,250 PSF"
+     "label": "5 YRS",
+     "price": "$2,250"
     },
     "badge": "$150 GAP"
    },
    "say": "But if the gap is small, say 2,400 against 2,250, the newer one usually gives more for your money.",
    "cap": "small gap? the *newer one* often wins",
-   "stat": ""
+   "stat": "Price per sq ft"
   },
   {
    "tpl": "signpost",

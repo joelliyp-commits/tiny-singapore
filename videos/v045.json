@@ -1,6 +1,6 @@
 {
  "id": "v045",
- "title": "Selling and buying?\n*Exercise to exercise*",
+ "title": "Sell, then buy?\n*Exercise to exercise*",
  "pill": "SELL + BUY",
  "lines": [
   {
@@ -35,7 +35,7 @@
   {
    "tpl": "tag",
    "p": {
-    "text": "1. BUYER EXERCISES",
+    "text": "BUYER FIRST",
     "bld": "hdb"
    },
    "say": "The key is timing. Your buyer must exercise the option on your current home first.",
@@ -45,7 +45,7 @@
   {
    "tpl": "tag",
    "p": {
-    "text": "2. YOU EXERCISE",
+    "text": "YOU SECOND",
     "bld": "condo"
    },
    "say": "Only then do you exercise the option on your new home.",
@@ -55,7 +55,7 @@
   {
    "tpl": "gov",
    "p": {
-    "text": "EXERCISE TO EXERCISE"
+    "text": "EXERCISE DATES"
    },
    "say": "Not the option date. Not completion. Exercise date to exercise date.",
    "cap": "*exercise date* to *exercise date*",

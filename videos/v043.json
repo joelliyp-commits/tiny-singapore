@@ -44,12 +44,12 @@
    "p": {
     "vals": [
      25,
-     3,
-     1
+     6,
+     3
     ],
     "labels": [
-     "25% DOWN",
-     "STAMP DUTY",
+     "25%",
+     "DUTY",
      "FEES"
     ],
     "cols": [
