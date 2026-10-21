@@ -84,7 +84,7 @@
    },
    "say": "Comment your flat type and town. We'll tell you which path fits you.",
    "cap": "comment your *flat type and town*",
-   "stat": "General info. Check your eligibility with HDB"
+   "stat": "General info only. Check with HDB"
   }
  ],
  "source": "HDB, MND, Jul 2026",
