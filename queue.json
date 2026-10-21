@@ -485,14 +485,14 @@
   },
   {
    "id": "v038",
-   "title": "Sold in 2019: what waiting would have meant",
+   "title": "You waited to upgrade. Did the gap shrink?",
    "status": "script_pending",
    "slot_plan": "Sat 31 Oct 6pm",
    "from": "p19"
   },
   {
    "id": "v039",
-   "title": "Your lease, your CPF: the age 95 rule",
+   "title": "Flats hitting 50: your lease, your CPF",
    "status": "script_pending",
    "slot_plan": "Sun 1 Nov 2pm",
    "from": "p23"
@@ -520,7 +520,7 @@
   },
   {
    "id": "v043",
-   "title": "$1.5M condo: the stamp duty on top",
+   "title": "The 0.29 rule: what you need upfront",
    "status": "script_pending",
    "slot_plan": "Tue 3 Nov 2pm",
    "from": "new"
@@ -529,8 +529,15 @@
    "id": "v044",
    "title": "Second home first? The 20% you didn't plan for",
    "status": "script_pending",
-   "slot_plan": "Tue 3 Nov 6pm",
+   "slot_plan": "batch B (moved; overlaps v045)",
    "from": "new"
+  },
+  {
+   "id": "v045",
+   "title": "Selling and buying? Exercise date to exercise date",
+   "status": "script_pending",
+   "slot_plan": "Tue 3 Nov 6pm",
+   "from": "Joel 21 Oct"
   }
  ],
  "cta_system": {
@@ -548,8 +555,10 @@
    "Before you commit, ask yourself this one question. Comment WHY if you want it.",
    "Most people decide this wrongly. Comment WHY to see the mistake."
   ],
-  "rotation": "Month 1 lean on engagement CTAs for reach; month 2 onwards lead CTAs; case studies use authority CTAs. Applies from 28 Oct slate.",
+  "rotation": "21 Oct (Joel): most videos end with 'Useful info? Follow for more.'; lead CTAs (CHECK, PLAN, WHY, flat type and town) used selectively. Month 1 lean on engagement CTAs for reach; month 2 onwards lead CTAs; case studies use authority CTAs. Applies from 28 Oct slate.",
   "patterns": "Hook: number or loss in first 2s framed as you. One object transforms on screen. New beat every 3-4s, 30-45s total, reveal near end. FOMO or fear of mistake resolved by clarity. 'What would you do?' only where there is a real choice.",
-  "keyword_freeze": "17 Oct (Joel): no new comment keywords for now. Lead CTAs use only CHECK, PLAN, WHY or 'flat type and town'. Existing ones (FIND, REPORT, PLEDGE, LIST, UNLOCK, GAP, TENANT, ELIGIBLE, EXIT, COMPARE, STAY/INVEST/BOTH) stay live on posted videos."
+  "keyword_freeze": "17 Oct (Joel): no new comment keywords for now. Lead CTAs use only CHECK, PLAN, WHY or 'flat type and town'. Existing ones (FIND, REPORT, PLEDGE, LIST, UNLOCK, GAP, TENANT, ELIGIBLE, EXIT, COMPARE, STAY/INVEST/BOTH) stay live on posted videos.",
+  "default_end": "Useful info? Follow for more.",
+  "mid_follow": "Every 1 in 5 videos (v039, v044, v049, ...): add a mid-video line 'Useful so far? Follow for more.' End those with a different CTA."
  }
 }

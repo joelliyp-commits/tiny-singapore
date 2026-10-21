@@ -16,7 +16,7 @@ Disclaimer: Illustration: 30 years, no other debts. Bank policies vary.
 3. So in a big condo, one block can fall inside 1km, while the block across the pool falls outside.
 4. The category can also change from year to year, if school boundaries or building plans change.
 5. Before you pick a unit, check the exact block on OneMap's school query, in the year you register.
-6. Save this before your next viewing.
+6. Useful info? Follow for more.
 
 ## v037 Who holds the power at a new launch? (CTA send)
 1. You're at a new launch, and you're told prices go up next phase. Who really holds the power?
@@ -25,25 +25,27 @@ Disclaimer: Illustration: 30 years, no other debts. Bank policies vary.
 4. That's why unsold units near the deadline can come with better deals.
 5. Early phases, on the other hand, are often priced to build momentum.
 6. Before you commit, ask two things: how many units are left, and how long until their deadline?
-7. Send this to the person you're buying with.
+7. Useful info? Follow for more.
 
-## v038 Sold in 2019: what waiting would have meant (CTA send)
-1. You sold your HDB flat at the end of 2019. What would waiting have meant?
-2. HDB's resale price index was 131.5 then. In the third quarter of 2026, it was about 202.
-3. That's a rise of about 54%.
-4. A flat that sold for 450,000 dollars would be worth about 690,000 dollars at today's index.
-5. But your next home rose too. When you sell and buy in the same market, the gap matters more than the price.
-6. Send this to the person you're buying with.
-Disclaimer: Past trends, not a forecast. HDB RPI.
+## v038 You waited to upgrade. Did the gap shrink? (CTA follow)
+1. It's 2019. Your HDB flat is worth 450,000 dollars, and you're eyeing a 1.5 million dollar condo. You decide to wait.
+2. The gap back then: about 1.05 million dollars.
+3. Since then, HDB resale prices rose about 54%. Your flat would now be worth about 690,000 dollars.
+4. But condo prices rose about 41%. That condo would now be about 2.1 million, over 600,000 dollars more.
+5. So your gap grew to about 1.4 million. Your flat gained 240,000. The gap grew 370,000.
+6. Waiting made your flat worth more, but the upgrade harder to reach.
+7. Useful info? Follow for more.
+Disclaimer: HDB RPI 4Q19 131.5 to 3Q26 202.4; URA non-landed PPI 4Q19 149.6 to 2Q26 210.6. Past trends, not a forecast.
 
-## v039 Your lease, your CPF: the age 95 rule (CTA save)
-1. You're buying a resale flat with 60 years left on the lease. Can you use your full CPF?
+## v039 Flats hitting 50: your lease, your CPF (CTA save, MID FOLLOW)
+1. More HDB flats are crossing the 50 year mark. Buying one with 49 years left? Check your CPF first.
 2. It comes down to one test: does the lease cover the youngest buyer until age 95?
-3. If the youngest of you is 35, 60 years left just covers it.
-4. If it doesn't, your CPF use is cut in proportion, and so is your HDB loan.
-5. Less than 20 years left? No CPF at all.
-6. Older flats can be cheaper for a reason. Check the lease against your age first.
-7. Save this before your next viewing.
+3. With 49 years left, the youngest buyer needs to be 46 or older.
+4. Younger than that? Your CPF use is cut in proportion, and so is your HDB loan.
+5. Useful so far? Follow for more.
+6. Less than 20 years left? No CPF at all.
+7. Older flats can be cheaper for a reason. Check the lease against your age first.
+8. Save this before your next viewing.
 
 ## v040 Tengah: then and now (CTA poll)
 1. You're thinking about Tengah. In 2018, it was mostly forest.
@@ -51,7 +53,8 @@ Disclaimer: Past trends, not a forecast. HDB RPI.
 3. The first residents moved in from 2023.
 4. The plan includes Singapore's first car-free town centre, with roads running underground.
 5. The Jurong Region Line is planned to open its Tengah stations in 2028.
-6. New towns can feel empty before the trains and malls arrive. Would you buy early, or wait? Comment early, or wait.
+6. New towns can feel empty before the trains and malls arrive. That's often when prices are lowest.
+7. Useful info? Follow for more.
 
 ## v041 Set your walk-away price before you view (CTA CHECK)
 1. You're viewing a condo this weekend. Before you go, set your walk-away price.
@@ -71,19 +74,31 @@ Disclaimer: Past trends, not a forecast. HDB RPI.
 6. Most people decide this wrongly. Comment WHY to see the mistake.
 Disclaimer: Illustrative figures.
 
-## v043 $1.5M condo: the stamp duty on top (CTA save)
-1. You found a 1.5 million dollar condo. The price isn't the whole cost.
-2. Buyer's stamp duty on 1.5 million is about 44,600 dollars, due within 14 days of signing.
-3. It's tiered: 1% on the first 180,000, rising to 4% on the part between 1 and 1.5 million.
-4. Add legal fees, valuation and moving costs, and it adds up quickly.
-5. Plan for it on top of your downpayment, not inside it.
-6. Save this before your next viewing.
+## v043 The 0.29 rule: what you need upfront (CTA follow)
+1. You found a 1.5 million dollar condo. How much cash and CPF do you need upfront?
+2. A quick rule: take the price, times 0.29.
+3. For 1.5 million, that's about 435,000 dollars.
+4. It covers the 25% downpayment when you take a 75% loan, plus stamp duty, legal fees and valuation.
+5. At least 5% of the price must be in cash.
+6. It's a ballpark, not a quote. But it stops you falling short at signing.
+7. Useful info? Follow for more.
 
-## v044 Second home first? The 20% you didn't plan for (CTA send)
+## v044 Second home first? The 20% you didn't plan for (CTA send, MID FOLLOW) [moved to batch B]
 1. You own your home and want to buy the next one before you sell. Expect a 20% stamp duty bill.
 2. Singapore citizens pay 20% Additional Buyer's Stamp Duty on a second home. On a 1.5 million dollar condo, that's 300,000 dollars.
 3. It's paid upfront, within 14 days.
 4. Married couples can get it refunded if they sell their first home within six months. Conditions apply.
+4b. Useful so far? Follow for more.
 5. Singles don't get this refund.
 6. So plan the order: sell first, or buy first with the refund in mind.
 7. Send this to the person you're buying with.
+
+## v045 Selling and buying? Exercise date to exercise date (CTA save) [Joel 21 Oct]
+1. You're placing a deposit on a new home, but you haven't sold your current one. One wrong move can cost you 20% of the new home's price.
+2. That's Additional Buyer's Stamp Duty. On a 1.5 million dollar condo, it's 300,000 dollars.
+3. The key is timing. Your buyer must exercise the option on your current home first.
+4. Only then do you exercise the option on your new home.
+5. Not the option date. Not completion. Exercise date to exercise date.
+6. Get the order right, and you buy as a first-home owner, with no ABSD for citizens.
+7. Save this.
+Disclaimer: General info. Confirm timing with your conveyancing lawyer.
