@@ -1,5 +1,5 @@
 {
- "note": "Tiny Singapore content queue. status: idea > script_approved > rendered > video_approved > scheduled | RULE: hold approved scripts; build in batches once 3 are approved. | From the 18 Oct batch onwards: set \"motion\": true in every new video spec (animated camera, build-in, word-pop captions) and add \"count\" to lines with key figures. Approved by Joel 16 Oct 2026. | 16 Oct: Joel approved the top-down MAP style (map.html + map_make.py, full 9:16, HDB clusters, PART tags). Next batch: make a few videos in map style (start with v025 full), keep 3D motion for single-property stories. Narration: $ amounts auto-read as \"X dollars\" (saynorm.py). | 17 Oct: map.html is now spec-driven (per-line beat: cam, tags, counts, arrows, buyers). Map specs use map:true + titleText; covers = map frame. | 17 Oct: Earth Studio test done (out/v025_earth_test.mp4; map.html beat.earth + mapr_earth.mjs; account tinyysingapore@gmail.com, project v025_punggol_test). Joel: parked for now, revisit later. Use real-speed clip + hold (minterpolate smears). | 17 Oct (Joel): no need to keep finished videos; delete a video's out/ and work/ files only after it has actually gone live (not when scheduled). Engine lives in GitHub joelliyp-commits/tiny-singapore; commit and push after every change.",
+ "note": "Tiny Singapore content queue. status: idea > script_approved > rendered > video_approved > scheduled | RULE: hold approved scripts; build in batches once 3 are approved. | From the 18 Oct batch onwards: set \"motion\": true in every new video spec (animated camera, build-in, word-pop captions) and add \"count\" to lines with key figures. Approved by Joel 16 Oct 2026. | 16 Oct: Joel approved the top-down MAP style (map.html + map_make.py, full 9:16, HDB clusters, PART tags). Next batch: make a few videos in map style (start with v025 full), keep 3D motion for single-property stories. Narration: $ amounts auto-read as \"X dollars\" (saynorm.py). | 17 Oct: map.html is now spec-driven (per-line beat: cam, tags, counts, arrows, buyers). Map specs use map:true + titleText; covers = map frame. | 17 Oct: Earth Studio test done (out/v025_earth_test.mp4; map.html beat.earth + mapr_earth.mjs; account tinyysingapore@gmail.com, project v025_punggol_test). Joel: parked for now, revisit later. Use real-speed clip + hold (minterpolate smears). | 17 Oct (Joel): no need to keep finished videos; delete a video's out/ and work/ files only after it has actually gone live (not when scheduled). Engine lives in GitHub joelliyp-commits/tiny-singapore; commit and push after every change. | 21 Oct: realsmart.sg review: specific project + single unit view and one dollar question per video perform best; app demos flop.",
  "items": [
   {
    "id": "v012",
@@ -407,7 +407,7 @@
   {
    "id": "v031",
    "title": "Just bought a $1.8M condo. Then you lost your job",
-   "status": "script_pending",
+   "status": "script_approved",
    "pillar": "Case study / rainy day",
    "style": "3D motion",
    "source": "Joel 17 Oct; rewritten as original angle (income shock test), not based on the reference carousel's story",
@@ -435,11 +435,28 @@
   {
    "id": "v034",
    "title": "Condo owners: the 15-month HDB wait is gone",
-   "status": "script_pending",
+   "status": "script_approved",
    "pillar": "Policy explainer",
    "style": "3D motion",
    "facts": "Removed 28 Jul 2026 with immediate effect (HDB/MND; EdgeProp, ERA). Applies to non-subsidised resale without HDB loan; need HFE letter; dispose all private property (SG and overseas) within 6 months of resale completion. 30-month wait remains for subsidised flats, resale with grants, new EC, HDB loan.",
    "cta": "Comment your flat type and town. We'll tell you which path fits you."
+  },
+  {
+   "id": "p25",
+   "title": "Same condo, but not every block is within 1km of the school",
+   "status": "idea",
+   "pillar": "Practical check (parents)",
+   "style": "map",
+   "cta": "Not sure if you're on track? Comment CHECK.",
+   "source": "Adapted from realsmart.sg pattern review 21 Oct"
+  },
+  {
+   "id": "p26",
+   "title": "Who holds the power at a new launch?",
+   "status": "idea",
+   "pillar": "Buyer vs developer, facts only",
+   "style": "3D motion",
+   "source": "Adapted from realsmart.sg pattern review 21 Oct"
   }
  ],
  "cta_system": {
