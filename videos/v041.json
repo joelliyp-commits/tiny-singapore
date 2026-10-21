@@ -1,6 +1,6 @@
 {
  "id": "v041",
- "title": "Viewing this weekend?\n*Set your walk-away price*",
+ "title": "Viewing soon?\n*Set a walk-away price*",
  "pill": "VIEWING",
  "lines": [
   {
@@ -49,7 +49,7 @@
   {
    "tpl": "tag",
    "p": {
-    "text": "ONE NUMBER",
+    "text": "1 NUMBER",
     "bld": "condo"
    },
    "say": "Write down one number. That's the most you'll pay.",
