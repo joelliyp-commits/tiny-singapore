@@ -27,14 +27,14 @@ Disclaimer: Illustration: 30 years, no other debts. Bank policies vary.
 6. Before you commit, ask two things: how many units are left, and how long until their deadline?
 7. Useful info? Follow for more.
 
-## v038 You waited to upgrade. Did the gap shrink? (CTA follow)
+## v038 You waited to upgrade. Did the gap shrink? (CTA GAP)
 1. It's 2019. Your HDB flat is worth 450,000 dollars, and you're eyeing a 1.5 million dollar condo. You decide to wait.
 2. The gap back then: about 1.05 million dollars.
 3. Since then, HDB resale prices rose about 54%. Your flat would now be worth about 690,000 dollars.
 4. But condo prices rose about 41%. That condo would now be about 2.1 million, over 600,000 dollars more.
 5. So your gap grew to about 1.4 million. Your flat gained 240,000. The gap grew 370,000.
 6. Waiting made your flat worth more, but the upgrade harder to reach.
-7. Useful info? Follow for more.
+7. Want to know if the home you're going for is within reach? Comment GAP and we can help you.
 Disclaimer: HDB RPI 4Q19 131.5 to 3Q26 202.4; URA non-landed PPI 4Q19 149.6 to 2Q26 210.6. Past trends, not a forecast.
 
 ## v039 Flats hitting 50: your lease, your CPF (CTA save, MID FOLLOW)
