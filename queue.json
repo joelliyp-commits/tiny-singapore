@@ -76,7 +76,7 @@
     "With a dependable framework, we've found units $200,000 to $300,000 below market. No auction needed.",
     "Want to know how? Comment FIND, or send us a message."
    ],
-   "caption": "Seized luxury condos from the $3B money laundering case are going to auction. \ud83d\udd28 But in September, only 4 of 26 sold, at just 1 to 7% below opening price. An auction isn't automatically a bargain.\n\nWith a dependable framework, we've found units $200K to $300K below market, without waiting for an auction. Want to know how? Comment FIND or DM us \ud83d\udc47\n\nBased on past transactions. Every unit and situation is different.",
+   "caption": "Seized luxury condos from the $3B money laundering case are going to auction. 🔨 But in September, only 4 of 26 sold, at just 1 to 7% below opening price. An auction isn't automatically a bargain.\n\nWith a dependable framework, we've found units $200K to $300K below market, without waiting for an auction. Want to know how? Comment FIND or DM us 👇\n\nBased on past transactions. Every unit and situation is different.",
    "note": "time-sensitive: should post before 28 Oct auction",
    "slot": "Wed 21 Oct 2pm (TikTok, IG, YouTube)"
   },
@@ -527,10 +527,12 @@
   },
   {
    "id": "v044",
-   "title": "Second home first? The 20% you didn't plan for",
+   "title": "Married, bought before selling? ABSD refund",
    "status": "script_pending",
    "slot_plan": "batch B (moved; overlaps v045)",
-   "from": "new"
+   "from": "new",
+   "slot": "2026-11-08 14:00",
+   "script": "scripts/batchB.md"
   },
   {
    "id": "v045",
@@ -538,6 +540,110 @@
    "status": "scheduled",
    "from": "Joel 21 Oct",
    "slot": "Tue 3 Nov 6pm | IG; TikTok+YouTube pending (YT daily limit)"
+  },
+  {
+   "id": "v046",
+   "from": "batch B",
+   "title": "BTO income ceiling now 16,000",
+   "status": "script_pending",
+   "slot": "2026-11-04 14:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v048",
+   "from": "batch B",
+   "title": "New launch: when you actually pay",
+   "status": "script_pending",
+   "slot": "2026-11-04 18:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v047",
+   "from": "batch B",
+   "title": "Rates are low. Leave your HDB loan?",
+   "status": "script_pending",
+   "slot": "2026-11-05 14:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v050",
+   "from": "batch B",
+   "title": "CPF refund on sale",
+   "status": "script_pending",
+   "slot": "2026-11-05 18:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v057",
+   "from": "batch B",
+   "title": "The 15 month wait is gone",
+   "status": "script_pending",
+   "slot": "2026-11-06 14:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v049",
+   "from": "batch B",
+   "title": "Valuation below price (COV)",
+   "status": "script_pending",
+   "slot": "2026-11-06 18:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v056",
+   "from": "batch B",
+   "title": "Land at 1,537. Launch at 2,900?",
+   "status": "script_pending",
+   "slot": "2026-11-07 14:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v052",
+   "from": "batch B",
+   "title": "Resale levy on second BTO",
+   "status": "script_pending",
+   "slot": "2026-11-07 18:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v053",
+   "from": "batch B",
+   "title": "Maintenance fee by share value",
+   "status": "script_pending",
+   "slot": "2026-11-08 18:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v051",
+   "from": "batch B",
+   "title": "En bloc just got easier",
+   "status": "script_pending",
+   "slot": "2026-11-09 14:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v054",
+   "from": "batch B",
+   "title": "Silver Housing Bonus up to 40K",
+   "status": "script_pending",
+   "slot": "2026-11-09 18:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v058",
+   "from": "batch B",
+   "title": "EC ceiling 18,000, not for every EC",
+   "status": "script_pending",
+   "slot": "2026-11-10 14:00",
+   "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v055",
+   "from": "batch B",
+   "title": "Lease Buyback Scheme",
+   "status": "script_pending",
+   "slot": "2026-11-10 18:00",
+   "script": "scripts/batchB.md"
   }
  ],
  "cta_system": {
