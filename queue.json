@@ -644,6 +644,14 @@
    "status": "script_pending",
    "slot": "2026-11-10 18:00",
    "script": "scripts/batchB.md"
+  },
+  {
+   "id": "v059",
+   "title": "Keep HDB and rent, or sell and buy condo?",
+   "status": "script_pending",
+   "slot": "2026-11-11 14:00",
+   "script": "scripts/batchB.md",
+   "from": "Joel topic 23 Oct"
   }
  ],
  "cta_system": {

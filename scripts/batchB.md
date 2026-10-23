@@ -156,3 +156,15 @@ Disclaimer: Top-up amounts depend on age and number of owners. Full rules on HDB
 - En bloc: Allen & Gledhill; Parliament 8 Sep 2026
 - Silver Housing Bonus, LBS: HDB
 - EC ceiling exclusions: Stacked Homes
+
+## v059 Keep your HDB and rent it, or sell and buy a condo? (market insight, MID FOLLOW, CTA flat type and town) - proposed Tue 11 Nov 2pm
+1. You can keep your HDB and rent it out, or sell it and buy a condo. On a 1.5 million dollar condo, one path costs about 300,000 dollars more upfront.
+2. Keep the flat, and the condo becomes your second property. That's 20% extra stamp duty: 300,000 dollars.
+3. Still have a loan on your flat? The bank lends up to 45%, not 75%. You'd need about 825,000 dollars upfront, before stamp duty.
+4. Useful so far? Follow for more.
+5. In return, the flat earns rent. A 4 room rented for a median of about 3,300 dollars a month this past year. That's over 7 years of rent just to cover the extra duty.
+6. Sell first, and there's no extra duty, the loan goes back to 75%, and your sale proceeds fund the downpayment. But you give up the rent.
+7. Keeping usually works only if the extra duty and bigger downpayment fit without stretching you.
+8. Comment your flat type and town. We'll tell you which path fits you.
+Disclaimer: Both paths need the flat to have met its 5 year MOP. Singapore Citizen buyers. Rent before costs and tax. Bank policies vary.
+Sources: DBS (ABSD 20%, 45% LTV, 25% cash); MAS LTV rules via Stacked Homes; HDB declared rents Oct 25 to Sep 26 via smartcalculator.
