@@ -28,7 +28,7 @@ import * as THREE from 'three';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 
 const W=1080,H=1920;
-const renderer=new THREE.WebGLRenderer({canvas:document.getElementById('c'),antialias:true,preserveDrawingBuffer:true});
+const renderer=new THREE.WebGLRenderer({canvas:document.getElementById('c'),antialias:true,preserveDrawingBuffer:true,alpha:true});
 renderer.setSize(W,H,false); renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
 renderer.outputColorSpace=THREE.SRGBColorSpace; renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=1.05;
 const scene=new THREE.Scene();
@@ -402,8 +402,8 @@ const ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;const cl=(x,a=0,b=1)=>Math.max(a
 const back=t=>{t=cl(t);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(t-1,3)+c1*Math.pow(t-1,2)};
 
 let TL=[],LINES=[];
-window.setup=(timing,scale)=>{window.MOTION=timing.some(t=>t.motion);timing.forEach((t,i)=>{if(t.tpl){const key='L'+i;const T=TPL[t.tpl];const g=new THREE.Group();g.visible=false;scene.add(g);groups.push(g);const r=T.build(g,t.p||{})||{};S[key]={g,...r};CAM[key]=T.cam;K[key]=T.k;BG[key]=t.bg||T.bg;t.scene=key;}});TL=timing;if(window.MOTION)initMotion();const c=document.getElementById('c');renderer.setSize(Math.round(1080*scale),Math.round(1920*scale),false);for(const id of['cap','stat','tt','tb','vig','flash','src'])document.getElementById(id).style.display='none';return true};
-window.grab=(T)=>{window.renderAt(T);return document.getElementById('c').toDataURL('image/jpeg',0.92).split(',')[1]};
+window.setup=(timing,scale)=>{window.MOTION=timing.some(t=>t.motion);timing.forEach((t,i)=>{if(t.tpl){const key='L'+i;const T=TPL[t.tpl];const g=new THREE.Group();g.visible=false;scene.add(g);groups.push(g);const r=T.build(g,t.p||{})||{};S[key]={g,...r};CAM[key]=T.cam;K[key]=T.k;BG[key]=t.bg||T.bg;t.scene=key;}});TL=timing;window.BOARD=timing.some(t=>t.style==='board');if(window.MOTION)initMotion();if(window.BOARD){if(SKY){scene.remove(SKY);SKY=null}renderer.setClearColor(0x000000,0)}const c=document.getElementById('c');renderer.setSize(Math.round(1080*scale),Math.round(1920*scale),false);for(const id of['cap','stat','tt','tb','vig','flash','src'])document.getElementById(id).style.display='none';return true};
+window.grab=(T)=>{window.renderAt(T);return document.getElementById('c').toDataURL(window.BOARD?'image/png':'image/jpeg',0.92).split(',')[1]};
 const capEl=document.getElementById('cap'),statEl=document.getElementById('stat'),flashEl=document.getElementById('flash'),srcEl=document.getElementById('src');
 let lastId=-1;
 window.renderAt=(T)=>{
@@ -413,7 +413,7 @@ window.renderAt=(T)=>{
   const [a,b,la,lb]=CAM[id];const e=ease(p);const look=la.clone().lerp(lb,e);camera.position.lerpVectors(a,b,e).sub(look).multiplyScalar(K[id]||1.45).add(look);look.y-=SHIFT;camera.position.y-=SHIFT;
   // punch-in on cut
   if(window.MOTION){motionCam(lt,p,look,T)}else{const punch=1-eo(lt/.35);camera.position.addScaledVector(camera.position.clone().sub(look).normalize(),punch*1.2);camera.lookAt(look);}
-  scene.background=new THREE.Color(BG[id]);scene.fog=new THREE.Fog(BG[id],22,40);
+  if(window.BOARD){scene.background=null;scene.fog=new THREE.Fog(0xF4F2EC,22,40)}else{scene.background=new THREE.Color(BG[id]);scene.fog=new THREE.Fog(BG[id],22,40);}
   const dusk=id===5;sun.color.set(dusk?0xff9d6b:0xffe2b8);sun.intensity=dusk?1.1:2.4;hemi.intensity=dusk?.55:1.25;hemi.color.set(dusk?0xb69ad1:0xfff4e0);
   // per-scene animation
   if(id===1){sc.towers.forEach((t,k)=>{const s=back((lt-.1-k*.12)/.5);t.scale.y=Math.max(.001,s)});sc.train.position.x=-7+lt*3.2;sc.ar.scale.setScalar(Math.max(.001,back((lt-1.2)/.5)));sc.ar.position.y=Math.sin(lt*3)*.08}

@@ -14,6 +14,7 @@ vid = spec["id"]
 W = os.path.join(ENGINE, "work", vid)
 REUSE = "--reuse" in sys.argv
 MOTION = bool(spec.get("motion"))
+BOARD = spec.get("style") == "board"
 if not REUSE: shutil.rmtree(W, ignore_errors=True); os.makedirs(W)
 log = lambda m: print(f"[{time.time()-t0:5.0f}s] {m}", flush=True)
 
@@ -25,6 +26,11 @@ if REUSE:
         subprocess.run(["node", f"{ENGINE}/kin.mjs", f"{W}/spec.json", W], check=True)
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", f"{W}/kin/list.txt", "-vf", f"fps={FPS},format=argb", "-c:v", "qtrle", f"{W}/kin.mov"], check=True)
         log("kinetic captions rebuilt")
+    if BOARD:
+        json.dump(spec, open(f"{W}/spec.json", "w")); shutil.rmtree(f"{W}/board", ignore_errors=True)
+        subprocess.run(["node", f"{ENGINE}/board.mjs", f"{W}/spec.json", W], check=True)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", f"{W}/board/list.txt", "-vf", f"fps={FPS},format=argb", "-c:v", "qtrle", f"{W}/board.mov"], check=True)
+        log("board layer rebuilt")
 else:
   pass
 if not REUSE:
@@ -38,7 +44,7 @@ if not REUSE:
         tail = GAP + (1.0 if i == len(spec["lines"]) - 1 else 0)
         parts += [a, np.zeros(int(tail * sr), dtype=a.dtype)]
         d = len(a) / sr + tail
-        timing.append({"scene": ln.get("scene"), "tpl": ln.get("tpl"), "p": ln.get("p"), "bg": ln.get("bg"), "motion": MOTION, "start": round(t, 3), "dur": round(d, 3)}); t += d
+        timing.append({"scene": ln.get("scene"), "tpl": ln.get("tpl"), "p": ln.get("p"), "bg": ln.get("bg"), "motion": MOTION, "style": spec.get("style"), "start": round(t, 3), "dur": round(d, 3)}); t += d
     total = t
     voice = np.concatenate(parts); voice = voice / np.max(np.abs(voice)) * 0.9
     sf.write(f"{W}/voice.wav", voice, sr)
@@ -51,9 +57,9 @@ if not REUSE:
              for a, b in [(0, mid), (mid, N)]]
     # 3. overlays while rendering
     jobs = [{"out": f"{W}/ov_brand.png", "brand": "@tiny_singapore"},
-            {"out": f"{W}/ov_title.png", "title": spec["title"]}]
+            {"out": f"{W}/ov_title.png", "title": "" if BOARD else spec["title"]}]
     for i, ln in enumerate(spec["lines"]):
-        jobs.append({"out": f"{W}/ov_{i:02d}.png", "cap": "" if MOTION else ln["cap"], "stat": "" if (MOTION and ln.get("count")) else ln.get("stat", ""),
+        jobs.append({"out": f"{W}/ov_{i:02d}.png", "cap": "" if MOTION else ln["cap"], "stat": "" if ((MOTION and ln.get("count")) or (BOARD and ln.get("draw"))) else ln.get("stat", ""),
                      "statTop": 560 if i == 0 else 250})
     if spec.get("source"):
         jobs.append({"out": f"{W}/ov_src.png", "src": spec["source"]})
@@ -65,6 +71,11 @@ if not REUSE:
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", f"{W}/kin/list.txt", "-vf", f"fps={FPS},format=argb",
                         "-c:v", "qtrle", f"{W}/kin.mov"], check=True)
         log("kinetic captions built")
+    if BOARD:
+        subprocess.run(["node", f"{ENGINE}/board.mjs", f"{W}/spec.json" if MOTION else sys.argv[1], W], check=True)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", f"{W}/board/list.txt", "-vf", f"fps={FPS},format=argb",
+                        "-c:v", "qtrle", f"{W}/board.mov"], check=True)
+        log("board layer built")
     # 4. music bed
     subprocess.run([sys.executable, f"{ENGINE}/music.py", str(total), f"{W}/music.wav"], check=True)
     for p in procs:
@@ -74,7 +85,10 @@ if not REUSE:
 
 # 5. compose
 mask = f"{ENGINE}/tiltmask.png"
-inputs = ["-framerate", str(FPS), "-i", f"{W}/frames/f%05d.jpg", "-i", mask]
+if BOARD:
+    inputs = ["-framerate", str(FPS), "-i", f"{W}/frames/f%05d.png", "-loop", "1", "-framerate", str(FPS), "-i", f"{W}/board_bg.png"]
+else:
+    inputs = ["-framerate", str(FPS), "-i", f"{W}/frames/f%05d.jpg", "-i", mask]
 ov = []  # (file, start, end)
 ov.append((f"{W}/ov_brand.png", 0, total))
 ov.append((f"{W}/ov_title.png", 0, timing[0]["start"] + timing[0]["dur"]))
@@ -88,12 +102,19 @@ for f, a, b in ov:
 fg = [f"[0:v]scale=720:1280,format=rgba,split[a][b]",
       "[b]boxblur=5:2[bb]", "[1:v]format=gray,scale=720:1280,loop=-1:1:0[m]", "[bb][m]alphamerge[bba]",
       "[a][bba]overlay=0:0,vignette=PI/5,scale=1080:1920:flags=lanczos[v0]"]
+if BOARD:
+    fg = ["[0:v]scale=1080:1920:flags=lanczos,format=rgba[f3]", "[1:v]format=rgba[bgp]", f"[bgp][f3]overlay=0:{spec.get('board_y', 260)}:shortest=1[v0]"]
 cur = "v0"
 for j, (f, a, b) in enumerate(ov):
     fg.append(f"[{cur}][{j+2}:v]overlay=0:0:eof_action=repeat:enable='between(t,{a:.3f},{b:.3f})'[v{j+1}]")
     cur = f"v{j+1}"
 fg.append(f"[{cur}]format=yuv420p[vout]")
 na = len(ov) + 2
+if BOARD:
+    inputs += ["-i", f"{W}/board.mov"]
+    fg.insert(3, f"[v0][{na}:v]overlay=0:0:eof_action=repeat[v0b]")
+    fg = [x.replace("[v0][", "[v0b][", 1) if x.startswith("[v0][") and "v0b" not in x else x for x in fg]
+    na += 1
 if MOTION:
     inputs += ["-i", f"{W}/kin.mov"]
     fg.insert(len(fg) - 1, f"[{cur}][{na}:v]overlay=0:0:eof_action=repeat[vk]")

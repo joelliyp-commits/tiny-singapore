@@ -12,6 +12,6 @@ await p.evaluate(([t, s]) => window.setup(t, s), [timing, Number(scale)]);
 fs.mkdirSync(outdir, { recursive: true });
 for (let f = Number(s0); f < Number(s1); f++) {
   const b64 = await p.evaluate(T => window.grab(T), f / 30);
-  fs.writeFileSync(`${outdir}/f${String(f).padStart(5, '0')}.jpg`, Buffer.from(b64, 'base64'));
+  fs.writeFileSync(`${outdir}/f${String(f).padStart(5, '0')}.${timing.some(t=>t.style==='board')?'png':'jpg'}`, Buffer.from(b64, 'base64'));
 }
 await b.close();

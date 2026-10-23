@@ -1,0 +1,240 @@
+{
+ "id": "v059s",
+ "motion": true,
+ "title": "Keep your HDB\n*or sell for a condo?*",
+ "pill": "UPGRADE",
+ "lines": [
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "KEEP",
+    "b": "SELL",
+    "l": "hdb",
+    "r": "condo"
+   },
+   "say": "You're 40, with a fully paid 700,000 dollar HDB. Keep it and rent it out, or sell and buy a 1.6 million dollar condo to rent out?",
+   "cap": "keep and rent, or *sell for a condo?*",
+   "stat": "Fully paid $700K HDB",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Keep your HDB",
+     "x": 540,
+     "y": 330,
+     "s": 120,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "or sell for a condo?",
+     "x": 540,
+     "y": 460,
+     "s": 110,
+     "c": "red",
+     "at": 0.9
+    },
+    {
+     "k": "l",
+     "x1": 230,
+     "y1": 495,
+     "x2": 860,
+     "y2": 490,
+     "c": "red",
+     "at": 1.8
+    },
+    {
+     "k": "t",
+     "t": "$700K",
+     "x": 230,
+     "y": 640,
+     "s": 96,
+     "c": "teal",
+     "at": 2.6,
+     "rot": -6
+    },
+    {
+     "k": "a",
+     "x1": 230,
+     "y1": 670,
+     "x2": 370,
+     "y2": 800,
+     "c": "teal",
+     "at": 3.0,
+     "bend": -40
+    },
+    {
+     "k": "t",
+     "t": "$1.6M?",
+     "x": 640,
+     "y": 630,
+     "s": 96,
+     "c": "red",
+     "at": 3.6,
+     "rot": 5
+    },
+    {
+     "k": "a",
+     "x1": 660,
+     "y1": 660,
+     "x2": 650,
+     "y2": 900,
+     "c": "red",
+     "at": 4.0,
+     "bend": 50
+    }
+   ]
+  },
+  {
+   "tpl": "rent",
+   "p": {
+    "cal": "$3,600"
+   },
+   "say": "Keep the flat. It rents for 3,600 a month. After tax, agent fees and upkeep, you keep about 2,300.",
+   "cap": "you keep about *$2,300 a month*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "i",
+     "n": "coin",
+     "x": 170,
+     "y": 320,
+     "s": 1.1,
+     "c": "gold",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$3,600 rent",
+     "x": 290,
+     "y": 345,
+     "s": 96,
+     "c": "ink",
+     "at": 0.3,
+     "al": "start"
+    },
+    {
+     "k": "t",
+     "t": "− tax  − agent  − upkeep",
+     "x": 290,
+     "y": 440,
+     "s": 72,
+     "c": "red",
+     "at": 1.5,
+     "al": "start",
+     "dur": 1.2
+    },
+    {
+     "k": "l",
+     "x1": 280,
+     "y1": 478,
+     "x2": 900,
+     "y2": 474,
+     "c": "ink",
+     "at": 2.9
+    },
+    {
+     "k": "hl",
+     "x": 285,
+     "y": 500,
+     "w": 520,
+     "h": 115,
+     "at": 3.4
+    },
+    {
+     "k": "t",
+     "t": "≈ $2,300 a month",
+     "x": 300,
+     "y": 590,
+     "s": 100,
+     "c": "teal",
+     "at": 3.3,
+     "al": "start"
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "5 YEARS",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "In 5 years, that's about 138,000 dollars. Add 10% growth, and you're up about 208,000.",
+   "cap": "5 years: up about *$208,000*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "i",
+     "n": "cal",
+     "x": 170,
+     "y": 330,
+     "s": 1.1,
+     "c": "ink",
+     "at": 0.1,
+     "t": "5 yrs"
+    },
+    {
+     "k": "t",
+     "t": "$138K rent",
+     "x": 300,
+     "y": 335,
+     "s": 92,
+     "c": "ink",
+     "at": 0.5,
+     "al": "start"
+    },
+    {
+     "k": "t",
+     "t": "+ $70K growth",
+     "x": 300,
+     "y": 435,
+     "s": 88,
+     "c": "teal",
+     "at": 2.0,
+     "al": "start"
+    },
+    {
+     "k": "l",
+     "x1": 290,
+     "y1": 470,
+     "x2": 860,
+     "y2": 466,
+     "c": "ink",
+     "at": 2.9
+    },
+    {
+     "k": "t",
+     "t": "+$208K",
+     "x": 540,
+     "y": 605,
+     "s": 150,
+     "c": "teal",
+     "at": 3.4
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 555,
+     "w": 470,
+     "h": 175,
+     "c": "red",
+     "at": 4.1
+    },
+    {
+     "k": "i",
+     "n": "up",
+     "x": 890,
+     "y": 560,
+     "s": 1,
+     "c": "teal",
+     "at": 4.4
+    }
+   ]
+  }
+ ],
+ "source": "IRAS, HDB",
+ "caption": "Fully paid $700K HDB. Keep it and rent it out, or sell and buy a $1.6M condo to rent out? 🏙️\n\nKeep: rent $3,600, keep about $2,300 a month after tax and fees. With 10% growth, up about $208K in 5 years.\n\nSell: $400K down, about $50K stamp duty, rent $5,000. Invest the $230K left at 4% to cover the monthly top up.\nCondo +25%: up about $460K. Condo +10%: about $220K.\n\nBreak even: about 9% growth in 5 years.\n\nComment your flat type and town, and we'll run your numbers 👇\n\nIllustration: 2% loan interest, 25 year loan, 4% return on cash (not guaranteed), 15% tax bracket, 15% deemed rental expenses. Not a forecast.",
+ "hashtags": "#singaporeproperty #hdb #condosg #upgrading #rentalincome #propertysg #tinysingapore",
+ "style": "board"
+}
