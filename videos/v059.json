@@ -93,13 +93,6 @@
    "say": "Keep the flat. It rents for 3,600 a month. After tax, agent fees and upkeep, you keep about 2,300.",
    "cap": "you keep about *$2,300 a month*",
    "stat": "",
-   "count": {
-    "to": 2300,
-    "pre": "$",
-    "label": "kept each month",
-    "at": 0.5,
-    "dur": 1.2
-   },
    "draw": [
     {
      "k": "i",
@@ -170,13 +163,6 @@
    "say": "In 5 years, that's about 138,000 dollars. Add 10% growth, and you're up about 208,000.",
    "cap": "5 years: up about *$208,000*",
    "stat": "",
-   "count": {
-    "to": 208000,
-    "pre": "+$",
-    "label": "after 5 years",
-    "at": 0.6,
-    "dur": 1.4
-   },
    "draw": [
     {
      "k": "i",
@@ -314,13 +300,6 @@
    "say": "You still have about 230,000 dollars left. Invest it at 4%, and it covers your monthly top up, with interest to spare.",
    "cap": "invest the rest at *4%*",
    "stat": "",
-   "count": {
-    "to": 230000,
-    "pre": "$",
-    "label": "left to invest",
-    "at": 0.5,
-    "dur": 1.2
-   },
    "draw": [
     {
      "k": "i",
@@ -444,7 +423,7 @@
      "k": "t",
      "t": "condo +25%",
      "x": 540,
-     "y": 340,
+     "y": 310,
      "s": 110,
      "c": "ink",
      "at": 0.1
@@ -453,7 +432,7 @@
      "k": "t",
      "t": "$1.6M to $2M",
      "x": 540,
-     "y": 460,
+     "y": 420,
      "s": 96,
      "c": "teal",
      "at": 1.0
@@ -462,7 +441,7 @@
      "k": "i",
      "n": "up",
      "x": 880,
-     "y": 440,
+     "y": 400,
      "s": 1,
      "c": "teal",
      "at": 1.8
@@ -492,7 +471,7 @@
      "k": "t",
      "t": "condo only +10%?",
      "x": 540,
-     "y": 340,
+     "y": 310,
      "s": 100,
      "c": "ink",
      "at": 0.1
@@ -500,8 +479,8 @@
     {
      "k": "t",
      "t": "$220K vs $208K",
-     "x": 540,
-     "y": 460,
+     "x": 500,
+     "y": 425,
      "s": 96,
      "c": "teal",
      "at": 1.8
@@ -509,20 +488,11 @@
     {
      "k": "i",
      "n": "tick",
-     "x": 850,
-     "y": 560,
+     "x": 880,
+     "y": 400,
      "s": 1.1,
-     "c": "teal",
-     "at": 3.6
-    },
-    {
-     "k": "t",
-     "t": "still ahead",
-     "x": 540,
-     "y": 590,
-     "s": 84,
      "c": "red",
-     "at": 3.2
+     "at": 3.4
     }
    ]
   },
@@ -587,7 +557,7 @@
      "k": "t",
      "t": "Comment your",
      "x": 540,
-     "y": 340,
+     "y": 300,
      "s": 100,
      "c": "ink",
      "at": 0.1
@@ -596,7 +566,7 @@
      "k": "t",
      "t": "flat type and town",
      "x": 540,
-     "y": 460,
+     "y": 410,
      "s": 110,
      "c": "red",
      "at": 0.8
@@ -604,9 +574,9 @@
     {
      "k": "l",
      "x1": 170,
-     "y1": 495,
+     "y1": 445,
      "x2": 910,
-     "y2": 490,
+     "y2": 440,
      "c": "red",
      "at": 1.9
     },
@@ -614,7 +584,7 @@
      "k": "t",
      "t": "we'll run your numbers",
      "x": 540,
-     "y": 590,
+     "y": 535,
      "s": 80,
      "c": "teal",
      "at": 2.4
@@ -623,7 +593,7 @@
      "k": "t",
      "t": "Illustration only. Not a forecast.",
      "x": 540,
-     "y": 1835,
+     "y": 1755,
      "s": 46,
      "c": "grey",
      "at": 0.1
