@@ -648,11 +648,11 @@
   {
    "id": "v059",
    "title": "Keep HDB and rent, or sell for a 1.6M condo and rent?",
-   "status": "on_hold",
+   "status": "building",
    "slot": "2026-11-11 14:00",
    "script": "scripts/batchB.md",
    "from": "Joel topic 23 Oct",
-   "note": "Joel version approved 23 Oct: both rented, 4% on leftover, mid follow"
+   "note": "Joel version approved 23 Oct: both rented, 4% on leftover, mid follow; board style (whiteboard + 3D) approved 23 Oct"
   }
  ],
  "cta_system": {

@@ -14,7 +14,76 @@
    },
    "say": "You're 40, with a fully paid 700,000 dollar HDB. Keep it and rent it out, or sell and buy a 1.6 million dollar condo to rent out?",
    "cap": "keep and rent, or *sell for a condo?*",
-   "stat": "Fully paid $700K HDB"
+   "stat": "Fully paid $700K HDB",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Keep your HDB",
+     "x": 540,
+     "y": 330,
+     "s": 120,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "or sell for a condo?",
+     "x": 540,
+     "y": 460,
+     "s": 110,
+     "c": "red",
+     "at": 0.9
+    },
+    {
+     "k": "l",
+     "x1": 230,
+     "y1": 495,
+     "x2": 860,
+     "y2": 490,
+     "c": "red",
+     "at": 1.8
+    },
+    {
+     "k": "t",
+     "t": "$700K",
+     "x": 230,
+     "y": 640,
+     "s": 96,
+     "c": "teal",
+     "at": 2.6,
+     "rot": -6
+    },
+    {
+     "k": "a",
+     "x1": 230,
+     "y1": 670,
+     "x2": 370,
+     "y2": 800,
+     "c": "teal",
+     "at": 3.0,
+     "bend": -40
+    },
+    {
+     "k": "t",
+     "t": "$1.6M?",
+     "x": 720,
+     "y": 600,
+     "s": 96,
+     "c": "red",
+     "at": 3.6,
+     "rot": 5
+    },
+    {
+     "k": "a",
+     "x1": 720,
+     "y1": 630,
+     "x2": 640,
+     "y2": 920,
+     "c": "red",
+     "at": 4.0,
+     "bend": 50
+    }
+   ]
   },
   {
    "tpl": "rent",
@@ -30,12 +99,71 @@
     "label": "kept each month",
     "at": 0.5,
     "dur": 1.2
-   }
+   },
+   "draw": [
+    {
+     "k": "i",
+     "n": "coin",
+     "x": 170,
+     "y": 320,
+     "s": 1.1,
+     "c": "gold",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$3,600 rent",
+     "x": 290,
+     "y": 345,
+     "s": 96,
+     "c": "ink",
+     "at": 0.3,
+     "al": "start"
+    },
+    {
+     "k": "t",
+     "t": "− tax  − agent  − upkeep",
+     "x": 290,
+     "y": 440,
+     "s": 72,
+     "c": "red",
+     "at": 1.5,
+     "al": "start",
+     "dur": 1.2
+    },
+    {
+     "k": "l",
+     "x1": 280,
+     "y1": 478,
+     "x2": 900,
+     "y2": 474,
+     "c": "ink",
+     "at": 2.9
+    },
+    {
+     "k": "hl",
+     "x": 285,
+     "y": 500,
+     "w": 470,
+     "h": 115,
+     "at": 3.4
+    },
+    {
+     "k": "t",
+     "t": "≈ $2,300 a month",
+     "x": 300,
+     "y": 590,
+     "s": 92,
+     "c": "teal",
+     "at": 3.3,
+     "al": "start"
+    }
+   ]
   },
   {
    "tpl": "tag",
    "p": {
-    "text": "+$208K",
+    "text": "5 YEARS",
     "bld": "hdb",
     "dir": "up"
    },
@@ -48,7 +176,75 @@
     "label": "after 5 years",
     "at": 0.6,
     "dur": 1.4
-   }
+   },
+   "draw": [
+    {
+     "k": "i",
+     "n": "cal",
+     "x": 170,
+     "y": 330,
+     "s": 1.1,
+     "c": "ink",
+     "at": 0.1,
+     "t": "5 yrs"
+    },
+    {
+     "k": "t",
+     "t": "$138K rent",
+     "x": 300,
+     "y": 335,
+     "s": 92,
+     "c": "ink",
+     "at": 0.5,
+     "al": "start"
+    },
+    {
+     "k": "t",
+     "t": "+ $70K growth",
+     "x": 300,
+     "y": 435,
+     "s": 88,
+     "c": "teal",
+     "at": 2.0,
+     "al": "start"
+    },
+    {
+     "k": "l",
+     "x1": 290,
+     "y1": 470,
+     "x2": 860,
+     "y2": 466,
+     "c": "ink",
+     "at": 2.9
+    },
+    {
+     "k": "t",
+     "t": "+$208K",
+     "x": 540,
+     "y": 605,
+     "s": 150,
+     "c": "teal",
+     "at": 3.4
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 555,
+     "w": 470,
+     "h": 175,
+     "c": "red",
+     "at": 4.1
+    },
+    {
+     "k": "i",
+     "n": "up",
+     "x": 890,
+     "y": 560,
+     "s": 1,
+     "c": "teal",
+     "at": 4.4
+    }
+   ]
   },
   {
    "tpl": "tag",
@@ -58,7 +254,56 @@
    },
    "say": "Or sell, put 400,000 down on a condo in Woodlands, and pay about 50,000 in stamp duty. It rents for 5,000 a month.",
    "cap": "$400K down, *$50K stamp duty*",
-   "stat": "Rents for $5,000 a month"
+   "stat": "Rents for $5,000 a month",
+   "draw": [
+    {
+     "k": "i",
+     "n": "condo",
+     "x": 170,
+     "y": 360,
+     "s": 1,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$400K down",
+     "x": 300,
+     "y": 330,
+     "s": 96,
+     "c": "ink",
+     "at": 0.4,
+     "al": "start"
+    },
+    {
+     "k": "t",
+     "t": "+ $50K stamp duty",
+     "x": 300,
+     "y": 430,
+     "s": 84,
+     "c": "red",
+     "at": 3.0,
+     "al": "start"
+    },
+    {
+     "k": "hl",
+     "x": 290,
+     "y": 500,
+     "w": 560,
+     "h": 105,
+     "at": 5.0
+    },
+    {
+     "k": "t",
+     "t": "rents $5,000 a month",
+     "x": 300,
+     "y": 580,
+     "s": 84,
+     "c": "teal",
+     "at": 4.9,
+     "al": "start"
+    }
+   ]
   },
   {
    "tpl": "bank",
@@ -75,7 +320,67 @@
     "label": "left to invest",
     "at": 0.5,
     "dur": 1.2
-   }
+   },
+   "draw": [
+    {
+     "k": "i",
+     "n": "coin",
+     "x": 170,
+     "y": 320,
+     "s": 1.1,
+     "c": "gold",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$230K left",
+     "x": 300,
+     "y": 340,
+     "s": 96,
+     "c": "ink",
+     "at": 0.4,
+     "al": "start"
+    },
+    {
+     "k": "t",
+     "t": "x 4% a year",
+     "x": 300,
+     "y": 440,
+     "s": 84,
+     "c": "teal",
+     "at": 2.6,
+     "al": "start"
+    },
+    {
+     "k": "a",
+     "x1": 330,
+     "y1": 470,
+     "x2": 420,
+     "y2": 560,
+     "c": "ink",
+     "at": 4.0,
+     "bend": -30
+    },
+    {
+     "k": "t",
+     "t": "covers the top up",
+     "x": 450,
+     "y": 590,
+     "s": 80,
+     "c": "teal",
+     "at": 4.4,
+     "al": "start"
+    },
+    {
+     "k": "i",
+     "n": "tick",
+     "x": 200,
+     "y": 570,
+     "s": 1,
+     "c": "teal",
+     "at": 5.4
+    }
+   ]
   },
   {
    "tpl": "tag",
@@ -85,7 +390,36 @@
    },
    "say": "Useful so far? Follow for more.",
    "cap": "useful so far? *follow*",
-   "stat": ""
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Useful so far?",
+     "x": 540,
+     "y": 400,
+     "s": 120,
+     "c": "ink",
+     "at": 0.05
+    },
+    {
+     "k": "t",
+     "t": "Follow for more",
+     "x": 540,
+     "y": 540,
+     "s": 110,
+     "c": "red",
+     "at": 0.7
+    },
+    {
+     "k": "l",
+     "x1": 260,
+     "y1": 575,
+     "x2": 820,
+     "y2": 570,
+     "c": "red",
+     "at": 1.4
+    }
+   ]
   },
   {
    "tpl": "versus",
@@ -104,7 +438,36 @@
    },
    "say": "If the condo grows to 2 million, you're up about 460,000.",
    "cap": "condo grows 25%: *$460K*",
-   "stat": ""
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "condo +25%",
+     "x": 540,
+     "y": 340,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$1.6M to $2M",
+     "x": 540,
+     "y": 460,
+     "s": 96,
+     "c": "teal",
+     "at": 1.0
+    },
+    {
+     "k": "i",
+     "n": "up",
+     "x": 880,
+     "y": 440,
+     "s": 1,
+     "c": "teal",
+     "at": 1.8
+    }
+   ]
   },
   {
    "tpl": "versus",
@@ -123,7 +486,45 @@
    },
    "say": "Even if it grows only 10%, like the flat, you're still slightly ahead, at about 220,000.",
    "cap": "only 10%? still *slightly ahead*",
-   "stat": ""
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "condo only +10%?",
+     "x": 540,
+     "y": 340,
+     "s": 100,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$220K vs $208K",
+     "x": 540,
+     "y": 460,
+     "s": 96,
+     "c": "teal",
+     "at": 1.8
+    },
+    {
+     "k": "i",
+     "n": "tick",
+     "x": 850,
+     "y": 560,
+     "s": 1.1,
+     "c": "teal",
+     "at": 3.6
+    },
+    {
+     "k": "t",
+     "t": "still ahead",
+     "x": 540,
+     "y": 590,
+     "s": 84,
+     "c": "red",
+     "at": 3.2
+    }
+   ]
   },
   {
    "tpl": "hesitate",
@@ -132,7 +533,45 @@
    },
    "say": "The condo wins as long as it grows more than about 9% in 5 years.",
    "cap": "break even at about *9% growth*",
-   "stat": ""
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "break even at",
+     "x": 540,
+     "y": 340,
+     "s": 100,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "about 9%",
+     "x": 540,
+     "y": 500,
+     "s": 150,
+     "c": "red",
+     "at": 0.9
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 450,
+     "w": 520,
+     "h": 180,
+     "c": "teal",
+     "at": 1.8
+    },
+    {
+     "k": "t",
+     "t": "growth in 5 years",
+     "x": 540,
+     "y": 620,
+     "s": 76,
+     "c": "ink",
+     "at": 2.3
+    }
+   ]
   },
   {
    "tpl": "tag",
@@ -142,10 +581,58 @@
    },
    "say": "Comment your flat type and town, and we'll run your numbers.",
    "cap": "comment your *flat type and town*",
-   "stat": "Illustration only. Not a forecast"
+   "stat": "Illustration only. Not a forecast",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Comment your",
+     "x": 540,
+     "y": 340,
+     "s": 100,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "flat type and town",
+     "x": 540,
+     "y": 460,
+     "s": 110,
+     "c": "red",
+     "at": 0.8
+    },
+    {
+     "k": "l",
+     "x1": 170,
+     "y1": 495,
+     "x2": 910,
+     "y2": 490,
+     "c": "red",
+     "at": 1.9
+    },
+    {
+     "k": "t",
+     "t": "we'll run your numbers",
+     "x": 540,
+     "y": 590,
+     "s": 80,
+     "c": "teal",
+     "at": 2.4
+    },
+    {
+     "k": "t",
+     "t": "Illustration only. Not a forecast.",
+     "x": 540,
+     "y": 1835,
+     "s": 46,
+     "c": "grey",
+     "at": 0.1
+    }
+   ]
   }
  ],
  "source": "IRAS, HDB",
  "caption": "Fully paid $700K HDB. Keep it and rent it out, or sell and buy a $1.6M condo to rent out? 🏙️\n\nKeep: rent $3,600, keep about $2,300 a month after tax and fees. With 10% growth, up about $208K in 5 years.\n\nSell: $400K down, about $50K stamp duty, rent $5,000. Invest the $230K left at 4% to cover the monthly top up.\nCondo +25%: up about $460K. Condo +10%: about $220K.\n\nBreak even: about 9% growth in 5 years.\n\nComment your flat type and town, and we'll run your numbers 👇\n\nIllustration: 2% loan interest, 25 year loan, 4% return on cash (not guaranteed), 15% tax bracket, 15% deemed rental expenses. Not a forecast.",
- "hashtags": "#singaporeproperty #hdb #condosg #upgrading #rentalincome #propertysg #tinysingapore"
+ "hashtags": "#singaporeproperty #hdb #condosg #upgrading #rentalincome #propertysg #tinysingapore",
+ "style": "board"
 }
