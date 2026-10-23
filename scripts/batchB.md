@@ -157,14 +157,17 @@ Disclaimer: Top-up amounts depend on age and number of owners. Full rules on HDB
 - Silver Housing Bonus, LBS: HDB
 - EC ceiling exclusions: Stacked Homes
 
-## v059 Keep your HDB and rent it, or sell and buy a condo? (market insight, MID FOLLOW, CTA flat type and town) - proposed Tue 11 Nov 2pm
-1. You can keep your HDB and rent it out, or sell it and buy a condo. On a 1.5 million dollar condo, one path costs about 300,000 dollars more upfront.
-2. Keep the flat, and the condo becomes your second property. That's 20% extra stamp duty: 300,000 dollars.
-3. Still have a loan on your flat? The bank lends up to 45%, not 75%. You'd need about 825,000 dollars upfront, before stamp duty.
-4. Useful so far? Follow for more.
-5. In return, the flat earns rent. A 4 room rented for a median of about 3,300 dollars a month this past year. That's over 7 years of rent just to cover the extra duty.
-6. Sell first, and there's no extra duty, the loan goes back to 75%, and your sale proceeds fund the downpayment. But you give up the rent.
-7. Keeping usually works only if the extra duty and bigger downpayment fit without stretching you.
-8. Comment your flat type and town. We'll tell you which path fits you.
-Disclaimer: Both paths need the flat to have met its 5 year MOP. Singapore Citizen buyers. Rent before costs and tax. Bank policies vary.
-Sources: DBS (ABSD 20%, 45% LTV, 25% cash); MAS LTV rules via Stacked Homes; HDB declared rents Oct 25 to Sep 26 via smartcalculator.
+## v059 Keep your HDB and rent it, or sell and buy a condo to rent? (APPROVED 23 Oct, MID FOLLOW, CTA flat type and town) - Tue 11 Nov 2pm
+1. You're 40, with a fully paid 700,000 dollar HDB. Keep it and rent it out, or sell and buy a 1.6 million dollar condo to rent out?
+2. Keep the flat. It rents for 3,600 a month. After tax, agent fees and upkeep, you keep about 2,300.
+3. In 5 years, that's about 138,000 dollars. Add 10% growth, and you're up about 208,000.
+4. Or sell, put 400,000 down on a condo in Woodlands, and pay about 50,000 in stamp duty. It rents for 5,000 a month.
+5. You still have about 230,000 dollars left. Invest it at 4%, and it covers your monthly top up, with interest to spare.
+6. Useful so far? Follow for more.
+7. If the condo grows to 2 million, you're up about 460,000.
+8. Even if it grows only 10%, like the flat, you're still slightly ahead, at about 220,000.
+9. The condo wins as long as it grows more than about 9% in 5 years.
+10. Comment your flat type and town, and we'll run your numbers.
+Disclaimer: Illustration. 2% loan interest, 25 year loan, 4% return on cash (not guaranteed), 15% tax bracket, 15% deemed rental expenses. Not a forecast.
+Workings: HDB net 27.65K/yr (NOO tax 6,240; income tax 5,510; agent 1,800; misc 2,000). Condo net 15.15K/yr (interest avg 22.1K; NOO tax 10,800; income tax 4.33K; MCST 3.6K; agent 2.5K; misc 1.5K). BSD 49.6K + legal 3K. Leftover 233.4K at 4% less 1,980/mth top ups = 39K interest.
+Sources: IRAS + littlebigreddot (NOO tax bands, BSD bands); IRAS + Dollars and Sense (15% deemed expenses plus mortgage interest).

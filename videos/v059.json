@@ -1,0 +1,151 @@
+{
+ "id": "v059",
+ "motion": true,
+ "title": "Keep your HDB\n*or sell for a condo?*",
+ "pill": "UPGRADE",
+ "lines": [
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "KEEP",
+    "b": "SELL",
+    "l": "hdb",
+    "r": "condo"
+   },
+   "say": "You're 40, with a fully paid 700,000 dollar HDB. Keep it and rent it out, or sell and buy a 1.6 million dollar condo to rent out?",
+   "cap": "keep and rent, or *sell for a condo?*",
+   "stat": "Fully paid $700K HDB"
+  },
+  {
+   "tpl": "rent",
+   "p": {
+    "cal": "$3,600"
+   },
+   "say": "Keep the flat. It rents for 3,600 a month. After tax, agent fees and upkeep, you keep about 2,300.",
+   "cap": "you keep about *$2,300 a month*",
+   "stat": "",
+   "count": {
+    "to": 2300,
+    "pre": "$",
+    "label": "kept each month",
+    "at": 0.5,
+    "dur": 1.2
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "+$208K",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "In 5 years, that's about 138,000 dollars. Add 10% growth, and you're up about 208,000.",
+   "cap": "5 years: up about *$208,000*",
+   "stat": "",
+   "count": {
+    "to": 208000,
+    "pre": "+$",
+    "label": "after 5 years",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1.6M",
+    "bld": "condo"
+   },
+   "say": "Or sell, put 400,000 down on a condo in Woodlands, and pay about 50,000 in stamp duty. It rents for 5,000 a month.",
+   "cap": "$400K down, *$50K stamp duty*",
+   "stat": "Rents for $5,000 a month"
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "AT 4%"
+   },
+   "say": "You still have about 230,000 dollars left. Invest it at 4%, and it covers your monthly top up, with interest to spare.",
+   "cap": "invest the rest at *4%*",
+   "stat": "",
+   "count": {
+    "to": 230000,
+    "pre": "$",
+    "label": "left to invest",
+    "at": 0.5,
+    "dur": 1.2
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "condo"
+   },
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "hdb",
+     "label": "KEEP",
+     "price": "$208K"
+    },
+    "r": {
+     "type": "condo",
+     "label": "SELL",
+     "price": "$460K"
+    },
+    "badge": "+25%"
+   },
+   "say": "If the condo grows to 2 million, you're up about 460,000.",
+   "cap": "condo grows 25%: *$460K*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "hdb",
+     "label": "KEEP",
+     "price": "$208K"
+    },
+    "r": {
+     "type": "condo",
+     "label": "SELL",
+     "price": "$220K"
+    },
+    "badge": "+10%"
+   },
+   "say": "Even if it grows only 10%, like the flat, you're still slightly ahead, at about 220,000.",
+   "cap": "only 10%? still *slightly ahead*",
+   "stat": ""
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "9%"
+   },
+   "say": "The condo wins as long as it grows more than about 9% in 5 years.",
+   "cap": "break even at about *9% growth*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "YOUR TOWN?",
+    "bld": "hdb"
+   },
+   "say": "Comment your flat type and town, and we'll run your numbers.",
+   "cap": "comment your *flat type and town*",
+   "stat": "Illustration only. Not a forecast"
+  }
+ ],
+ "source": "IRAS, HDB",
+ "caption": "Fully paid $700K HDB. Keep it and rent it out, or sell and buy a $1.6M condo to rent out? 🏙️\n\nKeep: rent $3,600, keep about $2,300 a month after tax and fees. With 10% growth, up about $208K in 5 years.\n\nSell: $400K down, about $50K stamp duty, rent $5,000. Invest the $230K left at 4% to cover the monthly top up.\nCondo +25%: up about $460K. Condo +10%: about $220K.\n\nBreak even: about 9% growth in 5 years.\n\nComment your flat type and town, and we'll run your numbers 👇\n\nIllustration: 2% loan interest, 25 year loan, 4% return on cash (not guaranteed), 15% tax bracket, 15% deemed rental expenses. Not a forecast.",
+ "hashtags": "#singaporeproperty #hdb #condosg #upgrading #rentalincome #propertysg #tinysingapore"
+}
