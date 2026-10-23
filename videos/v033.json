@@ -1,0 +1,294 @@
+{
+ "id": "v033",
+ "map": true,
+ "titleText": "Prices rose 1.4%. New sales hit a low",
+ "part": "Q3 2026 UPDATE",
+ "source": "URA Q3 2026 · Huttons",
+ "lines": [
+  {
+   "say": "You're waiting for condo prices to fall. In the third quarter of 2026, they went up instead, by 1.4%.",
+   "cap": "waiting for a fall? prices *rose 1.4%*",
+   "emoji": "📈",
+   "beat": {
+    "cam": [
+     540,
+     800,
+     1.05
+    ],
+    "intro": true,
+    "tags": [
+     {
+      "x": 540,
+      "y": 380,
+      "t": "CONDO PRICES",
+      "at": 0.6,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 48
+     },
+     {
+      "x": 540,
+      "y": 480,
+      "t": "+1.4%",
+      "at": 3.6,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 60
+     }
+    ]
+   }
+  },
+  {
+   "say": "That's faster than the 0.5% rise the quarter before.",
+   "cap": "faster than *0.5%* last quarter",
+   "emoji": "⏩",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 380,
+      "t": "CONDO PRICES",
+      "at": 0.3,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 48,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 480,
+      "t": "Q2 +0.5%",
+      "at": 0.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 40
+     },
+     {
+      "x": 790,
+      "y": 480,
+      "t": "Q3 +1.4%",
+      "at": 1.2,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 40
+     }
+    ]
+   }
+  },
+  {
+   "say": "The biggest jumps were in the suburbs. Condos outside the city centre rose 2.3%. Landed homes rose 2.9%.",
+   "cap": "suburb condos *+2.3%*. landed *+2.9%*",
+   "emoji": "🏘️",
+   "beat": {
+    "cam": [
+     600,
+     760,
+     1.08
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 380,
+      "t": "CONDO PRICES",
+      "at": 0.3,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 48,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 480,
+      "t": "SUBURBS +2.3%",
+      "at": 1.6,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 38
+     },
+     {
+      "x": 790,
+      "y": 430,
+      "t": "LANDED +2.9%",
+      "at": 3.6,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 38
+     }
+    ]
+   }
+  },
+  {
+   "say": "But developers sold only about 1,200 new homes. Huttons said it was the fewest in a third quarter since 1998.",
+   "cap": "new home sales: *fewest since 1998*",
+   "emoji": "📉",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 380,
+      "t": "NEW HOME SALES",
+      "at": 0.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 44
+     },
+     {
+      "x": 300,
+      "y": 480,
+      "t": "ABOUT 1,200",
+      "at": 1.2,
+      "bg": "#d6312b",
+      "fg": "#fff",
+      "size": 40
+     },
+     {
+      "x": 540,
+      "y": 580,
+      "t": "LOWEST Q3 SINCE 1998",
+      "at": 3.2,
+      "bg": "#d6312b",
+      "fg": "#fff",
+      "size": 36
+     }
+    ]
+   }
+  },
+  {
+   "say": "Buyers turned to resale instead. About 3,800 resale deals, nearly three in every four sales.",
+   "cap": "resale: *3 in 4 sales*",
+   "emoji": "🔑",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "arrows": [
+     {
+      "x1": 300,
+      "y1": 560,
+      "x2": 760,
+      "y2": 470,
+      "col": "#3fae5a",
+      "at": 0.6
+     }
+    ],
+    "tags": [
+     {
+      "x": 300,
+      "y": 480,
+      "t": "NEW",
+      "at": 0.2,
+      "bg": "#d6312b",
+      "fg": "#fff",
+      "size": 40
+     },
+     {
+      "x": 790,
+      "y": 430,
+      "t": "RESALE ~3,800",
+      "at": 1.0,
+      "bg": "#3fae5a",
+      "fg": "#fff",
+      "size": 38
+     },
+     {
+      "x": 790,
+      "y": 530,
+      "t": "74% OF SALES",
+      "at": 2.6,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 40
+     }
+    ]
+   }
+  },
+  {
+   "say": "Fewer launches meant less choice, and sellers held firm on price.",
+   "cap": "fewer launches. *sellers held firm*",
+   "emoji": "🤝",
+   "beat": {
+    "cam": [
+     540,
+     680,
+     1.12
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 380,
+      "t": "CONDO PRICES",
+      "at": 0.3,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 48,
+      "keep": true
+     },
+     {
+      "x": 300,
+      "y": 480,
+      "t": "FEWER LAUNCHES",
+      "at": 0.2,
+      "bg": "#fffaf0",
+      "fg": "#24504d",
+      "size": 36
+     },
+     {
+      "x": 790,
+      "y": 430,
+      "t": "SELLERS HOLD FIRM",
+      "at": 1.8,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 36
+     }
+    ]
+   }
+  },
+  {
+   "say": "Waiting for a dip? This quarter, it didn't come. Save this before your next viewing.",
+   "cap": "no dip this quarter. *save this*",
+   "emoji": "🔖",
+   "beat": {
+    "cam": [
+     540,
+     700,
+     1.05
+    ],
+    "tags": [
+     {
+      "x": 540,
+      "y": 470,
+      "t": "NO DIP THIS QUARTER",
+      "at": 0.3,
+      "bg": "#FFD36B",
+      "fg": "#24504d",
+      "size": 50
+     },
+     {
+      "x": 540,
+      "y": 580,
+      "t": "SAVE THIS",
+      "at": 2.6,
+      "bg": "#24504d",
+      "fg": "#FFD36B",
+      "size": 52
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "Waiting for condo prices to fall? In Q3 2026 they rose 1.4% (Q2: +0.5%). 📈\n\nSuburban (OCR) condos +2.3%. Landed +2.9%.\n\nDevelopers sold only about 1,200 new homes. Huttons said it was the fewest in a third quarter since 1998. Buyers turned to resale instead: about 3,800 deals, nearly 3 in 4 sales.\n\nFewer launches meant less choice, and sellers held firm.\n\nSave this before your next viewing 👇\n\nSource: URA Q3 2026 real estate statistics (23 Oct 2026); Huttons.",
+ "hashtags": "#singaporeproperty #condosg #propertymarket #ura #propertysg #sgproperty #tinysingapore"
+}
