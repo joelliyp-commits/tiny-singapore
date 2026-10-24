@@ -1,0 +1,175 @@
+{
+ "id": "v060",
+ "flat": true,
+ "title": "Keep your HDB or sell for a condo? Part 2",
+ "source": "Illustration. 2% loan, 4% cash return (not guaranteed). Not a forecast.",
+ "lines": [
+  {
+   "say": "Part 2. You've got a fully paid 700,000 dollar HDB. Keep it and rent it out, or sell for a 1.6 million dollar condo to rent out? Here's the answer.",
+   "cap": "you've got a *fully paid HDB.* keep it, or *sell for a condo?* here's the answer",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0
+    },
+    {
+     "k": "street",
+     "at": "@keep",
+     "day": true,
+     "l": "KEEP · $700K",
+     "lat": "@keep",
+     "r": "SELL · $1.6M",
+     "rat": "@sell",
+     "fam": true
+    }
+   ]
+  },
+  {
+   "say": "Keep the flat, and you're up about 208,000 dollars in 5 years.",
+   "cap": "keep it: up about *$208,000* in 5 years",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": true,
+     "l": "KEEP",
+     "to": 208000,
+     "pre": "+$",
+     "at2": 0,
+     "stack": 9,
+     "dur": 3.0
+    }
+   ]
+  },
+  {
+   "say": "The condo: after interest, tax and fees, the rent nets about 1,260 a month. Plus about 39,000 from investing the cash left over.",
+   "cap": "the condo nets about *$1,260 a month*. plus *$39,000* from your cash",
+   "scenes": [
+    {
+     "k": "cash",
+     "at": 0,
+     "l": "SELL",
+     "inAt": 0.4,
+     "out": [
+      "INTEREST",
+      "TAX",
+      "FEES"
+     ],
+     "outAt": 1.3,
+     "res": "$1,260 A MONTH",
+     "resAt": "@$1,260",
+     "res2": "+ $39K FROM CASH",
+     "res2At": "@$39,000"
+    }
+   ]
+  },
+  {
+   "say": "If the condo grows 25%, to 2 million, you're up about 460,000.",
+   "cap": "condo up *25%?* you're up about *$460,000*",
+   "scenes": [
+    {
+     "k": "race",
+     "at": 0,
+     "day": true,
+     "badge": "CONDO +25%",
+     "lv": "$208K",
+     "rv": "$460K",
+     "lAt": "@condo",
+     "rAt": "@$460,000",
+     "nl": 4,
+     "nr": 9
+    }
+   ]
+  },
+  {
+   "say": "If it grows only 10%, like the flat, about 220,000. Still slightly ahead.",
+   "cap": "only *10%?* about *$220,000.* still slightly ahead",
+   "scenes": [
+    {
+     "k": "race",
+     "at": 0,
+     "day": false,
+     "badge": "CONDO +10%",
+     "lv": "$208K",
+     "rv": "$220K",
+     "lAt": "@10%",
+     "rAt": "@$220,000",
+     "nl": 4,
+     "nr": 5,
+     "chips": [
+      {
+       "t": "STILL AHEAD",
+       "y": 600,
+       "x": 760,
+       "at": "@ahead",
+       "bg": "#ffd36b",
+       "fs": 50
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "The condo wins as long as it grows more than about 9% in 5 years. But you need the cash flow to hold it until then.",
+   "cap": "break even: about *9% growth* in 5 years. you need the *cash flow to hold*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": false,
+     "l": "KEEP",
+     "lat": 0.2,
+     "r": "SELL",
+     "rat": 0.4,
+     "chips": [
+      {
+       "t": "BREAK EVEN: ABOUT 9%",
+       "y": 420,
+       "at": "@9%",
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 76
+      },
+      {
+       "t": "CAN YOU HOLD 5 YEARS?",
+       "y": 560,
+       "at": "@cash",
+       "bg": "#ffd36b",
+       "fs": 54
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Comment your flat type and town, and we'll run your numbers.",
+   "cap": "comment your *flat type and town*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "chips": [
+      {
+       "t": "FLAT TYPE + TOWN",
+       "y": 420,
+       "at": "@flat",
+       "bg": "#ffd36b",
+       "fs": 70
+      },
+      {
+       "t": "WE'LL RUN YOUR NUMBERS",
+       "y": 560,
+       "at": "@town",
+       "bg": "#2c605d",
+       "fg": "#fffaf0",
+       "fs": 48
+      }
+     ],
+     "nobubble": true
+    }
+   ]
+  }
+ ],
+ "caption": "Part 2: the answer. 🏙️\n\nFully paid $700K HDB. Keep and rent it out: up about $208K in 5 years.\n\nSell for a $1.6M condo and rent it out: the rent nets about $1,260 a month after interest, tax and fees, plus about $39K from investing the cash left over.\n\nCondo +25%: up about $460K. Condo +10%: about $220K, still slightly ahead. Break even is about 9% growth in 5 years, but you need the cash flow to hold.\n\nComment your flat type and town, and we'll run your numbers 👇\n\nIllustration: 2% loan interest, 25 year loan, 4% return on cash (not guaranteed), 15% tax bracket. Not a forecast.",
+ "hashtags": "#singaporeproperty #hdb #condosg #upgrading #rentalincome #propertysg #tinysingapore"
+}
