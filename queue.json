@@ -648,7 +648,7 @@
   {
    "id": "v059",
    "title": "Keep HDB or sell for condo? Part 1 (question ending)",
-   "status": "built_pending_approval",
+   "status": "approved",
    "slot": "2026-11-11 14:00",
    "script": "scripts/batchB.md",
    "from": "Joel topic 23 Oct",
@@ -659,7 +659,9 @@
    "title": "Keep HDB or sell for condo? Part 2 (the answer)",
    "status": "script_pending",
    "from_": "v059 part 2",
-   "note": "Reveal: condo +25% up ~$460K vs $208K; +10% ~$220K; break even ~9%. CTA flat type and town. Post a few days after v059."
+   "note": "Reveal: condo +25% up ~$460K vs $208K; +10% ~$220K; break even ~9%. CTA flat type and town. Post a few days after v059.",
+   "slot": "2026-11-13 14:00",
+   "script": "scripts/batchB.md"
   }
  ],
  "cta_system": {
