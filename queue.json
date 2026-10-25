@@ -529,7 +529,7 @@
   {
    "id": "v044",
    "title": "Married, bought before selling? ABSD refund",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot_plan": "batch B (moved; overlaps v045)",
    "from": "new",
    "slot": "2026-11-08 14:00",
@@ -547,7 +547,7 @@
    "id": "v046",
    "from": "batch B",
    "title": "BTO income ceiling now 16,000",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-04 14:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -556,7 +556,7 @@
    "id": "v048",
    "from": "batch B",
    "title": "New launch: when you actually pay",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-04 18:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -565,7 +565,7 @@
    "id": "v047",
    "from": "batch B",
    "title": "Rates are low. Leave your HDB loan?",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-05 14:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -574,7 +574,7 @@
    "id": "v050",
    "from": "batch B",
    "title": "CPF refund on sale",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-05 18:00",
    "script": "scripts/batchB.md",
    "style": "flat"
@@ -583,7 +583,7 @@
    "id": "v057",
    "from": "batch B",
    "title": "The 15 month wait is gone",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-06 14:00",
    "script": "scripts/batchB.md",
    "style": "flat"
@@ -592,7 +592,7 @@
    "id": "v049",
    "from": "batch B",
    "title": "Valuation below price (COV)",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-06 18:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -601,7 +601,7 @@
    "id": "v056",
    "from": "batch B",
    "title": "Land at 1,537. Launch at 2,900?",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-07 14:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -610,7 +610,7 @@
    "id": "v052",
    "from": "batch B",
    "title": "Resale levy on second BTO",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-07 18:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -619,7 +619,7 @@
    "id": "v053",
    "from": "batch B",
    "title": "Maintenance fee by share value",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-08 18:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -628,7 +628,7 @@
    "id": "v051",
    "from": "batch B",
    "title": "En bloc just got easier",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-09 14:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -637,7 +637,7 @@
    "id": "v054",
    "from": "batch B",
    "title": "Silver Housing Bonus up to 40K",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-09 18:00",
    "script": "scripts/batchB.md",
    "style": "flat"
@@ -646,7 +646,7 @@
    "id": "v058",
    "from": "batch B",
    "title": "EC ceiling 18,000, not for every EC",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-10 14:00",
    "script": "scripts/batchB.md",
    "style": "3d"
@@ -655,7 +655,7 @@
    "id": "v055",
    "from": "batch B",
    "title": "Lease Buyback Scheme",
-   "status": "approved",
+   "status": "built_pending_approval",
    "slot": "2026-11-10 18:00",
    "script": "scripts/batchB.md",
    "style": "flat"
