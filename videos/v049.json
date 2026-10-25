@@ -1,0 +1,108 @@
+{
+ "id": "v049",
+ "motion": true,
+ "title": "Valued below\n*your price?*",
+ "pill": "BUYING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$700K",
+    "bld": "hdb"
+   },
+   "say": "You agree to buy a flat for 700,000 dollars. The valuation comes back at 670,000.",
+   "cap": "valuation: *$670,000*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "LOWER OF TWO"
+   },
+   "say": "Your loan is based on the lower of the two: the valuation.",
+   "cap": "loan based on the *valuation*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$30K GAP",
+    "bld": "hdb",
+    "dir": "down"
+   },
+   "say": "So the 30,000 dollar gap, the cash over valuation, has to come from you.",
+   "cap": "*$30,000* from you",
+   "stat": "",
+   "count": {
+    "to": 30000,
+    "pre": "$",
+    "label": "cash over valuation",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "CASH ONLY",
+    "label": "CPF"
+   },
+   "say": "For HDB flats, it must be paid in cash. No CPF.",
+   "cap": "HDB: *cash only*. no CPF",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "6": "g"
+    },
+    "tags": [
+     {
+      "f": 6,
+      "text": "SAME FLOOR",
+      "col": "g",
+      "side": -1
+     }
+    ]
+   },
+   "say": "Before you make an offer, check recent prices for the same block and floor range.",
+   "cap": "check the *same block and floor*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "CASH BUFFER"
+   },
+   "say": "And keep a cash buffer for a gap you didn't plan for.",
+   "cap": "keep a *cash buffer*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "hdb"
+   },
+   "say": "Save this before your next viewing.",
+   "cap": "*save this* before your viewing",
+   "stat": ""
+  }
+ ],
+ "source": "HDB, MAS",
+ "caption": "Agreed to buy a flat for $700,000, but the valuation came back at $670,000? 🏠\n\nYour loan is based on the lower of the two: the valuation. So the $30,000 gap, the cash over valuation, comes from you. For HDB flats, it must be paid in cash. No CPF.\n\nBefore you offer, check recent prices for the same block and floor range, and keep a cash buffer.\n\nSave this before your next viewing 👇",
+ "hashtags": "#singaporeproperty #hdbresale #valuation #cov #propertysg #sgproperty #tinysingapore"
+}

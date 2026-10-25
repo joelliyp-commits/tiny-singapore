@@ -1,4 +1,4 @@
-# Batch B (4 to 10 Nov) - pending Joel's approval
+# Batch B (4 to 10 Nov) - APPROVED 25 Oct
 
 ## v046 BTO income ceiling now 16,000 (market insight, CTA CHECK) - Tue 4 Nov 2pm
 1. You earn 15,000 dollars a month as a couple. Last year, that was too much for a BTO. Not any more.

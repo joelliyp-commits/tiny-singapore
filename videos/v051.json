@@ -1,0 +1,107 @@
+{
+ "id": "v051",
+ "motion": true,
+ "title": "En bloc\n*just got easier*",
+ "pill": "EN BLOC",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "OLD CONDO",
+    "bld": "condo"
+   },
+   "say": "You own a unit in an older condo. From now on, a collective sale could be easier to pass.",
+   "cap": "older condo? en bloc *easier*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "NEW RULES"
+   },
+   "say": "In September 2026, Parliament passed changes to the en bloc rules.",
+   "cap": "Parliament passed *new rules*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     80,
+     70
+    ],
+    "labels": [
+     "BEFORE",
+     "40-59Y"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "For estates aged 40 to 59 years, consent drops from 80% to 70%.",
+   "cap": "40 to 59 years: *80% to 70%*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     80,
+     65
+    ],
+    "labels": [
+     "BEFORE",
+     "60Y+"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "For 60 years and above, 65%.",
+   "cap": "60 years and above: *65%*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     90,
+     80
+    ],
+    "labels": [
+     "<10Y",
+     "10-39Y"
+    ],
+    "cols": [
+     2908253,
+     2908253
+    ]
+   },
+   "say": "Under 10 years still needs 90%. 10 to 39 years stays at 80%.",
+   "cap": "younger estates *unchanged*",
+   "stat": ""
+  },
+  {
+   "tpl": "dominoes",
+   "p": {},
+   "say": "So in older estates, fewer neighbours can block a sale.",
+   "cap": "*fewer neighbours* can block",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CHECK",
+    "bld": "condo"
+   },
+   "say": "Want to know if your estate could be next? Comment CHECK.",
+   "cap": "could yours be next? comment *CHECK*",
+   "stat": "Thresholds by share value and area"
+  }
+ ],
+ "source": "Parliament, Allen & Gledhill",
+ "caption": "Own a unit in an older condo? A collective sale could now be easier to pass. 🏢\n\nIn September 2026, Parliament passed changes to the en bloc rules:\n40 to 59 years: consent drops from 80% to 70%\n60 years and above: 65%\nUnder 10 years still 90%. 10 to 39 years stays at 80%.\n\nSo in older estates, fewer neighbours can block a sale.\n\nWant to know if your estate could be next? Comment CHECK 👇\n\nThresholds by share value and area.",
+ "hashtags": "#singaporeproperty #enbloc #collectivesale #condosg #propertysg #sgproperty #tinysingapore"
+}

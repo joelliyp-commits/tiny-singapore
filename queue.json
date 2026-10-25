@@ -428,12 +428,13 @@
   {
    "id": "v033",
    "title": "Prices rose 1.4%. New sales hit a low",
-   "status": "built_pending_approval",
+   "status": "approved",
    "pillar": "Timely market",
    "style": "map",
    "facts": "URA final Q3 2026 (23 Oct, pr26-73): PPI +1.4% (Q2 +0.5%), landed +2.9%, non-landed OCR +2.3%; developers sold 1,183 (Q2 2,141); resale 3,801 = 73.9% of sales. Huttons: ~1,100 sold, lowest Q3 since 1998 (Yahoo/EdgeProp).",
    "cta": "Save this before your next viewing.",
-   "note": "Build after URA final Q3 figures (23 Oct); update numbers first."
+   "note": "Extra timely slot (2pm/6pm already full through 31 Oct); schedule when Chrome reachable",
+   "slot": "2026-10-27 10:00"
   },
   {
    "id": "v034",
@@ -528,11 +529,12 @@
   {
    "id": "v044",
    "title": "Married, bought before selling? ABSD refund",
-   "status": "script_pending",
+   "status": "approved",
    "slot_plan": "batch B (moved; overlaps v045)",
    "from": "new",
    "slot": "2026-11-08 14:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "flat"
   },
   {
    "id": "v045",
@@ -545,105 +547,118 @@
    "id": "v046",
    "from": "batch B",
    "title": "BTO income ceiling now 16,000",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-04 14:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v048",
    "from": "batch B",
    "title": "New launch: when you actually pay",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-04 18:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v047",
    "from": "batch B",
    "title": "Rates are low. Leave your HDB loan?",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-05 14:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v050",
    "from": "batch B",
    "title": "CPF refund on sale",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-05 18:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "flat"
   },
   {
    "id": "v057",
    "from": "batch B",
    "title": "The 15 month wait is gone",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-06 14:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "flat"
   },
   {
    "id": "v049",
    "from": "batch B",
    "title": "Valuation below price (COV)",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-06 18:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v056",
    "from": "batch B",
    "title": "Land at 1,537. Launch at 2,900?",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-07 14:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v052",
    "from": "batch B",
    "title": "Resale levy on second BTO",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-07 18:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v053",
    "from": "batch B",
    "title": "Maintenance fee by share value",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-08 18:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v051",
    "from": "batch B",
    "title": "En bloc just got easier",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-09 14:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v054",
    "from": "batch B",
    "title": "Silver Housing Bonus up to 40K",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-09 18:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "flat"
   },
   {
    "id": "v058",
    "from": "batch B",
    "title": "EC ceiling 18,000, not for every EC",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-10 14:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "3d"
   },
   {
    "id": "v055",
    "from": "batch B",
    "title": "Lease Buyback Scheme",
-   "status": "script_pending",
+   "status": "approved",
    "slot": "2026-11-10 18:00",
-   "script": "scripts/batchB.md"
+   "script": "scripts/batchB.md",
+   "style": "flat"
   },
   {
    "id": "v059",

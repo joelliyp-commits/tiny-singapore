@@ -1,0 +1,112 @@
+{
+ "id": "v053",
+ "motion": true,
+ "title": "Why your fee\n*isn't your neighbour's*",
+ "pill": "CONDO",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FEES?",
+    "bld": "condo"
+   },
+   "say": "You're buying a condo. Your maintenance fee is higher than your neighbour's. Why?",
+   "cap": "higher than your *neighbour's*?",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "9": "g"
+    },
+    "tags": [
+     {
+      "f": 9,
+      "text": "SHARE VALUE",
+      "col": "g",
+      "side": -1
+     }
+    ]
+   },
+   "say": "Fees are shared by share value, which depends on the size of your unit.",
+   "cap": "shared by *share value*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     3,
+     5,
+     8
+    ],
+    "labels": [
+     "2BR",
+     "3BR",
+     "PH"
+    ],
+    "cols": [
+     2908253,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Bigger units pay more. Penthouses pay the most.",
+   "cap": "bigger units *pay more*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     70,
+     30
+    ],
+    "labels": [
+     "RUNNING",
+     "SINKING"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Part goes to running costs. Part goes to the sinking fund, for big repairs later.",
+   "cap": "running costs + *sinking fund*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "SPECIAL LEVY"
+   },
+   "say": "Fund too low when the lifts need replacing? Owners can be asked for a special levy, also by share value.",
+   "cap": "fund too low? *special levy*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "FINANCIALS"
+   },
+   "say": "Before you buy, ask for the latest financial statements and the sinking fund balance.",
+   "cap": "ask for the *sinking fund balance*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "condo"
+   },
+   "say": "Save this before your next viewing.",
+   "cap": "*save this* before your viewing",
+   "stat": ""
+  }
+ ],
+ "source": "BMSMA",
+ "caption": "Buying a condo and your maintenance fee is higher than your neighbour's? 🏢\n\nFees are shared by share value, which depends on unit size. Bigger units pay more. Part goes to running costs, part to the sinking fund for big repairs. Fund too low when the lifts need replacing? Owners can be asked for a special levy, also by share value.\n\nBefore you buy, ask for the latest financial statements and the sinking fund balance.\n\nSave this before your next viewing 👇",
+ "hashtags": "#singaporeproperty #condosg #maintenancefee #sinkingfund #propertysg #sgproperty #tinysingapore"
+}

@@ -1,0 +1,99 @@
+{
+ "id": "v046",
+ "motion": true,
+ "title": "BTO ceiling now\n*$16,000*",
+ "pill": "BTO",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$15K",
+    "bld": "hdb"
+   },
+   "say": "You earn 15,000 dollars a month as a couple. Last year, that was too much for a BTO. Not any more.",
+   "cap": "*$15,000* a month? now you *qualify*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "FROM 24 AUG"
+   },
+   "say": "From 24 August 2026, the BTO income ceiling for families went from 14,000 to 16,000 dollars.",
+   "cap": "families: *$14K to $16K*",
+   "stat": "",
+   "count": {
+    "to": 16000,
+    "pre": "$",
+    "label": "BTO ceiling, families",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SINGLES",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "For singles, it went up to 8,000 dollars.",
+   "cap": "singles: *$8,000*",
+   "stat": "",
+   "count": {
+    "to": 8000,
+    "pre": "$",
+    "label": "BTO ceiling, singles",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 1
+   },
+   "say": "HDB moved the October BTO launch to November, so more buyers can apply under the new limits.",
+   "cap": "October launch moved to *November*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 2
+   },
+   "say": "About 7,900 flats are expected across towns like Bedok, Tengah, Toa Payoh and Yishun.",
+   "cap": "about *7,900 flats*",
+   "stat": "",
+   "count": {
+    "to": 7900,
+    "pre": "",
+    "label": "flats expected",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "CLOSE CALL?"
+   },
+   "say": "Earning close to the line? Your income is assessed when you apply, so the timing of a raise or bonus matters.",
+   "cap": "near the line? *timing matters*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CHECK",
+    "bld": "hdb"
+   },
+   "say": "Not sure if you qualify? Comment CHECK.",
+   "cap": "not sure? comment *CHECK*",
+   "stat": "Average gross monthly household income"
+  }
+ ],
+ "source": "HDB, EdgeProp, Stacked Homes",
+ "caption": "Earning $15,000 a month as a couple? You may now qualify for a BTO. 🏠\n\nFrom 24 August 2026, the BTO income ceiling for families went from $14,000 to $16,000. For singles, it's now $8,000.\n\nHDB moved the October BTO launch to November so more buyers can apply under the new limits. About 7,900 flats are expected across towns like Bedok, Tengah, Toa Payoh and Yishun.\n\nEarning close to the line? Your income is assessed when you apply, so timing matters.\n\nNot sure if you qualify? Comment CHECK 👇\n\nAverage gross monthly household income. Full eligibility rules on HDB.",
+ "hashtags": "#singaporeproperty #bto #hdb #incomeceiling #propertysg #sgproperty #tinysingapore"
+}

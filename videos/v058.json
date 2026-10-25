@@ -1,0 +1,90 @@
+{
+ "id": "v058",
+ "motion": true,
+ "title": "EC ceiling $18K.\n*Not for every EC*",
+ "pill": "EC",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$18K",
+    "bld": "ec"
+   },
+   "say": "You heard the EC income ceiling went up to 18,000 dollars. It's not for every EC.",
+   "cap": "*$18,000* ceiling. *not for every EC*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "FROM 24 AUG"
+   },
+   "say": "It only applies to sites sold from 24 August 2026.",
+   "cap": "only sites sold *from 24 Aug 2026*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "3 UPCOMING",
+     "price": "$16K"
+    },
+    "r": {
+     "type": "condo",
+     "label": "NEW SITES",
+     "price": "$18K"
+    }
+   },
+   "say": "Three upcoming ECs, at Senja Close, Woodlands Drive 17 and Sembawang Road, still use the old 16,000 dollar ceiling.",
+   "cap": "3 upcoming ECs: still *$16,000*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$17K?",
+    "bld": "ec",
+    "dir": "down"
+   },
+   "say": "So a couple earning 17,000 dollars can't buy these, but may qualify for later ones.",
+   "cap": "earn $17K? *not these*, maybe later",
+   "stat": ""
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "PRICED HIGHER"
+   },
+   "say": "Newer sites may also launch higher, as land prices rise.",
+   "cap": "newer sites may *launch higher*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "INCOME",
+    "b": "TIMING",
+    "l": "condo",
+    "r": "condo"
+   },
+   "say": "Your income, the site and the timing all decide which EC is open to you.",
+   "cap": "income, site and *timing*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "ELIGIBLE",
+    "bld": "ec"
+   },
+   "say": "Want to know which ECs you can buy? Comment ELIGIBLE.",
+   "cap": "comment *ELIGIBLE*",
+   "stat": "Average gross monthly household income"
+  }
+ ],
+ "source": "HDB, Stacked Homes",
+ "caption": "Heard the EC income ceiling went up to $18,000? It's not for every EC. 🏠\n\nThe new ceiling only applies to sites sold from 24 August 2026. Three upcoming ECs, at Senja Close, Woodlands Drive 17 and Sembawang Road, still use the old $16,000 ceiling. So a couple earning $17,000 can't buy these, but may qualify for later ones. Newer sites may also launch higher as land prices rise.\n\nWant to know which ECs you can buy? Comment ELIGIBLE 👇\n\nAverage gross monthly household income. HDB and URA rules apply.",
+ "hashtags": "#singaporeproperty #ec #executivecondo #incomeceiling #propertysg #sgproperty #tinysingapore"
+}

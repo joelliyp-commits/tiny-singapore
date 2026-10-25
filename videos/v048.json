@@ -1,0 +1,124 @@
+{
+ "id": "v048",
+ "motion": true,
+ "title": "New launch:\n*When you actually pay*",
+ "pill": "NEW LAUNCH",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1.5M",
+    "bld": "condo"
+   },
+   "say": "You buy a 1.5 million dollar new launch. You don't pay it all at once.",
+   "cap": "*$1.5M* new launch. not *all at once*",
+   "stat": ""
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "20% FIRST",
+    "label": "CPF"
+   },
+   "say": "5% when you get the option. Another 15% within 8 weeks. That's 300,000 dollars, mostly cash and CPF.",
+   "cap": "*20%* in the first 8 weeks",
+   "stat": "",
+   "count": {
+    "to": 300000,
+    "pre": "$",
+    "label": "first 8 weeks",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     10,
+     10
+    ],
+    "labels": [
+     "BASE",
+     "FRAME"
+    ],
+    "cols": [
+     2908253,
+     2908253
+    ]
+   },
+   "say": "Then the bank pays as the building goes up: 10% at foundation, 10% at the frame.",
+   "cap": "*10%* foundation. *10%* frame",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     5,
+     5,
+     5,
+     5
+    ],
+    "labels": [
+     "WALLS",
+     "ROOF",
+     "DOORS",
+     "ROADS"
+    ],
+    "cols": [
+     2908253,
+     2908253,
+     2908253,
+     2908253
+    ]
+   },
+   "say": "5% each for walls, roof, doors and windows, then car parks and roads.",
+   "cap": "*5%* at each stage",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     25,
+     15
+    ],
+    "labels": [
+     "TOP",
+     "CSC"
+    ],
+    "cols": [
+     14710863,
+     14710863
+    ]
+   },
+   "say": "25% at TOP, when you get your keys. The last 15% at completion.",
+   "cap": "*25%* at TOP. *15%* at completion",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "GROWS LATER"
+   },
+   "say": "So your loan, and your monthly instalment, grows over the years, not on day one.",
+   "cap": "your instalment *grows over time*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "condo"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow* for more",
+   "stat": "Normal progressive payment scheme"
+  }
+ ],
+ "source": "URA, PropertyGuru",
+ "caption": "Buying a $1.5M new launch? You don't pay it all at once. 🏗️\n\n5% at option, 15% within 8 weeks: $300,000, mostly cash and CPF.\nThen as it's built: 10% foundation, 10% frame, 5% each for walls, roof, doors and windows, car parks and roads.\n25% at TOP, the last 15% at completion.\n\nSo your loan and monthly instalment grow over the years, not on day one.\n\nUseful info? Follow for more 👇\n\nNormal progressive payment scheme for uncompleted private homes.",
+ "hashtags": "#singaporeproperty #newlaunch #condosg #progressivepayment #propertysg #sgproperty #tinysingapore"
+}

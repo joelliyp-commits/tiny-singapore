@@ -1,0 +1,103 @@
+{
+ "id": "v052",
+ "motion": true,
+ "title": "Second BTO?\n*The levy first*",
+ "pill": "HDB",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "2ND FLAT",
+    "bld": "hdb"
+   },
+   "say": "You sold your first BTO. Now you want a second subsidised flat. There's a bill first.",
+   "cap": "second subsidised flat? *a bill first*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "RESALE LEVY"
+   },
+   "say": "It's called the resale levy. It's how HDB takes back part of the first subsidy.",
+   "cap": "the *resale levy*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     30,
+     40,
+     45
+    ],
+    "labels": [
+     "3RM",
+     "4RM",
+     "5RM"
+    ],
+    "cols": [
+     2908253,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Sold a 3 room? 30,000 dollars. A 4 room? 40,000. A 5 room? 45,000.",
+   "cap": "*$30K*, *$40K*, *$45K*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     50,
+     55
+    ],
+    "labels": [
+     "EXEC",
+     "EC"
+    ],
+    "cols": [
+     14710863,
+     14710863
+    ]
+   },
+   "say": "An executive flat, 50,000. An EC, 55,000.",
+   "cap": "executive *$50K*. EC *$55K*",
+   "stat": ""
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "NO CPF",
+    "label": "CPF"
+   },
+   "say": "It can't be paid with CPF. It comes from cash or your sale proceeds.",
+   "cap": "*no CPF*. cash or sale proceeds",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "BUDGET IT"
+   },
+   "say": "Planning a second BTO or EC? Count the levy in your budget from day one.",
+   "cap": "count it *from day one*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow* for more",
+   "stat": "Levy for first flats sold from 3 Mar 2006"
+  }
+ ],
+ "source": "HDB",
+ "caption": "Sold your first BTO and want a second subsidised flat? There's a bill first. 🏠\n\nThe resale levy is how HDB takes back part of the first subsidy:\n3 room $30,000 · 4 room $40,000 · 5 room $45,000 · Executive $50,000 · EC $55,000\n\nIt can't be paid with CPF. It comes from cash or your sale proceeds. Count it in your budget from day one.\n\nUseful info? Follow for more 👇\n\nFixed levy for a first subsidised flat sold on or after 3 Mar 2006.",
+ "hashtags": "#singaporeproperty #bto #hdb #resalelevy #propertysg #sgproperty #tinysingapore"
+}

@@ -1,0 +1,90 @@
+{
+ "id": "v047",
+ "motion": true,
+ "title": "Rates are low.\n*Leave your HDB loan?*",
+ "pill": "LOANS",
+ "lines": [
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "HDB 2.6%"
+   },
+   "say": "You're paying 2.6% on your HDB loan. Some bank loans are now well below that.",
+   "cap": "HDB loan: *2.6%*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     3.2,
+     1.2
+    ],
+    "labels": [
+     "2023",
+     "Q3 2026"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "In 2023, SORA, the rate most floating loans follow, went above 3%.",
+   "cap": "2023: SORA *above 3%*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SORA 1.2%",
+    "bld": "condo",
+    "dir": "down"
+   },
+   "say": "In the third quarter of 2026, 3-month SORA averaged about 1.2%.",
+   "cap": "now about *1.2%*",
+   "stat": ""
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "THE CATCH"
+   },
+   "say": "So switching to a bank could cut your interest. But there's a catch.",
+   "cap": "cut your interest? *there's a catch*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "NO WAY BACK"
+   },
+   "say": "Once you leave an HDB loan for a bank, you can't go back.",
+   "cap": "leave HDB loan: *can't go back*",
+   "stat": ""
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "RATES RISE?"
+   },
+   "say": "If rates rise again, you ride them. The HDB rate has stayed at 2.6% for years.",
+   "cap": "rates rise? *you ride them*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CHECK",
+    "bld": "hdb"
+   },
+   "say": "Not sure if switching makes sense for you? Comment CHECK.",
+   "cap": "not sure? comment *CHECK*",
+   "stat": "Not financial advice. Packages vary"
+  }
+ ],
+ "source": "MAS, HDB, Homejourney",
+ "caption": "Paying 2.6% on your HDB loan while some bank loans are well below that? 🏦\n\nIn 2023, SORA (the rate most floating loans follow) went above 3%. In Q3 2026, 3-month SORA averaged about 1.2%.\n\nSwitching could cut your interest. The catch: once you leave an HDB loan for a bank, you can't go back. If rates rise again, you ride them.\n\nNot sure if switching makes sense for you? Comment CHECK 👇\n\nRates for illustration. Bank packages vary. Not financial advice.",
+ "hashtags": "#singaporeproperty #hdbloan #homeloan #sora #refinancing #propertysg #sgproperty #tinysingapore"
+}

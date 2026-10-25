@@ -1,0 +1,109 @@
+{
+ "id": "v056",
+ "motion": true,
+ "title": "Land at $1,537.\n*Launch at $2,900?*",
+ "pill": "NEW LAUNCH",
+ "lines": [
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "PRICES DROP?"
+   },
+   "say": "You're waiting for new condo prices to drop. Here's what developers just paid for land.",
+   "cap": "waiting for a drop? *look at land*",
+   "stat": ""
+  },
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "$1,537 PSF",
+    "sell": "BEDOK",
+    "mult": "TOP BID"
+   },
+   "say": "On 1 September 2026, a Bedok site at New Upper Changi Road drew a top bid of 1,537 dollars per square foot.",
+   "cap": "top bid: *$1,537 psf*",
+   "stat": "",
+   "count": {
+    "to": 1537,
+    "pre": "$",
+    "label": "land, psf ppr",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1537,
+     700,
+     500
+    ],
+    "labels": [
+     "LAND",
+     "BUILD",
+     "OTHER"
+    ],
+    "cols": [
+     14710863,
+     2908253,
+     2908253
+    ]
+   },
+   "say": "That's land only. Construction, financing and profit come on top.",
+   "cap": "land only. *build costs on top*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$2,900?",
+    "bld": "condo",
+    "dir": "up"
+   },
+   "say": "Analysts expect the project to launch at about 2,850 to 3,200 dollars per square foot.",
+   "cap": "launch: about *$2,850 to $3,200 psf*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "SKY EDEN",
+     "price": "$2,100"
+    },
+    "r": {
+     "type": "condo",
+     "label": "NEW SITE",
+     "price": "$2,900?"
+    }
+   },
+   "say": "Nearby, Sky Eden at Bedok launched at about 2,100 a few years ago.",
+   "cap": "Sky Eden: about *$2,100*",
+   "stat": ""
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "PRICED HIGHER"
+   },
+   "say": "When land costs rise, future launches nearby are often priced higher too.",
+   "cap": "land up: launches *often higher*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WHY",
+    "bld": "condo"
+   },
+   "say": "Most people decide this wrongly. Comment WHY to see the mistake.",
+   "cap": "comment *WHY*",
+   "stat": "Analyst estimates, not confirmed prices"
+  }
+ ],
+ "source": "URA, EdgeProp, CBRE",
+ "caption": "Waiting for new condo prices to drop? Look at what developers just paid for land. 🏗️\n\nOn 1 Sep 2026, a Bedok site at New Upper Changi Road drew a top bid of $1,537 psf ppr. That's land only: construction, financing and profit come on top.\n\nAnalysts expect a launch at about $2,850 to $3,200 psf. Nearby, Sky Eden@Bedok launched at about $2,100 a few years ago.\n\nWhen land costs rise, future launches nearby are often priced higher too.\n\nMost people decide this wrongly. Comment WHY to see the mistake 👇\n\nAnalyst estimates, not confirmed prices.",
+ "hashtags": "#singaporeproperty #newlaunch #gls #bedok #condosg #propertysg #sgproperty #tinysingapore"
+}
