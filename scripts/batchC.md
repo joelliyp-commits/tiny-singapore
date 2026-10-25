@@ -110,8 +110,17 @@ Disclaimer: IRAS ABSD rates. Married couples have separate rules.
 7. Save this.
 Disclaimer: HDB, IRAS. Check your own purchase date.
 
-## v072 HDB flats lose value as the lease runs down? The numbers (market insight, CTA flat type and town) - Mon 17 Nov 6pm
-HOLD: needs a second source for the lease decay figure (Propwise: flats with 45 to 54 years left sold for a median 41% less per sqm than 85 to 94 years, same town, since 2024). Will swap for another topic if it can't be verified.
+## v073 One bedder: easy to rent, harder to sell (market insight, CTA CHECK) - Mon 17 Nov 6pm (replaces v072 on hold)
+1. You bought a one bedroom condo to rent out. Finding a tenant was easy. Finding a buyer could be harder.
+2. Developers are building fewer of them. New launch one bedroom sales fell from about 1,800 a year to about 500.
+3. Some big new launches now have no one bedroom units at all.
+4. Resale went the other way: from about 100 one bedroom deals a year to about 1,000.
+5. Who buys them? HDB upgraders, about 4 in 10 buyers. Small resale units cost around 818,000 dollars, against about 1.37 million for new ones.
+6. But fewer buyers want a one bedder. So when you sell, your price has to be right.
+7. Bigger layouts, good transport and a longer lease tend to sell more easily.
+8. Thinking of selling yours? Comment CHECK.
+Disclaimer: PropNex data via The Business Times, 23 Oct 2026. Annual averages 2010 to 2015 vs 2021 to 2025. Small units = under 500 sq ft.
+Notes: "no one bedroom" verified for Thomson Reserve (Stacked Homes unit mix) and The Serra Residences (EdgeProp, smallest 2BR+study). Sales and resale figures are PropNex's own data, reported by BT; no independent second source, so attributed on screen.
 
 ## Sources
 - Rates/instalments: computed; SORA from MAS / Homejourney
@@ -123,3 +132,4 @@ HOLD: needs a second source for the lease decay figure (Propwise: flats with 45 
 - Million dollar flats: PropertyNet; AsiaOne; Stacked Homes
 - HDB loan: MoneySmart; HDB
 - ABSD: IRAS via Smartcalculator; PropKaki
+- One bedders: The Business Times 23 Oct 2026 (PropNex data); Stacked Homes; EdgeProp

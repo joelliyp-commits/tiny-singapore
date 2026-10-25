@@ -771,9 +771,18 @@
    "id": "v072",
    "from": "batch C",
    "title": "Lease decay numbers (hold, verify)",
+   "status": "parked",
+   "slot": null,
+   "script": "scripts/batchC.md",
+   "note": "Lease decay: needs 2nd source; slot given to v073"
+  },
+  {
+   "id": "v073",
+   "title": "One bedder: easy to rent, harder to sell",
    "status": "script_pending",
    "slot": "2026-11-17 18:00",
-   "script": "scripts/batchC.md"
+   "script": "scripts/batchC.md",
+   "from_": "BT 23 Oct 2026 (Joel)"
   }
  ],
  "cta_system": {
