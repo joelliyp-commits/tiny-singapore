@@ -172,7 +172,7 @@ Disclaimer: Illustration. 2% loan interest, 25 year loan, 4% return on cash (not
 Workings: HDB net 27.65K/yr (NOO tax 6,240; income tax 5,510; agent 1,800; misc 2,000). Condo net 15.15K/yr (interest avg 22.1K; NOO tax 10,800; income tax 4.33K; MCST 3.6K; agent 2.5K; misc 1.5K). BSD 49.6K + legal 3K. Leftover 233.4K at 4% less 1,980/mth top ups = 39K interest.
 Sources: IRAS + littlebigreddot (NOO tax bands, BSD bands); IRAS + Dollars and Sense (15% deemed expenses plus mortgage interest).
 
-## v060 Keep your HDB or sell for a condo? Part 2: the answer (board style, CTA flat type and town) - proposed Thu 13 Nov 2pm
+## v060 Keep your HDB or sell for a condo? Part 2: the answer (APPROVED 25 Oct, flat illustrated style, CTA flat type and town) - Thu 13 Nov 2pm
 1. Part 2. Fully paid 700,000 dollar HDB. Keep it and rent it out, or sell for a 1.6 million dollar condo to rent out? Here's the answer.
 2. Keep the flat, and you're up about 208,000 dollars in 5 years.
 3. The condo: after interest, tax and fees, the rent nets about 1,260 a month. Plus about 39,000 from investing the cash left over.
