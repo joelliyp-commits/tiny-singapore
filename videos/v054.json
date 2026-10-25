@@ -1,0 +1,195 @@
+{
+ "title": "Parents right sizing? Up to $40,000",
+ "lines": [
+  {
+   "say": "Your parents live in a 5 room flat, just the two of them. Moving smaller could pay them up to 40,000 dollars.",
+   "cap": "moving smaller could pay *up to $40,000*",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "day": true,
+     "big": true,
+     "l": "5 ROOM",
+     "lat": 0.3,
+     "chips": [
+      {
+       "t": "UP TO $40,000",
+       "at": "@$40,000",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 72,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It's the Silver Housing Bonus.",
+   "cap": "the *Silver Housing Bonus*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "HDB",
+     "chips": [
+      {
+       "t": "SILVER HOUSING BONUS",
+       "at": "@silver",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Sell, buy a 3 room or smaller, and top up 60,000 dollars into their CPF retirement account. That's up to 30,000 dollars.",
+   "cap": "top up *$60,000* into CPF: up to *$30,000*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "CPF",
+     "flow": "in",
+     "flowAt": 1.5,
+     "chips": [
+      {
+       "t": "TOP UP $60K",
+       "at": "@$60,000",
+       "y": 330,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      },
+      {
+       "t": "BONUS $30K",
+       "at": "@$30,000",
+       "y": 460,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Move into a 2 room or smaller, and there's an extra 10,000 dollars.",
+   "cap": "2 room or smaller: *extra $10,000*",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "day": true,
+     "l": "2 ROOM",
+     "lat": 0.3,
+     "chips": [
+      {
+       "t": "+ $10,000",
+       "at": "@$10,000",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 72,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "At least one owner must be 55 or older, with household income up to 14,000 dollars.",
+   "cap": "*55 or older*, income up to *$14,000*",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "day": false,
+     "l": "55+",
+     "lat": 0.3,
+     "chips": [
+      {
+       "t": "INCOME UP TO $14K",
+       "at": "@$14,000",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "They must apply within a year of buying the new flat.",
+   "cap": "apply *within a year*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "HDB",
+     "chips": [
+      {
+       "t": "WITHIN 1 YEAR",
+       "at": "@year",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 66,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Send this to your parents.",
+   "cap": "*send this* to your parents",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "day": true,
+     "l": "SEND THIS",
+     "lat": 0.2
+    }
+   ]
+  }
+ ],
+ "source": "HDB. Bonus pro-rated for smaller top-ups.",
+ "caption": "Parents living in a 5 room flat, just the two of them? Moving smaller could pay them up to $40,000. 🏠\n\nSilver Housing Bonus: sell, buy a 3 room or smaller, and top up $60,000 into their CPF retirement account for up to $30,000. Move into a 2 room or smaller for an extra $10,000.\n\nAt least one owner must be 55 or older, household income up to $14,000, and they must apply within a year of buying the new flat.\n\nSend this to your parents 👇\n\nBonus is pro-rated for smaller top-ups. Full rules on HDB.",
+ "hashtags": "#singaporeproperty #silverhousingbonus #rightsizing #hdb #cpf",
+ "id": "v054",
+ "flat": true
+}

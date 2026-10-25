@@ -1,0 +1,156 @@
+{
+ "title": "Seniors: keep the flat, unlock the cash",
+ "lines": [
+  {
+   "say": "You're 65, your flat is paid off, and your CPF feels thin. You don't have to move to unlock cash.",
+   "cap": "you're *65.* you *don't have to move*",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "day": false,
+     "l": "PAID OFF",
+     "lat": 0.3,
+     "chips": [
+      {
+       "t": "NO NEED TO MOVE",
+       "at": "@move",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It's the Lease Buyback Scheme. You sell part of your remaining lease back to HDB.",
+   "cap": "sell *part of your lease* back to HDB",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "HDB",
+     "flow": "out",
+     "flowAt": 1.2,
+     "chips": [
+      {
+       "t": "LEASE BUYBACK",
+       "at": "@lease",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 68,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "At 65 to 69, you keep at least 30 years. Older owners can keep less.",
+   "cap": "age 65 to 69: keep *at least 30 years*",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "day": true,
+     "l": "KEEP 30 YEARS",
+     "lat": "@30"
+    }
+   ]
+  },
+  {
+   "say": "The proceeds top up your CPF retirement account, for a monthly CPF LIFE payout.",
+   "cap": "top up CPF for a *monthly payout*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "CPF LIFE",
+     "flow": "in",
+     "flowAt": 0.4,
+     "chips": [
+      {
+       "t": "MONTHLY PAYOUT",
+       "at": "@monthly",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "A 3 room or smaller can get a bonus of up to 30,000 dollars.",
+   "cap": "3 room or smaller: bonus *up to $30,000*",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "day": true,
+     "l": "3 ROOM",
+     "lat": 0.2,
+     "chips": [
+      {
+       "t": "BONUS UP TO $30K",
+       "at": "@$30,000",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "And you can keep up to 100,000 dollars as cash.",
+   "cap": "keep *up to $100,000* as cash",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": false,
+     "l": "YOUR FLAT",
+     "to": 100000,
+     "pre": "$",
+     "stack": 7
+    }
+   ]
+  },
+  {
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "HDB. Top-up depends on age and number of owners.",
+ "caption": "65, flat paid off, CPF feels thin? You don't have to move to unlock cash. 🏠\n\nThe Lease Buyback Scheme lets you sell part of your remaining lease back to HDB. At 65 to 69 you keep at least 30 years; older owners can keep less. The proceeds top up your CPF retirement account for a monthly CPF LIFE payout. 3 room or smaller can get a bonus of up to $30,000, and you can keep up to $100,000 as cash.\n\nUseful info? Follow for more 👇\n\nTop-up amounts depend on age and number of owners. Full rules on HDB.",
+ "hashtags": "#singaporeproperty #leasebuyback #retirement #cpflife #hdb",
+ "id": "v055",
+ "flat": true
+}

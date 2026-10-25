@@ -1,0 +1,156 @@
+{
+ "title": "The 15 month wait is gone",
+ "lines": [
+  {
+   "say": "You own a condo and want to move into an HDB resale flat. You used to wait 15 months. Not any more.",
+   "cap": "you used to *wait 15 months.* not any more",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "HDB RESALE",
+     "lat": 0.3,
+     "r": "YOUR CONDO",
+     "rat": 0.2,
+     "chips": [
+      {
+       "t": "15 MONTH WAIT",
+       "at": "@15",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "On 27 July 2026, HDB removed the 15 month wait out with immediate effect.",
+   "cap": "27 July 2026: wait out *removed*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "HDB",
+     "chips": [
+      {
+       "t": "WAIT OUT REMOVED",
+       "at": "@removed",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It applies to private property owners, and former owners, buying a non subsidised resale flat.",
+   "cap": "for *private owners*, buying *non subsidised resale*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "RESALE FLAT",
+     "lat": 0.2,
+     "r": "PRIVATE",
+     "rat": 0.2
+    }
+   ]
+  },
+  {
+   "say": "The condition: you buy without an HDB loan.",
+   "cap": "the condition: *no HDB loan*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "HDB LOAN",
+     "chips": [
+      {
+       "t": "NO HDB LOAN",
+       "at": "@loan",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "HDB said resale prices had moderated for several quarters and were stabilising.",
+   "cap": "resale prices *stabilising*",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": true,
+     "l": "RESALE",
+     "to": 0,
+     "pre": "",
+     "stack": 4,
+     "chips": [
+      {
+       "t": "PRICES STABILISING",
+       "at": "@stabilising",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "For right sizers, that means one move, not a 15 month gap in rented housing.",
+   "cap": "*one move*, not a 15 month gap",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "day": true,
+     "l": "ONE MOVE",
+     "lat": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Thinking of right sizing? Comment CHECK and we'll map out your steps.",
+   "cap": "thinking of right sizing? comment *CHECK*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "COMMENT CHECK",
+       "at": "@check",
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 76,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "HDB, 27 Jul 2026. Other eligibility rules apply.",
+ "caption": "Own a condo and want to move into an HDB resale flat? You no longer need to wait 15 months. 🏠\n\nOn 27 July 2026, HDB removed the 15 month wait out with immediate effect. It applies to private property owners, and former owners, buying a non subsidised resale flat without an HDB loan.\n\nFor right sizers, that means one move, not a 15 month gap in rented housing.\n\nThinking of right sizing? Comment CHECK and we'll map out your steps 👇\n\nOther HDB eligibility rules still apply.",
+ "hashtags": "#singaporeproperty #hdbresale #rightsizing #waitout",
+ "id": "v057",
+ "flat": true
+}

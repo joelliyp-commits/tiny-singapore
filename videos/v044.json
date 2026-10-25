@@ -1,0 +1,201 @@
+{
+ "title": "Married, bought before selling? The ABSD refund",
+ "lines": [
+  {
+   "say": "You and your spouse buy your next home before selling your first. You pay 20% extra in stamp duty, upfront.",
+   "cap": "bought before selling? *20% extra* stamp duty",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "FIRST HOME",
+     "lat": 0.3,
+     "r": "NEXT HOME",
+     "rat": 0.8,
+     "chips": [
+      {
+       "t": "+20% ABSD",
+       "at": "@20%",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 76,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "On a 1.8 million dollar condo, that's 360,000 dollars.",
+   "cap": "on *$1.8M*, that's *$360,000*",
+   "scenes": [
+    {
+     "k": "cash",
+     "at": 0,
+     "l": "$1.8M",
+     "inAt": 99,
+     "out": [],
+     "outAt": 99,
+     "res": "$360,000 ABSD",
+     "resAt": "@$360,000"
+    }
+   ]
+  },
+  {
+   "say": "Married couples with at least one Singapore Citizen can get it refunded.",
+   "cap": "married, *one Singapore Citizen*: refund",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "REFUND POSSIBLE",
+       "at": "@refunded",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "The condition: sell your first home within 6 months.",
+   "cap": "sell your first home *within 6 months*",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": true,
+     "l": "SELL IN 6 MONTHS",
+     "to": 0,
+     "pre": "",
+     "stack": 0,
+     "chips": [
+      {
+       "t": "6 MONTHS",
+       "at": "@6",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 80,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Bought a completed home? The 6 months start from the purchase date. Buying off plan? From TOP or completion, whichever is earlier.",
+   "cap": "completed: *from purchase*. off plan: *from TOP*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": false,
+     "l": "COMPLETED",
+     "lat": 0.2,
+     "r": "OFF PLAN",
+     "rat": "@off",
+     "chips": [
+      {
+       "t": "FROM PURCHASE",
+       "at": "@purchase",
+       "y": 330,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 54,
+       "x": 540
+      },
+      {
+       "t": "FROM TOP",
+       "at": "@top",
+       "y": 450,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 54,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Miss the deadline, and the refund is gone.",
+   "cap": "miss it: *refund gone*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "REFUND GONE",
+       "at": "@gone",
+       "y": 380,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 76,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Save this.",
+   "cap": "*save this*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "SAVE THIS",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 80,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "IRAS. Conditions apply, incl. no other home bought in between.",
+ "caption": "Bought your next home before selling your first? You pay 20% ABSD upfront: $360,000 on a $1.8M condo. 🏠\n\nMarried couples with at least one Singapore Citizen can get it refunded if they sell their first home within 6 months: from the purchase date for a completed home, or from TOP or completion (whichever is earlier) if buying off plan.\n\nMiss the deadline and the refund is gone.\n\nSave this 👇\n\nIRAS rules apply, including that no other residential property is bought in between.",
+ "hashtags": "#singaporeproperty #absd #stampduty #upgrading",
+ "id": "v044",
+ "flat": true
+}

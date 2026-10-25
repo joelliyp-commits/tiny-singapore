@@ -1,0 +1,179 @@
+{
+ "title": "Sold your flat, less cash than expected?",
+ "lines": [
+  {
+   "say": "You sell your flat for 600,000 dollars. You expected a big cheque. It's much smaller.",
+   "cap": "you sell for *$600,000.* the cheque is *much smaller*",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": true,
+     "l": "SOLD",
+     "to": 600000,
+     "pre": "$",
+     "stack": 8,
+     "chips": [
+      {
+       "t": "MUCH SMALLER?",
+       "at": "@smaller",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Every CPF dollar you used for your home must go back to your CPF account first.",
+   "cap": "every CPF dollar *goes back first*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "CPF",
+     "flow": "in",
+     "flowAt": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Plus the interest it would have earned: 2.5% a year, compounded.",
+   "cap": "plus interest: *2.5% a year*, compounded",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "CPF",
+     "flow": "in",
+     "flowAt": 0.2,
+     "chips": [
+      {
+       "t": "+2.5% A YEAR",
+       "at": "@2.5%",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 72,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Used 200,000 dollars over 15 years? You could owe CPF close to 290,000 dollars.",
+   "cap": "used *$200,000?* you could owe close to *$290,000*",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": false,
+     "l": "CPF USED",
+     "to": 290000,
+     "pre": "$",
+     "stack": 10,
+     "at2": 0,
+     "chips": [
+      {
+       "t": "USED $200K",
+       "at": "@200,000",
+       "y": 330,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 56,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It's not lost. It goes back into your own CPF. But it's not cash in hand.",
+   "cap": "not lost. but *not cash in hand*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "BACK IN YOUR CPF",
+       "at": "@lost",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 60,
+       "x": 540
+      },
+      {
+       "t": "NOT CASH IN HAND",
+       "at": "@cash",
+       "y": 470,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Planning your next home? Count your cash proceeds after the CPF refund, not before.",
+   "cap": "count your cash *after the CPF refund*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "NOW",
+     "lat": 0.2,
+     "r": "NEXT HOME",
+     "rat": 0.4,
+     "chips": [
+      {
+       "t": "CASH AFTER REFUND",
+       "at": "@after",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "CPF Board. Illustration: lump sum used at the start.",
+ "caption": "Sold your flat for $600,000 but the cheque is much smaller? 🏠\n\nEvery CPF dollar you used for your home goes back to your CPF account first, plus the interest it would have earned: 2.5% a year, compounded. Used $200,000 over 15 years? You could owe CPF close to $290,000.\n\nIt's not lost: it goes back into your own CPF. But it's not cash in hand. Planning your next home? Count your cash proceeds after the CPF refund, not before.\n\nUseful info? Follow for more 👇\n\nIllustration assumes a lump sum used at the start. Check your figure on the CPF website.",
+ "hashtags": "#singaporeproperty #cpf #hdbresale #accruedinterest",
+ "id": "v050",
+ "flat": true
+}

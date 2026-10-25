@@ -45,7 +45,7 @@ function lamp(x,base,T,day){return (day?'':glowAt(x,base-300,120))+`<rect x="${x
 function tree(x,base,s=1){return `<rect x="${x-7*s}" y="${base-70*s}" width="${14*s}" height="${70*s}" fill="#5b4a33"/><circle cx="${x}" cy="${base-110*s}" r="${58*s}" fill="#2f6b4f"/><circle cx="${x-30*s}" cy="${base-80*s}" r="${40*s}" fill="#2a5f46"/>`}
 function person(x,y,s,T,o={}){const sh=o.shirt||P.gold,bob=Math.sin(T*2.2+(o.ph||0))*2*s,blink=((T+(o.ph||0))%3.4)<.12;y+=bob;
  const eye=blink?`<rect x="${x-24*s}" y="${y-298*s}" width="${14*s}" height="${3*s}" fill="#222"/><rect x="${x+10*s}" y="${y-298*s}" width="${14*s}" height="${3*s}" fill="#222"/>`:`<circle cx="${x-17*s}" cy="${y-298*s}" r="${7*s}" fill="#222"/><circle cx="${x+17*s}" cy="${y-298*s}" r="${7*s}" fill="#222"/>`;
- const hair=o.bun?`<circle cx="${x+22*s}" cy="${y-372*s}" r="${24*s}" fill="${P.hair}"/><path d="M${x-58*s} ${y-300*s} Q${x-60*s} ${y-372*s} ${x} ${y-372*s} Q${x+60*s} ${y-372*s} ${x+58*s} ${y-300*s} Q${x+30*s} ${y-340*s} ${x-58*s} ${y-300*s}Z" fill="${P.hair}"/>`:`<path d="M${x-58*s} ${y-300*s} Q${x-62*s} ${y-370*s} ${x} ${y-368*s} Q${x+62*s} ${y-370*s} ${x+58*s} ${y-300*s} Q${x+20*s} ${y-330*s} ${x-58*s} ${y-300*s}Z" fill="${P.hair}"/>`;
+ const hair=o.bun?`<circle cx="${x+22*s}" cy="${y-372*s}" r="${24*s}" fill="${o.hair||P.hair}"/><path d="M${x-58*s} ${y-300*s} Q${x-60*s} ${y-372*s} ${x} ${y-372*s} Q${x+60*s} ${y-372*s} ${x+58*s} ${y-300*s} Q${x+30*s} ${y-340*s} ${x-58*s} ${y-300*s}Z" fill="${o.hair||P.hair}"/>`:`<path d="M${x-58*s} ${y-300*s} Q${x-62*s} ${y-370*s} ${x} ${y-368*s} Q${x+62*s} ${y-370*s} ${x+58*s} ${y-300*s} Q${x+20*s} ${y-330*s} ${x-58*s} ${y-300*s}Z" fill="${o.hair||P.hair}"/>`;
  return `<ellipse cx="${x}" cy="${y-bob+4*s}" rx="${70*s}" ry="${12*s}" fill="#000" opacity=".25"/>
  <rect x="${x-34*s}" y="${y-110*s}" width="${28*s}" height="${110*s}" fill="${P.leg}"/><rect x="${x+6*s}" y="${y-110*s}" width="${28*s}" height="${110*s}" fill="${P.leg}"/>
  <rect x="${x-92*s}" y="${y-230*s}" width="${30*s}" height="${130*s}" rx="${14*s}" fill="${sh}"/><rect x="${x+62*s}" y="${y-230*s}" width="${30*s}" height="${130*s}" rx="${14*s}" fill="${sh}"/>
@@ -84,7 +84,7 @@ const SC={
   ${person(540,b+24,.8,T,{shirt:P.gold,ph:.3})}`},
  growth(T,lt,o){const b=1330,D=o.day,u=eo((lt-(o.at||.6))/(o.dur||3));const n=Math.round(u*(o.stack||9));let st='';for(let i=0;i<n;i++)st+=note(650+(i%2)*10,b-80-i*44,180,70);
   return `${sky(T,D,880,280)}${skyline(T,b-40,D)}${lamp(1010,b,T,D)}${hdb(110,b,360,640,T,{label:o.l,lt:pop(lt,.3),day:D})}${D?'':glowAt(740,b-300,260)}${st}${street_fg(b,D,lt)}
-  ${chip(740,b-80-Math.max(n,1)*44-70,(o.pre||'+$')+Math.round((o.to||0)*u/1000)+'K',pop(lt,o.at||.6,.3),P.gold,P.dteal,80)}
+  ${!o.to?'':chip(740,b-80-Math.max(n,1)*44-70,(o.pre||'+$')+Math.round((o.to||0)*u/1000)+'K',pop(lt,o.at||.6,.3),P.gold,P.dteal,80)}
   ${person(560,b+24,.8,T,{shirt:P.gold,ph:.3})}`},
  race(T,lt,o){const b=1330,D=o.day;const u=eo((lt-(o.at2||.5))/2.2);let st='';const nl=Math.round(u*(o.nl||4)),nr=Math.round(u*(o.nr||8));
   for(let i=0;i<nl;i++)st+=note(420,b-70-i*40,130,62);for(let i=0;i<nr;i++)st+=note(905,b-70-i*40,130,62);
@@ -92,6 +92,15 @@ const SC={
   ${person(560,b+24,.75,T,{shirt:P.gold,ph:.3})}
   ${chip(540,330,o.badge||'',pop(lt,.1),P.coral,P.cream,70)}
   ${lt>(o.lAt||1)?chip(230,560,o.lv,pop(lt,o.lAt||1),P.cream,P.dteal,72):''}${lt>(o.rAt||2)?chip(760,440,o.rv,pop(lt,o.rAt||2),o.rcol||P.green,P.cream,80):''}`},
+ bank(T,lt,o){const b=1330,D=o.day!==false;let s=`${sky(T,D,860,280)}${skyline(T,b-40,D)}${tree(80,b,.9)}${tree(1000,b,.8)}
+  <rect x="200" y="${b-90}" width="680" height="90" fill="#d8ccb2"/><rect x="230" y="${b-560}" width="620" height="470" fill="#efe6d2"/>
+  ${[0,1,2,3,4].map(k=>`<rect x="${270+k*125}" y="${b-520}" width="60" height="430" fill="#fffaf0"/><rect x="${262+k*125}" y="${b-530}" width="76" height="16" fill="#d8ccb2"/>`).join('')}
+  <path d="M190 ${b-560} L540 ${b-760} L890 ${b-560}Z" fill="${P.teal}"/><rect x="180" y="${b-580}" width="720" height="26" fill="${P.dteal}"/>
+  ${label(540,b-640,o.sign||'CPF',1,P.gold)}${street_fg(b,D,lt)}${person(o.px||170,b+24,.8,T,{shirt:P.gold,ph:.3})}`;
+  if(o.flow){const at=o.flowAt||.5;for(let k=0;k<5;k++){const u=cl((lt-at-k*.25)/1.1);if(u>0&&u<1){const x=o.flow==='in'?260+u*280:540+u*300,y=b-250-Math.sin(u*Math.PI)*180;s+=note(x-60,y,120,58)}}}
+  return s},
+ parents(T,lt,o){const b=1330,D=o.day!==false;return `${sky(T,D,860,280)}${skyline(T,b-40,D)}${tree(950,b,.9)}${hdb(80,b,o.big?420:260,o.big?640:420,T,{label:o.l,lt:pop(lt,o.lat||.3),day:D})}${street_fg(b,D,lt)}
+  ${person(640,b+24,.8,T,{shirt:P.teal,hair:'#b8b2a6',ph:1})}${person(780,b+24,.76,T,{shirt:P.coral,hair:'#c9c3b8',bun:true,ph:2})}`},
  cash(T,lt,o){const b=1330,D=o.day;let s=`${sky(T,D,170,300)}${skyline(T,b-40,D)}${lamp(70,b,T,D)}${tree(950,b,.8)}${condo(400,b,280,740,T,{label:lt<(o.resAt||99)?o.l:'',lt:pop(lt,.2),lcol:P.gold,day:D})}${street_fg(b,D,lt)}${person(250,b+24,.8,T,{shirt:P.gold,ph:.3})}`;
   const inU=eo((lt-(o.inAt||.6))/1.2);if(lt>(o.inAt||.6)&&lt<(o.resAt||9))s+=note(40+inU*330,b-420,160,76)+chip(130+inU*320,b-480,'RENT $5,000',1,P.cream,P.dteal,44);
   (o.out||[]).forEach((t,i)=>{const at=o.outAt+i*.45,u=eo((lt-at)/1.1);if(lt>at&&lt<at+2&&lt<(o.resAt||99))s+=`<g opacity="${(1-cl((lt-at-1.5)/.5)).toFixed(2)}">${note(590+u*150,b-640-i*150-u*60,110,54)}${chip(820+u*90,b-610-i*150-u*60,'− '+t,1,P.coral,P.cream,40)}</g>`});
