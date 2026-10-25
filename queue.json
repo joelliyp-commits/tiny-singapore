@@ -129,7 +129,7 @@
    "id": "p01",
    "title": "Government signals: why they want more buyers",
    "pillar": "from presentation",
-   "status": "idea",
+   "status": "scripted as v064",
    "source": "Joel's EC/market presentation (Zoom 8 Oct 2026, claude_video.mp4)",
    "facts": "Wait-out removal + income ceiling raise = more buyers; read policy as leading indicators"
   },
@@ -319,7 +319,7 @@
   {
    "id": "p17",
    "title": "This flat sold for over a million. Here's why",
-   "status": "idea",
+   "status": "scripted as v067",
    "pillar": "Million dollar HDB",
    "hook": "\"This flat sold for over a million. Here is why it's not crazy.\" One real deal, 2 sources, no owner named",
    "visual": "Single HDB block, zoom into price drivers: MRT, view, lease, scarcity",
@@ -363,7 +363,7 @@
   {
    "id": "p21",
    "title": "Rates moved: your monthly instalment",
-   "status": "idea",
+   "status": "scripted as v062",
    "pillar": "How much must you earn",
    "hook": "\"Interest rates moved. Here is what changed in your monthly instalment.\" Post only when rates actually move; overlaps v003",
    "visual": "Dial turning, instalment ticking up or down",
@@ -678,6 +678,102 @@
    "slot": "2026-11-13 14:00",
    "script": "scripts/batchB.md",
    "style": "flat"
+  },
+  {
+   "id": "v062",
+   "from": "batch C",
+   "title": "Rates moved: your instalment",
+   "status": "script_pending",
+   "slot": "2026-11-11 18:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v061",
+   "from": "batch C",
+   "title": "HDB resale Q3: dip, but $1M record",
+   "status": "script_pending",
+   "slot": "2026-11-12 14:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v063",
+   "from": "batch C",
+   "title": "Signed the OTP? What next",
+   "status": "script_pending",
+   "slot": "2026-11-12 18:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v064",
+   "from": "batch C",
+   "title": "Why the government wants more buyers",
+   "status": "script_pending",
+   "slot": "2026-11-13 18:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v065",
+   "from": "batch C",
+   "title": "Decoupling: what it is, what it costs",
+   "status": "script_pending",
+   "slot": "2026-11-14 14:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v066",
+   "from": "batch C",
+   "title": "Seller stamp duty 4 years",
+   "status": "script_pending",
+   "slot": "2026-11-14 18:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v067",
+   "from": "batch C",
+   "title": "What million dollar flats have in common",
+   "status": "script_pending",
+   "slot": "2026-11-15 14:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v068",
+   "from": "batch C",
+   "title": "HDB resale: the cash you need",
+   "status": "script_pending",
+   "slot": "2026-11-15 18:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v069",
+   "from": "batch C",
+   "title": "Salary for a $700K HDB flat",
+   "status": "script_pending",
+   "slot": "2026-11-16 14:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v070",
+   "from": "batch C",
+   "title": "PR buying a home: 5% and 30%",
+   "status": "script_pending",
+   "slot": "2026-11-16 18:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v071",
+   "from": "batch C",
+   "title": "SSD vs MOP: when can you sell",
+   "status": "script_pending",
+   "slot": "2026-11-17 14:00",
+   "script": "scripts/batchC.md"
+  },
+  {
+   "id": "v072",
+   "from": "batch C",
+   "title": "Lease decay numbers (hold, verify)",
+   "status": "script_pending",
+   "slot": "2026-11-17 18:00",
+   "script": "scripts/batchC.md"
   }
  ],
  "cta_system": {
