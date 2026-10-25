@@ -84,8 +84,11 @@
    "stat": ""
   },
   {
-   "tpl": "dominoes",
-   "p": {},
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "EASIER NOW"
+   },
    "say": "So in older estates, fewer neighbours can block a sale.",
    "cap": "*fewer neighbours* can block",
    "stat": ""

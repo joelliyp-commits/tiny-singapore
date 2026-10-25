@@ -81,7 +81,7 @@
    },
    "say": "Want to know which ECs you can buy? Comment ELIGIBLE.",
    "cap": "comment *ELIGIBLE*",
-   "stat": "Average gross monthly household income"
+   "stat": "Gross monthly household income"
   }
  ],
  "source": "HDB, Stacked Homes",

@@ -90,7 +90,7 @@
    },
    "say": "Not sure if you qualify? Comment CHECK.",
    "cap": "not sure? comment *CHECK*",
-   "stat": "Average gross monthly household income"
+   "stat": "Gross monthly household income"
   }
  ],
  "source": "HDB, EdgeProp, Stacked Homes",
