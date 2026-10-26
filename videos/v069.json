@@ -128,9 +128,9 @@
      "k": "phone",
      "at": 0,
      "app": "HOUSEHOLD",
-     "lab": "INCOME NEEDED",
+     "lab": "INCOME A MONTH",
      "to": 8000,
-     "suf": " /MTH",
+     "suf": "",
      "at2": "@$8,000",
      "from": 0
     }
@@ -148,7 +148,7 @@
      "bigText": "PLAN",
      "rows": [
       {
-       "t": "Income calculator",
+       "t": "Calculator",
        "v": "FREE",
        "at": "@calculator",
        "col": "#3fae5a"

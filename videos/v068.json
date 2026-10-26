@@ -59,8 +59,8 @@
      "bigText": "CPF OK",
      "rows": [
       {
-       "t": "25% downpayment",
-       "v": "CPF / CASH",
+       "t": "Downpayment",
+       "v": "CPF/CASH",
        "at": "@cpf",
        "col": "#3fae5a"
       }

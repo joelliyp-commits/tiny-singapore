@@ -98,12 +98,12 @@
      "neg": true,
      "rows": [
       {
-       "t": "CPF used + interest",
+       "t": "CPF + interest",
        "v": "BACK",
        "at": "@cpf"
       },
       {
-       "t": "Remaining owner",
+       "t": "Other owner",
        "v": "NEW LOAN?",
        "at": "@loan",
        "col": "#e0774f"
@@ -149,7 +149,7 @@
      "bigText": "PLAN",
      "rows": [
       {
-       "t": "Decoupling calculator",
+       "t": "Calculator",
        "v": "FREE",
        "at": "@calculator",
        "col": "#3fae5a"

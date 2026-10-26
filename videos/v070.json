@@ -55,7 +55,7 @@
      "app": "IRAS",
      "lab": "ABSD ON $1.2M",
      "to": 60000,
-     "at2": "@$60,000",
+     "at2": 0.3,
      "neg": true,
      "from": 0
     }
