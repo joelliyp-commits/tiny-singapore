@@ -59,6 +59,7 @@ function note(x,y,w=150,h=70){return `<rect x="${x}" y="${y}" width="${w}" heigh
 function chip(x,y,t,k,bg,fg,fs=56){const w=t.length*fs*.52+70;return sc(x,y,k,`<rect x="${x-w/2}" y="${y-fs*.95}" width="${w}" height="${fs*1.55}" rx="${fs*.35}" fill="${bg}"/><text x="${x}" y="${y+fs*.18}" text-anchor="middle" font-family="O" font-weight="700" font-size="${fs}" fill="${fg}">${esc(t)}</text>`)}
 function card(l1,l2,k){return sc(540,300,k,`<rect x="250" y="210" width="580" height="${l2?190:130}" rx="22" fill="${P.dteal}" stroke="${P.gold}" stroke-width="5"/><text x="540" y="${l2?300:300}" text-anchor="middle" font-family="O" font-weight="700" font-size="82" fill="${P.gold}" letter-spacing="2">${esc(l1)}</text>${l2?`<text x="540" y="368" text-anchor="middle" font-family="O" font-weight="600" font-size="44" fill="${P.cream}" letter-spacing="2">${esc(l2)}</text>`:''}`)}
 // ---------- scenes ----------
+function bgFill(c,T,light){let s=`<rect width="1080" height="1920" fill="${c}"/>`;for(let i=0;i<60;i++){const x=hash(i,11)*1080,y=hash(i,12)*1920,r=3+hash(i,13)*6;s+=`<circle cx="${x}" cy="${(y+T*8*(1+hash(i)))%1920}" r="${r}" fill="${light?'#00000010':'#ffffff14'}"/>`}return s+`<rect x="0" y="1330" width="1080" height="590" fill="${light?'#00000012':'#00000026'}"/>`}
 const ground=(y,c='#173a39')=>`<rect x="0" y="${y}" width="1080" height="${1920-y}" fill="${c}"/>`;
 function street_fg(b,D,lt){// road, pavement, grass, bushes in foreground
  return `<rect x="0" y="${b}" width="1080" height="40" fill="${D?'#d8ccb2':'#1e4442'}"/><rect x="0" y="${b+40}" width="1080" height="150" fill="${D?'#8f9d9a':'#122d2c'}"/>
@@ -101,6 +102,56 @@ const SC={
   return s},
  parents(T,lt,o){const b=1330,D=o.day!==false;return `${sky(T,D,860,280)}${skyline(T,b-40,D)}${tree(950,b,.9)}${hdb(80,b,o.big?420:260,o.big?640:420,T,{label:o.l,lt:pop(lt,o.lat||.3),day:D})}${street_fg(b,D,lt)}
   ${person(640,b+24,.8,T,{shirt:P.teal,hair:'#b8b2a6',ph:1})}${person(780,b+24,.76,T,{shirt:P.coral,hair:'#c9c3b8',bun:true,ph:2})}`},
+ // ---- content-driven scenes (v2) ----
+ phone(T,lt,o){const bg=o.bg||P.teal;const u=eo((lt-(o.at2||.5))/1.6);const v=(o.from||0)+((o.to||0)-(o.from||0))*u;
+  let s=bgFill(bg,T)+`<rect x="262" y="250" width="556" height="1080" rx="70" fill="#0d1f1f"/><rect x="290" y="300" width="500" height="980" rx="44" fill="${P.cream}"/><rect x="480" y="268" width="120" height="16" rx="8" fill="#263b3a"/>
+  <rect x="290" y="300" width="500" height="150" rx="44" fill="${o.appCol||P.dteal}"/><rect x="290" y="400" width="500" height="50" fill="${o.appCol||P.dteal}"/>
+  <text x="540" y="400" text-anchor="middle" font-family="O" font-weight="700" font-size="56" fill="${P.gold}">${esc(o.app||'MY ACCOUNT')}</text>
+  <text x="540" y="530" text-anchor="middle" font-family="J" font-weight="800" font-size="34" fill="${P.grey||'#6b7f7c'}">${esc(o.lab||'BALANCE')}</text>
+  <text x="540" y="630" text-anchor="middle" font-family="O" font-weight="700" font-size="104" fill="${o.neg?P.coral:P.dteal}">${o.bigText?esc(o.bigText):(o.pre??'$')+Math.round(v).toLocaleString('en-US')+(o.suf||'')}</text>`;
+  (o.rows||[]).forEach((r,k)=>{if(lt>r.at){const k2=pop(lt,r.at,.35),y=720+k*120;s+=sc(540,y+40,k2,`<rect x="320" y="${y}" width="440" height="96" rx="20" fill="#fff" stroke="#e5ddca" stroke-width="3"/><circle cx="370" cy="${y+48}" r="24" fill="${r.col||P.teal}"/><text x="410" y="${y+60}" font-family="J" font-weight="800" font-size="27" fill="${P.dteal}">${esc(r.t)}</text><text x="740" y="${y+60}" text-anchor="end" font-family="O" font-weight="700" font-size="36" fill="${r.col||P.teal}">${esc(r.v)}</text>`)}});
+  if(o.toast&&lt>o.toastAt)s+=sc(540,330,pop(lt,o.toastAt),`<rect x="230" y="270" width="620" height="120" rx="28" fill="${o.toastCol||P.coral}"/><text x="540" y="348" text-anchor="middle" font-family="O" font-weight="700" font-size="50" fill="${P.cream}">${esc(o.toast)}</text>`);
+  return s+person(930,1380,.55,T,{shirt:P.gold,ph:.3})},
+ receipt(T,lt,o){const items=o.items||[];const n=items.length+(o.total?2:0);const H=Math.min(1,eo(lt/(o.unroll||1.2)))*(170+n*110);let s=bgFill(o.bg||P.coral,T);
+  s+=`<rect x="200" y="200" width="680" height="40" rx="20" fill="#3a4a48"/><g><rect x="230" y="220" width="620" height="${H}" fill="${P.cream}"/>`;
+  s+=`<text x="540" y="320" text-anchor="middle" font-family="O" font-weight="700" font-size="58" fill="${P.dteal}" opacity="${cl(lt*3)}">${esc(o.title||'RECEIPT')}</text><line x1="270" y1="350" x2="810" y2="350" stroke="${P.dteal}" stroke-width="3" stroke-dasharray="10 8"/>`;
+  items.forEach((it,k)=>{if(lt>it.at){const y=430+k*110,op=cl((lt-it.at)/.25);s+=`<g opacity="${op}"><text x="270" y="${y}" font-family="J" font-weight="800" font-size="40" fill="${P.dteal}">${esc(it.t)}</text><text x="810" y="${y}" text-anchor="end" font-family="O" font-weight="700" font-size="50" fill="${it.col||P.dteal}">${esc(it.v)}</text></g>`}});
+  if(o.total&&lt>o.totalAt){const y=430+items.length*110+40;s+=`<line x1="270" y1="${y-50}" x2="810" y2="${y-50}" stroke="${P.dteal}" stroke-width="4"/>`+sc(540,y,pop(lt,o.totalAt),`<text x="270" y="${y+20}" font-family="O" font-weight="700" font-size="58" fill="${P.dteal}">TOTAL</text><text x="810" y="${y+20}" text-anchor="end" font-family="O" font-weight="700" font-size="76" fill="${P.coral}">${esc(o.total)}</text>`)}
+  s+=`<path d="M230 ${220+H} ${Array.from({length:16},(_,i)=>`L${230+i*38.75+19} ${220+H+18} L${230+(i+1)*38.75} ${220+H}`).join(' ')}Z" fill="${P.cream}"/></g>`;
+  return s+person(140,1380,.6,T,{shirt:P.gold,ph:.3})},
+ scale(T,lt,o){const a=(o.tilt||0)*ease((lt-(o.tiltAt||1))/1.2)*Math.PI/180,cx=540,cy=640,L=330;const lx=cx-L*Math.cos(a),ly=cy-L*Math.sin(a),rx=cx+L*Math.cos(a),ry=cy+L*Math.sin(a);
+  const pan=(x,y,lab,ic,col)=>`<line x1="${x}" y1="${y}" x2="${x-110}" y2="${y+200}" stroke="#3a4a48" stroke-width="5"/><line x1="${x}" y1="${y}" x2="${x+110}" y2="${y+200}" stroke="#3a4a48" stroke-width="5"/><path d="M${x-150} ${y+200} Q${x} ${y+280} ${x+150} ${y+200}Z" fill="${col}"/>${ic}${label(x,y+340,lab,1,col===P.gold?P.gold:undefined)}`;
+  const icL=hdb(lx-60,ly+205,120,150,T,{}),icR=condo(rx-45,ry+205,90,190,T,{});
+  return bgFill(o.bg||P.cream,T,true)+`<rect x="520" y="${cy}" width="40" height="650" fill="#3a4a48"/><path d="M420 1300 L660 1300 L600 1240 L480 1240Z" fill="#3a4a48"/><circle cx="${cx}" cy="${cy}" r="26" fill="${P.gold}"/>
+  <line x1="${lx}" y1="${ly}" x2="${rx}" y2="${ry}" stroke="#3a4a48" stroke-width="16" stroke-linecap="round"/>${pan(lx,ly,o.l||'KEEP',icL,P.teal)}${pan(rx,ry,o.r||'SELL',icR,P.gold)}${person(170,1380,.6,T,{shirt:P.gold,ph:.3})}`},
+ timeline(T,lt,o){const m=o.marks||[];const x0=150,x1=930,y=820;let s=bgFill(o.bg||P.dteal,T)+`<line x1="${x0}" y1="${y}" x2="${x0+(x1-x0)*eo(lt/1)}" y2="${y}" stroke="${P.cream}" stroke-width="10" stroke-linecap="round"/>`;
+  m.forEach((mk,k)=>{const x=x0+(x1-x0)*(m.length>1?k/(m.length-1):.5);if(lt>mk.at){const p=pop(lt,mk.at);s+=sc(x,y,p,`<circle cx="${x}" cy="${y}" r="26" fill="${mk.col||P.gold}" stroke="${P.cream}" stroke-width="6"/><text x="${x}" y="${y-60}" text-anchor="middle" font-family="O" font-weight="700" font-size="54" fill="${P.cream}">${esc(mk.label)}</text>${mk.sub?`<rect x="${x-120}" y="${y+60}" width="240" height="80" rx="18" fill="${mk.col||P.gold}"/><text x="${x}" y="${y+114}" text-anchor="middle" font-family="O" font-weight="700" font-size="40" fill="${P.dteal}">${esc(mk.sub)}</text>`:''}`)}});
+  const cur=m.filter(mk=>lt>mk.at).length-1;const px=x0+(x1-x0)*(m.length>1?Math.max(0,cur)/(m.length-1):.5);
+  return s+person(px,1330,.6,T,{shirt:P.gold,ph:.3})},
+ chart(T,lt,o){const pts=o.pts||[],n=pts.length,mx=Math.max(...pts)*1.15,X=i=>200+i*(700/(n-1)),Y=v=>1180-v/mx*700;const u=cl((lt-(o.at2||.3))/(o.dur||2.2));
+  let s=bgFill(o.bg||P.cream,T,true)+`<line x1="180" y1="1180" x2="920" y2="1180" stroke="${P.dteal}" stroke-width="6"/><line x1="180" y1="420" x2="180" y2="1180" stroke="${P.dteal}" stroke-width="6"/>`;
+  const k=u*(n-1),full=Math.floor(k);let d=`M${X(0)} ${Y(pts[0])}`;for(let i=1;i<=full;i++)d+=` L${X(i)} ${Y(pts[i])}`;if(full<n-1){const f=k-full;d+=` L${X(full)+(X(full+1)-X(full))*f} ${Y(pts[full])+(Y(pts[full+1])-Y(pts[full]))*f}`}
+  s+=`<path d="${d} L${X(0)+(Math.min(k,n-1))*(700/(n-1))} 1180 L${X(0)} 1180Z" fill="${o.col||P.teal}" opacity=".15"/><path d="${d}" stroke="${o.col||P.teal}" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+  pts.forEach((v,i)=>{if(i<=k+.001){s+=`<circle cx="${X(i)}" cy="${Y(v)}" r="14" fill="${P.gold}" stroke="${P.dteal}" stroke-width="5"/>`;if(o.vl&&o.vl[i])s+=`<text x="${X(i)}" y="${Y(v)-36}" text-anchor="middle" font-family="O" font-weight="700" font-size="44" fill="${P.dteal}">${esc(o.vl[i])}</text>`}
+   if(o.xl)s+=`<text x="${X(i)}" y="1240" text-anchor="middle" font-family="O" font-weight="700" font-size="40" fill="${P.dteal}">${esc(o.xl[i])}</text>`});
+  if(o.title)s+=`<text x="540" y="360" text-anchor="middle" font-family="O" font-weight="700" font-size="64" fill="${P.dteal}">${esc(o.title)}</text>`;return s},
+ crowd(T,lt,o){const N=o.n0||24,keep=o.n1??6,at=o.at2||1.5;let s=bgFill(o.bg||P.teal,T);const cols=[P.coral,P.gold,P.cream,'#7fae6e','#cfe3df'];
+  s+=label(540,420,o.l||'BUYERS',1,P.gold);
+  for(let i=0;i<N;i++){const r=Math.floor(i/6),c=i%6;const x=190+c*140+(r%2)*40,y=760+r*150;const gone=i>=keep;const u=gone?cl((lt-at-hash(i)*0.8)/.5):0;
+   if(u<1)s+=`<g opacity="${(1-u).toFixed(2)}">${person(x+u*(hash(i,3)>.5?200:-200),y,.36,T,{shirt:cols[i%5],ph:i,bun:hash(i,7)>.5})}</g>`}
+  return s},
+ doc(T,lt,o){let s=bgFill(o.bg||P.sand,T,true)+`<g transform="rotate(-3 540 760)"><rect x="250" y="300" width="580" height="900" rx="16" fill="#fff" stroke="#d9cfb9" stroke-width="4"/>
+  <text x="540" y="400" text-anchor="middle" font-family="O" font-weight="700" font-size="56" fill="${P.dteal}">${esc(o.title||'OPTION TO PURCHASE')}</text>`;
+  for(let i=0;i<8;i++)s+=`<rect x="300" y="${460+i*60}" width="${400+hash(i)*80}" height="14" rx="7" fill="#e5ddca"/>`;
+  (o.lines||[]).forEach((l,k)=>{if(lt>l.at)s+=`<text x="300" y="${960+k*60}" font-family="O" font-weight="700" font-size="44" fill="${l.col||P.coral}" opacity="${cl((lt-l.at)/.25)}">${esc(l.t)}</text>`});
+  if(lt>(o.signAt||99)){const u=cl((lt-o.signAt)/.8);s+=`<path d="M320 1150 q40 -60 80 0 t80 0 t80 -20 t90 10" stroke="${P.dteal}" stroke-width="7" fill="none" stroke-dasharray="600" stroke-dashoffset="${600*(1-u)}" stroke-linecap="round"/>`}
+  s+='</g>';if(o.stamp&&lt>o.stampAt){const k=1+1.2*(1-eo((lt-o.stampAt)/.25));s+=sc(760,1040,k,`<g transform="rotate(-14 760 1040)"><rect x="600" y="980" width="320" height="120" rx="14" fill="none" stroke="${o.stampCol||P.coral}" stroke-width="10"/><text x="760" y="1062" text-anchor="middle" font-family="O" font-weight="700" font-size="60" fill="${o.stampCol||P.coral}">${esc(o.stamp)}</text></g>`)}
+  return s+person(150,1380,.6,T,{shirt:P.gold,ph:.3})},
+ ladder(T,lt,o){const st=o.steps||['HDB','EC','CONDO'];const n=st.length;let s=bgFill(o.bg||P.cream,T,true);
+  st.forEach((t,i)=>{const x=150+i*270,h=220+i*200,y=1300-h;s+=`<rect x="${x}" y="${y}" width="260" height="${h}" rx="10" fill="${[P.teal,P.gold,P.coral,P.dteal][i%4]}"/><text x="${x+130}" y="${y+80}" text-anchor="middle" font-family="O" font-weight="700" font-size="56" fill="${i===1?P.dteal:P.cream}">${esc(t)}</text>`;
+   if(o.sub&&o.sub[i])s+=`<text x="${x+130}" y="${y+150}" text-anchor="middle" font-family="O" font-weight="600" font-size="40" fill="${i===1?P.dteal:P.cream}">${esc(o.sub[i])}</text>`});
+  const tgt=o.to??n-1,k=cl((lt-(o.at2||.8))/1.8)*tgt,i0=Math.floor(k),f=k-i0;const px=150+130+k*270,py=1300-(220+i0*200)-(i0<tgt?f*200*Math.min(1,f*2):0);
+  return s+person(px,py,.55,T,{shirt:P.gold,ph:.3})},
  cash(T,lt,o){const b=1330,D=o.day;let s=`${sky(T,D,170,300)}${skyline(T,b-40,D)}${lamp(70,b,T,D)}${tree(950,b,.8)}${condo(400,b,280,740,T,{label:lt<(o.resAt||99)?o.l:'',lt:pop(lt,.2),lcol:P.gold,day:D})}${street_fg(b,D,lt)}${person(250,b+24,.8,T,{shirt:P.gold,ph:.3})}`;
   const inU=eo((lt-(o.inAt||.6))/1.2);if(lt>(o.inAt||.6)&&lt<(o.resAt||9))s+=note(40+inU*330,b-420,160,76)+chip(130+inU*320,b-480,'RENT $5,000',1,P.cream,P.dteal,44);
   (o.out||[]).forEach((t,i)=>{const at=o.outAt+i*.45,u=eo((lt-at)/1.1);if(lt>at&&lt<at+2&&lt<(o.resAt||99))s+=`<g opacity="${(1-cl((lt-at-1.5)/.5)).toFixed(2)}">${note(590+u*150,b-640-i*150-u*60,110,54)}${chip(820+u*90,b-610-i*150-u*60,'− '+t,1,P.coral,P.cream,40)}</g>`});
@@ -117,7 +168,7 @@ function caption(i,lt){const ws=WORDS[i],seg=TL[i];const speak=Math.max(.6,seg.d
  return sc(540,1440,k,`<text x="540" y="1470" text-anchor="middle" font-family="O" font-weight="700" font-size="104" stroke="#0b1c1c" stroke-width="16" stroke-linejoin="round" paint-order="stroke" letter-spacing="1">${txt}</text>`)}
 function revs(i){const ws=WORDS[i],seg=TL[i];const speak=Math.max(.6,seg.dur-.22-(i===TL.length-1?1:0))*.88;const wt=ws.map(w=>w.t.length+2),tot=wt.reduce((a,b)=>a+b,0);let acc=0;return wt.map(x=>{const r=.08+acc/tot*speak;acc+=x;return r})}
 function resolve(i,s){const o={...s};const ws=WORDS[i],rv=revs(i);const wt=v=>{const q=v.slice(1).toLowerCase();const k=ws.findIndex(w=>w.t.toLowerCase().includes(q));return k<0?0:rv[k]};
- if(typeof o.at==='string')o.at=wt(o.at);for(const k in o){if(k!=='at'&&typeof o[k]==='string'&&o[k][0]==='@')o[k]=Math.max(0,wt(o[k])-(o.at||0))}if(o.chips)o.chips=o.chips.map(c=>typeof c.at==='string'?{...c,at:Math.max(0,wt(c.at)-(o.at||0))}:c);return o}
+ if(typeof o.at==='string')o.at=wt(o.at);for(const k in o){if(k!=='at'&&typeof o[k]==='string'&&o[k][0]==='@')o[k]=Math.max(0,wt(o[k])-(o.at||0))}for(const key of ['chips','items','rows','lines','marks'])if(Array.isArray(o[key]))o[key]=o[key].map(c=>c&&typeof c.at==='string'?{...c,at:Math.max(0,wt(c.at)-(o.at||0))}:c);return o}
 function sceneAt(ln,lt){const ss=ln.scenes||[];let cur=ss[0],k0=0;ss.forEach((s,k)=>{if(lt>=(s.at||0)){cur=s;k0=k}});return {s:cur,st:lt-(cur.at||0),k0}}
 window.init=(spec,timing)=>{SPEC=spec;TL=timing;WORDS=spec.lines.map(ln=>{let g=false;const out=[];for(const raw of ln.cap.split(/\s+/)){if(!raw)continue;let t=raw;const st=g||t.startsWith('*');if(t.startsWith('*'))t=t.slice(1);let end=false;if(t.endsWith('*')){t=t.slice(0,-1);end=true}else if(t.includes('*')){t=t.replace('*','');end=true}out.push({t,g:st});g=st&&!end}return out});return true};
 window.draw=T=>{let i=TL.findIndex((x,k)=>T>=x.start&&(k===TL.length-1||T<TL[k+1].start));if(i<0)i=0;const ln=SPEC.lines[i],lt=T-TL[i].start;const lnr={...ln,scenes:(ln.scenes||[]).map(x=>resolve(i,x))};const {s,st}=sceneAt(lnr,lt);

@@ -6,24 +6,18 @@
    "cap": "a second home means *20% extra* stamp duty",
    "scenes": [
     {
-     "k": "street",
+     "k": "doc",
      "at": 0,
-     "day": true,
-     "l": "YOUR CONDO",
-     "lat": 0.3,
-     "r": "SECOND HOME",
-     "rat": "@second",
-     "chips": [
+     "title": "JOINT OWNERSHIP",
+     "lines": [
       {
-       "t": "+20% ABSD",
-       "at": "@20%",
-       "y": 330,
-       "bg": "#e0774f",
-       "fg": "#fffaf0",
-       "fs": 72,
-       "x": 540
+       "t": "You + your spouse",
+       "at": 0.6,
+       "col": "#2c605d"
       }
-     ]
+     ],
+     "stamp": "+20% ABSD",
+     "stampAt": "@20%"
     }
    ]
   },
@@ -32,29 +26,16 @@
    "cap": "*decoupling*: one spouse sells their share",
    "scenes": [
     {
-     "k": "room",
+     "k": "doc",
      "at": 0,
-     "nobubble": true,
-     "chips": [
+     "title": "TRANSFER OF SHARE",
+     "lines": [
       {
-       "t": "DECOUPLING",
-       "at": "@decoupling",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 76,
-       "x": 540
-      },
-      {
-       "t": "SELL YOUR SHARE",
-       "at": "@share",
-       "y": 460,
-       "bg": "#fffaf0",
-       "fg": "#163634",
-       "fs": 54,
-       "x": 540
+       "t": "Your share: to spouse",
+       "at": "@share"
       }
-     ]
+     ],
+     "signAt": "@sells"
     }
    ]
   },
@@ -63,24 +44,18 @@
    "cap": "then buy as a *first time buyer*",
    "scenes": [
     {
-     "k": "street",
+     "k": "ladder",
      "at": 0,
-     "day": true,
-     "l": "OUT",
-     "lat": 0.2,
-     "r": "FIRST HOME",
-     "rat": "@first",
-     "chips": [
-      {
-       "t": "NO 20% ABSD",
-       "at": "@20%",
-       "y": 330,
-       "bg": "#3fae5a",
-       "fg": "#fffaf0",
-       "fs": 64,
-       "x": 540
-      }
-     ]
+     "steps": [
+      "OUT",
+      "FIRST HOME"
+     ],
+     "sub": [
+      "",
+      "NO 20% ABSD"
+     ],
+     "to": 1,
+     "at2": "@first"
     }
    ]
   },
@@ -89,26 +64,24 @@
    "cap": "*not free*: stamp duty on the share, plus legal fees",
    "scenes": [
     {
-     "k": "cash",
+     "k": "receipt",
      "at": 0,
-     "l": "SHARE",
-     "inAt": 99,
-     "out": [
-      "STAMP DUTY",
-      "LEGAL FEES"
-     ],
-     "outAt": 1.2,
-     "chips": [
+     "title": "DECOUPLING COSTS",
+     "items": [
       {
-       "t": "NOT FREE",
-       "at": "@free",
-       "y": 330,
-       "bg": "#e0774f",
-       "fg": "#fffaf0",
-       "fs": 70,
-       "x": 540
+       "t": "Stamp duty on share",
+       "v": "BSD",
+       "at": "@stamp"
+      },
+      {
+       "t": "Legal fees",
+       "v": "FEES",
+       "at": "@legal"
       }
-     ]
+     ],
+     "total": "NOT FREE",
+     "totalAt": "@legal",
+     "bg": "#e0774f"
     }
    ]
   },
@@ -117,20 +90,23 @@
    "cap": "CPF *goes back*. maybe a *new loan*",
    "scenes": [
     {
-     "k": "bank",
+     "k": "phone",
      "at": 0,
-     "sign": "CPF",
-     "flow": "in",
-     "flowAt": 0.4,
-     "chips": [
+     "app": "CPF",
+     "lab": "YOUR SHARE",
+     "bigText": "REFUND",
+     "neg": true,
+     "rows": [
       {
-       "t": "NEW LOAN?",
+       "t": "CPF used + interest",
+       "v": "BACK",
+       "at": "@cpf"
+      },
+      {
+       "t": "Remaining owner",
+       "v": "NEW LOAN?",
        "at": "@loan",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 64,
-       "x": 540
+       "col": "#e0774f"
       }
      ]
     }
@@ -141,26 +117,20 @@
    "cap": "costs can *outweigh savings*. get *legal advice*",
    "scenes": [
     {
-     "k": "room",
+     "k": "scale",
      "at": 0,
-     "nobubble": true,
+     "l": "COSTS",
+     "r": "SAVINGS",
+     "tilt": -10,
+     "tiltAt": "@outweigh",
      "chips": [
-      {
-       "t": "COSTS VS SAVINGS",
-       "at": "@costs",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 62,
-       "x": 540
-      },
       {
        "t": "GET LEGAL ADVICE",
        "at": "@legal",
-       "y": 460,
+       "y": 330,
        "bg": "#e0774f",
        "fg": "#fffaf0",
-       "fs": 56,
+       "fs": 58,
        "x": 540
       }
      ]
@@ -172,27 +142,17 @@
    "cap": "comment *PLAN* for the calculator",
    "scenes": [
     {
-     "k": "room",
+     "k": "phone",
      "at": 0,
-     "nobubble": true,
-     "chips": [
+     "app": "TINY SINGAPORE",
+     "lab": "COMMENT",
+     "bigText": "PLAN",
+     "rows": [
       {
-       "t": "COMMENT PLAN",
-       "at": "@plan",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 74,
-       "x": 540
-      },
-      {
-       "t": "FREE CALCULATOR",
+       "t": "Decoupling calculator",
+       "v": "FREE",
        "at": "@calculator",
-       "y": 460,
-       "bg": "#2c605d",
-       "fg": "#fffaf0",
-       "fs": 54,
-       "x": 540
+       "col": "#3fae5a"
       }
      ]
     }

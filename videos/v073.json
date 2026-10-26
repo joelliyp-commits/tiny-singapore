@@ -32,32 +32,27 @@
    "cap": "new launch sales: *1,800* to about *500* a year",
    "scenes": [
     {
-     "k": "cash",
+     "k": "chart",
      "at": 0,
-     "l": "NEW LAUNCH",
-     "inAt": 99,
-     "out": [],
-     "outAt": 99,
-     "chips": [
-      {
-       "t": "1,800 A YEAR",
-       "at": "@1,800",
-       "y": 290,
-       "bg": "#fffaf0",
-       "fg": "#163634",
-       "fs": 60,
-       "x": 540
-      },
-      {
-       "t": "NOW ABOUT 500",
-       "at": "@500",
-       "y": 410,
-       "bg": "#e0774f",
-       "fg": "#fffaf0",
-       "fs": 60,
-       "x": 540
-      }
-     ]
+     "title": "NEW LAUNCH 1 BED SALES A YEAR",
+     "pts": [
+      1808,
+      1157,
+      521
+     ],
+     "xl": [
+      "2010-15",
+      "2016-20",
+      "2021-25"
+     ],
+     "vl": [
+      "1,808",
+      "1,157",
+      "521"
+     ],
+     "col": "#e0774f",
+     "at2": 0.3,
+     "dur": 2.6
     }
    ]
   },
@@ -66,14 +61,18 @@
    "cap": "some launches: *no one bedroom* at all",
    "scenes": [
     {
-     "k": "cash",
+     "k": "doc",
      "at": 0,
-     "l": "NEW LAUNCH",
-     "inAt": 99,
-     "out": [],
-     "outAt": 99,
-     "res": "NO 1 BEDROOM",
-     "resAt": "@one"
+     "title": "NEW LAUNCH UNIT MIX",
+     "lines": [
+      {
+       "t": "2, 3, 4 bedrooms",
+       "at": 0.4,
+       "col": "#2c605d"
+      }
+     ],
+     "stamp": "NO 1 BEDROOM",
+     "stampAt": "@one"
     }
    ]
   },
@@ -82,23 +81,27 @@
    "cap": "resale: *100* to about *1,000* a year",
    "scenes": [
     {
-     "k": "growth",
+     "k": "chart",
      "at": 0,
-     "day": true,
-     "l": "RESALE",
-     "to": 0,
-     "stack": 9,
-     "chips": [
-      {
-       "t": "100 TO 1,000 A YEAR",
-       "at": "@1,000",
-       "y": 330,
-       "bg": "#3fae5a",
-       "fg": "#fffaf0",
-       "fs": 58,
-       "x": 540
-      }
-     ]
+     "title": "RESALE 1 BED DEALS A YEAR",
+     "pts": [
+      108,
+      528,
+      1023
+     ],
+     "xl": [
+      "2010-15",
+      "2016-20",
+      "2021-25"
+     ],
+     "vl": [
+      "108",
+      "528",
+      "1,023"
+     ],
+     "col": "#2c605d",
+     "at2": 0.3,
+     "dur": 2.6
     }
    ]
   },
@@ -107,18 +110,16 @@
    "cap": "*4 in 10* buyers are *HDB upgraders*",
    "scenes": [
     {
-     "k": "street",
+     "k": "crowd",
      "at": 0,
-     "day": true,
-     "l": "HDB",
-     "lat": 0.2,
-     "r": "1 BEDROOM",
-     "rat": 0.4,
+     "l": "WHO BUYS THEM?",
+     "n0": 10,
+     "n1": 10,
      "chips": [
       {
        "t": "4 IN 10: HDB UPGRADERS",
        "at": "@4",
-       "y": 330,
+       "y": 1240,
        "bg": "#ffd36b",
        "fg": "#163634",
        "fs": 54,
@@ -133,23 +134,17 @@
    "cap": "*smaller buyer pool*. your price *has to be right*",
    "scenes": [
     {
-     "k": "room",
+     "k": "crowd",
      "at": 0,
-     "nobubble": true,
+     "l": "ONE BEDROOM BUYERS",
+     "n0": 24,
+     "n1": 8,
+     "at2": "@smaller",
      "chips": [
-      {
-       "t": "SMALLER POOL",
-       "at": "@smaller",
-       "y": 330,
-       "bg": "#e0774f",
-       "fg": "#fffaf0",
-       "fs": 66,
-       "x": 540
-      },
       {
        "t": "PRICE IT RIGHT",
        "at": "@price",
-       "y": 460,
+       "y": 1240,
        "bg": "#ffd36b",
        "fg": "#163634",
        "fs": 60,

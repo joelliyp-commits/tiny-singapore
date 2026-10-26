@@ -6,23 +6,18 @@
    "cap": "a *$700,000* flat. the *income* you need",
    "scenes": [
     {
-     "k": "growth",
+     "k": "doc",
      "at": 0,
-     "day": true,
-     "l": "$700K FLAT",
-     "to": 0,
-     "stack": 0,
-     "chips": [
+     "title": "HDB LOAN",
+     "lines": [
       {
-       "t": "WHAT INCOME?",
-       "at": "@income",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 70,
-       "x": 540
+       "t": "Flat: $700,000",
+       "at": 0.5,
+       "col": "#2c605d"
       }
-     ]
+     ],
+     "stamp": "INCOME?",
+     "stampAt": "@income"
     }
    ]
   },
@@ -31,20 +26,23 @@
    "cap": "a 75% loan: *$525,000*",
    "scenes": [
     {
-     "k": "bank",
+     "k": "receipt",
      "at": 0,
-     "sign": "HDB LOAN",
-     "chips": [
+     "title": "THE LOAN",
+     "items": [
       {
-       "t": "LOAN $525,000",
+       "t": "Flat price",
+       "v": "$700,000",
+       "at": 0.3
+      },
+      {
+       "t": "75% loan",
+       "v": "$525,000",
        "at": "@$525,000",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 66,
-       "x": 540
+       "col": "#2c605d"
       }
-     ]
+     ],
+     "bg": "#2c605d"
     }
    ]
   },
@@ -53,32 +51,25 @@
    "cap": "about *$2,400* a month",
    "scenes": [
     {
-     "k": "growth",
+     "k": "phone",
      "at": 0,
-     "day": false,
-     "l": "MONTHLY",
-     "to": 0,
-     "stack": 5,
-     "chips": [
+     "app": "HDB LOAN",
+     "lab": "MONTHLY INSTALMENT",
+     "to": 2400,
+     "at2": "@$2,400",
+     "rows": [
       {
-       "t": "2.6% OVER 25 YEARS",
-       "at": "@2.6%",
-       "y": 330,
-       "bg": "#fffaf0",
-       "fg": "#163634",
-       "fs": 54,
-       "x": 540
+       "t": "Interest",
+       "v": "2.6%",
+       "at": "@2.6%"
       },
       {
-       "t": "ABOUT $2,400 A MONTH",
-       "at": "@$2,400",
-       "y": 460,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 58,
-       "x": 540
+       "t": "Tenure",
+       "v": "25 YEARS",
+       "at": "@25"
       }
-     ]
+     ],
+     "from": 0
     }
    ]
   },
@@ -109,9 +100,12 @@
    "cap": "max *30%* of your income",
    "scenes": [
     {
-     "k": "bank",
+     "k": "scale",
      "at": 0,
-     "sign": "MSR 30%",
+     "l": "INSTALMENT",
+     "r": "INCOME",
+     "tilt": 14,
+     "tiltAt": 0.5,
      "chips": [
       {
        "t": "MAX 30% OF INCOME",
@@ -131,20 +125,14 @@
    "cap": "roughly *$8,000* a month",
    "scenes": [
     {
-     "k": "room",
+     "k": "phone",
      "at": 0,
-     "nobubble": true,
-     "chips": [
-      {
-       "t": "ABOUT $8,000 A MONTH",
-       "at": "@$8,000",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 62,
-       "x": 540
-      }
-     ]
+     "app": "HOUSEHOLD",
+     "lab": "INCOME NEEDED",
+     "to": 8000,
+     "suf": " /MTH",
+     "at2": "@$8,000",
+     "from": 0
     }
    ]
   },
@@ -153,27 +141,17 @@
    "cap": "comment *PLAN* for the calculator",
    "scenes": [
     {
-     "k": "room",
+     "k": "phone",
      "at": 0,
-     "nobubble": true,
-     "chips": [
+     "app": "TINY SINGAPORE",
+     "lab": "COMMENT",
+     "bigText": "PLAN",
+     "rows": [
       {
-       "t": "COMMENT PLAN",
-       "at": "@plan",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 74,
-       "x": 540
-      },
-      {
-       "t": "FREE CALCULATOR",
+       "t": "Income calculator",
+       "v": "FREE",
        "at": "@calculator",
-       "y": 460,
-       "bg": "#2c605d",
-       "fg": "#fffaf0",
-       "fs": 54,
-       "x": 540
+       "col": "#3fae5a"
       }
      ]
     }

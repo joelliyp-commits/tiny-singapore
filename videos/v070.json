@@ -6,24 +6,18 @@
    "cap": "PR, first home: *5% extra*",
    "scenes": [
     {
-     "k": "street",
+     "k": "doc",
      "at": 0,
-     "day": true,
-     "l": "FIRST HOME",
-     "lat": 0.3,
-     "r": "CONDO",
-     "rat": 0.6,
-     "chips": [
+     "title": "FIRST HOME",
+     "lines": [
       {
-       "t": "+5% ABSD",
-       "at": "@5%",
-       "y": 330,
-       "bg": "#e0774f",
-       "fg": "#fffaf0",
-       "fs": 74,
-       "x": 540
+       "t": "Buyer: PR",
+       "at": 0.5,
+       "col": "#2c605d"
       }
-     ]
+     ],
+     "stamp": "+5% ABSD",
+     "stampAt": "@5%"
     }
    ]
   },
@@ -32,18 +26,20 @@
    "cap": "*on top of* the usual stamp duty",
    "scenes": [
     {
-     "k": "bank",
+     "k": "receipt",
      "at": 0,
-     "sign": "IRAS",
-     "chips": [
+     "title": "STAMP DUTY",
+     "items": [
       {
-       "t": "ON TOP OF BSD",
+       "t": "Buyer's stamp duty",
+       "v": "BSD",
+       "at": 0.4
+      },
+      {
+       "t": "Additional (PR)",
+       "v": "+5%",
        "at": "@top",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 64,
-       "x": 540
+       "col": "#e0774f"
       }
      ]
     }
@@ -54,14 +50,14 @@
    "cap": "on *$1.2M*, that's *$60,000*",
    "scenes": [
     {
-     "k": "cash",
+     "k": "phone",
      "at": 0,
-     "l": "$1.2M",
-     "inAt": 99,
-     "out": [],
-     "outAt": 99,
-     "res": "$60,000 ABSD",
-     "resAt": "@$60,000"
+     "app": "IRAS",
+     "lab": "ABSD ON $1.2M",
+     "to": 60000,
+     "at2": "@$60,000",
+     "neg": true,
+     "from": 0
     }
    ]
   },
@@ -70,24 +66,19 @@
    "cap": "a second home: *30%*",
    "scenes": [
     {
-     "k": "street",
+     "k": "ladder",
      "at": 0,
-     "day": false,
-     "l": "FIRST",
-     "lat": 0.2,
-     "r": "SECOND",
-     "rat": 0.4,
-     "chips": [
-      {
-       "t": "30% ABSD",
-       "at": "@30%",
-       "y": 330,
-       "bg": "#e0774f",
-       "fg": "#fffaf0",
-       "fs": 74,
-       "x": 540
-      }
-     ]
+     "steps": [
+      "1ST HOME",
+      "2ND HOME"
+     ],
+     "sub": [
+      "5%",
+      "30%"
+     ],
+     "to": 1,
+     "at2": "@30%",
+     "bg": "#fbe3d6"
     }
    ]
   },
@@ -96,13 +87,20 @@
    "cap": "citizens: *0%* first, *20%* second",
    "scenes": [
     {
-     "k": "street",
+     "k": "ladder",
      "at": 0,
-     "day": true,
-     "l": "CITIZEN: 0%",
-     "lat": "@nothing",
-     "r": "2ND: 20%",
-     "rat": "@20%"
+     "steps": [
+      "SC 1ST",
+      "SC 2ND",
+      "PR 2ND"
+     ],
+     "sub": [
+      "0%",
+      "20%",
+      "30%"
+     ],
+     "to": 1,
+     "at2": "@20%"
     }
    ]
   },
@@ -111,18 +109,25 @@
    "cap": "*citizenship first* can change the maths",
    "scenes": [
     {
-     "k": "room",
+     "k": "timeline",
      "at": 0,
-     "nobubble": true,
-     "chips": [
+     "marks": [
       {
-       "t": "CITIZENSHIP FIRST?",
+       "label": "NOW",
+       "sub": "PR",
+       "at": 0.3
+      },
+      {
+       "label": "LATER",
+       "sub": "CITIZEN",
        "at": "@citizenship",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 62,
-       "x": 540
+       "col": "#3fae5a"
+      },
+      {
+       "label": "2ND HOME",
+       "sub": "20%",
+       "at": "@maths",
+       "col": "#e0774f"
       }
      ]
     }

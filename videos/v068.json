@@ -6,23 +6,18 @@
    "cap": "a *$600,000* flat. what you need *upfront*",
    "scenes": [
     {
-     "k": "growth",
+     "k": "doc",
      "at": 0,
-     "day": true,
-     "l": "$600K FLAT",
-     "to": 0,
-     "stack": 0,
-     "chips": [
+     "title": "HDB RESALE",
+     "lines": [
       {
-       "t": "WHAT YOU NEED UPFRONT",
-       "at": "@upfront",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 54,
-       "x": 540
+       "t": "Price: $600,000",
+       "at": 0.5,
+       "col": "#2c605d"
       }
-     ]
+     ],
+     "stamp": "UPFRONT?",
+     "stampAt": "@upfront"
     }
    ]
   },
@@ -31,29 +26,24 @@
    "cap": "borrow *75%*. you pay *$150,000*",
    "scenes": [
     {
-     "k": "bank",
+     "k": "receipt",
      "at": 0,
-     "sign": "HDB LOAN",
-     "chips": [
+     "title": "THE SPLIT",
+     "items": [
       {
-       "t": "LOAN UP TO 75%",
+       "t": "HDB loan 75%",
+       "v": "$450,000",
        "at": "@75%",
-       "y": 330,
-       "bg": "#fffaf0",
-       "fg": "#163634",
-       "fs": 58,
-       "x": 540
+       "col": "#2c605d"
       },
       {
-       "t": "YOU PAY $150,000",
+       "t": "Yours 25%",
+       "v": "$150,000",
        "at": "@$150,000",
-       "y": 460,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 58,
-       "x": 540
+       "col": "#e0774f"
       }
-     ]
+     ],
+     "bg": "#2c605d"
     }
    ]
   },
@@ -62,20 +52,17 @@
    "cap": "from *CPF, cash, or both*",
    "scenes": [
     {
-     "k": "bank",
+     "k": "phone",
      "at": 0,
-     "sign": "CPF",
-     "flow": "in",
-     "flowAt": 0.3,
-     "chips": [
+     "app": "CPF",
+     "lab": "ORDINARY ACCOUNT",
+     "bigText": "CPF OK",
+     "rows": [
       {
-       "t": "CPF OR CASH",
+       "t": "25% downpayment",
+       "v": "CPF / CASH",
        "at": "@cpf",
-       "y": 330,
-       "bg": "#3fae5a",
-       "fg": "#fffaf0",
-       "fs": 66,
-       "x": 540
+       "col": "#3fae5a"
       }
      ]
     }
@@ -86,32 +73,28 @@
    "cap": "plus about *$12,600* stamp duty",
    "scenes": [
     {
-     "k": "growth",
+     "k": "receipt",
      "at": 0,
-     "day": true,
-     "l": "$600K FLAT",
-     "to": 0,
-     "stack": 3,
-     "chips": [
+     "title": "UPFRONT",
+     "items": [
       {
-       "t": "+ $12,600 STAMP DUTY",
-       "at": "@$12,600",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 56,
-       "x": 540
+       "t": "25% down",
+       "v": "$150,000",
+       "at": 0.3
       },
       {
-       "t": "+ LEGAL FEES",
-       "at": "@legal",
-       "y": 460,
-       "bg": "#fffaf0",
-       "fg": "#163634",
-       "fs": 50,
-       "x": 540
+       "t": "Stamp duty",
+       "v": "$12,600",
+       "at": "@$12,600"
+      },
+      {
+       "t": "Legal fees",
+       "v": "EXTRA",
+       "at": "@legal"
       }
-     ]
+     ],
+     "total": "$162,600+",
+     "totalAt": "@legal"
     }
    ]
   },
@@ -120,26 +103,20 @@
    "cap": "above valuation? *cash only*",
    "scenes": [
     {
-     "k": "room",
+     "k": "scale",
      "at": 0,
-     "nobubble": true,
+     "l": "VALUATION",
+     "r": "PRICE",
+     "tilt": 12,
+     "tiltAt": "@valuation",
      "chips": [
       {
-       "t": "ABOVE VALUATION?",
-       "at": "@valuation",
-       "y": 330,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 62,
-       "x": 540
-      },
-      {
-       "t": "CASH ONLY",
+       "t": "GAP: CASH ONLY",
        "at": "@cash",
-       "y": 460,
+       "y": 330,
        "bg": "#e0774f",
        "fg": "#fffaf0",
-       "fs": 66,
+       "fs": 60,
        "x": 540
       }
      ]
@@ -151,27 +128,22 @@
    "cap": "check *CPF*, keep a *cash buffer*",
    "scenes": [
     {
-     "k": "bank",
+     "k": "phone",
      "at": 0,
-     "sign": "CPF",
-     "chips": [
+     "app": "CPF",
+     "lab": "BEFORE YOU OFFER",
+     "bigText": "CHECK",
+     "rows": [
       {
-       "t": "CHECK YOUR CPF",
-       "at": "@cpf",
-       "y": 330,
-       "bg": "#fffaf0",
-       "fg": "#163634",
-       "fs": 60,
-       "x": 540
+       "t": "CPF balance",
+       "v": "CHECK",
+       "at": "@cpf"
       },
       {
-       "t": "KEEP A CASH BUFFER",
+       "t": "Cash buffer",
+       "v": "KEEP",
        "at": "@buffer",
-       "y": 460,
-       "bg": "#ffd36b",
-       "fg": "#163634",
-       "fs": 56,
-       "x": 540
+       "col": "#3fae5a"
       }
      ]
     }
