@@ -1,0 +1,91 @@
+{
+ "id": "v063",
+ "motion": true,
+ "title": "Signed the OTP?\n*What happens next*",
+ "pill": "BUYING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "OTP",
+    "bld": "condo"
+   },
+   "say": "You've found the one, and the seller hands you the option to purchase. Here's what happens next.",
+   "cap": "you got the *option to purchase*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "1% · 14 DAYS"
+   },
+   "say": "For a private home, you usually pay 1% for the option. You then have about 14 days to decide.",
+   "cap": "private: *1%*, about *14 days*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1,
+     4
+    ],
+    "labels": [
+     "OPTION",
+     "EXERCISE"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Exercise it, and you pay about 4% more. That's 5% down in total.",
+   "cap": "exercise: *4% more*. *5%* in total",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$1,000",
+    "bld": "hdb"
+   },
+   "say": "For an HDB resale flat, the option fee is capped at 1,000 dollars, and you have 21 days.",
+   "cap": "HDB: up to *$1,000*, *21 days*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "MAX $5,000"
+   },
+   "say": "The total deposit for HDB is capped at 5,000 dollars.",
+   "cap": "HDB deposit: max *$5,000*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "FEE GONE"
+   },
+   "say": "Walk away without exercising, and the option fee is gone.",
+   "cap": "walk away: *fee gone*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "condo"
+   },
+   "say": "Save this before your next viewing.",
+   "cap": "*save this* before your viewing",
+   "stat": "Terms vary. Check your OTP"
+  }
+ ],
+ "source": "Dollars and Sense, PropertyGuru",
+ "caption": "Found the one and got the option to purchase? Here's what happens next. 🏠\n\nPrivate home: usually 1% for the option, about 14 days to decide. Exercise it and pay about 4% more: 5% down in total.\nHDB resale: option fee up to $1,000, 21 days, total deposit capped at $5,000.\n\nWalk away without exercising, and the option fee is gone.\n\nSave this before your next viewing 👇",
+ "hashtags": "#singaporeproperty #otp #optiontopurchase #hdbresale #condosg #propertysg #sgproperty #tinysingapore"
+}

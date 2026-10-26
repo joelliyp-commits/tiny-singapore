@@ -1,0 +1,243 @@
+{
+ "title": "One bedder: easy to rent, harder to sell",
+ "lines": [
+  {
+   "say": "You bought a one bedroom condo to rent out. Finding a tenant was easy. Finding a buyer could be harder.",
+   "cap": "tenant: easy. *buyer: harder*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "TENANT IN",
+     "lat": "@tenant",
+     "r": "1 BEDROOM",
+     "rat": 0.3,
+     "chips": [
+      {
+       "t": "BUYER?",
+       "at": "@buyer",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 74,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Developers are building fewer of them. New launch one bedroom sales fell from about 1,800 a year to about 500.",
+   "cap": "new launch sales: *1,800* to about *500* a year",
+   "scenes": [
+    {
+     "k": "cash",
+     "at": 0,
+     "l": "NEW LAUNCH",
+     "inAt": 99,
+     "out": [],
+     "outAt": 99,
+     "chips": [
+      {
+       "t": "1,800 A YEAR",
+       "at": "@1,800",
+       "y": 330,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      },
+      {
+       "t": "NOW ABOUT 500",
+       "at": "@500",
+       "y": 460,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Some big new launches now have no one bedroom units at all.",
+   "cap": "some launches: *no one bedroom* at all",
+   "scenes": [
+    {
+     "k": "cash",
+     "at": 0,
+     "l": "NEW LAUNCH",
+     "inAt": 99,
+     "out": [],
+     "outAt": 99,
+     "res": "NO 1 BEDROOM",
+     "resAt": "@one"
+    }
+   ]
+  },
+  {
+   "say": "Resale went the other way: from about 100 one bedroom deals a year to about 1,000.",
+   "cap": "resale: *100* to about *1,000* a year",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": true,
+     "l": "RESALE",
+     "to": 0,
+     "stack": 9,
+     "chips": [
+      {
+       "t": "100 TO 1,000 A YEAR",
+       "at": "@1,000",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Who buys them? HDB upgraders, about 4 in 10 buyers. Small resale units cost around 818,000 dollars, against about 1.37 million for new ones.",
+   "cap": "*4 in 10* are HDB upgraders. *$818,000* vs *$1.37M*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "HDB",
+     "lat": 0.2,
+     "r": "1 BEDROOM",
+     "rat": 0.4,
+     "chips": [
+      {
+       "t": "4 IN 10: HDB UPGRADERS",
+       "at": "@4",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 52,
+       "x": 540
+      },
+      {
+       "t": "$818K VS $1.37M NEW",
+       "at": "@$818,000",
+       "y": 460,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 54,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "But fewer buyers want a one bedder. So when you sell, your price has to be right.",
+   "cap": "*fewer buyers*. your price *has to be right*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FEWER BUYERS",
+       "at": "@fewer",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 66,
+       "x": 540
+      },
+      {
+       "t": "PRICE IT RIGHT",
+       "at": "@price",
+       "y": 460,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Bigger layouts, good transport and a longer lease tend to sell more easily.",
+   "cap": "*bigger layouts, transport, longer lease*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "EASIER",
+     "lat": 0.2,
+     "r": "TO SELL",
+     "rat": 0.3,
+     "chips": [
+      {
+       "t": "BIGGER LAYOUT",
+       "at": "@bigger",
+       "y": 300,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 52,
+       "x": 540
+      },
+      {
+       "t": "GOOD TRANSPORT",
+       "at": "@transport",
+       "y": 420,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 52,
+       "x": 540
+      },
+      {
+       "t": "LONGER LEASE",
+       "at": "@lease",
+       "y": 540,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 52,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Thinking of selling yours? Comment CHECK.",
+   "cap": "thinking of selling? comment *CHECK*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "COMMENT CHECK",
+       "at": "@check",
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 76,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "PropNex data via The Business Times, 23 Oct 2026.",
+ "caption": "Bought a one bedroom condo to rent out? Finding a tenant was easy. Finding a buyer could be harder. 🏢\n\nPropNex data reported by The Business Times: new launch one bedroom sales fell from about 1,800 a year (2010 to 2015) to about 500 (2021 to 2025), and some big new launches now have none at all. Resale went the other way: from about 100 deals a year to about 1,000. About 4 in 10 buyers are HDB upgraders, and small resale units cost around $818,000 against about $1.37M for new ones.\n\nFewer buyers want a one bedder, so when you sell, your price has to be right. Bigger layouts, good transport and a longer lease tend to sell more easily.\n\nThinking of selling yours? Comment CHECK 👇",
+ "hashtags": "#singaporeproperty #onebedroom #condosg #rentalincome",
+ "id": "v073",
+ "flat": true
+}

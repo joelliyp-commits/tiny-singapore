@@ -1,0 +1,112 @@
+{
+ "id": "v066",
+ "motion": true,
+ "title": "Selling within 4 years?\n*Seller's stamp duty*",
+ "pill": "SELLING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "8%?",
+    "bld": "condo",
+    "dir": "down"
+   },
+   "say": "You bought a condo in 2025 and want to sell after two and a half years. You could owe 8% in stamp duty.",
+   "cap": "sell in year 3? *8% stamp duty*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "4 YEARS"
+   },
+   "say": "For private homes bought from 4 July 2025, seller's stamp duty lasts four years.",
+   "cap": "bought from July 2025: *4 years*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     16,
+     12
+    ],
+    "labels": [
+     "YEAR 1",
+     "YEAR 2"
+    ],
+    "cols": [
+     14710863,
+     14710863
+    ]
+   },
+   "say": "Sell in the first year: 16%. Second year: 12%.",
+   "cap": "year 1: *16%*. year 2: *12%*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     8,
+     4,
+     0.3
+    ],
+    "labels": [
+     "YEAR 3",
+     "YEAR 4",
+     "AFTER"
+    ],
+    "cols": [
+     14710863,
+     14710863,
+     2908253
+    ]
+   },
+   "say": "Third year: 8%. Fourth year: 4%. After that, nothing.",
+   "cap": "year 3: *8%*. year 4: *4%*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$128K",
+    "bld": "condo",
+    "dir": "down"
+   },
+   "say": "On a 1.6 million dollar sale in year three, that's 128,000 dollars.",
+   "cap": "$1.6M in year 3: *$128,000*",
+   "stat": "",
+   "count": {
+    "to": 128000,
+    "pre": "$",
+    "label": "seller's stamp duty",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "HDB: MOP",
+    "bld": "hdb"
+   },
+   "say": "HDB flats aren't affected, because of the minimum occupation period.",
+   "cap": "HDB: *not affected*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "condo"
+   },
+   "say": "Save this before you plan your exit.",
+   "cap": "*save this* before you plan your exit",
+   "stat": "Higher of price or market value"
+  }
+ ],
+ "source": "MOF, IRAS, SRX",
+ "caption": "Bought a condo in 2025 and want to sell after two and a half years? You could owe 8% seller's stamp duty. 🏢\n\nFor private homes bought from 4 July 2025, SSD lasts four years: 16% in year 1, 12% in year 2, 8% in year 3, 4% in year 4, then nothing. On a $1.6M sale in year three, that's $128,000. HDB flats aren't affected because of the MOP.\n\nSave this before you plan your exit 👇\n\nCharged on the higher of price or market value.",
+ "hashtags": "#singaporeproperty #ssd #stampduty #condosg #propertysg #sgproperty #tinysingapore"
+}

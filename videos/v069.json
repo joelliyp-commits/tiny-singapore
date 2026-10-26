@@ -1,0 +1,188 @@
+{
+ "title": "The salary for a $700,000 HDB flat",
+ "lines": [
+  {
+   "say": "You want a 700,000 dollar flat with an HDB loan. Here's roughly the income you need.",
+   "cap": "a *$700,000* flat. the *income* you need",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": true,
+     "l": "$700K FLAT",
+     "to": 0,
+     "stack": 0,
+     "chips": [
+      {
+       "t": "WHAT INCOME?",
+       "at": "@income",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "A 75% loan is 525,000 dollars.",
+   "cap": "a 75% loan: *$525,000*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "HDB LOAN",
+     "chips": [
+      {
+       "t": "LOAN $525,000",
+       "at": "@$525,000",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 66,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "At 2.6% over 25 years, that's about 2,400 dollars a month.",
+   "cap": "about *$2,400* a month",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": false,
+     "l": "MONTHLY",
+     "to": 0,
+     "stack": 5,
+     "chips": [
+      {
+       "t": "2.6% OVER 25 YEARS",
+       "at": "@2.6%",
+       "y": 330,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 54,
+       "x": 540
+      },
+      {
+       "t": "ABOUT $2,400 A MONTH",
+       "at": "@$2,400",
+       "y": 460,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Your instalment can't go above 30% of your income. That's the mortgage servicing ratio.",
+   "cap": "max *30%* of your income",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "MSR 30%",
+     "chips": [
+      {
+       "t": "MAX 30% OF INCOME",
+       "at": "@30%",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "So you'd need roughly 8,000 dollars a month as a household.",
+   "cap": "roughly *$8,000* a month",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "ABOUT $8,000 A MONTH",
+       "at": "@$8,000",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 62,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Comment PLAN and we'll send you the calculator used in this video.",
+   "cap": "comment *PLAN* for the calculator",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "COMMENT PLAN",
+       "at": "@plan",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 74,
+       "x": 540
+      },
+      {
+       "t": "FREE CALCULATOR",
+       "at": "@calculator",
+       "y": 460,
+       "bg": "#2c605d",
+       "fg": "#fffaf0",
+       "fs": 54,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "Illustration. HDB assesses each case. MSR 30%.",
+ "caption": "Want a $700,000 flat with an HDB loan? Here's roughly the income you need. 🏠\n\nA 75% loan is $525,000. At 2.6% over 25 years, that's about $2,400 a month. Your instalment can't go above 30% of income (the mortgage servicing ratio), so you'd need roughly $8,000 a month as a household.\n\nComment PLAN and we'll send you the calculator used in this video 👇\n\nIllustration only. HDB assesses each case.",
+ "hashtags": "#singaporeproperty #hdb #hdbloan #msr #homeloan",
+ "id": "v069",
+ "flat": true
+}

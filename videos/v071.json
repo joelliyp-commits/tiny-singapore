@@ -1,0 +1,98 @@
+{
+ "id": "v071",
+ "motion": true,
+ "title": "Got your keys.\n*When can you sell?*",
+ "pill": "SELLING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "KEYS",
+    "bld": "hdb"
+   },
+   "say": "You just got your keys. When can you actually sell?",
+   "cap": "got your keys. *when can you sell?*",
+   "stat": ""
+  },
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "5 YEAR MOP"
+   },
+   "say": "HDB flat? Five years. That's the minimum occupation period.",
+   "cap": "HDB: *5 years* MOP",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "NO SALE"
+   },
+   "say": "Before that, you can't sell or rent out the whole flat.",
+   "cap": "before that: *no sale, no full rental*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     16,
+     12,
+     8,
+     4
+    ],
+    "labels": [
+     "Y1",
+     "Y2",
+     "Y3",
+     "Y4"
+    ],
+    "cols": [
+     14710863,
+     14710863,
+     14710863,
+     14710863
+    ]
+   },
+   "say": "Private home bought from July 2025? You can sell any time, but seller's stamp duty applies for four years.",
+   "cap": "private: *SSD for 4 years*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "EC TERMS",
+    "bld": "ec"
+   },
+   "say": "Bought an EC? It has its own minimum occupation period, so check your project's terms.",
+   "cap": "EC: *check your terms*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "PLAN",
+    "b": "DATES",
+    "l": "hdb",
+    "r": "condo"
+   },
+   "say": "Plan your next move around these dates, not after.",
+   "cap": "plan *around these dates*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "hdb"
+   },
+   "say": "Save this.",
+   "cap": "*save this*",
+   "stat": "Check your own purchase date"
+  }
+ ],
+ "source": "HDB, IRAS, MOF",
+ "caption": "Just got your keys? Here's when you can actually sell. 🔑\n\nHDB: 5 year minimum occupation period. Before that, you can't sell or rent out the whole flat.\nPrivate (bought from July 2025): sell any time, but seller's stamp duty applies for four years.\nEC: has its own MOP, so check your project's terms.\n\nPlan your next move around these dates, not after.\n\nSave this 👇",
+ "hashtags": "#singaporeproperty #mop #ssd #hdb #condosg #propertysg #sgproperty #tinysingapore"
+}

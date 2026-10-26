@@ -1,0 +1,159 @@
+{
+ "title": "PR buying a home? The 5% and 30%",
+ "lines": [
+  {
+   "say": "You're a permanent resident buying your first home in Singapore. There's 5% extra stamp duty.",
+   "cap": "PR, first home: *5% extra*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "FIRST HOME",
+     "lat": 0.3,
+     "r": "CONDO",
+     "rat": 0.6,
+     "chips": [
+      {
+       "t": "+5% ABSD",
+       "at": "@5%",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 74,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "That's additional buyer's stamp duty, on top of the usual stamp duty.",
+   "cap": "*on top of* the usual stamp duty",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "IRAS",
+     "chips": [
+      {
+       "t": "ON TOP OF BSD",
+       "at": "@top",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "On a 1.2 million dollar condo, that's 60,000 dollars.",
+   "cap": "on *$1.2M*, that's *$60,000*",
+   "scenes": [
+    {
+     "k": "cash",
+     "at": 0,
+     "l": "$1.2M",
+     "inAt": 99,
+     "out": [],
+     "outAt": 99,
+     "res": "$60,000 ABSD",
+     "resAt": "@$60,000"
+    }
+   ]
+  },
+  {
+   "say": "Buy a second home, and it jumps to 30%.",
+   "cap": "a second home: *30%*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": false,
+     "l": "FIRST",
+     "lat": 0.2,
+     "r": "SECOND",
+     "rat": 0.4,
+     "chips": [
+      {
+       "t": "30% ABSD",
+       "at": "@30%",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 74,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Citizens pay nothing extra on their first, and 20% on their second.",
+   "cap": "citizens: *0%* first, *20%* second",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "CITIZEN: 0%",
+     "lat": "@nothing",
+     "r": "2ND: 20%",
+     "rat": "@20%"
+    }
+   ]
+  },
+  {
+   "say": "Getting citizenship before your second purchase can change the maths.",
+   "cap": "*citizenship first* can change the maths",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "CITIZENSHIP FIRST?",
+       "at": "@citizenship",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 62,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "IRAS ABSD rates. Married couples have separate rules.",
+ "caption": "PR buying your first home in Singapore? There's 5% additional buyer's stamp duty on top of the usual stamp duty: $60,000 on a $1.2M condo. 🏠\n\nBuy a second home and it jumps to 30%. Citizens pay nothing extra on their first and 20% on their second, so getting citizenship before your second purchase can change the maths.\n\nUseful info? Follow for more 👇\n\nIRAS ABSD rates. Married couples have separate rules.",
+ "hashtags": "#singaporeproperty #absd #permanentresident #stampduty",
+ "id": "v070",
+ "flat": true
+}

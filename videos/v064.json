@@ -1,0 +1,95 @@
+{
+ "id": "v064",
+ "motion": true,
+ "title": "3 rule changes.\n*One pattern*",
+ "pill": "POLICY",
+ "lines": [
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "3 CHANGES"
+   },
+   "say": "You've seen three housing changes in one season. Put them together and you can see a pattern.",
+   "cap": "three changes. *one pattern*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "NO WAIT",
+    "bld": "hdb",
+    "dir": "up"
+   },
+   "say": "In July, private owners no longer had to wait 15 months to buy an HDB resale flat.",
+   "cap": "July: *no 15 month wait*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     14,
+     16,
+     16,
+     18
+    ],
+    "labels": [
+     "BTO",
+     "NOW",
+     "EC",
+     "NOW"
+    ],
+    "cols": [
+     2908253,
+     14710863,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "In August, BTO and EC income ceilings went up, to 16,000 and 18,000 dollars.",
+   "cap": "August: ceilings up to *$16K* and *$18K*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 2
+   },
+   "say": "And families get an extra ballot chance for each child, from February 2027.",
+   "cap": "an *extra ballot* per child",
+   "stat": ""
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "MORE BUYERS"
+   },
+   "say": "Each one lets more people into the market.",
+   "cap": "each one: *more buyers*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WHY",
+    "bld": "hdb"
+   },
+   "say": "Most people read these one by one. Comment WHY and we'll show you what they mean together.",
+   "cap": "comment *WHY*",
+   "stat": "Not a forecast"
+  }
+ ],
+ "source": "HDB, MND, EdgeProp",
+ "caption": "Three housing changes in one season. Put them together and you can see a pattern. 🏛️\n\nJuly: private owners no longer wait 15 months to buy an HDB resale flat.\nAugust: BTO and EC income ceilings up to $16,000 and $18,000.\nFrom February 2027: an extra ballot chance per child for families.\n\nEach one lets more people into the market.\n\nComment WHY and we'll show you what they mean together 👇\n\nNot a forecast.",
+ "hashtags": "#singaporeproperty #hdb #bto #housingpolicy #propertysg #sgproperty #tinysingapore"
+}

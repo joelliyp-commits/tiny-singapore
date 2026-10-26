@@ -1,0 +1,208 @@
+{
+ "title": "Buying an HDB resale flat: the cash you need",
+ "lines": [
+  {
+   "say": "You're buying a 600,000 dollar HDB resale flat. Here's what you need upfront.",
+   "cap": "a *$600,000* flat. what you need *upfront*",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": true,
+     "l": "$600K FLAT",
+     "to": 0,
+     "stack": 0,
+     "chips": [
+      {
+       "t": "WHAT YOU NEED UPFRONT",
+       "at": "@upfront",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 54,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "With an HDB loan, you can borrow up to 75%. So 25% is yours: 150,000 dollars.",
+   "cap": "borrow *75%*. you pay *$150,000*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "HDB LOAN",
+     "chips": [
+      {
+       "t": "LOAN UP TO 75%",
+       "at": "@75%",
+       "y": 330,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 58,
+       "x": 540
+      },
+      {
+       "t": "YOU PAY $150,000",
+       "at": "@$150,000",
+       "y": 460,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Good news: that can come from CPF, cash, or both.",
+   "cap": "from *CPF, cash, or both*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "CPF",
+     "flow": "in",
+     "flowAt": 0.3,
+     "chips": [
+      {
+       "t": "CPF OR CASH",
+       "at": "@cpf",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 66,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Add about 12,600 dollars in buyer's stamp duty, plus legal fees.",
+   "cap": "plus about *$12,600* stamp duty",
+   "scenes": [
+    {
+     "k": "growth",
+     "at": 0,
+     "day": true,
+     "l": "$600K FLAT",
+     "to": 0,
+     "stack": 3,
+     "chips": [
+      {
+       "t": "+ $12,600 STAMP DUTY",
+       "at": "@$12,600",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 56,
+       "x": 540
+      },
+      {
+       "t": "+ LEGAL FEES",
+       "at": "@legal",
+       "y": 460,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 50,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Paying above valuation? That gap must be cash.",
+   "cap": "above valuation? *cash only*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "ABOVE VALUATION?",
+       "at": "@valuation",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 62,
+       "x": 540
+      },
+      {
+       "t": "CASH ONLY",
+       "at": "@cash",
+       "y": 460,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 66,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "So check your CPF balance and keep a cash buffer before you offer.",
+   "cap": "check *CPF*, keep a *cash buffer*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "CPF",
+     "chips": [
+      {
+       "t": "CHECK YOUR CPF",
+       "at": "@cpf",
+       "y": 330,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      },
+      {
+       "t": "KEEP A CASH BUFFER",
+       "at": "@buffer",
+       "y": 460,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 56,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "HDB loan LTV 75% from 20 Aug 2024. Illustration only.",
+ "caption": "Buying a $600,000 HDB resale flat? Here's what you need upfront. 🏠\n\nWith an HDB loan you can borrow up to 75%, so 25% is yours: $150,000. That can come from CPF, cash, or both. Add about $12,600 in buyer's stamp duty plus legal fees. Paying above valuation? That gap must be cash.\n\nCheck your CPF balance and keep a cash buffer before you offer.\n\nUseful info? Follow for more 👇\n\nHDB loan LTV 75% from 20 Aug 2024. Illustration only.",
+ "hashtags": "#singaporeproperty #hdb #hdbresale #downpayment #cpf",
+ "id": "v068",
+ "flat": true
+}

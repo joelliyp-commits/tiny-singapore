@@ -1,0 +1,112 @@
+{
+ "id": "v067",
+ "motion": true,
+ "title": "Million dollar flats:\n*what they share*",
+ "pill": "HDB",
+ "lines": [
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "9": "g"
+    },
+    "tags": [
+     {
+      "f": 9,
+      "text": "$1M+",
+      "col": "g",
+      "side": 1
+     }
+    ]
+   },
+   "say": "You're wondering how an HDB flat sells for over a million dollars. Most of them share a few things.",
+   "cap": "*$1M* HDB flats share a few things",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     664,
+     557,
+     368
+    ],
+    "labels": [
+     "4RM",
+     "5RM",
+     "EXEC"
+    ],
+    "cols": [
+     2908253,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Size: most are 4 room, 5 room or executive flats.",
+   "cap": "mostly *4 room, 5 room, executive*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "TOA PAYOH",
+    "b": "QUEENSTOWN",
+    "l": "hdb",
+    "r": "hdb"
+   },
+   "say": "Location: towns like Toa Payoh, Bukit Merah and Queenstown lead the count.",
+   "cap": "*Toa Payoh, Bukit Merah, Queenstown*",
+   "stat": ""
+  },
+  {
+   "tpl": "lease",
+   "p": {
+    "yrs": "NEWER LEASE"
+   },
+   "say": "Lease: many are newer flats, just past their minimum occupation period.",
+   "cap": "many are *newer flats*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "11": "g"
+    },
+    "tags": [
+     {
+      "f": 11,
+      "text": "HIGH FLOOR",
+      "col": "g",
+      "side": 1
+     }
+    ]
+   },
+   "say": "And high floors near an MRT tend to fetch the most.",
+   "cap": "*high floors* near an MRT",
+   "stat": ""
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "SPREADING"
+   },
+   "say": "They're now spreading to towns like Tampines, Punggol and Woodlands.",
+   "cap": "now *spreading* to more towns",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CHECK",
+    "bld": "hdb"
+   },
+   "say": "Curious if your flat has these traits? Comment CHECK.",
+   "cap": "comment *CHECK*",
+   "stat": "2025 counts by flat type"
+  }
+ ],
+ "source": "PropertyNet, AsiaOne, HDB",
+ "caption": "How does an HDB flat sell for over $1 million? Most share a few things. 🏠\n\nSize: mostly 4 room, 5 room or executive. Location: Toa Payoh, Bukit Merah and Queenstown lead the count. Lease: many are newer flats just past MOP. High floors near an MRT tend to fetch the most. And they're spreading to towns like Tampines, Punggol and Woodlands.\n\nCurious if your flat has these traits? Comment CHECK 👇",
+ "hashtags": "#singaporeproperty #hdb #milliondollarflat #hdbresale #propertysg #sgproperty #tinysingapore"
+}

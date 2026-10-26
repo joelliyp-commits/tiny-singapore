@@ -1,0 +1,207 @@
+{
+ "title": "Decoupling: what it is, what it costs",
+ "lines": [
+  {
+   "say": "You and your spouse own a condo together. Buying a second home means 20% extra stamp duty.",
+   "cap": "a second home means *20% extra* stamp duty",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "YOUR CONDO",
+     "lat": 0.3,
+     "r": "SECOND HOME",
+     "rat": "@second",
+     "chips": [
+      {
+       "t": "+20% ABSD",
+       "at": "@20%",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 72,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Some couples look at decoupling: one spouse sells their share to the other.",
+   "cap": "*decoupling*: one spouse sells their share",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "DECOUPLING",
+       "at": "@decoupling",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 76,
+       "x": 540
+      },
+      {
+       "t": "SELL YOUR SHARE",
+       "at": "@share",
+       "y": 460,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 54,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "The one who's out may then buy as a first time buyer, without that 20%.",
+   "cap": "then buy as a *first time buyer*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "OUT",
+     "lat": 0.2,
+     "r": "FIRST HOME",
+     "rat": "@first",
+     "chips": [
+      {
+       "t": "NO 20% ABSD",
+       "at": "@20%",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "But it isn't free. Buyer's stamp duty is due on the share transferred, plus legal fees.",
+   "cap": "*not free*: stamp duty on the share, plus legal fees",
+   "scenes": [
+    {
+     "k": "cash",
+     "at": 0,
+     "l": "SHARE",
+     "inAt": 99,
+     "out": [
+      "STAMP DUTY",
+      "LEGAL FEES"
+     ],
+     "outAt": 1.2,
+     "chips": [
+      {
+       "t": "NOT FREE",
+       "at": "@free",
+       "y": 330,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "CPF used for that share goes back to CPF, and the remaining owner may need a new loan.",
+   "cap": "CPF *goes back*. maybe a *new loan*",
+   "scenes": [
+    {
+     "k": "bank",
+     "at": 0,
+     "sign": "CPF",
+     "flow": "in",
+     "flowAt": 0.4,
+     "chips": [
+      {
+       "t": "NEW LOAN?",
+       "at": "@loan",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 64,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Sometimes the costs outweigh the savings. Get legal advice before you start.",
+   "cap": "costs can *outweigh savings*. get *legal advice*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "COSTS VS SAVINGS",
+       "at": "@costs",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 62,
+       "x": 540
+      },
+      {
+       "t": "GET LEGAL ADVICE",
+       "at": "@legal",
+       "y": 460,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 56,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Comment PLAN and we'll send you the calculator to run your numbers.",
+   "cap": "comment *PLAN* for the calculator",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "COMMENT PLAN",
+       "at": "@plan",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 74,
+       "x": 540
+      },
+      {
+       "t": "FREE CALCULATOR",
+       "at": "@calculator",
+       "y": 460,
+       "bg": "#2c605d",
+       "fg": "#fffaf0",
+       "fs": 54,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "Private property only. Not legal or tax advice.",
+ "caption": "Own a condo with your spouse and thinking of a second home? That usually means 20% ABSD. 🏢\n\nSome couples look at decoupling: one spouse sells their share to the other, so the one who's out may buy as a first time buyer.\n\nBut it isn't free: buyer's stamp duty on the share transferred, legal fees, CPF refunded with interest, and the remaining owner may need a new loan. Sometimes the costs outweigh the savings. Get legal advice before you start.\n\nComment PLAN and we'll send you the calculator to run your numbers 👇\n\nPrivate property only; HDB has its own rules. Not legal or tax advice.",
+ "hashtags": "#singaporeproperty #decoupling #absd #stampduty #condosg",
+ "id": "v065",
+ "flat": true
+}

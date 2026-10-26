@@ -1,0 +1,126 @@
+{
+ "id": "v061",
+ "motion": true,
+ "title": "HDB prices dipped.\n*$1M flats hit a record*",
+ "pill": "HDB",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FALLING?",
+    "bld": "hdb",
+    "dir": "down"
+   },
+   "say": "You heard HDB resale prices are falling. They dipped for a third quarter in a row. But that's not the whole story.",
+   "cap": "prices dipped. *not the whole story*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "Q3 -0.1%",
+    "bld": "hdb",
+    "dir": "down"
+   },
+   "say": "In the third quarter of 2026, prices slipped about 0.1%.",
+   "cap": "Q3: down about *0.1%*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     6396,
+     7645
+    ],
+    "labels": [
+     "Q2",
+     "Q3"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Yet more flats changed hands: 7,645, up about 20% from the quarter before.",
+   "cap": "*7,645* flats sold, up about *20%*",
+   "stat": "",
+   "count": {
+    "to": 7645,
+    "pre": "",
+    "label": "resale flats, Q3",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "9": "g"
+    },
+    "tags": [
+     {
+      "f": 9,
+      "text": "$1M+",
+      "col": "g",
+      "side": 1
+     }
+    ]
+   },
+   "say": "And about 600 flats sold for a million dollars or more. A quarterly record.",
+   "cap": "about *600* sold for *$1M+*",
+   "stat": "",
+   "count": {
+    "to": 596,
+    "pre": "",
+    "label": "$1M+ flats, Q3",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "hdb",
+     "label": "AVERAGE",
+     "price": "FLAT"
+    },
+    "r": {
+     "type": "hdb",
+     "label": "TOP END",
+     "price": "UP"
+    }
+   },
+   "say": "So the average barely moved, but the top end kept climbing.",
+   "cap": "average flat. *top end climbing*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "TOWN",
+    "b": "FLOOR",
+    "l": "hdb",
+    "r": "hdb"
+   },
+   "say": "Your flat's value depends on your town, block and floor, not the headline.",
+   "cap": "your *town, block and floor*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "YOUR TOWN?",
+    "bld": "hdb"
+   },
+   "say": "Comment your flat type and town, and we'll tell you where yours sits.",
+   "cap": "comment your *flat type and town*",
+   "stat": "HDB data, 23 Oct 2026"
+  }
+ ],
+ "source": "HDB, AsiaOne, EdgeProp",
+ "caption": "Heard HDB resale prices are falling? They dipped for a third quarter in a row, about 0.1% in Q3 2026. But that's not the whole story. 🏠\n\nMore flats changed hands: 7,645, up about 20% from Q2. And about 600 flats sold for $1M or more, a quarterly record. The average barely moved, but the top end kept climbing.\n\nYour flat's value depends on your town, block and floor, not the headline.\n\nComment your flat type and town, and we'll tell you where yours sits 👇\n\nHDB Q3 2026 data, released 23 Oct 2026.",
+ "hashtags": "#singaporeproperty #hdb #hdbresale #milliondollarflat #propertysg #sgproperty #tinysingapore"
+}
