@@ -683,7 +683,7 @@
    "id": "v062",
    "from": "batch C",
    "title": "Rates moved: your instalment",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-11 18:00",
    "script": "scripts/batchC.md"
   },
@@ -691,7 +691,7 @@
    "id": "v061",
    "from": "batch C",
    "title": "HDB resale Q3: dip, but $1M record",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-12 14:00",
    "script": "scripts/batchC.md"
   },
@@ -699,7 +699,7 @@
    "id": "v063",
    "from": "batch C",
    "title": "Signed the OTP? What next",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-12 18:00",
    "script": "scripts/batchC.md"
   },
@@ -707,7 +707,7 @@
    "id": "v064",
    "from": "batch C",
    "title": "Why the government wants more buyers",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-13 18:00",
    "script": "scripts/batchC.md"
   },
@@ -715,7 +715,7 @@
    "id": "v065",
    "from": "batch C",
    "title": "Decoupling: what it is, what it costs",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-14 14:00",
    "script": "scripts/batchC.md"
   },
@@ -723,7 +723,7 @@
    "id": "v066",
    "from": "batch C",
    "title": "Seller stamp duty 4 years",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-14 18:00",
    "script": "scripts/batchC.md"
   },
@@ -731,7 +731,7 @@
    "id": "v067",
    "from": "batch C",
    "title": "What million dollar flats have in common",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-15 14:00",
    "script": "scripts/batchC.md"
   },
@@ -739,7 +739,7 @@
    "id": "v068",
    "from": "batch C",
    "title": "HDB resale: the cash you need",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-15 18:00",
    "script": "scripts/batchC.md"
   },
@@ -747,7 +747,7 @@
    "id": "v069",
    "from": "batch C",
    "title": "Salary for a $700K HDB flat",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-16 14:00",
    "script": "scripts/batchC.md"
   },
@@ -755,7 +755,7 @@
    "id": "v070",
    "from": "batch C",
    "title": "PR buying a home: 5% and 30%",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-16 18:00",
    "script": "scripts/batchC.md"
   },
@@ -763,7 +763,7 @@
    "id": "v071",
    "from": "batch C",
    "title": "SSD vs MOP: when can you sell",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-17 14:00",
    "script": "scripts/batchC.md"
   },
@@ -779,7 +779,7 @@
   {
    "id": "v073",
    "title": "One bedder: easy to rent, harder to sell",
-   "status": "building",
+   "status": "built_pending_approval",
    "slot": "2026-11-17 18:00",
    "script": "scripts/batchC.md",
    "from_": "BT 23 Oct 2026 (Joel)"
