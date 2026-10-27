@@ -428,7 +428,7 @@
   {
    "id": "v033",
    "title": "Prices rose 1.4%. New sales hit a low",
-   "status": "video_approved",
+   "status": "scheduled",
    "pillar": "Timely market",
    "style": "map",
    "facts": "URA final Q3 2026 (23 Oct, pr26-73): PPI +1.4% (Q2 +0.5%), landed +2.9%, non-landed OCR +2.3%; developers sold 1,183 (Q2 2,141); resale 3,801 = 73.9% of sales. Huttons: ~1,100 sold, lowest Q3 since 1998 (Yahoo/EdgeProp).",
@@ -436,7 +436,10 @@
    "note": "Extra timely slot (2pm/6pm already full through 31 Oct); schedule when Chrome reachable",
    "slot": "2026-10-27 10:00",
    "platforms": {
-    "tiktok": "scheduled"
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending",
+    "instagram_slot": "2026-10-27 20:00"
    }
   },
   {
@@ -501,7 +504,9 @@
    "from": "p23",
    "slot": "Sun 1 Nov 2pm | IG+YouTube; TikTok pending",
    "platforms": {
-    "tiktok": "scheduled"
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "scheduled"
    }
   },
   {
@@ -511,7 +516,9 @@
    "from": "p15",
    "slot": "Sun 1 Nov 6pm | IG+YouTube; TikTok pending",
    "platforms": {
-    "tiktok": "scheduled"
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "scheduled"
    }
   },
   {
@@ -521,7 +528,9 @@
    "from": "p12",
    "slot": "Mon 2 Nov 2pm | IG+YouTube; TikTok pending",
    "platforms": {
-    "tiktok": "scheduled"
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "scheduled"
    }
   },
   {
@@ -531,7 +540,9 @@
    "from": "p11",
    "slot": "Mon 2 Nov 6pm | IG; TikTok+YouTube pending (YT daily limit)",
    "platforms": {
-    "tiktok": "scheduled"
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
    }
   },
   {
@@ -541,18 +552,25 @@
    "from": "new",
    "slot": "Tue 3 Nov 2pm | IG; TikTok+YouTube pending (YT daily limit)",
    "platforms": {
-    "tiktok": "scheduled"
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
    }
   },
   {
    "id": "v044",
    "title": "Married, bought before selling? ABSD refund",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot_plan": "batch B (moved; overlaps v045)",
    "from": "new",
    "slot": "2026-11-08 14:00",
    "script": "scripts/batchB.md",
-   "style": "flat"
+   "style": "flat",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v045",
@@ -561,147 +579,221 @@
    "from": "Joel 21 Oct",
    "slot": "Tue 3 Nov 6pm | IG; TikTok+YouTube pending (YT daily limit)",
    "platforms": {
-    "tiktok": "scheduled"
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
    }
   },
   {
    "id": "v046",
    "from": "batch B",
    "title": "BTO income ceiling now 16,000",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-04 14:00",
    "script": "scripts/batchB.md",
    "style": "3d",
    "platforms": {
-    "tiktok": "scheduled"
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
    }
   },
   {
    "id": "v048",
    "from": "batch B",
    "title": "New launch: when you actually pay",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-04 18:00",
    "script": "scripts/batchB.md",
-   "style": "3d"
+   "style": "3d",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v047",
    "from": "batch B",
    "title": "Rates are low. Leave your HDB loan?",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-05 14:00",
    "script": "scripts/batchB.md",
-   "style": "3d"
+   "style": "3d",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v050",
    "from": "batch B",
    "title": "CPF refund on sale",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-05 18:00",
    "script": "scripts/batchB.md",
-   "style": "flat"
+   "style": "flat",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v057",
    "from": "batch B",
    "title": "The 15 month wait is gone",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-06 14:00",
    "script": "scripts/batchB.md",
-   "style": "flat"
+   "style": "flat",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v049",
    "from": "batch B",
    "title": "Valuation below price (COV)",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-06 18:00",
    "script": "scripts/batchB.md",
-   "style": "3d"
+   "style": "3d",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v056",
    "from": "batch B",
    "title": "Land at 1,537. Launch at 2,900?",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-07 14:00",
    "script": "scripts/batchB.md",
-   "style": "3d"
+   "style": "3d",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v052",
    "from": "batch B",
    "title": "Resale levy on second BTO",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-07 18:00",
    "script": "scripts/batchB.md",
-   "style": "3d"
+   "style": "3d",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v053",
    "from": "batch B",
    "title": "Maintenance fee by share value",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-08 18:00",
    "script": "scripts/batchB.md",
-   "style": "3d"
+   "style": "3d",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v051",
    "from": "batch B",
    "title": "En bloc just got easier",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-09 14:00",
    "script": "scripts/batchB.md",
-   "style": "3d"
+   "style": "3d",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v054",
    "from": "batch B",
    "title": "Silver Housing Bonus up to 40K",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-09 18:00",
    "script": "scripts/batchB.md",
-   "style": "flat"
+   "style": "flat",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v058",
    "from": "batch B",
    "title": "EC ceiling 18,000, not for every EC",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-10 14:00",
    "script": "scripts/batchB.md",
-   "style": "3d"
+   "style": "3d",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v055",
    "from": "batch B",
    "title": "Lease Buyback Scheme",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-10 18:00",
    "script": "scripts/batchB.md",
-   "style": "flat"
+   "style": "flat",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v059",
    "title": "Keep HDB or sell for condo? Part 1 (question ending)",
-   "status": "video_approved",
+   "status": "scheduled",
    "slot": "2026-11-11 14:00",
    "script": "scripts/batchB.md",
    "from": "Joel topic 23 Oct",
-   "note": "Joel version approved 23 Oct: both rented, 4% on leftover, mid follow; board style (whiteboard + 3D) approved 23 Oct"
+   "note": "Joel version approved 23 Oct: both rented, 4% on leftover, mid follow; board style (whiteboard + 3D) approved 23 Oct",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v060",
    "title": "Keep HDB or sell for condo? Part 2 (the answer)",
-   "status": "video_approved",
+   "status": "scheduled",
    "from_": "v059 part 2",
    "note": "Reveal: condo +25% up ~$460K vs $208K; +10% ~$220K; break even ~9%. CTA flat type and town. Post a few days after v059.",
    "slot": "2026-11-13 14:00",
    "script": "scripts/batchB.md",
-   "style": "flat"
+   "style": "flat",
+   "platforms": {
+    "tiktok": "scheduled",
+    "instagram": "scheduled",
+    "youtube": "pending"
+   }
   },
   {
    "id": "v062",
