@@ -900,6 +900,30 @@
    "slot": "2026-11-17 18:00",
    "script": "scripts/batchC.md",
    "from_": "BT 23 Oct 2026 (Joel)"
+  },
+  {
+   "id": "v074",
+   "title": "Prices fell. Records broke.",
+   "pillar": "market split / HDB",
+   "status": "idea",
+   "script": "scripts/news_2026-10-31.md",
+   "from_": "Daily news pack 31 Oct 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v075",
+   "title": "Prices up. Buyers down.",
+   "pillar": "market insight / URA",
+   "status": "idea",
+   "script": "scripts/news_2026-10-31.md",
+   "from_": "Daily news pack 31 Oct 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v076",
+   "title": "3,200 people. 1,268 units.",
+   "pillar": "unit selection / new launch",
+   "status": "idea",
+   "script": "scripts/news_2026-10-31.md",
+   "from_": "Daily news pack 31 Oct 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
