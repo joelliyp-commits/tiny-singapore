@@ -1,9 +1,9 @@
 /**
  * Save With Property: Telegram auto poster (Google Apps Script, free).
  *
- * Reads the "SWP Telegram Queue" sheet. Every row whose status is "approved"
- * is posted to the channel as its card image with the text as the caption,
- * then marked "posted" (or "error" with the reason).
+ * Reads the "SWP Telegram Queue" sheet. Approved rows are posted one at a time,
+ * oldest first, at 11:00 and 15:00 Singapore time (max 2 a day), as the card
+ * image with the text as the caption, then marked "posted" (or "error").
  *
  * Setup (once):
  * 1. Project Settings (gear icon) > Script Properties > add:
@@ -38,10 +38,39 @@ function tg_(method, payload) {
   return body.result;
 }
 
+// Posting slots (Singapore time). One approved row goes out per slot, oldest first.
+var SLOTS = ['11:00', '15:00'];
+var SLOT_WINDOW_MIN = 20;
+
+function dueSlot_() {
+  var now = new Date();
+  var day = Utilities.formatDate(now, 'Asia/Singapore', 'yyyy-MM-dd');
+  var mins = Number(Utilities.formatDate(now, 'Asia/Singapore', 'H')) * 60 + Number(Utilities.formatDate(now, 'Asia/Singapore', 'm'));
+  for (var k = 0; k < SLOTS.length; k++) {
+    var p = SLOTS[k].split(':'), start = Number(p[0]) * 60 + Number(p[1]);
+    if (mins >= start && mins < start + SLOT_WINDOW_MIN) return day + ' ' + SLOTS[k];
+  }
+  return null;
+}
+
 function postApproved() {
+  var slot = dueSlot_();
+  if (!slot) return;
+  var store = PropertiesService.getScriptProperties();
+  if (store.getProperty('LAST_SLOT') === slot) return;
+  postNext_(slot);
+}
+
+// Posts the oldest approved row right now, ignoring the slot times (for testing or urgent items).
+function postNextNow() {
+  postNext_(null);
+}
+
+function postNext_(slot) {
   var lock = LockService.getScriptLock();
   if (!lock.tryLock(10000)) return;
   try {
+    var store = PropertiesService.getScriptProperties();
     var channel = props_().channel;
     var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
     var rows = sh.getDataRange().getValues();
@@ -65,6 +94,8 @@ function postApproved() {
         sh.getRange(i + 1, 2).setValue('error');
         sh.getRange(i + 1, 7).setValue(String(e.message || e));
       }
+      if (slot) store.setProperty('LAST_SLOT', slot);
+      return; // one post per slot
     }
   } finally {
     lock.releaseLock();
