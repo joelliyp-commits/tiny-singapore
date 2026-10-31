@@ -84,3 +84,14 @@ function installTrigger() {
   ScriptApp.newTrigger('postApproved').timeBased().everyMinutes(5).create();
   Logger.log('Checking the queue every 5 minutes.');
 }
+
+function findChannelId() {
+  Logger.log('CHANNEL currently set to: ' + PropertiesService.getScriptProperties().getProperty('CHANNEL'));
+  var ups = tg_('getUpdates', { allowed_updates: ['my_chat_member', 'channel_post'] });
+  var seen = {};
+  ups.forEach(function (u) {
+    var c = (u.my_chat_member || u.channel_post || {}).chat;
+    if (c && !seen[c.id]) { seen[c.id] = 1; if (c.type === 'channel' && c.title.indexOf('Save With Property') === 0) { PropertiesService.getScriptProperties().setProperty('CHANNEL', String(c.id)); Logger.log('CHANNEL saved as ' + c.id); } Logger.log(c.type + ' | ' + c.title + ' | id ' + c.id + (c.username ? ' | @' + c.username : '')); }
+  });
+  if (!ups.length) Logger.log('No updates yet. Post any message in the channel, then run this again.');
+}
