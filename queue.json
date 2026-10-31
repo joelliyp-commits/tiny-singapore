@@ -984,6 +984,30 @@
    "status": "idea",
    "script": "scripts/news_2026-10-31.md",
    "from_": "Daily news pack 31 Oct 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v077",
+   "title": "The Fed paused. Your loan didn't.",
+   "pillar": "home loans / news",
+   "status": "idea",
+   "script": "scripts/news_2026-11-01.md",
+   "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v078",
+   "title": "1.818 million dollars. Not your flat.",
+   "pillar": "Million dollar HDB",
+   "status": "idea",
+   "script": "scripts/news_2026-11-01.md",
+   "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v079",
+   "title": "Today's land. Tomorrow's price.",
+   "pillar": "new launch / news",
+   "status": "idea",
+   "script": "scripts/news_2026-11-01.md",
+   "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
