@@ -1098,6 +1098,30 @@
    "status": "script_pending_approval",
    "script": "scripts/batchD.md",
    "batch": "D"
+  },
+  {
+   "id": "v090",
+   "title": "Every big unit gone. Now what?",
+   "pillar": "new launch / news",
+   "status": "idea",
+   "script": "scripts/news_2026-11-02.md",
+   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v091",
+   "title": "11,000 homes. How many years?",
+   "pillar": "township",
+   "status": "idea",
+   "script": "scripts/news_2026-11-02.md",
+   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v092",
+   "title": "Rents dipped. Is yours right?",
+   "pillar": "Landlords / tenant risk",
+   "status": "idea",
+   "script": "scripts/news_2026-11-02.md",
+   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
