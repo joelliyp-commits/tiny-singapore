@@ -1,7 +1,8 @@
 /**
  * Save With Property: Telegram auto poster (Google Apps Script, free).
  *
- * Reads the "SWP Telegram Queue" sheet. Approved rows are posted one at a time,
+ * Reads the "SWP Telegram Queue" sheet (media column: one image, one .mp4, or several
+ * image URLs one per line for an album). Approved rows are posted one at a time,
  * oldest first, at 11:00 and 15:00 Singapore time (max 2 a day), as the card
  * image with the text as the caption, then marked "posted" (or "error").
  *
@@ -80,13 +81,7 @@ function postNext_(slot) {
       var photo = r[2], text = String(r[3]), source = String(r[4] || '');
       if (source) text += '\n\nSource: <a href="' + source + '">read the article</a>';
       try {
-        var msg;
-        if (photo && text.length <= CAPTION_LIMIT) {
-          msg = tg_('sendPhoto', { chat_id: channel, photo: photo, caption: text, parse_mode: 'HTML' });
-        } else {
-          if (photo) tg_('sendPhoto', { chat_id: channel, photo: photo });
-          msg = tg_('sendMessage', { chat_id: channel, text: text, parse_mode: 'HTML' });
-        }
+        var msg = sendMedia_(channel, String(photo || ''), text);
         sh.getRange(i + 1, 2).setValue('posted');
         sh.getRange(i + 1, 6).setValue(new Date());
         sh.getRange(i + 1, 7).setValue('message ' + msg.message_id);
@@ -100,6 +95,30 @@ function postNext_(slot) {
   } finally {
     lock.releaseLock();
   }
+}
+
+// Media column (photo_url): one PNG/JPG URL = photo, one .mp4 URL = video,
+// several URLs (one per line) = album (carousel), first item carries the caption.
+function sendMedia_(channel, media, text) {
+  var urls = media.split(/\s+/).filter(function (u) { return u; });
+  var fits = text.length <= CAPTION_LIMIT;
+  var isVid = function (u) { return /\.mp4(\?|$)/i.test(u); };
+  if (!urls.length) return tg_('sendMessage', { chat_id: channel, text: text, parse_mode: 'HTML' });
+  if (urls.length === 1) {
+    var m = isVid(urls[0]) ? 'sendVideo' : 'sendPhoto', key = isVid(urls[0]) ? 'video' : 'photo';
+    var p = { chat_id: channel }; p[key] = urls[0];
+    if (fits) { p.caption = text; p.parse_mode = 'HTML'; return tg_(m, p); }
+    tg_(m, p);
+    return tg_('sendMessage', { chat_id: channel, text: text, parse_mode: 'HTML' });
+  }
+  var group = urls.slice(0, 10).map(function (u, i) {
+    var it = { type: isVid(u) ? 'video' : 'photo', media: u };
+    if (i === 0 && fits) { it.caption = text; it.parse_mode = 'HTML'; }
+    return it;
+  });
+  var res = tg_('sendMediaGroup', { chat_id: channel, media: group });
+  if (!fits) return tg_('sendMessage', { chat_id: channel, text: text, parse_mode: 'HTML' });
+  return res[0];
 }
 
 function testConnection() {
@@ -125,4 +144,13 @@ function findChannelId() {
     if (c && !seen[c.id]) { seen[c.id] = 1; if (c.type === 'channel' && c.title.indexOf('Save With Property') === 0) { PropertiesService.getScriptProperties().setProperty('CHANNEL', String(c.id)); Logger.log('CHANNEL saved as ' + c.id); } Logger.log(c.type + ' | ' + c.title + ' | id ' + c.id + (c.username ? ' | @' + c.username : '')); }
   });
   if (!ups.length) Logger.log('No updates yet. Post any message in the channel, then run this again.');
+}
+
+// Creates a channel invite link (bot needs "Add Subscribers") and writes it to cell I2 of the queue sheet.
+function createInviteLink() {
+  var r = tg_('createChatInviteLink', { chat_id: props_().channel, name: 'WhatsApp nurture' });
+  var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
+  sh.getRange('I1').setValue('invite_link');
+  sh.getRange('I2').setValue(r.invite_link);
+  Logger.log('Invite link saved to the sheet, cell I2.');
 }

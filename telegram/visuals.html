@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+
+<style>
+@font-face{font-family:Montserrat;font-weight:500;src:url(fonts/montserrat-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-weight:600;src:url(fonts/montserrat-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-weight:700;src:url(fonts/montserrat-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-weight:800;src:url(fonts/montserrat-latin-800-normal.woff2) format("woff2")}
+
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f2a3a;--gold:#e8c27a;--up:#7fd6a8;--down:#f08a7a;--ink:#fff;--soft:#cfdbe2;--mute:#9fb3bf;--line:rgba(255,255,255,.12);--panel:rgba(255,255,255,.06)}
+body{width:1080px;height:1080px;font-family:Montserrat,Arial,sans-serif;background:var(--bg);color:var(--ink);overflow:hidden}
+.card{position:relative;width:1080px;height:1080px;padding:80px 84px 68px;display:flex;flex-direction:column;
+ background:radial-gradient(circle at 85% 10%,#1d4a5e 0%,#0f2a3a 55%,#0a1f2b 100%)}
+.tag{display:inline-block;align-self:flex-start;font-size:24px;font-weight:700;letter-spacing:3px;color:#0f2a3a;background:var(--gold);padding:10px 20px;border-radius:6px}
+.hook{margin-top:40px;font-size:58px;line-height:1.14;font-weight:800;letter-spacing:-.5px}
+.hook.sm{font-size:48px}
+.hook em{font-style:normal;color:var(--gold)}
+.body{margin-top:44px;flex:1;display:flex;flex-direction:column;min-height:0}
+.take{margin-top:auto;padding-top:28px;font-size:31px;font-weight:600;line-height:1.38;color:#e9f0f3}
+.foot{margin-top:30px;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid rgba(255,255,255,.15);padding-top:26px}
+.brand{font-size:29px;font-weight:800}.brand span{color:var(--gold)}
+.sub{font-size:21px;color:var(--mute);margin-top:6px;font-weight:500}
+.src{font-size:19px;color:var(--mute);text-align:right;line-height:1.4;max-width:470px}
+.pager{position:absolute;top:88px;right:84px;font-size:22px;font-weight:700;color:var(--mute);letter-spacing:2px}
+/* stats */
+.stats{display:flex;gap:28px}
+.stat{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:32px 32px 28px}
+.num{font-size:88px;font-weight:800;line-height:1}.up{color:var(--up)}.down{color:var(--down)}.gold{color:var(--gold)}
+.lbl{margin-top:14px;font-size:24px;font-weight:500;line-height:1.35;color:var(--soft)}
+/* table */
+table{width:100%;border-collapse:separate;border-spacing:0;font-size:27px;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+th{font-size:22px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mute);font-weight:700;text-align:left;padding:20px 24px;border-bottom:1px solid var(--line)}
+td{padding:20px 24px;border-bottom:1px solid var(--line);font-weight:600;line-height:1.25}
+tr:last-child td{border-bottom:none}
+td:first-child{color:var(--soft);font-weight:500}
+.hl{color:var(--gold)!important}
+th.hl{color:var(--gold)}
+/* list styles */
+.items{display:flex;flex-direction:column;gap:20px}
+.item{display:flex;gap:24px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px 28px}
+.badge{flex:none;width:52px;height:52px;border-radius:50%;background:var(--gold);color:#0f2a3a;font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center}
+.itxt{font-size:29px;font-weight:600;line-height:1.3}.itxt small{display:block;font-size:23px;font-weight:500;color:var(--soft);margin-top:6px}
+/* myth fact */
+.mf{display:flex;flex-direction:column;gap:22px}
+.mfbox{border-radius:20px;padding:30px 34px;border:1px solid var(--line)}
+.mfbox.m{background:rgba(240,138,122,.10)}.mfbox.f{background:rgba(127,214,168,.10)}
+.mfk{font-size:22px;font-weight:800;letter-spacing:3px}.m .mfk{color:var(--down)}.f .mfk{color:var(--up)}
+.mft{margin-top:12px;font-size:32px;font-weight:600;line-height:1.32}
+/* timeline */
+.tl{position:relative;display:flex;flex-direction:column;gap:34px;padding-left:50px}
+.tl:before{content:"";position:absolute;left:15px;top:14px;bottom:14px;width:3px;background:rgba(255,255,255,.18)}
+.ts{position:relative}
+.ts:before{content:"";position:absolute;left:-41px;top:8px;width:22px;height:22px;border-radius:50%;background:#0f2a3a;border:3px solid var(--mute)}
+.ts.on:before{background:var(--gold);border-color:var(--gold)}
+.tw{font-size:22px;font-weight:700;letter-spacing:2px;color:var(--mute);text-transform:uppercase}.ts.on .tw{color:var(--gold)}
+.tt{font-size:32px;font-weight:600;line-height:1.3;margin-top:4px}
+/* chart + map */
+svg text{font-family:Montserrat,Arial,sans-serif}
+.chartwrap,.mapwrap{flex:1;min-height:0;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:18px}
+.legend{display:flex;gap:30px;margin-top:16px;font-size:22px;color:var(--soft);font-weight:600}
+.legend i{display:inline-block;width:22px;height:8px;border-radius:4px;margin-right:10px;vertical-align:middle}
+/* text slide */
+.big{font-size:40px;line-height:1.4;font-weight:600;color:#e9f0f3}.big p+p{margin-top:24px}.big em{font-style:normal;color:var(--gold)}
+/* animation (video) */
+.anim .a{opacity:0;transform:translateY(24px);animation:in .7s ease forwards}
+@keyframes in{to{opacity:1;transform:none}}
+.anim .draw{stroke-dasharray:3000;stroke-dashoffset:3000;animation:draw 2.2s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+</style></head><body>
+<div id="root"></div>
+<script>
+const esc=s=>String(s??'');
+const C={up:'#7fd6a8',down:'#f08a7a',gold:'#e8c27a',soft:'#cfdbe2',mute:'#9fb3bf',s2:'#6fb6d9'};
+let D=0;const a=()=>{const d=D;D+=0.35;return `class="a" style="animation-delay:${d}s"`};
+const A=(cls='')=>{const d=D;D+=0.35;return `class="a ${cls}" style="animation-delay:${d}s"`};
+
+function frame(s,inner,opts={}){
+  return `<div class="card">
+   ${s.pager?`<div class="pager">${s.pager}</div>`:''}
+   <div ${A('tag')}>${esc(s.tag)}</div>
+   ${s.hook?`<div ${A('hook'+(opts.smallHook||s.smallHook?' sm':''))}>${s.hook}</div>`:''}
+   <div class="body">${inner}${s.take?`<div ${A('take')}>${s.take}</div>`:''}</div>
+   <div class="foot"><div><div class="brand">Save With Property <span>|</span> Joel Li</div><div class="sub">savewithproperty.sg</div></div>
+   <div class="src">${esc(s.sources||'')}</div></div></div>`;
+}
+const R={
+ card:s=>frame(s,`<div class="stats">${(s.stats||[]).map(t=>`<div ${A('stat')}><div class="num ${t.dir||'up'}">${t.num}</div><div class="lbl">${t.label}</div></div>`).join('')}</div>`),
+ table:s=>{const h=s.highlight_col??-1;return frame(s,`<div ${a()}><table><tr>${s.columns.map((c,i)=>`<th class="${i===h?'hl':''}">${c}</th>`).join('')}</tr>${s.rows.map(r=>`<tr>${r.map((c,i)=>`<td class="${i===h?'hl':''}">${c}</td>`).join('')}</tr>`).join('')}</table></div>`,{smallHook:true})},
+ checklist:s=>frame(s,`<div class="items">${s.items.map((t,i)=>`<div ${A('item')}><div class="badge">${s.numbered===false?'✓':i+1}</div><div class="itxt">${t}</div></div>`).join('')}</div>`,{smallHook:true}),
+ mythfact:s=>frame(s,`<div class="mf"><div ${A('mfbox m')}><div class="mfk">MYTH</div><div class="mft">${s.myth}</div></div><div ${A('mfbox f')}><div class="mfk">FACT</div><div class="mft">${s.fact}</div></div></div>`,{smallHook:true}),
+ timeline:s=>frame(s,`<div class="tl">${s.steps.map(t=>`<div ${A('ts'+(t.on?' on':''))}><div class="tw">${t.when}</div><div class="tt">${t.what}</div></div>`).join('')}</div>`,{smallHook:true}),
+ text:s=>frame(s,`<div ${A('big')}>${(s.paras||[]).map(p=>`<p>${p}</p>`).join('')}</div>`),
+ chart:s=>frame(s,`<div ${A('chartwrap')}>${chartSVG(s.chart)}</div>${s.chart.series.length>1?`<div ${A('legend')}>${s.chart.series.map((z,i)=>`<span><i style="background:${z.color||[C.gold,C.s2,C.up][i]}"></i>${z.name}</span>`).join('')}</div>`:''}`,{smallHook:true}),
+ map:s=>frame(s,`<div ${A('mapwrap')}>${mapSVG(s.map)}</div>`,{smallHook:true}),
+};
+
+function chartSVG(c){
+  const W=880,H=c.height||380,L=86,Rr=20,T=26,B=56,w=W-L-Rr,h=H-T-B;
+  const all=c.series.flatMap(z=>z.values).filter(v=>v!=null);
+  let lo=c.min??Math.min(0,...all),hi=c.max??Math.max(...all);
+  if(c.type==='line'&&c.min==null){const pad=(hi-Math.min(...all))*0.25||1;lo=Math.min(...all)-pad;hi=hi+pad*0.6;}
+  const raw=(hi-lo)/4,mag=Math.pow(10,Math.floor(Math.log10(raw||1))),step=[1,2,2.5,5,10].map(m=>m*mag).find(x=>x>=raw)||raw;
+  if(c.min==null)lo=Math.floor(lo/step)*step; if(c.max==null)hi=Math.ceil(hi/step)*step;
+  const n=c.labels.length,y=v=>T+h-(v-lo)/(hi-lo)*h,u=c.unit||'',dp=c.dp??2;
+  const fmt=v=>{let r=Math.round(v*Math.pow(10,dp))/Math.pow(10,dp);if(Object.is(r,-0)||Math.abs(r)<1e-9)r=0;const t=Math.abs(r).toLocaleString('en-SG',{maximumFractionDigits:dp});return (r<0?'−':'')+(c.prefix||'')+t+u};
+  let g='';for(let v=lo;v<=hi+step/1000;v+=step){const yy=y(v);g+=`<line x1="${L}" x2="${W-Rr}" y1="${yy}" y2="${yy}" stroke="rgba(255,255,255,${Math.abs(v)<step/1000?'.35':'.10'})"/><text x="${L-12}" y="${yy+7}" text-anchor="end" font-size="20" fill="${C.mute}">${fmt(v)}</text>`}
+  let body='';
+  if(c.type==='bar'){
+    const gw=w/n,bw=Math.min(90,gw*0.7/c.series.length);
+    c.series.forEach((z,si)=>z.values.forEach((v,i)=>{if(v==null)return;const x=L+gw*i+gw/2-bw*c.series.length/2+bw*si,y0=y(Math.max(lo,0)),yy=y(v),col=z.color||(i===c.highlight?C.gold:[C.s2,C.gold,C.up][si]);
+      body+=`<rect class="a" style="animation-delay:${0.9+i*0.15}s" x="${x+3}" y="${Math.min(yy,y0)}" width="${bw-6}" height="${Math.abs(y0-yy)}" rx="6" fill="${col}"/><text class="a" style="animation-delay:${1.1+i*0.15}s" x="${x+bw/2}" y="${v<0?yy+32:yy-10}" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">${fmt(v)}</text>`}));
+  } else {
+    const x=i=>L+(n===1?w/2:w*i/(n-1));
+    c.series.forEach((z,si)=>{const col=z.color||[C.gold,C.s2,C.up][si];const pts=z.values.map((v,i)=>v==null?null:[x(i),y(v)]).filter(Boolean);
+      body+=`<polyline class="draw" points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="${col}" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>`;
+      z.values.forEach((v,i)=>{if(v==null)return;const last=i===z.values.length-1,hl=i===c.highlight||last;body+=`<circle class="a" style="animation-delay:${1+i*0.12}s" cx="${x(i)}" cy="${y(v)}" r="${hl?10:6}" fill="${col}"/>`;
+        if(hl||c.labelAll)body+=`<text class="a" style="animation-delay:${1.6+i*0.1}s" x="${x(i)}" y="${y(v)-20}" text-anchor="${last&&n>2?'end':'middle'}" font-size="24" font-weight="800" fill="#fff">${fmt(v)}</text>`})});
+  }
+  const lx=i=>c.type==='bar'?L+w/n*i+w/n/2:L+(n===1?w/2:w*i/(n-1));
+  const every=Math.ceil(n/8);
+  const xl=c.labels.map((t,i)=>(i%every===0||i===n-1)?`<text x="${lx(i)}" y="${H-18}" text-anchor="middle" font-size="20" fill="${C.mute}">${t}</text>`:'').join('');
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">${g}${body}${xl}</svg>`;
+}
+
+function mapSVG(m){
+  // schematic map: coordinates 0..100. Not to scale.
+  const W=880,H=m.height||420,X=v=>20+v/100*(W-40),Y=v=>20+v/100*(H-40);
+  let s=`<rect x="0" y="0" width="${W}" height="${H}" rx="14" fill="rgba(255,255,255,.02)"/>`;
+  (m.areas||[]).forEach(z=>{s+=`<ellipse class="a" style="animation-delay:.8s" cx="${X(z.x)}" cy="${Y(z.y)}" rx="${z.rx/100*W}" ry="${z.ry/100*H}" fill="${z.color||'rgba(232,194,122,.10)'}" stroke="${z.stroke||'rgba(232,194,122,.45)'}" stroke-width="2" stroke-dasharray="8 8"/><text class="a" style="animation-delay:.9s" x="${X(z.x)}" y="${Y(z.y)-z.ry/100*H+30}" text-anchor="middle" font-size="22" font-weight="700" fill="${C.gold}" letter-spacing="2">${z.name}</text>`});
+  (m.roads||[]).forEach(r=>{s+=`<polyline points="${r.points.map(p=>X(p[0])+','+Y(p[1])).join(' ')}" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="${r.w||14}" stroke-linecap="round" stroke-linejoin="round"/>`});
+  (m.lines||[]).forEach(l=>{s+=`<polyline class="draw" points="${l.points.map(p=>X(p[0])+','+Y(p[1])).join(' ')}" fill="none" stroke="${l.color}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>`;
+    (l.stations||[]).forEach(st=>{s+=`<circle class="a" style="animation-delay:1.2s" cx="${X(st.x)}" cy="${Y(st.y)}" r="13" fill="#0f2a3a" stroke="${l.color}" stroke-width="6"/><text class="a" style="animation-delay:1.3s" x="${X(st.x)+(st.dx??0)}" y="${Y(st.y)+(st.dy??42)}" text-anchor="middle" font-size="20" font-weight="600" fill="${C.soft}">${st.name}</text>`});
+    if(l.name)s+=`<text x="${X(l.points[0][0])}" y="${Y(l.points[0][1])-22}" font-size="20" font-weight="700" fill="${l.color}">${l.name}</text>`});
+  (m.pins||[]).forEach((p,i)=>{const col=p.color||C.gold,d=1.6+i*0.3;s+=`<g class="a" style="animation-delay:${d}s"><path d="M${X(p.x)} ${Y(p.y)} l-16 -28 a20 20 0 1 1 32 0 z" fill="${col}"/><circle cx="${X(p.x)}" cy="${Y(p.y)-38}" r="7" fill="#0f2a3a"/>
+     <rect x="${X(p.x)+(p.lx??24)}" y="${Y(p.y)-70+(p.ly??0)}" rx="10" width="${(p.label.length*12.5)+36}" height="48" fill="rgba(10,31,43,.92)" stroke="${col}" stroke-width="2"/><text x="${X(p.x)+(p.lx??24)+18}" y="${Y(p.y)-38+(p.ly??0)}" font-size="22" font-weight="700" fill="#fff">${p.label}</text></g>`});
+  s+=`<text x="${W-16}" y="${H-12}" text-anchor="end" font-size="16" fill="${C.mute}">Schematic, not to scale</text>`;
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">${s}</svg>`;
+}
+
+window.render=(spec,animate)=>{D=0.2;document.getElementById('root').innerHTML=(R[spec.style]||R.card)(spec);
+  document.body.classList.toggle('anim',!!animate);
+  if(!animate)document.querySelectorAll('.a').forEach(e=>{e.style.opacity=1;e.style.transform='none'});
+  const over=[...document.querySelectorAll('.card')].some(c=>c.scrollHeight>1082);return {overflow:over,duration:D};};
+window.ready=true;
+</script></body></html>
