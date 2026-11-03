@@ -19,7 +19,7 @@
       {
        "t": "SAME BUDGET",
        "at": "@buying",
-       "y": 330,
+       "y": 210,
        "bg": "#ffd36b",
        "fg": "#163634",
        "fs": 60,
@@ -28,7 +28,7 @@
       {
        "t": "DIFFERENT RULES",
        "at": "@different",
-       "y": 1240,
+       "y": 320,
        "bg": "#e0774f",
        "fg": "#fffaf0",
        "fs": 58,
