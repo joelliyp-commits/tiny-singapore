@@ -1,0 +1,3 @@
+{"style":"chart","tag":"MARKET UPDATE · HDB","hook":"HDB prices have dipped <em>three quarters in a row</em>",
+"chart":{"type":"bar","labels":["Q4 2025","Q1 2026","Q2 2026","Q3 2026"],"series":[{"name":"HDB resale index, change vs previous quarter","values":[0.0,-0.1,-0.3,-0.2],"color":"#f08a7a"}],"unit":"%","dp":1,"min":-0.4,"max":0.1},
+"take":"Small dips on the average. The real story is which flats are still chased.","sources":"Source: HDB flash estimates"}

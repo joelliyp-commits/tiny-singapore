@@ -1,0 +1,3 @@
+{"style":"timeline","tag":"BUYER TIP","hook":"When do <em>sellers crowd</em> a project?",
+"steps":[{"when":"Launch","what":"Buyers commit, many of them investors"},{"when":"TOP","what":"Keys are collected. Investors start listing together","on":true},{"when":"EC: 5 years after TOP","what":"MOP ends and a wave of owners can sell at once","on":true},{"when":"12 to 24 months later","what":"Listings thin out. The buyer's window closes"}],
+"take":"Buyers hold the leverage when sellers move together.","sources":""}

@@ -1,0 +1,4 @@
+{"style":"map","tag":"BUYER TIP","hook":"Same budget. <em>How central can you go?</em>",
+"map":{"height":440,"areas":[{"name":"OCR","x":50,"y":54,"rx":45,"ry":44,"color":"rgba(111,182,217,.06)","stroke":"rgba(111,182,217,.5)"},{"name":"RCR","x":50,"y":54,"rx":29,"ry":30},{"name":"CCR","x":50,"y":54,"rx":12,"ry":13,"color":"rgba(232,194,122,.18)"}],
+"pins":[{"x":13,"y":70,"label":"Your budget here?","lx":-40,"ly":96},{"x":68,"y":62,"label":"Or here?","lx":26,"ly":0}]},
+"take":"Before buying in the OCR, check what the same budget buys in the RCR.","sources":""}
