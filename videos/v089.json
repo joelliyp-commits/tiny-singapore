@@ -40,7 +40,7 @@
       {
        "t": "ROOMS: OK DURING MOP",
        "at": "@during",
-       "y": 1240,
+       "y": 330,
        "bg": "#ffd36b",
        "fg": "#163634",
        "fs": 56,
@@ -49,7 +49,7 @@
       {
        "t": "IF YOU LIVE THERE",
        "at": "@live",
-       "y": 460,
+       "y": 440,
        "bg": "#fffaf0",
        "fg": "#163634",
        "fs": 52,
@@ -144,7 +144,7 @@
      "bigText": "APPROVE",
      "rows": [
       {
-       "t": "Before tenant moves in",
+       "t": "Before move in",
        "v": "APPLY",
        "at": "@approval",
        "col": "#3fae5a"
