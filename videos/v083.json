@@ -130,19 +130,18 @@
    "cap": "extra ballot chances: *back to zero*",
    "scenes": [
     {
-     "k": "ladder",
+     "k": "doc",
      "at": 0,
-     "steps": [
-      "3 CHANCES",
-      "0"
+     "title": "EXTRA BALLOT CHANCES",
+     "lines": [
+      {
+       "t": "Built up: 3",
+       "at": 0.4,
+       "col": "#2c605d"
+      }
      ],
-     "sub": [
-      "BUILT UP",
-      "RESET"
-     ],
-     "to": 1,
-     "at2": "@zero",
-     "bg": "#fbe3d6"
+     "stamp": "BACK TO 0",
+     "stampAt": "@zero"
     }
    ]
   },
