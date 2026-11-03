@@ -8,11 +8,11 @@
    "tpl": "tower",
    "p": {
     "hl": {
-     "12": "g"
+     "9": "g"
     },
     "tags": [
      {
-      "f": 12,
+      "f": 9,
       "text": "$1.818M",
       "col": "g",
       "side": 1
@@ -44,13 +44,13 @@
    "tpl": "tower",
    "p": {
     "hl": {
-     "12": "g",
-     "13": "g"
+     "9": "g",
+     "10": "g"
     },
     "tags": [
      {
-      "f": 13,
-      "text": "40TH+ FLOOR",
+      "f": 10,
+      "text": "40TH+",
       "col": "g",
       "side": 1
      }
@@ -97,7 +97,7 @@
     "tags": [
      {
       "f": 6,
-      "text": "SAME BLOCK",
+      "text": "SAME",
       "col": "g",
       "side": -1
      }
