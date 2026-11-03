@@ -1,0 +1,119 @@
+{
+ "id": "v076",
+ "motion": true,
+ "title": "Thomson Reserve:\n*3,000 cheques, 1,268 units*",
+ "pill": "NEW LAUNCH",
+ "lines": [
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "5": "g",
+     "9": "g"
+    },
+    "badge": "90% SOLD IN 2 DAYS"
+   },
+   "say": "You're one of over 3,000 cheques for Thomson Reserve's 1,268 units. Over 90% sold in two days.",
+   "cap": "*3,000+ cheques*, *90%* sold in 2 days",
+   "stat": "",
+   "count": {
+    "to": 1268,
+    "pre": "",
+    "label": "units",
+    "at": 0.8,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "WHAT'S LEFT?"
+   },
+   "say": "In a crowd like that, it's tempting to take whatever is left.",
+   "cap": "tempted to take *whatever is left*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "4": "g",
+     "10": "r"
+    },
+    "tags": [
+     {
+      "f": 4,
+      "text": "STACK A",
+      "col": "g",
+      "side": -1
+     },
+     {
+      "f": 10,
+      "text": "STACK B",
+      "col": "r",
+      "side": 1
+     }
+    ]
+   },
+   "say": "But in the same project, a different stack can resell very differently.",
+   "cap": "same project, *different resale*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "7": "r"
+    },
+    "tags": [
+     {
+      "f": 7,
+      "text": "FACING · FLOOR · NOISE",
+      "col": "r",
+      "side": 1
+     }
+    ]
+   },
+   "say": "Facing, floor and noise all show up later in your price.",
+   "cap": "*facing, floor, noise* show up later",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "3": "g",
+     "6": "g",
+     "11": "g"
+    },
+    "badge": "YOUR TOP 3"
+   },
+   "say": "Pick your top three stacks before balloting day.",
+   "cap": "pick your *top 3 stacks* first",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WALK AWAY $",
+    "bld": "condo"
+   },
+   "say": "And set your walk away price before you walk in.",
+   "cap": "set your *walk away price*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "condo"
+   },
+   "say": "Save this before your next launch.",
+   "cap": "*save this* before your next launch",
+   "stat": "Not a recommendation to buy"
+  }
+ ],
+ "source": "UOL and CapitaLand via EdgeProp, 31 Oct 2026",
+ "caption": "Over 3,000 cheques for Thomson Reserve's 1,268 units, and over 90% sold in two days. 🏢\n\nIn a crowd like that, it's tempting to take whatever is left. But in the same project, a different stack can resell very differently. Facing, floor and noise all show up later in your price.\n\nPick your top three stacks before balloting day, and set your walk away price before you walk in.\n\nSave this before your next launch 👇\n\nUOL and CapitaLand statement via EdgeProp, 31 Oct 2026. General information, not a recommendation to buy.",
+ "hashtags": "#singaporeproperty #newlaunch #thomsonreserve #condosg #propertysg #sgproperty #tinysingapore"
+}

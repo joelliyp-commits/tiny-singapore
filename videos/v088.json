@@ -1,0 +1,165 @@
+{
+ "id": "v088",
+ "flat": true,
+ "title": "Buying near your parents? Up to $30,000",
+ "lines": [
+  {
+   "say": "You're buying a resale flat. Living near your parents could be worth 20,000 dollars.",
+   "cap": "near your parents: *$20,000*",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "chips": [
+      {
+       "t": "WORTH $20,000",
+       "at": "@20,000",
+       "y": 1240,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It's the Proximity Housing Grant.",
+   "cap": "the *Proximity Housing Grant*",
+   "scenes": [
+    {
+     "k": "doc",
+     "at": 0,
+     "title": "PROXIMITY HOUSING GRANT",
+     "lines": [
+      {
+       "t": "Resale flats",
+       "at": "@grant",
+       "col": "#2c605d"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Live with your parents, and a family gets 30,000 dollars.",
+   "cap": "live *with* them: *$30,000*",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "chips": [
+      {
+       "t": "LIVE WITH: $30,000",
+       "at": "@30,000",
+       "y": 1240,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Live within 4 kilometres of them, and it's 20,000.",
+   "cap": "within *4km*: *$20,000*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "YOU",
+     "lat": 0.3,
+     "r": "PARENTS",
+     "rat": "@kilometres",
+     "chips": [
+      {
+       "t": "WITHIN 4KM: $20,000",
+       "at": "@20,000",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Singles get 15,000 and 10,000.",
+   "cap": "singles: *$15,000* / *$10,000*",
+   "scenes": [
+    {
+     "k": "receipt",
+     "at": 0,
+     "title": "SINGLES",
+     "items": [
+      {
+       "t": "Live with parents",
+       "v": "$15,000",
+       "at": "@15,000",
+       "col": "#3fae5a"
+      },
+      {
+       "t": "Within 4km",
+       "v": "$10,000",
+       "at": "@10,000"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "There's no income ceiling, but it's only for resale flats.",
+   "cap": "*no income ceiling*. resale only",
+   "scenes": [
+    {
+     "k": "doc",
+     "at": 0,
+     "title": "PHG RULES",
+     "lines": [
+      {
+       "t": "No income ceiling",
+       "at": "@ceiling",
+       "col": "#3fae5a"
+      },
+      {
+       "t": "Resale flats only",
+       "at": "@resale",
+       "col": "#e0774f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Send this to the person you're buying with.",
+   "cap": "*send this* to your partner",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "SEND THIS",
+       "at": "@send",
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 76,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "CPF, HDB. Living with parents: they stay through the MOP.",
+ "caption": "Buying a resale flat? Living near your parents could be worth $20,000. 🏠\n\nThe Proximity Housing Grant: live with your parents and a family gets $30,000. Live within 4km of them and it's $20,000. Singles get $15,000 and $10,000. There's no income ceiling, but it's only for resale flats.\n\nSend this to the person you're buying with 👇\n\nCPF, HDB. Living with parents means they stay in the flat through the minimum occupation period.",
+ "hashtags": "#singaporeproperty #hdb #housinggrant #phg #hdbresale #propertysg #sgproperty #tinysingapore"
+}

@@ -1,0 +1,285 @@
+{
+ "id": "v084",
+ "motion": true,
+ "title": "Your CPF can stop\n*paying your loan*",
+ "pill": "CPF",
+ "lines": [
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "$1.5M CONDO",
+    "right": "YEAR 19?"
+   },
+   "say": "You bought a 1.5 million dollar condo. In about year 19, your CPF could stop paying the loan.",
+   "cap": "in about *year 19*, CPF could *stop*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "$1.5M condo",
+     "x": 540,
+     "y": 320,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "CPF stops paying",
+     "x": 540,
+     "y": 450,
+     "s": 90,
+     "c": "red",
+     "at": 2.4
+    },
+    {
+     "k": "t",
+     "t": "around year 19",
+     "x": 540,
+     "y": 570,
+     "s": 96,
+     "c": "red",
+     "at": 3.4
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 540,
+     "w": 560,
+     "h": 150,
+     "c": "red",
+     "at": 4.2
+    }
+   ]
+  },
+  {
+   "tpl": "cpf",
+   "p": {
+    "left": "PRICE",
+    "right": "CAP"
+   },
+   "say": "For private property, CPF use is capped. First at the price or valuation, whichever is lower.",
+   "cap": "CPF is *capped* at price or valuation",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "CPF has a cap",
+     "x": 540,
+     "y": 340,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "lower of price or valuation",
+     "x": 540,
+     "y": 470,
+     "s": 72,
+     "c": "teal",
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1.5
+    ],
+    "labels": [
+     "CAP"
+    ],
+    "cols": [
+     14710863
+    ]
+   },
+   "say": "Here that's 1.5 million, including your downpayment.",
+   "cap": "cap: *$1.5M*, downpayment included",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Cap = $1.5M",
+     "x": 540,
+     "y": 360,
+     "s": 120,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "incl. downpayment",
+     "x": 540,
+     "y": 490,
+     "s": 80,
+     "c": "ink",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     0.3,
+     1.5
+    ],
+    "labels": [
+     "DOWN",
+     "YEAR 19"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Pay 300,000 down from CPF and 5,300 a month from CPF, and you hit it around year 19.",
+   "cap": "$300K down + *$5,300* a month: *year 19*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "$300K down",
+     "x": 540,
+     "y": 330,
+     "s": 90,
+     "c": "ink",
+     "at": 0.2
+    },
+    {
+     "k": "t",
+     "t": "+ $5,300 a month",
+     "x": 540,
+     "y": 440,
+     "s": 90,
+     "c": "ink",
+     "at": 1.8
+    },
+    {
+     "k": "t",
+     "t": "= cap at year 19",
+     "x": 540,
+     "y": 560,
+     "s": 100,
+     "c": "red",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1.5,
+     1.8
+    ],
+    "labels": [
+     "100%",
+     "120%"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "You can go up to 120%, 1.8 million, only if you've set aside your Basic Retirement Sum.",
+   "cap": "up to *$1.8M* only with your *BRS* set aside",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Up to 120% = $1.8M",
+     "x": 540,
+     "y": 350,
+     "s": 90,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "only if BRS set aside",
+     "x": 540,
+     "y": 470,
+     "s": 80,
+     "c": "red",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "CASH"
+   },
+   "say": "After that, every instalment is cash. Plan for it now.",
+   "cap": "after that: *every instalment is cash*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "After that:",
+     "x": 540,
+     "y": 350,
+     "s": 100,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "CASH",
+     "x": 540,
+     "y": 490,
+     "s": 140,
+     "c": "red",
+     "at": 1.0
+    },
+    {
+     "k": "t",
+     "t": "plan for it now",
+     "x": 540,
+     "y": 610,
+     "s": 80,
+     "c": "teal",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "condo"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "stat": "Illustration. 3%, 25 years",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Useful info?",
+     "x": 540,
+     "y": 380,
+     "s": 104,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "Follow for more",
+     "x": 540,
+     "y": 510,
+     "s": 104,
+     "c": "red",
+     "at": 0.9
+    }
+   ]
+  }
+ ],
+ "source": "CPF Board, EdgeProp, MoneySmart",
+ "caption": "Bought a $1.5 million condo? In about year 19, your CPF could stop paying the loan. 🏦\n\nFor private property, CPF use is capped at the price or valuation, whichever is lower, including your downpayment. Pay $300,000 down from CPF and about $5,300 a month from CPF, and you hit that cap around year 19. You can go up to 120%, $1.8M, only if you've set aside your Basic Retirement Sum. After that, every instalment is cash.\n\nUseful info? Follow for more 👇\n\nIllustration: $1.125M loan, 3%, 25 years, all instalments from CPF. CPF Board rules.",
+ "hashtags": "#singaporeproperty #cpf #homeloan #condosg #propertysg #sgproperty #tinysingapore",
+ "style": "board"
+}

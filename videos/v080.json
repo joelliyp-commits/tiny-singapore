@@ -1,0 +1,318 @@
+{
+ "id": "v080",
+ "motion": true,
+ "title": "Nov BTO:\n*Standard, Plus or Prime?*",
+ "pill": "BTO",
+ "lines": [
+  {
+   "tpl": "gov",
+   "p": {
+    "text": "NOV BTO"
+   },
+   "say": "You're applying for the November BTO. The label on your flat could lock you in for 10 years.",
+   "cap": "the label could lock you in for *10 years*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Nov BTO",
+     "x": 540,
+     "y": 320,
+     "s": 120,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "Standard? Plus? Prime?",
+     "x": 540,
+     "y": 450,
+     "s": 84,
+     "c": "teal",
+     "at": 1.4
+    },
+    {
+     "k": "t",
+     "t": "could mean 10 years",
+     "x": 540,
+     "y": 580,
+     "s": 100,
+     "c": "red",
+     "at": 3.4
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 545,
+     "w": 640,
+     "h": 150,
+     "c": "red",
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "7,960 FLATS"
+   },
+   "say": "About 7,960 flats across six towns, including Bedok, Toa Payoh and Tengah. HDB confirms each project's label at launch.",
+   "cap": "about *7,960 flats*, six towns",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "≈ 7,960 flats",
+     "x": 540,
+     "y": 320,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "6 towns",
+     "x": 540,
+     "y": 440,
+     "s": 90,
+     "c": "teal",
+     "at": 1.6
+    },
+    {
+     "k": "t",
+     "t": "label confirmed at launch",
+     "x": 540,
+     "y": 570,
+     "s": 72,
+     "c": "grey",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "STANDARD",
+    "bld": "bto"
+   },
+   "say": "Standard: 5 year minimum occupation period. After that, you can rent out the whole flat.",
+   "cap": "Standard: *5 years*, then you can *rent it out*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "i",
+     "n": "cal",
+     "x": 170,
+     "y": 330,
+     "s": 1.1,
+     "c": "ink",
+     "at": 0.1,
+     "t": "5 yrs"
+    },
+    {
+     "k": "t",
+     "t": "Standard",
+     "x": 540,
+     "y": 300,
+     "s": 345,
+     "c": 96,
+     "at": 0.1,
+     "al": "start"
+    },
+    {
+     "k": "t",
+     "t": "rent out whole flat",
+     "x": 2.6,
+     "y": 300,
+     "s": 470,
+     "c": 80,
+     "at": "teal",
+     "al": "start"
+    },
+    {
+     "k": "i",
+     "n": "tick",
+     "x": 880,
+     "y": 450,
+     "s": 1.1,
+     "c": "teal",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "bto"
+   },
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Useful so far?",
+     "x": 540,
+     "y": 360,
+     "s": 104,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "Follow for more",
+     "x": 540,
+     "y": 500,
+     "s": 104,
+     "c": "red",
+     "at": 1.0
+    },
+    {
+     "k": "l",
+     "x1": 260,
+     "y1": 535,
+     "x2": 820,
+     "y2": 531,
+     "c": "red",
+     "at": 1.8
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PLUS · PRIME",
+    "bld": "bto",
+    "dir": "down"
+   },
+   "say": "Plus and Prime: 10 years before you can sell, and you can never rent out the whole flat.",
+   "cap": "Plus and Prime: *10 years*, *never rent out whole*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "i",
+     "n": "cal",
+     "x": 170,
+     "y": 330,
+     "s": 1.1,
+     "c": "red",
+     "at": 0.1,
+     "t": "10 yrs"
+    },
+    {
+     "k": "t",
+     "t": "Plus / Prime",
+     "x": 540,
+     "y": 300,
+     "s": 345,
+     "c": 96,
+     "at": 0.1,
+     "al": "start"
+    },
+    {
+     "k": "t",
+     "t": "never rent out whole",
+     "x": 2.4,
+     "y": 300,
+     "s": 470,
+     "c": 80,
+     "at": "red",
+     "al": "start"
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     6,
+     9
+    ],
+    "labels": [
+     "LOW",
+     "HIGH"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "When you sell, HDB takes back a share of the price, set per project. Past launches ranged from about 6% to 9%.",
+   "cap": "HDB takes back about *6% to 9%*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "When you sell",
+     "x": 540,
+     "y": 320,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "HDB takes back",
+     "x": 540,
+     "y": 430,
+     "s": 90,
+     "c": "ink",
+     "at": 1.2
+    },
+    {
+     "k": "t",
+     "t": "≈ 6% to 9%",
+     "x": 540,
+     "y": 560,
+     "s": 120,
+     "c": "red",
+     "at": 3.6
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 525,
+     "w": 560,
+     "h": 160,
+     "c": "red",
+     "at": 4.8
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "bto"
+   },
+   "say": "Save this before you pick your flat.",
+   "cap": "*save this* before you pick",
+   "stat": "HDB rules",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Save this",
+     "x": 540,
+     "y": 360,
+     "s": 120,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "before you pick your flat",
+     "x": 540,
+     "y": 490,
+     "s": 80,
+     "c": "teal",
+     "at": 0.8
+    }
+   ]
+  }
+ ],
+ "source": "HDB, 99.co, DBS",
+ "caption": "Applying for the November BTO? The label on your flat could lock you in for 10 years. 🏢\n\nAbout 7,960 flats across six towns, and HDB confirms each project's label at launch.\nStandard: 5 year minimum occupation period, then you can rent out the whole flat.\nPlus and Prime: 10 years before you can sell, and you can never rent out the whole flat. When you sell, HDB takes back a share of the price, set per project. Past launches ranged from about 6% to 9%.\n\nSave this before you pick your flat 👇\n\nHDB rules. Recovery is a % of the resale price or valuation, whichever is higher.",
+ "hashtags": "#singaporeproperty #bto #hdb #plusflats #primeflats #propertysg #sgproperty #tinysingapore",
+ "style": "board"
+}

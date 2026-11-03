@@ -1,0 +1,98 @@
+{
+ "id": "v085",
+ "motion": true,
+ "title": "HDB loan or bank loan:\n*the cash you need*",
+ "pill": "LOANS",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$30,000?",
+    "bld": "hdb"
+   },
+   "say": "You're buying a 600,000 dollar HDB flat. One choice decides if you need 30,000 dollars in cash.",
+   "cap": "one choice: *$30,000 cash* or not",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "HDB LOAN"
+   },
+   "say": "With an HDB loan, the 25% downpayment, 150,000 dollars, can all come from CPF.",
+   "cap": "HDB loan: *$150,000*, all from *CPF*",
+   "stat": "",
+   "count": {
+    "to": 150000,
+    "pre": "$",
+    "label": "downpayment from CPF",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "BANK LOAN"
+   },
+   "say": "With a bank loan, it's also 25%, but at least 5% must be cash.",
+   "cap": "bank loan: at least *5% cash*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$30,000 CASH",
+    "bld": "hdb",
+    "dir": "down"
+   },
+   "say": "That's 30,000 dollars from your bank account, not your CPF.",
+   "cap": "*$30,000* from your bank account",
+   "stat": "",
+   "count": {
+    "to": 30000,
+    "pre": "$",
+    "label": "cash, not CPF",
+    "at": 0.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "HDB",
+    "b": "BANK",
+    "l": "hdb",
+    "r": "none"
+   },
+   "say": "And once you leave an HDB loan for a bank, you can't switch back.",
+   "cap": "leave HDB loan: *no way back*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "stat": "Illustration only"
+  }
+ ],
+ "source": "MoneySmart, CPF Board",
+ "caption": "Buying a $600,000 HDB flat? One choice decides if you need $30,000 in cash. 🏦\n\nWith an HDB loan, the 25% downpayment, $150,000, can all come from CPF. With a bank loan, it's also 25%, but at least 5% must be cash: $30,000 from your bank account, not your CPF. And once you leave an HDB loan for a bank, you can't switch back.\n\nUseful info? Follow for more 👇\n\n75% loan limit from 20 Aug 2024. Illustration only.",
+ "hashtags": "#singaporeproperty #hdbloan #bankloan #downpayment #cpf #propertysg #sgproperty #tinysingapore"
+}

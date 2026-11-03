@@ -1,0 +1,99 @@
+{
+ "id": "v079",
+ "motion": true,
+ "title": "Today's land.\n*Tomorrow's price*",
+ "pill": "NEW LAUNCH",
+ "lines": [
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "$1,755 PSF",
+    "sell": "?",
+    "mult": "LAND ONLY"
+   },
+   "say": "You're budgeting your upgrade. 1,755 dollars per square foot, and that's just the land.",
+   "cap": "*$1,755 psf*, just the land",
+   "stat": "",
+   "count": {
+    "to": 1755,
+    "pre": "$",
+    "label": "psf, land only",
+    "at": 1.2,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "TOP BID",
+    "bld": "land"
+   },
+   "say": "That was the top bid for a residential site near Orchard Road last week.",
+   "cap": "top bid, *near Orchard Road*",
+   "stat": ""
+  },
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "LAND",
+    "sell": "+ BUILD",
+    "mult": "+ PROFIT"
+   },
+   "say": "Developers buy land years before a launch. Construction, financing and profit come on top.",
+   "cap": "then *build, finance, profit* on top",
+   "stat": ""
+  },
+  {
+   "tpl": "developer",
+   "p": {
+    "land": "$1,755",
+    "sell": "≈ $3,500",
+    "mult": "× 2"
+   },
+   "say": "Analysts expect homes there at around 3,500 dollars psf.",
+   "cap": "analysts: about *$3,500 psf*",
+   "stat": "",
+   "count": {
+    "to": 3500,
+    "pre": "$",
+    "label": "psf, analyst estimate",
+    "at": 1.0,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "NEARBY ↑"
+   },
+   "say": "When land costs rise, nearby launches are often priced higher too.",
+   "cap": "nearby launches *often priced higher*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "LAND BIDS",
+    "b": "BUDGET",
+    "l": "land",
+    "r": "condo"
+   },
+   "say": "So check recent land bids in the area you want before you fix your budget.",
+   "cap": "check *land bids* first",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WHY",
+    "bld": "condo"
+   },
+   "say": "Most people decide this wrongly. Comment WHY to see the mistake.",
+   "cap": "comment *WHY*",
+   "stat": "Analyst estimates"
+  }
+ ],
+ "source": "EdgeProp, The Edge Singapore",
+ "caption": "Budgeting your upgrade? 1,755 dollars per square foot, and that's just the land. 🏗️\n\nThat was the top bid for a residential site near Orchard Road. Developers buy land years before a launch, and construction, financing and profit come on top. Analysts expect homes there at around $3,500 psf. When land costs rise, nearby launches are often priced higher too.\n\nCheck recent land bids in the area you want before you fix your budget.\n\nMost people decide this wrongly. Comment WHY to see the mistake 👇\n\nAnalyst estimates, not confirmed prices.",
+ "hashtags": "#singaporeproperty #newlaunch #gls #landprice #orchard #propertysg #sgproperty #tinysingapore"
+}

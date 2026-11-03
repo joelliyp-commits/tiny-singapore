@@ -1,0 +1,101 @@
+{
+ "id": "v081",
+ "motion": true,
+ "title": "$800,000:\n*HDB, EC or resale condo?*",
+ "pill": "BUYING",
+ "lines": [
+  {
+   "tpl": "dominoes",
+   "p": {
+    "labels": [
+     "HDB",
+     "EC",
+     "CONDO"
+    ],
+    "fall": false,
+    "q": true
+   },
+   "say": "You've got 800,000 dollars to spend. HDB, EC or resale condo? The rules decide more than the price.",
+   "cap": "*$800K*: HDB, EC or condo?",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "HDB · 30% CAP"
+   },
+   "say": "Resale HDB: you can get grants, and your loan instalment is capped at 30% of income.",
+   "cap": "HDB: *grants*, instalment cap *30%*",
+   "stat": ""
+  },
+  {
+   "tpl": "lease",
+   "p": {
+    "yrs": "5 YRS TO SELL"
+   },
+   "say": "You'll live there at least 5 years before you can sell.",
+   "cap": "live there *5 years* first",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "EC: 10 YRS",
+    "bld": "ec"
+   },
+   "say": "New EC: there's an income ceiling, the same 30% cap, and new sites need 10 years before you can sell.",
+   "cap": "EC: *income ceiling*, new sites *10 years*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "55% CAP",
+    "bld": "condo"
+   },
+   "say": "Resale condo: no income ceiling, a 55% cap on all your debts, and no minimum stay.",
+   "cap": "condo: *no ceiling*, *55%* debt cap",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     16,
+     12,
+     8,
+     4
+    ],
+    "labels": [
+     "Y1",
+     "Y2",
+     "Y3",
+     "Y4"
+    ],
+    "cols": [
+     14710863,
+     14710863,
+     14710863,
+     14710863
+    ]
+   },
+   "say": "But sell within 4 years and seller's stamp duty applies.",
+   "cap": "sell within 4 years: *SSD*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CHECK",
+    "bld": "condo"
+   },
+   "say": "Not sure which fits you? Comment CHECK.",
+   "cap": "comment *CHECK*",
+   "stat": "Eligibility varies"
+  }
+ ],
+ "source": "HDB, MAS, IRAS",
+ "caption": "Got $800,000 to spend? HDB, EC or resale condo? The rules decide more than the price. 🏠\n\nResale HDB: grants available, instalment capped at 30% of income, and at least 5 years before you can sell.\nNew EC: income ceiling, the same 30% cap, and new sites need 10 years before you can sell.\nResale condo: no income ceiling, a 55% cap on all your debts, no minimum stay, but seller's stamp duty if you sell within 4 years.\n\nNot sure which fits you? Comment CHECK 👇\n\nHDB, MAS, IRAS rules. Eligibility varies by household.",
+ "hashtags": "#singaporeproperty #hdb #ec #condosg #homebuying #propertysg #sgproperty #tinysingapore"
+}

@@ -1,0 +1,124 @@
+{
+ "id": "v078",
+ "motion": true,
+ "title": "$1.818 million.\n*Not your flat*",
+ "pill": "HDB",
+ "lines": [
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "12": "g"
+    },
+    "tags": [
+     {
+      "f": 12,
+      "text": "$1.818M",
+      "col": "g",
+      "side": 1
+     }
+    ]
+   },
+   "say": "You see an HDB flat sold for 1.818 million dollars. You quietly add 200,000 to your own price.",
+   "cap": "*$1.818M*. you add *$200K* to yours?",
+   "stat": "",
+   "count": {
+    "to": 1818000,
+    "pre": "$",
+    "label": "one HDB flat",
+    "at": 0.8,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "STACKED",
+    "bld": "hdb"
+   },
+   "say": "That flat had everything stacked.",
+   "cap": "that flat had *everything stacked*",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "12": "g",
+     "13": "g"
+    },
+    "tags": [
+     {
+      "f": 13,
+      "text": "40TH+ FLOOR",
+      "col": "g",
+      "side": 1
+     }
+    ],
+    "badge": "CITY FRINGE · 94 YRS"
+   },
+   "say": "City fringe, above the 40th floor, about 94 years of lease left.",
+   "cap": "city fringe, *40th floor*, *94 years* left",
+   "stat": ""
+  },
+  {
+   "tpl": "wave",
+   "p": {
+    "n": "FEW FOR SALE"
+   },
+   "say": "And almost no similar units for sale at the time.",
+   "cap": "almost *no similar units* for sale",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "hdb",
+     "label": "RECORD",
+     "price": "$1.818M"
+    },
+    "r": {
+     "type": "hdb",
+     "label": "YOURS",
+     "price": "?"
+    }
+   },
+   "say": "Most flats don't have all of that, so the record doesn't move them.",
+   "cap": "the record *doesn't move* most flats",
+   "stat": ""
+  },
+  {
+   "tpl": "tower",
+   "p": {
+    "hl": {
+     "6": "g"
+    },
+    "tags": [
+     {
+      "f": 6,
+      "text": "SAME BLOCK",
+      "col": "g",
+      "side": -1
+     }
+    ]
+   },
+   "say": "Price from flats that truly compare: same block, same type, similar floor and lease.",
+   "cap": "*same block, type, floor, lease*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "YOUR TOWN?",
+    "bld": "hdb"
+   },
+   "say": "Comment your flat type and town, and we'll tell you where yours sits.",
+   "cap": "comment your *flat type and town*",
+   "stat": "EdgeProp, 30 Oct 2026"
+  }
+ ],
+ "source": "EdgeProp, Stacked Homes",
+ "caption": "Saw an HDB flat sell for $1.818 million and quietly added $200,000 to your own price? 🏢\n\nThat flat had everything stacked: city fringe, above the 40th floor, about 94 years of lease left, and almost no similar units for sale at the time. Most flats don't have all of that, so the record doesn't move them.\n\nPrice from flats that truly compare: same block, same type, similar floor and lease.\n\nComment your flat type and town, and we'll tell you where yours sits 👇",
+ "hashtags": "#singaporeproperty #hdb #milliondollarflat #hdbresale #propertysg #sgproperty #tinysingapore"
+}

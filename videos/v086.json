@@ -1,0 +1,313 @@
+{
+ "id": "v086",
+ "motion": true,
+ "title": "Stamp duty:\n*the tiers nobody explains*",
+ "pill": "BUYING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$15,600",
+    "bld": "hdb"
+   },
+   "say": "You're buying a 700,000 dollar flat. Your stamp duty is 15,600 dollars. Here's why.",
+   "cap": "*$700K* flat: *$15,600* stamp duty",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "$700,000 flat",
+     "x": 540,
+     "y": 320,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "stamp duty",
+     "x": 540,
+     "y": 440,
+     "s": 86,
+     "c": "ink",
+     "at": 1.4
+    },
+    {
+     "k": "t",
+     "t": "$15,600",
+     "x": 540,
+     "y": 570,
+     "s": 130,
+     "c": "red",
+     "at": 2.6
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 535,
+     "w": 460,
+     "h": 170,
+     "c": "red",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "labels": [
+     "1%",
+     "2%",
+     "3%",
+     "4%"
+    ],
+    "cols": [
+     2908253,
+     2908253,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "It's charged in slices, not one rate.",
+   "cap": "charged in *slices*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Not one rate.",
+     "x": 540,
+     "y": 360,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "Slices.",
+     "x": 540,
+     "y": 500,
+     "s": 130,
+     "c": "red",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1,
+     2
+    ],
+    "labels": [
+     "1ST $180K",
+     "NEXT $180K"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "1% on the first 180,000. 2% on the next 180,000.",
+   "cap": "*1%* first $180K. *2%* next $180K",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "1% on first $180,000",
+     "x": 540,
+     "y": 350,
+     "s": 80,
+     "c": "ink",
+     "at": 0.2
+    },
+    {
+     "k": "t",
+     "t": "= $1,800",
+     "x": 540,
+     "y": 440,
+     "s": 80,
+     "c": "teal",
+     "at": 1.4
+    },
+    {
+     "k": "t",
+     "t": "2% on next $180,000",
+     "x": 540,
+     "y": 540,
+     "s": 80,
+     "c": "ink",
+     "at": 2.4
+    },
+    {
+     "k": "t",
+     "t": "= $3,600",
+     "x": 540,
+     "y": 630,
+     "s": 80,
+     "c": "teal",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     3,
+     4
+    ],
+    "labels": [
+     "NEXT $640K",
+     "NEXT $500K"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "3% on the next 640,000. 4% on the next 500,000.",
+   "cap": "*3%* next $640K. *4%* next $500K",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "3% on next $640,000",
+     "x": 540,
+     "y": 370,
+     "s": 80,
+     "c": "ink",
+     "at": 0.2
+    },
+    {
+     "k": "t",
+     "t": "4% on next $500,000",
+     "x": 540,
+     "y": 500,
+     "s": 80,
+     "c": "ink",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$44,600",
+    "bld": "condo"
+   },
+   "say": "So a 1.5 million dollar condo costs 44,600 dollars.",
+   "cap": "*$1.5M* condo: *$44,600*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "$1.5M condo",
+     "x": 540,
+     "y": 340,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$44,600",
+     "x": 540,
+     "y": 490,
+     "s": 130,
+     "c": "red",
+     "at": 1.6
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 455,
+     "w": 460,
+     "h": 170,
+     "c": "red",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     5,
+     6
+    ],
+    "labels": [
+     "ABOVE $1.5M",
+     "ABOVE $3M"
+    ],
+    "cols": [
+     14710863,
+     14710863
+    ]
+   },
+   "say": "Above 1.5 million it's 5%, and above 3 million, 6%.",
+   "cap": "above $1.5M: *5%*. above $3M: *6%*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "above $1.5M: 5%",
+     "x": 540,
+     "y": 370,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "above $3M: 6%",
+     "x": 540,
+     "y": 500,
+     "s": 96,
+     "c": "red",
+     "at": 1.8
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "hdb"
+   },
+   "say": "Save this before you set your budget.",
+   "cap": "*save this* before you budget",
+   "stat": "IRAS. Excludes ABSD",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Save this",
+     "x": 540,
+     "y": 360,
+     "s": 120,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "before you set your budget",
+     "x": 540,
+     "y": 490,
+     "s": 76,
+     "c": "teal",
+     "at": 0.8
+    }
+   ]
+  }
+ ],
+ "source": "IRAS, SmartCalculator",
+ "caption": "Buying a $700,000 flat? Your stamp duty is $15,600. Here's why. 🏠\n\nBuyer's stamp duty is charged in slices: 1% on the first $180,000, 2% on the next $180,000, 3% on the next $640,000, 4% on the next $500,000, 5% up to $3 million, and 6% above that. So a $1.5M condo costs $44,600.\n\nSave this before you set your budget 👇\n\nIRAS buyer's stamp duty, residential. Excludes ABSD.",
+ "hashtags": "#singaporeproperty #stampduty #bsd #homebuying #propertysg #sgproperty #tinysingapore",
+ "style": "board"
+}

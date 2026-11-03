@@ -1,0 +1,195 @@
+{
+ "id": "v087",
+ "flat": true,
+ "title": "Two ECs, two sets of rules",
+ "lines": [
+  {
+   "say": "You're buying an EC. Two projects side by side could have different rules for 10 years.",
+   "cap": "two ECs, *different rules*",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "EC A",
+     "lat": 0.3,
+     "r": "EC B",
+     "rat": 0.6,
+     "chips": [
+      {
+       "t": "SAME BUDGET",
+       "at": "@buying",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      },
+      {
+       "t": "DIFFERENT RULES",
+       "at": "@different",
+       "y": 460,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It depends on when the land tender closed.",
+   "cap": "it depends on the *land date*",
+   "scenes": [
+    {
+     "k": "doc",
+     "at": 0,
+     "title": "LAND TENDER",
+     "lines": [
+      {
+       "t": "Closed on: ?",
+       "at": "@tender",
+       "col": "#2c605d"
+      }
+     ],
+     "stamp": "CHECK DATE",
+     "stampAt": "@closed"
+    }
+   ]
+  },
+  {
+   "say": "Sites from before 8 May 2026: 5 year minimum occupation period, fully private at 10 years.",
+   "cap": "older sites: *5 years*, private at *10*",
+   "scenes": [
+    {
+     "k": "timeline",
+     "at": 0,
+     "marks": [
+      {
+       "label": "KEYS",
+       "sub": "YEAR 0",
+       "at": 0.3
+      },
+      {
+       "label": "SELL",
+       "sub": "YEAR 5",
+       "at": "@5",
+       "col": "#3fae5a"
+      },
+      {
+       "label": "PRIVATE",
+       "sub": "YEAR 10",
+       "at": "@10",
+       "col": "#2c605d"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Sites from 8 May 2026 onwards: 10 years before you can sell, fully private only at 15.",
+   "cap": "new sites: *10 years*, private at *15*",
+   "scenes": [
+    {
+     "k": "timeline",
+     "at": 0,
+     "marks": [
+      {
+       "label": "KEYS",
+       "sub": "YEAR 0",
+       "at": 0.3
+      },
+      {
+       "label": "SELL",
+       "sub": "YEAR 10",
+       "at": "@10",
+       "col": "#e0774f"
+      },
+      {
+       "label": "PRIVATE",
+       "sub": "YEAR 15",
+       "at": "@15",
+       "col": "#e0774f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "New sites also keep 90% of units for first timers, and the deferred payment scheme is gone.",
+   "cap": "*90%* for first timers. *no deferred payment*",
+   "scenes": [
+    {
+     "k": "crowd",
+     "at": 0,
+     "l": "NEW EC UNITS",
+     "n0": 10,
+     "n1": 9,
+     "at2": "@90%",
+     "chips": [
+      {
+       "t": "NO DEFERRED PAYMENT",
+       "at": "@gone",
+       "y": 1240,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 52,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "So the same budget can mean a very different exit. Check the land date first.",
+   "cap": "check the *land date first*",
+   "scenes": [
+    {
+     "k": "scale",
+     "at": 0,
+     "l": "OLD SITE",
+     "r": "NEW SITE",
+     "tilt": -8,
+     "tiltAt": "@exit",
+     "chips": [
+      {
+       "t": "CHECK THE LAND DATE",
+       "at": "@land",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Want to know which ECs you can buy? Comment CHECK.",
+   "cap": "comment *CHECK*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "COMMENT CHECK",
+       "at": "@check",
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 76,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "MND, 8 May 2026. Income ceilings also differ by site.",
+ "caption": "Buying an EC? Two projects side by side could have different rules for 10 years. 🏢\n\nIt depends on when the land tender closed.\nSites from before 8 May 2026: 5 year minimum occupation period, fully private at 10 years.\nSites from 8 May 2026 onwards: 10 years before you can sell, fully private only at 15. New sites also keep 90% of units for first timers, and the deferred payment scheme is gone.\n\nSame budget, very different exit. Check the land date first.\n\nWant to know which ECs you can buy? Comment CHECK 👇\n\nMND, 8 May 2026. Income ceilings also differ by site.",
+ "hashtags": "#singaporeproperty #ec #executivecondo #mop #propertysg #sgproperty #tinysingapore"
+}

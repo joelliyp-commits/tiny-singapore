@@ -1,0 +1,182 @@
+{
+ "id": "v089",
+ "flat": true,
+ "title": "Renting out your HDB: rooms vs whole flat",
+ "lines": [
+  {
+   "say": "You want rental income from your HDB. The rules depend on rooms or the whole flat.",
+   "cap": "*rooms* or the *whole flat*?",
+   "scenes": [
+    {
+     "k": "scale",
+     "at": 0,
+     "l": "ROOMS",
+     "r": "WHOLE FLAT",
+     "tilt": 0,
+     "tiltAt": 0.5,
+     "chips": [
+      {
+       "t": "RENTAL INCOME",
+       "at": "@rental",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Rooms: you can rent them out even during your minimum occupation period, if you still live there.",
+   "cap": "rooms: OK *during MOP*, if you *live there*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "ROOMS: OK DURING MOP",
+       "at": "@during",
+       "y": 1240,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 56,
+       "x": 540
+      },
+      {
+       "t": "IF YOU LIVE THERE",
+       "at": "@live",
+       "y": 460,
+       "bg": "#fffaf0",
+       "fg": "#163634",
+       "fs": 52,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "1 bedroom for a 3 room flat. 2 bedrooms for 4 room and above.",
+   "cap": "*1 room* for 3 room. *2 rooms* for 4 room+",
+   "scenes": [
+    {
+     "k": "receipt",
+     "at": 0,
+     "title": "BEDROOMS YOU CAN RENT",
+     "items": [
+      {
+       "t": "3 room flat",
+       "v": "1 ROOM",
+       "at": "@3"
+      },
+      {
+       "t": "4 room and above",
+       "v": "2 ROOMS",
+       "at": "@4",
+       "col": "#3fae5a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Whole flat: only after your MOP, and only Singapore Citizen owners.",
+   "cap": "whole flat: *after MOP*, *citizen owners*",
+   "scenes": [
+    {
+     "k": "timeline",
+     "at": 0,
+     "marks": [
+      {
+       "label": "KEYS",
+       "sub": "YEAR 0",
+       "at": 0.3
+      },
+      {
+       "label": "MOP",
+       "sub": "YEAR 5",
+       "at": "@MOP",
+       "col": "#3fae5a"
+      },
+      {
+       "label": "RENT WHOLE",
+       "sub": "CITIZENS",
+       "at": "@Citizen",
+       "col": "#2c605d"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Plus and Prime flats can never be rented out whole.",
+   "cap": "Plus and Prime: *never whole*",
+   "scenes": [
+    {
+     "k": "doc",
+     "at": 0,
+     "title": "PLUS AND PRIME",
+     "lines": [
+      {
+       "t": "Whole flat rental",
+       "at": 0.4,
+       "col": "#2c605d"
+      }
+     ],
+     "stamp": "NEVER",
+     "stampAt": "@never"
+    }
+   ]
+  },
+  {
+   "say": "Every tenancy needs HDB approval first.",
+   "cap": "*HDB approval first*",
+   "scenes": [
+    {
+     "k": "phone",
+     "at": 0,
+     "app": "HDB",
+     "lab": "RENTAL",
+     "bigText": "APPROVE",
+     "rows": [
+      {
+       "t": "Before tenant moves in",
+       "v": "APPLY",
+       "at": "@approval",
+       "col": "#3fae5a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "HDB rules. Occupancy caps apply.",
+ "caption": "Want rental income from your HDB? The rules depend on rooms or the whole flat. 🏠\n\nRooms: you can rent them out even during your minimum occupation period, if you still live there. 1 bedroom for a 3 room flat, 2 bedrooms for 4 room and above.\nWhole flat: only after your MOP, and only Singapore Citizen owners. Plus and Prime flats can never be rented out whole.\n\nEvery tenancy needs HDB approval first.\n\nUseful info? Follow for more 👇\n\nHDB rules. Occupancy caps apply.",
+ "hashtags": "#singaporeproperty #hdb #rentout #hdbrental #propertysg #sgproperty #tinysingapore"
+}

@@ -1,0 +1,182 @@
+{
+ "id": "v082",
+ "flat": true,
+ "title": "No HFE letter, no flat",
+ "lines": [
+  {
+   "say": "You found the perfect resale flat. But without one letter, the seller can't even give you the option.",
+   "cap": "no letter, *no option*",
+   "scenes": [
+    {
+     "k": "doc",
+     "at": 0,
+     "title": "OPTION TO PURCHASE",
+     "lines": [
+      {
+       "t": "Resale flat",
+       "at": 0.5,
+       "col": "#2c605d"
+      }
+     ],
+     "stamp": "NOT YET",
+     "stampAt": "@letter"
+    }
+   ]
+  },
+  {
+   "say": "It's the HDB Flat Eligibility letter, or HFE.",
+   "cap": "the *HFE letter*",
+   "scenes": [
+    {
+     "k": "doc",
+     "at": 0,
+     "title": "HFE LETTER",
+     "lines": [
+      {
+       "t": "HDB Flat Eligibility",
+       "at": "@eligibility",
+       "col": "#2c605d"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It tells you if you can buy, which grants you get, and how much HDB will lend you.",
+   "cap": "can you buy, *grants*, *loan*",
+   "scenes": [
+    {
+     "k": "phone",
+     "at": 0,
+     "app": "HDB",
+     "lab": "YOUR HFE",
+     "bigText": "HFE",
+     "rows": [
+      {
+       "t": "Can you buy?",
+       "v": "YES",
+       "at": "@buy",
+       "col": "#3fae5a"
+      },
+      {
+       "t": "Grants",
+       "v": "$",
+       "at": "@grants"
+      },
+      {
+       "t": "HDB loan",
+       "v": "$",
+       "at": "@lend"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "You need it before you apply for a BTO, and before a seller can grant you the option to purchase.",
+   "cap": "needed *before BTO* and *before the OTP*",
+   "scenes": [
+    {
+     "k": "timeline",
+     "at": 0,
+     "marks": [
+      {
+       "label": "HFE",
+       "sub": "FIRST",
+       "at": 0.3,
+       "col": "#3fae5a"
+      },
+      {
+       "label": "BTO",
+       "sub": "APPLY",
+       "at": "@BTO"
+      },
+      {
+       "label": "OTP",
+       "sub": "RESALE",
+       "at": "@option",
+       "col": "#e0774f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It takes about a month, and longer near a BTO launch.",
+   "cap": "about *a month*, longer near launches",
+   "scenes": [
+    {
+     "k": "timeline",
+     "at": 0,
+     "marks": [
+      {
+       "label": "APPLY",
+       "sub": "DAY 1",
+       "at": 0.3
+      },
+      {
+       "label": "HFE",
+       "sub": "ABOUT 1 MONTH",
+       "at": "@month",
+       "col": "#3fae5a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It lasts 9 months. So apply when you start viewing, not when you find the flat.",
+   "cap": "lasts *9 months*. apply *when you start viewing*",
+   "scenes": [
+    {
+     "k": "timeline",
+     "at": 0,
+     "marks": [
+      {
+       "label": "HFE",
+       "sub": "ISSUED",
+       "at": 0.3,
+       "col": "#3fae5a"
+      },
+      {
+       "label": "VIEW",
+       "sub": "MONTHS 1-9",
+       "at": "@viewing"
+      },
+      {
+       "label": "EXPIRES",
+       "sub": "9 MONTHS",
+       "at": "@9",
+       "col": "#e0774f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "HDB. Processing times vary.",
+ "caption": "Found the perfect resale flat? Without one letter, the seller can't even give you the option to purchase. 🏠\n\nThe HDB Flat Eligibility (HFE) letter tells you if you can buy, which grants you get, and how much HDB will lend you. You need it before you apply for a BTO, and before a seller can grant you the OTP. It takes about a month, longer near a BTO launch, and lasts 9 months.\n\nApply when you start viewing, not when you find the flat.\n\nUseful info? Follow for more 👇\n\nHDB. Processing times vary.",
+ "hashtags": "#singaporeproperty #hdb #hfe #hdbresale #bto #propertysg #sgproperty #tinysingapore"
+}
