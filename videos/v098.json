@@ -1,0 +1,273 @@
+{
+ "id": "v098",
+ "motion": true,
+ "title": "Extra stamp duty:\n*who pays what*",
+ "pill": "BUYING",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "+20%",
+    "bld": "condo"
+   },
+   "say": "You're buying your second home as a citizen. That's 20% extra stamp duty before anything else.",
+   "cap": "second home: *20% extra*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "2nd home, citizen",
+     "x": 540,
+     "y": 330,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "+20% ABSD",
+     "x": 540,
+     "y": 470,
+     "s": 130,
+     "c": "red",
+     "at": 2.6
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 435,
+     "w": 560,
+     "h": 180,
+     "c": "red",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     0,
+     20,
+     30
+    ],
+    "labels": [
+     "1ST",
+     "2ND",
+     "3RD+"
+    ],
+    "cols": [
+     2908253,
+     14710863,
+     14710863
+    ]
+   },
+   "say": "Citizens: 0% on the first, 20% on the second, 30% from the third.",
+   "cap": "citizens: *0 / 20 / 30%*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Citizens",
+     "x": 540,
+     "y": 330,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "0%   20%   30%",
+     "x": 540,
+     "y": 470,
+     "s": 110,
+     "c": "red",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     5,
+     30,
+     35
+    ],
+    "labels": [
+     "1ST",
+     "2ND",
+     "3RD+"
+    ],
+    "cols": [
+     14710863,
+     14710863,
+     14710863
+    ]
+   },
+   "say": "Permanent residents: 5% on the first, 30% on the second, 35% from the third.",
+   "cap": "PRs: *5 / 30 / 35%*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "PRs",
+     "x": 540,
+     "y": 330,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "5%   30%   35%",
+     "x": 540,
+     "y": 470,
+     "s": 110,
+     "c": "red",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     60
+    ],
+    "labels": [
+     "ANY"
+    ],
+    "cols": [
+     14710863
+    ]
+   },
+   "say": "Foreigners: 60% on any home.",
+   "cap": "foreigners: *60%*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Foreigners",
+     "x": 540,
+     "y": 330,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "60%",
+     "x": 540,
+     "y": 480,
+     "s": 150,
+     "c": "red",
+     "at": 0.9
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$300,000",
+    "bld": "condo"
+   },
+   "say": "On a 1.5 million dollar second home, a citizen pays 300,000 dollars.",
+   "cap": "*$1.5M* second home: *$300,000*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "$1.5M 2nd home",
+     "x": 540,
+     "y": 340,
+     "s": 100,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$300,000",
+     "x": 540,
+     "y": 480,
+     "s": 130,
+     "c": "red",
+     "at": 2.2
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 445,
+     "w": 520,
+     "h": 170,
+     "c": "red",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "+ BSD",
+    "bld": "condo"
+   },
+   "say": "That's on top of the usual buyer's stamp duty.",
+   "cap": "on top of *BSD*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "On top of",
+     "x": 540,
+     "y": 350,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "buyer's stamp duty",
+     "x": 540,
+     "y": 480,
+     "s": 96,
+     "c": "teal",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "condo"
+   },
+   "say": "Save this before you plan your next purchase.",
+   "cap": "*save this*",
+   "stat": "IRAS, from 27 Apr 2023",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Save this",
+     "x": 540,
+     "y": 360,
+     "s": 120,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "before your next purchase",
+     "x": 540,
+     "y": 490,
+     "s": 80,
+     "c": "teal",
+     "at": 0.8
+    }
+   ]
+  }
+ ],
+ "source": "IRAS via 99.co, PropertyGuru",
+ "caption": "Buying your second home as a citizen? That's 20% extra stamp duty before anything else. 🏠\n\nCitizens: 0% on the first, 20% on the second, 30% from the third.\nPRs: 5% on the first, 30% on the second, 35% from the third.\nForeigners: 60% on any home.\n\nOn a $1.5 million second home, a citizen pays $300,000, on top of the usual buyer's stamp duty.\n\nSave this before you plan your next purchase 👇\n\nIRAS ABSD rates from 27 Apr 2023. Some nationalities follow citizen rates under trade agreements.",
+ "hashtags": "#singaporeproperty #absd #stampduty #secondproperty #propertysg #sgproperty #tinysingapore",
+ "style": "board"
+}

@@ -1,0 +1,107 @@
+{
+ "id": "v099",
+ "motion": true,
+ "title": "Your car loan just cost you\n*$250,000*",
+ "pill": "LOANS",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "-$250K",
+    "bld": "car",
+    "dir": "down"
+   },
+   "say": "You earn 10,000 dollars a month and pay 1,200 for your car. That could cut 250,000 off your condo budget.",
+   "cap": "*$1,200* car loan. *$250,000* off your budget",
+   "stat": "",
+   "count": {
+    "to": 250000,
+    "pre": "$",
+    "label": "off your budget",
+    "at": 3.0,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "55% = $5,500"
+   },
+   "say": "Banks cap all your debts at 55% of income: 5,500 dollars a month.",
+   "cap": "all debts capped at *$5,500*",
+   "stat": ""
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     1200,
+     4300
+    ],
+    "labels": [
+     "CAR",
+     "HOME"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "Your car loan takes 1,200 of that, leaving 4,300 for the home loan.",
+   "cap": "car *$1,200*. home loan *$4,300*",
+   "stat": ""
+  },
+  {
+   "tpl": "versus",
+   "p": {
+    "l": {
+     "type": "condo",
+     "label": "WITH CAR",
+     "price": "$900K"
+    },
+    "r": {
+     "type": "condo",
+     "label": "NO CAR",
+     "price": "$1.15M"
+    }
+   },
+   "say": "Tested at 4% over 30 years, that's about 900,000 instead of 1.15 million.",
+   "cap": "about *$900K* instead of *$1.15M*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "CLEAR IT?",
+    "bld": "car"
+   },
+   "say": "Clearing a car loan before you buy can change the whole plan.",
+   "cap": "clearing it *changes the plan*",
+   "stat": ""
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "BEFORE YOU VIEW"
+   },
+   "say": "Check your numbers before you view, not after.",
+   "cap": "check *before you view*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "PLAN",
+    "bld": "condo"
+   },
+   "say": "Comment PLAN and we'll send you the calculator used in this video.",
+   "cap": "comment *PLAN*",
+   "stat": "MAS TDSR. Illustration"
+  }
+ ],
+ "source": "MAS",
+ "caption": "Earn $10,000 a month and pay $1,200 for your car? That could cut $250,000 off your condo budget. 🚗\n\nBanks cap all your debts at 55% of income: $5,500 a month. Your car loan takes $1,200, leaving $4,300 for the home loan. Tested at 4% over 30 years, that's about $900,000 instead of $1.15 million.\n\nClearing a car loan before you buy can change the whole plan. Check your numbers before you view, not after.\n\nComment PLAN and we'll send you the calculator used in this video 👇\n\nMAS TDSR, 4% medium term rate floor. Illustration.",
+ "hashtags": "#singaporeproperty #tdsr #carloan #homeloan #condosg #propertysg #sgproperty #tinysingapore"
+}

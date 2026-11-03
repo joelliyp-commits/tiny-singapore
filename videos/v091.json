@@ -1,0 +1,91 @@
+{
+ "id": "v091",
+ "motion": true,
+ "title": "11,000 homes.\n*How many years?*",
+ "pill": "HDB",
+ "lines": [
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 0,
+    "label": "11,000 HOMES",
+    "tag": "COMING"
+   },
+   "say": "You read that 11,000 new homes are coming, and decide to wait for one.",
+   "cap": "*11,000 homes*. you decide to *wait*",
+   "stat": "",
+   "count": {
+    "to": 11000,
+    "pre": "",
+    "label": "new homes",
+    "at": 0.8,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "hesitate",
+   "p": {
+    "text": "WAIT = FREE?"
+   },
+   "say": "Waiting feels free. It isn't.",
+   "cap": "waiting feels free. *it isn't*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 1,
+    "label": "SITE WORKS",
+    "tag": "LATE 2027"
+   },
+   "say": "HDB says site works only start from late 2027.",
+   "cap": "site works from *late 2027*",
+   "stat": ""
+  },
+  {
+   "tpl": "township",
+   "p": {
+    "stage": 2,
+    "label": "IN PHASES",
+    "tag": "≈ 10 YEARS"
+   },
+   "say": "The homes come in phases over about 10 years.",
+   "cap": "in phases over *about 10 years*",
+   "stat": ""
+  },
+  {
+   "tpl": "rent",
+   "p": {
+    "cal": "EVERY YEAR"
+   },
+   "say": "Every year you wait is another year of rent or a smaller flat.",
+   "cap": "every year: *more rent* or *a smaller flat*",
+   "stat": ""
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "BUY NOW",
+    "b": "WAIT",
+    "l": "hdb",
+    "r": "rent"
+   },
+   "say": "Compare two paths: buy what fits now, or wait with the real years and costs counted.",
+   "cap": "*buy what fits* or *wait with costs counted*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "YOUR TOWN?",
+    "bld": "hdb"
+   },
+   "say": "Comment your flat type and town, and we'll tell you which path fits you.",
+   "cap": "comment your *flat type and town*",
+   "stat": "HDB, 28 Oct 2026"
+  }
+ ],
+ "source": "HDB via AsiaOne, Mothership",
+ "caption": "Read that 11,000 new homes are coming and decided to wait for one? 🏗️\n\nWaiting feels free. It isn't. HDB says site works only start from late 2027, and the homes come in phases over about 10 years. Every year you wait is another year of rent or a smaller flat.\n\nCompare two paths: buy what fits now, or wait with the real years and costs counted.\n\nComment your flat type and town, and we'll tell you which path fits you 👇\n\nHDB release 28 Oct 2026 via AsiaOne, Mothership.",
+ "hashtags": "#singaporeproperty #hdb #bto #newtown #propertysg #sgproperty #tinysingapore"
+}

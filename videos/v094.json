@@ -1,0 +1,182 @@
+{
+ "id": "v094",
+ "flat": true,
+ "title": "2 years 10 months to your keys",
+ "lines": [
+  {
+   "say": "You want a BTO, but you can't wait 4 or 5 years. Here's one with a 2 year 10 month wait.",
+   "cap": "*2 years 10 months* to your keys",
+   "scenes": [
+    {
+     "k": "timeline",
+     "at": 0,
+     "marks": [
+      {
+       "label": "APPLY",
+       "sub": "NOV 2026",
+       "at": 0.3
+      },
+      {
+       "label": "KEYS",
+       "sub": "2Y 10M",
+       "at": "@10",
+       "col": "#3fae5a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "This November, 1,310 flats in Sembawang come with that shorter wait.",
+   "cap": "*1,310 flats* in Sembawang",
+   "scenes": [
+    {
+     "k": "street",
+     "at": 0,
+     "day": true,
+     "l": "SEMBAWANG",
+     "lat": 0.3,
+     "r": "1,310 FLATS",
+     "rat": "@1,310",
+     "chips": [
+      {
+       "t": "SHORTER WAIT",
+       "at": "@shorter",
+       "y": 330,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 58,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Bayshore and Tengah are about 3 years 2 months.",
+   "cap": "Bayshore, Tengah: *3 years 2 months*",
+   "scenes": [
+    {
+     "k": "receipt",
+     "at": 0,
+     "title": "WAITING TIMES",
+     "items": [
+      {
+       "t": "Sembawang",
+       "v": "2Y 10M",
+       "at": 0.3,
+       "col": "#3fae5a"
+      },
+      {
+       "t": "Bayshore",
+       "v": "3Y 2M",
+       "at": "@Bayshore"
+      },
+      {
+       "t": "Tengah",
+       "v": "3Y 2M",
+       "at": "@Tengah"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "And the BTO income ceiling is now 16,000 dollars.",
+   "cap": "income ceiling now *$16,000*",
+   "scenes": [
+    {
+     "k": "doc",
+     "at": 0,
+     "title": "BTO INCOME CEILING",
+     "lines": [
+      {
+       "t": "$16,000 a month",
+       "at": "@16,000",
+       "col": "#3fae5a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Most people pick the estate first and only check the wait later.",
+   "cap": "most check the wait *later*",
+   "scenes": [
+    {
+     "k": "crowd",
+     "at": 0,
+     "l": "MOST BUYERS",
+     "n0": 10,
+     "n1": 10,
+     "at2": "@later",
+     "chips": [
+      {
+       "t": "ESTATE FIRST",
+       "at": "@estate",
+       "y": 1240,
+       "bg": "#e0774f",
+       "fg": "#fffaf0",
+       "fs": 56,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Decide what matters most: the wait, the location or the price. Then shortlist.",
+   "cap": "*wait, location or price*. then shortlist",
+   "scenes": [
+    {
+     "k": "receipt",
+     "at": 0,
+     "title": "WHAT MATTERS MOST?",
+     "items": [
+      {
+       "t": "The wait",
+       "v": "1?",
+       "at": "@wait"
+      },
+      {
+       "t": "The location",
+       "v": "2?",
+       "at": "@location"
+      },
+      {
+       "t": "The price",
+       "v": "3?",
+       "at": "@price",
+       "col": "#e0774f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Not sure if you're on track? Comment CHECK.",
+   "cap": "comment *CHECK*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "COMMENT CHECK",
+       "at": "@check",
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 76,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "HDB via AsiaOne, The Straits Times. Waits are HDB estimates.",
+ "caption": "Want a BTO but can't wait 4 or 5 years? Here's one with a 2 year 10 month wait. 🔑\n\nThis November, 1,310 flats in Sembawang come with that shorter wait. Bayshore and Tengah are about 3 years 2 months. And the BTO income ceiling is now $16,000.\n\nMost people pick the estate first and only check the wait later. Decide what matters most: the wait, the location or the price. Then shortlist.\n\nNot sure if you're on track? Comment CHECK 👇\n\nHDB, AsiaOne, The Straits Times, 1 Nov 2026. Waiting times are HDB estimates.",
+ "hashtags": "#singaporeproperty #bto #hdb #sembawang #novbto #propertysg #sgproperty #tinysingapore"
+}

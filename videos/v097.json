@@ -1,0 +1,167 @@
+{
+ "id": "v097",
+ "flat": true,
+ "title": "One more ballot chance per child",
+ "lines": [
+  {
+   "say": "You're a first time family with two kids. From February 2027, you get two extra BTO ballot chances.",
+   "cap": "two kids: *two extra* ballot chances",
+   "scenes": [
+    {
+     "k": "crowd",
+     "at": 0,
+     "l": "BTO BALLOT",
+     "n0": 2,
+     "n1": 4,
+     "at2": "@extra",
+     "chips": [
+      {
+       "t": "+2 CHANCES",
+       "at": "@two",
+       "y": 1240,
+       "bg": "#3fae5a",
+       "fg": "#fffaf0",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "It's one extra chance for every Singaporean child aged 18 and below.",
+   "cap": "*one per child*, 18 and below",
+   "scenes": [
+    {
+     "k": "parents",
+     "at": 0,
+     "chips": [
+      {
+       "t": "+1 PER CHILD",
+       "at": "@child",
+       "y": 1240,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "That's on top of your usual first timer chances.",
+   "cap": "on top of *first timer* chances",
+   "scenes": [
+    {
+     "k": "ladder",
+     "at": 0,
+     "steps": [
+      "FIRST TIMER",
+      "+ KIDS"
+     ],
+     "sub": [
+      "USUAL",
+      "EXTRA"
+     ],
+     "to": 1,
+     "at2": "@top",
+     "bg": "#e3f1e6"
+    }
+   ]
+  },
+  {
+   "say": "It starts with the February 2027 BTO exercise.",
+   "cap": "starts *Feb 2027*",
+   "scenes": [
+    {
+     "k": "timeline",
+     "at": 0,
+     "marks": [
+      {
+       "label": "NOW",
+       "sub": "NOV 2026",
+       "at": 0.3
+      },
+      {
+       "label": "FEB 2027",
+       "sub": "BTO",
+       "at": "@February",
+       "col": "#3fae5a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "So if you're planning to apply soon, February could give you better odds than now.",
+   "cap": "February: *better odds*",
+   "scenes": [
+    {
+     "k": "scale",
+     "at": 0,
+     "l": "NOW",
+     "r": "FEB 2027",
+     "tilt": 8,
+     "tiltAt": "@odds",
+     "chips": [
+      {
+       "t": "BETTER ODDS",
+       "at": "@better",
+       "y": 330,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 60,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Check your HFE letter is ready before then.",
+   "cap": "get your *HFE letter* ready",
+   "scenes": [
+    {
+     "k": "doc",
+     "at": 0,
+     "title": "HFE LETTER",
+     "lines": [
+      {
+       "t": "Ready before Feb",
+       "at": "@ready",
+       "col": "#3fae5a"
+      }
+     ],
+     "stamp": "READY",
+     "stampAt": "@then"
+    }
+   ]
+  },
+  {
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "scenes": [
+    {
+     "k": "room",
+     "at": 0,
+     "nobubble": true,
+     "chips": [
+      {
+       "t": "FOLLOW FOR MORE",
+       "at": 0.2,
+       "y": 380,
+       "bg": "#ffd36b",
+       "fg": "#163634",
+       "fs": 70,
+       "x": 540
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "source": "National Day Rally 2026. HDB will confirm details.",
+ "caption": "First time family with two kids? From February 2027, you get two extra BTO ballot chances. 👨‍👩‍👧‍👦\n\nIt's one extra chance for every Singaporean child aged 18 and below, on top of your usual first timer chances. It starts with the February 2027 BTO exercise.\n\nIf you're planning to apply soon, February could give you better odds than now. Check your HFE letter is ready before then.\n\nUseful info? Follow for more 👇\n\nAnnounced at National Day Rally 2026. HDB will confirm details.",
+ "hashtags": "#singaporeproperty #bto #hdb #ballot #youngfamily #propertysg #sgproperty #tinysingapore"
+}

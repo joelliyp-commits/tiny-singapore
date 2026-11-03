@@ -1,4 +1,4 @@
-# Batch E (25 to 30 Nov) - pending Joel's approval
+# Batch E (25 to 30 Nov) - scripts approved by Joel 3 Nov
 Slots 2pm and 6pm SGT. Mid line "Useful so far? Follow for more." on v095 and v100.
 News pack ideas folded in: v091, v093, v094. Held: v090 (second Thomson Reserve video, a week after v076), v092 (rents, single source).
 

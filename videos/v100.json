@@ -1,0 +1,267 @@
+{
+ "id": "v100",
+ "motion": true,
+ "title": "Pay $20,000 extra\n*on your loan?*",
+ "pill": "LOANS",
+ "lines": [
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "$20,000"
+   },
+   "say": "You've got 20,000 dollars spare and a 500,000 dollar home loan at 3%. Pay it down?",
+   "cap": "*$20,000* spare. pay down?",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "$20,000 spare",
+     "x": 540,
+     "y": 320,
+     "s": 104,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$500K loan at 3%",
+     "x": 540,
+     "y": 450,
+     "s": 84,
+     "c": "ink",
+     "at": 1.8
+    },
+    {
+     "k": "t",
+     "t": "pay it down?",
+     "x": 540,
+     "y": 570,
+     "s": 96,
+     "c": "red",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "tpl": "lease",
+   "p": {
+    "yrs": "-1.5 YRS"
+   },
+   "say": "Keep the same instalment, and you could finish about a year and a half earlier.",
+   "cap": "same instalment: *1.5 years earlier*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Same instalment",
+     "x": 540,
+     "y": 340,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "done ≈ 1.5 years earlier",
+     "x": 540,
+     "y": 470,
+     "s": 84,
+     "c": "teal",
+     "at": 2.0
+    },
+    {
+     "k": "i",
+     "n": "cal",
+     "x": 880,
+     "y": 330,
+     "s": 1.1,
+     "c": "teal",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "≈ $21,000",
+    "bld": "hdb"
+   },
+   "say": "That saves around 21,000 dollars in interest.",
+   "cap": "saves about *$21,000* interest",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Interest saved",
+     "x": 540,
+     "y": 350,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "≈ $21,000",
+     "x": 540,
+     "y": 490,
+     "s": 130,
+     "c": "teal",
+     "at": 1.2
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 455,
+     "w": 500,
+     "h": 170,
+     "c": "teal",
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Useful so far?",
+     "x": 540,
+     "y": 360,
+     "s": 104,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "Follow for more",
+     "x": 540,
+     "y": 500,
+     "s": 104,
+     "c": "red",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     2371,
+     2276
+    ],
+    "labels": [
+     "BEFORE",
+     "AFTER"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "Or keep the same end date, and your instalment drops by about 95 dollars a month.",
+   "cap": "same end date: *$95 less* a month",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Same end date",
+     "x": 540,
+     "y": 340,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "≈ $95 less a month",
+     "x": 540,
+     "y": 470,
+     "s": 96,
+     "c": "teal",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "LOCK IN?"
+   },
+   "say": "But check your lock in first. Many banks charge a penalty for paying early.",
+   "cap": "check your *lock in* first",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Check your lock in",
+     "x": 540,
+     "y": 350,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "early payment penalty",
+     "x": 540,
+     "y": 480,
+     "s": 84,
+     "c": "red",
+     "at": 1.8
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 445,
+     "w": 640,
+     "h": 140,
+     "c": "red",
+     "at": 2.8
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "stat": "Illustration. Not financial advice",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Useful info?",
+     "x": 540,
+     "y": 380,
+     "s": 104,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "Follow for more",
+     "x": 540,
+     "y": 510,
+     "s": 104,
+     "c": "red",
+     "at": 0.9
+    }
+   ]
+  }
+ ],
+ "source": "Computed illustration",
+ "caption": "Got $20,000 spare and a $500,000 home loan at 3%? Pay it down? 🏦\n\nKeep the same instalment, and you could finish about a year and a half earlier, saving around $21,000 in interest. Or keep the same end date, and your instalment drops by about $95 a month.\n\nBut check your lock in first. Many banks charge a penalty for paying early.\n\nUseful info? Follow for more 👇\n\nIllustration: 25 year loan at 3%, prepaid at the start. Not financial advice.",
+ "hashtags": "#singaporeproperty #homeloan #prepayment #mortgage #propertysg #sgproperty #tinysingapore",
+ "style": "board"
+}

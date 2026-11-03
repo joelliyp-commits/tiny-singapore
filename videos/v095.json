@@ -1,0 +1,114 @@
+{
+ "id": "v095",
+ "motion": true,
+ "title": "Rent at $3,500\n*or buy at $600,000?*",
+ "pill": "RENT VS BUY",
+ "lines": [
+  {
+   "tpl": "rent",
+   "p": {
+    "cal": "$3,500"
+   },
+   "say": "You're paying 3,500 dollars a month in rent. That's 42,000 dollars a year, gone.",
+   "cap": "*$3,500* a month. *$42,000* a year, gone",
+   "stat": "",
+   "count": {
+    "to": 42000,
+    "pre": "$",
+    "label": "rent a year",
+    "at": 1.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "HDB LOAN 75%"
+   },
+   "say": "A 600,000 dollar resale flat with a 75% HDB loan is about 2,040 dollars a month.",
+   "cap": "*$600K* flat: about *$2,040* a month",
+   "stat": "",
+   "count": {
+    "to": 2040,
+    "pre": "$",
+    "label": "a month, HDB loan",
+    "at": 1.6,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     3500,
+     2040
+    ],
+    "labels": [
+     "RENT",
+     "LOAN"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "That's at 2.6% over 25 years, before conservancy and property tax.",
+   "cap": "*2.6%*, *25 years*, before other costs",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful so far? Follow for more.",
+   "cap": "useful so far? *follow*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "$150K + $12.6K",
+    "bld": "hdb",
+    "dir": "down"
+   },
+   "say": "But you need about 150,000 upfront, from CPF or cash, plus about 12,600 in stamp duty.",
+   "cap": "about *$150,000* upfront + *$12,600* stamp duty",
+   "stat": "",
+   "count": {
+    "to": 162600,
+    "pre": "$",
+    "label": "upfront, roughly",
+    "at": 1.8,
+    "dur": 1.4
+   }
+  },
+  {
+   "tpl": "signpost",
+   "p": {
+    "a": "UPFRONT CASH",
+    "b": "HOW LONG?",
+    "l": "rent",
+    "r": "hdb"
+   },
+   "say": "So the real question is your upfront cash and how long you'll stay, not just the monthly bill.",
+   "cap": "*upfront cash* and *how long you stay*",
+   "stat": ""
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "FOLLOW",
+    "bld": "hdb"
+   },
+   "say": "Useful info? Follow for more.",
+   "cap": "useful? *follow for more*",
+   "stat": "Illustration. Not financial advice"
+  }
+ ],
+ "source": "HDB, CPF, IRAS",
+ "caption": "Paying $3,500 a month in rent? That's $42,000 a year, gone. 🏠\n\nA $600,000 resale flat with a 75% HDB loan is about $2,040 a month, at 2.6% over 25 years, before conservancy and property tax. But you need about $150,000 upfront, from CPF or cash, plus about $12,600 in stamp duty.\n\nThe real question is your upfront cash and how long you'll stay, not just the monthly bill.\n\nUseful info? Follow for more 👇\n\nIllustration. HDB loan rate 2.6%. Not financial advice.",
+ "hashtags": "#singaporeproperty #rentvsbuy #hdb #hdbloan #propertysg #sgproperty #tinysingapore"
+}

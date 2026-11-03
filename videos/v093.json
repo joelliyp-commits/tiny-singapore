@@ -1,0 +1,289 @@
+{
+ "id": "v093",
+ "motion": true,
+ "title": "1 in 5\n*sold at a loss*",
+ "pill": "MARKET",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "1 IN 5",
+    "bld": "condo",
+    "dir": "down"
+   },
+   "say": "You bought in the city because prime always holds. Nearly 1 in 5 owners like you sold at a loss last quarter.",
+   "cap": "nearly *1 in 5* sold at a loss",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "\"Prime always holds\"",
+     "x": 540,
+     "y": 320,
+     "s": 90,
+     "c": "grey",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "nearly 1 in 5",
+     "x": 540,
+     "y": 460,
+     "s": 120,
+     "c": "red",
+     "at": 3.2
+    },
+    {
+     "k": "t",
+     "t": "sold at a loss",
+     "x": 540,
+     "y": 580,
+     "s": 90,
+     "c": "red",
+     "at": 4.2
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     19.5
+    ],
+    "labels": [
+     "CCR"
+    ],
+    "cols": [
+     14710863
+    ]
+   },
+   "say": "In the core central region, 19.5% of resale deals lost money.",
+   "cap": "core central: *19.5%* lost money",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Core central",
+     "x": 540,
+     "y": 340,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "19.5%",
+     "x": 540,
+     "y": 480,
+     "s": 150,
+     "c": "red",
+     "at": 1.6
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 450,
+     "w": 420,
+     "h": 190,
+     "c": "red",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     19.5,
+     1.6
+    ],
+    "labels": [
+     "CCR",
+     "SUBURBS"
+    ],
+    "cols": [
+     14710863,
+     2908253
+    ]
+   },
+   "say": "In the suburbs, only 1.6%.",
+   "cap": "suburbs: only *1.6%*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Suburbs",
+     "x": 540,
+     "y": 340,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "1.6%",
+     "x": 540,
+     "y": 480,
+     "s": 150,
+     "c": "teal",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     19.5,
+     1.6,
+     4.6
+    ],
+    "labels": [
+     "CCR",
+     "OCR",
+     "ALL"
+    ],
+    "cols": [
+     14710863,
+     2908253,
+     14710863
+    ]
+   },
+   "say": "Islandwide it was 4.6%, the highest since 2022.",
+   "cap": "islandwide *4.6%*, highest since 2022",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Islandwide 4.6%",
+     "x": 540,
+     "y": 350,
+     "s": 104,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "highest since 2022",
+     "x": 540,
+     "y": 480,
+     "s": 84,
+     "c": "red",
+     "at": 1.8
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "DAY 1",
+    "bld": "condo"
+   },
+   "say": "Most of those losses were set on the day of purchase.",
+   "cap": "set on *the day of purchase*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Losses set on",
+     "x": 540,
+     "y": 350,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "DAY 1",
+     "x": 540,
+     "y": 490,
+     "s": 150,
+     "c": "red",
+     "at": 1.4
+    },
+    {
+     "k": "i",
+     "n": "cal",
+     "x": 860,
+     "y": 330,
+     "s": 1.1,
+     "c": "red",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "PAST OWNERS"
+   },
+   "say": "Before you buy, check how past owners in that project did when they sold.",
+   "cap": "check *how past owners did*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Before you buy:",
+     "x": 540,
+     "y": 350,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "how did past owners do?",
+     "x": 540,
+     "y": 480,
+     "s": 84,
+     "c": "teal",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "WHY",
+    "bld": "condo"
+   },
+   "say": "Most people decide this wrongly. Comment WHY to see the mistake.",
+   "cap": "comment *WHY*",
+   "stat": "Q3 2026 data",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Comment",
+     "x": 540,
+     "y": 360,
+     "s": 104,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "WHY",
+     "x": 540,
+     "y": 500,
+     "s": 150,
+     "c": "red",
+     "at": 0.8
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 470,
+     "w": 360,
+     "h": 180,
+     "c": "red",
+     "at": 1.8
+    }
+   ]
+  }
+ ],
+ "source": "Cushman and Wakefield via The Business Times, 2 Nov 2026",
+ "caption": "Bought in the city because prime always holds? Nearly 1 in 5 owners like you sold at a loss last quarter. 📉\n\nIn the core central region, 19.5% of resale deals lost money. In the suburbs, only 1.6%. Islandwide it was 4.6%, the highest since 2022. Most of those losses were set on the day of purchase.\n\nBefore you buy, check how past owners in that project did when they sold.\n\nMost people decide this wrongly. Comment WHY to see the mistake 👇\n\nCushman and Wakefield data via The Business Times, 2 Nov 2026.",
+ "hashtags": "#singaporeproperty #condosg #ccr #propertyloss #propertysg #sgproperty #tinysingapore",
+ "style": "board"
+}

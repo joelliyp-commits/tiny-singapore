@@ -1,0 +1,282 @@
+{
+ "id": "v096",
+ "motion": true,
+ "title": "Second property:\n*the 45% loan*",
+ "pill": "LOANS",
+ "lines": [
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "45%",
+    "bld": "condo"
+   },
+   "say": "You already have a home loan and want a 1.2 million dollar second property. The bank lends you only 45%.",
+   "cap": "second property: bank lends *only 45%*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "$1.2M 2nd property",
+     "x": 540,
+     "y": 320,
+     "s": 96,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "bank lends 45%",
+     "x": 540,
+     "y": 450,
+     "s": 110,
+     "c": "red",
+     "at": 3.6
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 415,
+     "w": 600,
+     "h": 160,
+     "c": "red",
+     "at": 4.6
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     540,
+     660
+    ],
+    "labels": [
+     "LOAN",
+     "YOURS"
+    ],
+    "cols": [
+     2908253,
+     14710863
+    ]
+   },
+   "say": "That's 540,000 dollars. The other 660,000 is yours.",
+   "cap": "loan *$540K*. yours: *$660K*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Loan  $540,000",
+     "x": 540,
+     "y": 350,
+     "s": 96,
+     "c": "teal",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "Yours  $660,000",
+     "x": 540,
+     "y": 480,
+     "s": 104,
+     "c": "red",
+     "at": 1.6
+    },
+    {
+     "k": "l",
+     "x1": 220,
+     "y1": 520,
+     "x2": 860,
+     "y2": 516,
+     "c": "red",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "NO",
+    "text": "25% CASH"
+   },
+   "say": "At least 25%, 300,000 dollars, must be cash.",
+   "cap": "*$300,000* must be *cash*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "At least 25%",
+     "x": 540,
+     "y": 340,
+     "s": 100,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$300,000 CASH",
+     "x": 540,
+     "y": 480,
+     "s": 110,
+     "c": "red",
+     "at": 1.4
+    },
+    {
+     "k": "o",
+     "x": 540,
+     "y": 445,
+     "w": 620,
+     "h": 160,
+     "c": "red",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     20
+    ],
+    "labels": [
+     "ABSD"
+    ],
+    "cols": [
+     14710863
+    ]
+   },
+   "say": "Then add 20% extra stamp duty as a citizen: 240,000 dollars.",
+   "cap": "ABSD *20%*: *$240,000*",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "+ ABSD 20%",
+     "x": 540,
+     "y": 350,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$240,000",
+     "x": 540,
+     "y": 490,
+     "s": 120,
+     "c": "red",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "tpl": "bars",
+   "p": {
+    "vals": [
+     32.6
+    ],
+    "labels": [
+     "BSD"
+    ],
+    "cols": [
+     14710863
+    ]
+   },
+   "say": "And 32,600 dollars in buyer's stamp duty.",
+   "cap": "+ *$32,600* BSD",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "+ BSD",
+     "x": 540,
+     "y": 350,
+     "s": 110,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "$32,600",
+     "x": 540,
+     "y": 490,
+     "s": 120,
+     "c": "red",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "tpl": "bank",
+   "p": {
+    "stamp": "OK",
+    "text": "CASH FIRST"
+   },
+   "say": "So check your cash, not just your CPF, before you view.",
+   "cap": "check your *cash*, not just CPF",
+   "stat": "",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Check your CASH",
+     "x": 540,
+     "y": 360,
+     "s": 104,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "not just your CPF",
+     "x": 540,
+     "y": 490,
+     "s": 84,
+     "c": "teal",
+     "at": 1.4
+    },
+    {
+     "k": "i",
+     "n": "coin",
+     "x": 880,
+     "y": 350,
+     "s": 1.1,
+     "c": "gold",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "tpl": "tag",
+   "p": {
+    "text": "SAVE THIS",
+    "bld": "condo"
+   },
+   "say": "Save this before you start looking.",
+   "cap": "*save this* before you look",
+   "stat": "Singapore Citizen buyer",
+   "draw": [
+    {
+     "k": "t",
+     "t": "Save this",
+     "x": 540,
+     "y": 360,
+     "s": 120,
+     "c": "ink",
+     "at": 0.1
+    },
+    {
+     "k": "t",
+     "t": "before you start looking",
+     "x": 540,
+     "y": 490,
+     "s": 80,
+     "c": "teal",
+     "at": 0.8
+    }
+   ]
+  }
+ ],
+ "source": "MAS, IRAS",
+ "caption": "Already have a home loan and want a $1.2 million second property? The bank lends you only 45%. 🏦\n\nThat's $540,000. The other $660,000 is yours, and at least 25%, $300,000, must be cash. Then add 20% ABSD as a citizen, $240,000, and $32,600 in buyer's stamp duty.\n\nCheck your cash, not just your CPF, before you view.\n\nSave this before you start looking 👇\n\nMAS loan limits, IRAS stamp duty. Singapore Citizen buyer. Lower limits if tenure exceeds 30 years or runs past age 65.",
+ "hashtags": "#singaporeproperty #secondproperty #ltv #absd #condosg #propertysg #sgproperty #tinysingapore",
+ "style": "board"
+}
