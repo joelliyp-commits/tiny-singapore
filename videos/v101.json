@@ -28,7 +28,7 @@
      "title": "FROM $650,000",
      "items": [
       {
-       "t": "Outstanding loan",
+       "t": "Loan",
        "v": "-$200,000",
        "at": "@200,000",
        "col": "#e0774f"
@@ -47,13 +47,13 @@
      "title": "FROM $650,000",
      "items": [
       {
-       "t": "Outstanding loan",
+       "t": "Loan",
        "v": "-$200,000",
        "at": 0.2,
        "col": "#e0774f"
       },
       {
-       "t": "CPF refund + interest",
+       "t": "CPF refund",
        "v": "-$250,000",
        "at": "@250,000",
        "col": "#e0774f"
@@ -72,13 +72,13 @@
      "title": "FROM $650,000",
      "items": [
       {
-       "t": "Outstanding loan",
+       "t": "Loan",
        "v": "-$200,000",
        "at": 0.1,
        "col": "#e0774f"
       },
       {
-       "t": "CPF refund + interest",
+       "t": "CPF refund",
        "v": "-$250,000",
        "at": 0.2,
        "col": "#e0774f"
@@ -102,7 +102,7 @@
      "at": 0,
      "steps": [
       "CASH",
-      "NEXT HOME"
+      "NEXT"
      ],
      "sub": [
       "$200,000",

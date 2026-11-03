@@ -57,11 +57,11 @@
      "k": "ladder",
      "at": 0,
      "steps": [
-      "FIRST TIMER",
+      "USUAL",
       "+ KIDS"
      ],
      "sub": [
-      "USUAL",
+      "FIRST TIMER",
       "EXTRA"
      ],
      "to": 1,
