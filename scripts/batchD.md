@@ -113,15 +113,16 @@ Disclaimer: HDB, MAS, IRAS rules. Eligibility varies by household.
 7. Send this to the person you're buying with.
 Disclaimer: CPF, HDB. Living with parents means they stay in the flat through the minimum occupation period.
 
-## v076 Over 3,000 cheques. 1,268 units. (unit selection, 3D, CTA save) - Mon 23 Nov 6pm
-1. You're one of over 3,000 cheques for 1,268 units. Over 90% sold in two days.
+## v076 Thomson Reserve: over 3,000 cheques, 1,268 units (unit selection, 3D, CTA save) - Mon 23 Nov 6pm
+1. You're one of over 3,000 cheques for Thomson Reserve's 1,268 units. Over 90% sold in two days.
 2. In a crowd like that, it's tempting to take whatever is left.
 3. But in the same project, a different stack can resell very differently.
 4. Facing, floor and noise all show up later in your price.
 5. Pick your top three stacks before balloting day.
 6. And set your walk away price before you walk in.
 7. Save this before your next launch.
-Disclaimer: Developer statement via EdgeProp, 31 Oct 2026; unit count from developer. Project not named on screen.
+Disclaimer: UOL and CapitaLand statement via EdgeProp, 31 Oct 2026. General information, not a recommendation to buy.
+Note: Joel OK'd naming the project (3 Nov). Keep it factual: no praise of the project, no pricing pitch.
 
 ## v089 Renting out your HDB: rooms vs whole flat (skill, illustrated, CTA follow) - Tue 24 Nov 2pm
 1. You want rental income from your HDB. The rules depend on rooms or the whole flat.

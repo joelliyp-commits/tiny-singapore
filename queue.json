@@ -981,13 +981,14 @@
   },
   {
    "id": "v076",
-   "title": "Over 3,000 cheques. 1,268 units.",
+   "title": "Thomson Reserve: over 3,000 cheques, 1,268 units",
    "pillar": "unit selection / new launch",
    "status": "script_pending_approval",
    "script": "scripts/batchD.md",
    "from_": "Daily news pack 31 Oct 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-23 18:00",
-   "batch": "D"
+   "batch": "D",
+   "note": "Joel OK'd naming the project 3 Nov"
   },
   {
    "id": "v077",
