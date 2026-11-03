@@ -51,7 +51,7 @@
       "f": 10,
       "text": "STACK B",
       "col": "r",
-      "side": 1
+      "side": -1
      }
     ]
    },
@@ -68,9 +68,9 @@
     "tags": [
      {
       "f": 7,
-      "text": "FACING · FLOOR · NOISE",
+      "text": "NOISE?",
       "col": "r",
-      "side": 1
+      "side": -1
      }
     ]
    },
