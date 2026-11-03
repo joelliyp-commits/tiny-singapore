@@ -983,7 +983,7 @@
    "id": "v076",
    "title": "Thomson Reserve: over 3,000 cheques, 1,268 units",
    "pillar": "unit selection / new launch",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "from_": "Daily news pack 31 Oct 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-23 18:00",
@@ -994,7 +994,7 @@
    "id": "v077",
    "title": "The Fed paused. Your loan didn't.",
    "pillar": "home loans / news",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-18 18:00",
@@ -1004,7 +1004,7 @@
    "id": "v078",
    "title": "1.818 million dollars. Not your flat.",
    "pillar": "Million dollar HDB",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-21 18:00",
@@ -1014,7 +1014,7 @@
    "id": "v079",
    "title": "Today's land. Tomorrow's price.",
    "pillar": "new launch / news",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-19 18:00",
@@ -1024,7 +1024,7 @@
    "id": "v080",
    "title": "Nov BTO: Standard, Plus or Prime?",
    "slot": "2026-11-18 14:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1032,7 +1032,7 @@
    "id": "v082",
    "title": "No HFE letter, no flat",
    "slot": "2026-11-19 14:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1040,7 +1040,7 @@
    "id": "v083",
    "title": "Backing out of your BTO: what it costs",
    "slot": "2026-11-20 14:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1048,7 +1048,7 @@
    "id": "v087",
    "title": "Two ECs, two sets of rules",
    "slot": "2026-11-20 18:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1056,7 +1056,7 @@
    "id": "v085",
    "title": "HDB loan or bank loan: the cash you need",
    "slot": "2026-11-21 14:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1064,7 +1064,7 @@
    "id": "v086",
    "title": "Stamp duty: the tiers nobody explains",
    "slot": "2026-11-22 14:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1072,7 +1072,7 @@
    "id": "v081",
    "title": "800,000 dollars: HDB, EC or resale condo?",
    "slot": "2026-11-22 18:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1080,7 +1080,7 @@
    "id": "v088",
    "title": "Buying near your parents? Up to 30,000 dollars",
    "slot": "2026-11-23 14:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1088,7 +1088,7 @@
    "id": "v089",
    "title": "Renting out your HDB: rooms vs whole flat",
    "slot": "2026-11-24 14:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1096,7 +1096,7 @@
    "id": "v084",
    "title": "Your CPF can stop paying your loan",
    "slot": "2026-11-24 18:00",
-   "status": "script_pending_approval",
+   "status": "script_approved",
    "script": "scripts/batchD.md",
    "batch": "D"
   },
@@ -1104,41 +1104,121 @@
    "id": "v090",
    "title": "Every big unit gone. Now what?",
    "pillar": "new launch / news",
-   "status": "idea",
+   "status": "held",
    "script": "scripts/news_2026-11-02.md",
-   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)"
+   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)",
+   "note": "Held: second Thomson Reserve video a week after v076"
   },
   {
    "id": "v091",
    "title": "11,000 homes. How many years?",
    "pillar": "township",
-   "status": "idea",
-   "script": "scripts/news_2026-11-02.md",
-   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)"
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)",
+   "slot": "2026-11-25 18:00",
+   "batch": "E"
   },
   {
    "id": "v092",
    "title": "Rents dipped. Is yours right?",
    "pillar": "Landlords / tenant risk",
-   "status": "idea",
+   "status": "held",
    "script": "scripts/news_2026-11-02.md",
-   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)"
+   "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)",
+   "note": "Held: single source (SRX)"
   },
   {
    "id": "v093",
    "title": "1 in 5 sold at a loss",
    "pillar": "market insight / resale losses",
-   "status": "idea",
-   "script": "scripts/news_2026-11-03.md",
-   "from_": "Daily pack 3 Nov 2026 (awaiting Joel's script approval)"
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "from_": "Daily pack 3 Nov 2026 (awaiting Joel's script approval)",
+   "slot": "2026-11-26 18:00",
+   "batch": "E"
   },
   {
    "id": "v094",
    "title": "2 years 10 months to your keys",
    "pillar": "news / BTO",
-   "status": "idea",
-   "script": "scripts/news_2026-11-03.md",
-   "from_": "Daily pack 3 Nov 2026 (awaiting Joel's script approval)"
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "from_": "Daily pack 3 Nov 2026 (awaiting Joel's script approval)",
+   "slot": "2026-11-27 18:00",
+   "batch": "E"
+  },
+  {
+   "id": "v095",
+   "title": "Rent at 3,500 or buy at 600,000?",
+   "slot": "2026-11-25 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
+  },
+  {
+   "id": "v096",
+   "title": "Second property: the 45% loan",
+   "slot": "2026-11-26 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
+  },
+  {
+   "id": "v097",
+   "title": "One more ballot chance per child",
+   "slot": "2026-11-27 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
+  },
+  {
+   "id": "v098",
+   "title": "Extra stamp duty: who pays what",
+   "slot": "2026-11-28 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
+  },
+  {
+   "id": "v103",
+   "title": "Commission earner? The bank counts 70%",
+   "slot": "2026-11-28 18:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
+  },
+  {
+   "id": "v100",
+   "title": "Pay 20,000 extra on your loan?",
+   "slot": "2026-11-29 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
+  },
+  {
+   "id": "v101",
+   "title": "Sold for 650,000. Why only 200,000 in cash?",
+   "slot": "2026-11-29 18:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
+  },
+  {
+   "id": "v102",
+   "title": "Earn 15,000? HDB now says yes",
+   "slot": "2026-11-30 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
+  },
+  {
+   "id": "v099",
+   "title": "Your car loan just cost you 250,000",
+   "slot": "2026-11-30 18:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchE.md",
+   "batch": "E"
   }
  ],
  "cta_system": {

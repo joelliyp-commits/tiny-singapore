@@ -1,4 +1,4 @@
-# Batch D (18 to 24 Nov) - pending Joel's approval
+# Batch D (18 to 24 Nov) - scripts approved by Joel 3 Nov
 Slots 2pm and 6pm SGT. Mid line "Useful so far? Follow for more." on v080 and v085 (ids divisible by 5).
 News pack ideas folded in: v076, v077, v078, v079. Dropped: v074 (repeats v061, Q3 HDB data, 12 Nov) and v075 (repeats v033, Q3 URA data, 27 Oct).
 
@@ -15,13 +15,13 @@ Disclaimer: HDB rules. Recovery rate is a % of resale price or valuation, whiche
 ## v077 The Fed paused. Your loan didn't. (market insight, board, CTA CHECK) - Wed 18 Nov 6pm
 1. You've got a floating home loan. The US Fed paused, but two members wanted a hike.
 2. Singapore floating loans follow SORA, not the Fed directly. But global rates pull on it.
-3. SORA has edged up only slightly this month, still around 1.2% to 1.3%.
+3. 3 month SORA edged up in October, from about 1.23% to about 1.30%.
 4. Small now. But floating rates move slowly, then catch up.
 5. Know three numbers: your lock in end date, your spread, and your instalment if rates rise 0.5%.
 6. Then you're not reacting when the bill changes.
 7. Not sure if you're on track? Comment CHECK.
 Disclaimer: Fed statement 28 Oct 2026. SORA from MAS data. Not financial advice.
-Note: SORA level to be confirmed on MAS before build (news pack had single sources).
+Note: SORA 1.23% (5 Oct, Propoa) and 1.297% (30 Oct, Cashew).
 
 ## v082 No HFE letter, no flat (skill, illustrated, CTA follow) - Thu 19 Nov 2pm
 1. You found the perfect resale flat. But without one letter, the seller can't even give you the option.
