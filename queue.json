@@ -1219,6 +1219,22 @@
    "status": "built_pending_approval",
    "script": "scripts/batchE.md",
    "batch": "E"
+  },
+  {
+   "id": "v104",
+   "title": "61 years left. Still a record.",
+   "pillar": "news / HDB",
+   "status": "idea",
+   "script": "scripts/news_2026-11-04.md",
+   "from_": "Daily pack 4 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v105",
+   "title": "Prime is only 19% more",
+   "pillar": "news / private",
+   "status": "idea",
+   "script": "scripts/news_2026-11-04.md",
+   "from_": "Daily pack 4 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
