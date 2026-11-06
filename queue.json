@@ -1251,6 +1251,22 @@
    "status": "idea",
    "script": "scripts/news_2026-11-05.md",
    "from_": "Daily pack 5 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v108",
+   "title": "4,300 flats. Half are central.",
+   "pillar": "news / HDB BTO",
+   "status": "idea",
+   "script": "scripts/news_2026-11-06.md",
+   "from_": "Daily pack 6 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v109",
+   "title": "20% cheaper. Still a loss?",
+   "pillar": "news / private",
+   "status": "idea",
+   "script": "scripts/news_2026-11-06.md",
+   "from_": "Daily pack 6 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
