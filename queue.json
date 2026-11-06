@@ -1267,6 +1267,14 @@
    "status": "idea",
    "script": "scripts/news_2026-11-06.md",
    "from_": "Daily pack 6 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v110",
+   "status": "idea",
+   "title": "238 flats. Is yours one?",
+   "pillar": "market insight",
+   "script": "scripts/news_2026-11-07.md",
+   "from_": "Daily pack 7 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
