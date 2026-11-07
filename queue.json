@@ -1275,6 +1275,14 @@
    "pillar": "market insight",
    "script": "scripts/news_2026-11-07.md",
    "from_": "Daily pack 7 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v111",
+   "status": "idea",
+   "title": "15 applicants for 1 flat",
+   "pillar": "market insight",
+   "script": "scripts/news_2026-11-08.md",
+   "from_": "Daily pack 8 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
