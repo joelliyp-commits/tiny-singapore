@@ -988,7 +988,10 @@
    "from_": "Daily news pack 31 Oct 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-23 18:00",
    "batch": "D",
-   "note": "Joel OK'd naming the project 3 Nov"
+   "note": "Joel OK'd naming the project 3 Nov",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v077",
@@ -1035,7 +1038,10 @@
    "slot": "2026-11-18 14:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v082",
@@ -1109,7 +1115,10 @@
    "slot": "2026-11-23 14:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v089",
@@ -1117,7 +1126,10 @@
    "slot": "2026-11-24 14:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v084",
@@ -1125,7 +1137,10 @@
    "slot": "2026-11-24 18:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v090",
@@ -1144,7 +1159,10 @@
    "script": "scripts/batchE.md",
    "from_": "Daily news pack 2 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-25 18:00",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v092",
@@ -1163,7 +1181,10 @@
    "script": "scripts/batchE.md",
    "from_": "Daily pack 3 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-26 18:00",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v094",
@@ -1173,7 +1194,10 @@
    "script": "scripts/batchE.md",
    "from_": "Daily pack 3 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-27 18:00",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v095",
@@ -1181,7 +1205,10 @@
    "slot": "2026-11-25 14:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v096",
@@ -1189,7 +1216,10 @@
    "slot": "2026-11-26 14:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v097",
@@ -1197,7 +1227,10 @@
    "slot": "2026-11-27 14:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v098",
@@ -1205,7 +1238,10 @@
    "slot": "2026-11-28 14:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v103",
@@ -1213,7 +1249,10 @@
    "slot": "2026-11-28 18:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v100",
@@ -1221,7 +1260,10 @@
    "slot": "2026-11-29 14:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v101",
@@ -1229,7 +1271,10 @@
    "slot": "2026-11-29 18:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v102",
@@ -1237,7 +1282,10 @@
    "slot": "2026-11-30 14:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v099",
@@ -1245,7 +1293,10 @@
    "slot": "2026-11-30 18:00",
    "status": "video_approved",
    "script": "scripts/batchE.md",
-   "batch": "E"
+   "batch": "E",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v104",
