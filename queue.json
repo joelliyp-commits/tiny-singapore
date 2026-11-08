@@ -998,7 +998,10 @@
    "script": "scripts/batchD.md",
    "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-18 18:00",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v078",
@@ -1008,7 +1011,10 @@
    "script": "scripts/batchD.md",
    "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-21 18:00",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v079",
@@ -1018,7 +1024,10 @@
    "script": "scripts/batchD.md",
    "from_": "Daily news pack 1 Nov 2026 (awaiting Joel's script approval)",
    "slot": "2026-11-19 18:00",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v080",
@@ -1034,7 +1043,10 @@
    "slot": "2026-11-19 14:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v083",
@@ -1042,7 +1054,10 @@
    "slot": "2026-11-20 14:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v087",
@@ -1050,7 +1065,10 @@
    "slot": "2026-11-20 18:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v085",
@@ -1058,7 +1076,10 @@
    "slot": "2026-11-21 14:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v086",
@@ -1066,7 +1087,10 @@
    "slot": "2026-11-22 14:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v081",
@@ -1074,7 +1098,10 @@
    "slot": "2026-11-22 18:00",
    "status": "video_approved",
    "script": "scripts/batchD.md",
-   "batch": "D"
+   "batch": "D",
+   "platforms": {
+    "tiktok": "scheduled"
+   }
   },
   {
    "id": "v088",
