@@ -1,24 +1,24 @@
 {
  "id": "v080",
  "motion": true,
- "title": "Nov BTO:\n*Standard, Plus or Prime?*",
+ "title": "BTO labels:\n*Standard, Plus or Prime?*",
  "pill": "BTO",
  "lines": [
   {
    "tpl": "gov",
    "p": {
-    "text": "NOV BTO"
+    "text": "NEXT BTO"
    },
-   "say": "You're applying for the November BTO. The label on your flat could lock you in for 10 years.",
+   "say": "You're planning your next BTO. The label on your flat could lock you in for 10 years.",
    "cap": "the label could lock you in for *10 years*",
    "stat": "",
    "draw": [
     {
      "k": "t",
-     "t": "Nov BTO",
+     "t": "Your next BTO",
      "x": 540,
      "y": 320,
-     "s": 120,
+     "s": 110,
      "c": "ink",
      "at": 0.1
     },
@@ -54,38 +54,47 @@
   {
    "tpl": "wave",
    "p": {
-    "n": "7,960 FLATS"
+    "n": "NOV LABELS"
    },
-   "say": "About 7,960 flats across six towns, including Bedok, Toa Payoh and Tengah. HDB confirms each project's label at launch.",
-   "cap": "about *7,960 flats*, six towns",
+   "say": "In November, Toa Payoh was Prime, Bayshore and Geylang were Plus, and Sembawang, Tengah and Yishun were Standard.",
+   "cap": "Nov: *Prime*, *Plus*, *Standard*",
    "stat": "",
    "draw": [
     {
      "k": "t",
-     "t": "≈ 7,960 flats",
+     "t": "Prime: Toa Payoh",
      "x": 540,
-     "y": 320,
-     "s": 110,
+     "y": 330,
+     "s": 84,
+     "c": "red",
+     "at": 0.4
+    },
+    {
+     "k": "t",
+     "t": "Plus: Bayshore, Geylang",
+     "x": 540,
+     "y": 450,
+     "s": 76,
      "c": "ink",
-     "at": 0.1
+     "at": 2.4
     },
     {
      "k": "t",
-     "t": "6 towns",
-     "x": 540,
-     "y": 440,
-     "s": 90,
-     "c": "teal",
-     "at": 1.6
-    },
-    {
-     "k": "t",
-     "t": "label confirmed at launch",
+     "t": "Standard: Sembawang,",
      "x": 540,
      "y": 570,
      "s": 72,
-     "c": "grey",
-     "at": 3.6
+     "c": "teal",
+     "at": 4.6
+    },
+    {
+     "k": "t",
+     "t": "Tengah, Yishun",
+     "x": 540,
+     "y": 660,
+     "s": 72,
+     "c": "teal",
+     "at": 5.2
     }
    ]
   },
@@ -223,23 +232,13 @@
    ]
   },
   {
-   "tpl": "bars",
+   "tpl": "bank",
    "p": {
-    "vals": [
-     6,
-     9
-    ],
-    "labels": [
-     "LOW",
-     "HIGH"
-    ],
-    "cols": [
-     2908253,
-     14710863
-    ]
+    "stamp": "NO",
+    "text": "CHECK RATE"
    },
-   "say": "When you sell, HDB takes back a share of the price, set per project. Past launches ranged from about 6% to 9%.",
-   "cap": "HDB takes back about *6% to 9%*",
+   "say": "When you sell, HDB takes back a share of the price, set for each project. Check the rate before you book.",
+   "cap": "HDB takes back a share. *check the rate*",
    "stat": "",
    "draw": [
     {
@@ -253,19 +252,19 @@
     },
     {
      "k": "t",
-     "t": "HDB takes back",
+     "t": "HDB takes back a share",
      "x": 540,
      "y": 430,
-     "s": 90,
+     "s": 84,
      "c": "ink",
      "at": 1.2
     },
     {
      "k": "t",
-     "t": "≈ 6% to 9%",
+     "t": "check the rate first",
      "x": 540,
      "y": 560,
-     "s": 120,
+     "s": 96,
      "c": "red",
      "at": 3.6
     },
@@ -273,8 +272,8 @@
      "k": "o",
      "x": 540,
      "y": 525,
-     "w": 560,
-     "h": 160,
+     "w": 600,
+     "h": 150,
      "c": "red",
      "at": 4.8
     }
@@ -311,8 +310,8 @@
    ]
   }
  ],
- "source": "HDB, 99.co, DBS",
- "caption": "Applying for the November BTO? The label on your flat could lock you in for 10 years. 🏢\n\nAbout 7,960 flats across six towns, and HDB confirms each project's label at launch.\nStandard: 5 year minimum occupation period, then you can rent out the whole flat.\nPlus and Prime: 10 years before you can sell, and you can never rent out the whole flat. When you sell, HDB takes back a share of the price, set per project. Past launches ranged from about 6% to 9%.\n\nSave this before you pick your flat 👇\n\nHDB rules. Recovery is a % of the resale price or valuation, whichever is higher.",
+ "source": "HDB, Stacked Homes, EdgeProp",
+ "caption": "Planning your next BTO? The label on your flat could lock you in for 10 years. 🏢\n\nIn November, Toa Payoh was Prime, Bayshore and Geylang were Plus, and Sembawang, Tengah and Yishun were Standard.\nStandard: 5 year minimum occupation period, then you can rent out the whole flat.\nPlus and Prime: 10 years before you can sell, and you can never rent out the whole flat. When you sell, HDB takes back a share of the price, set for each project. Check the rate before you book.\n\nSave this before you pick your flat 👇\n\nHDB rules. Labels from HDB's November 2026 BTO release.",
  "hashtags": "#singaporeproperty #bto #hdb #plusflats #primeflats #propertysg #sgproperty #tinysingapore",
  "style": "board"
 }

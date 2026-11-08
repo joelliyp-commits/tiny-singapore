@@ -1,11 +1,11 @@
 {
  "id": "v094",
  "flat": true,
- "title": "2 years 10 months to your keys",
+ "title": "34 months to your keys",
  "lines": [
   {
-   "say": "You want a BTO, but you can't wait 4 or 5 years. Here's one with a 2 year 10 month wait.",
-   "cap": "*2 years 10 months* to your keys",
+   "say": "You want a BTO, but you can't wait 4 or 5 years. In November, one project had keys in 34 months.",
+   "cap": "keys in *34 months*",
    "scenes": [
     {
      "k": "timeline",
@@ -18,8 +18,8 @@
       },
       {
        "label": "KEYS",
-       "sub": "2Y 10M",
-       "at": "@10",
+       "sub": "34 MONTHS",
+       "at": "@34",
        "col": "#3fae5a"
       }
      ]
@@ -27,8 +27,8 @@
    ]
   },
   {
-   "say": "This November, 1,310 flats in Sembawang come with that shorter wait.",
-   "cap": "*1,310 flats* in Sembawang",
+   "say": "Sembawang Anchor: 1,310 flats, the shortest wait of the seven projects.",
+   "cap": "*1,310 flats*, the *shortest wait*",
    "scenes": [
     {
      "k": "street",
@@ -40,8 +40,8 @@
      "rat": "@1,310",
      "chips": [
       {
-       "t": "SHORTER WAIT",
-       "at": "@shorter",
+       "t": "SHORTEST WAIT",
+       "at": "@shortest",
        "y": 330,
        "bg": "#3fae5a",
        "fg": "#fffaf0",
@@ -53,8 +53,8 @@
    ]
   },
   {
-   "say": "Bayshore and Tengah are about 3 years 2 months.",
-   "cap": "Bayshore, Tengah: *3 years 2 months*",
+   "say": "Toa Payoh Hillside was 45 months, and Bayshore Sails 44.",
+   "cap": "Toa Payoh *45 months*, Bayshore Sails *44*",
    "scenes": [
     {
      "k": "receipt",
@@ -63,19 +63,19 @@
      "items": [
       {
        "t": "Sembawang",
-       "v": "2Y 10M",
+       "v": "34 MTHS",
        "at": 0.3,
        "col": "#3fae5a"
       },
       {
-       "t": "Bayshore",
-       "v": "3Y 2M",
-       "at": "@Bayshore"
+       "t": "Toa Payoh",
+       "v": "45 MTHS",
+       "at": "@Toa"
       },
       {
-       "t": "Tengah",
-       "v": "3Y 2M",
-       "at": "@Tengah"
+       "t": "Bayshore Sails",
+       "v": "44 MTHS",
+       "at": "@Bayshore"
       }
      ]
     }
@@ -125,7 +125,7 @@
    ]
   },
   {
-   "say": "Decide what matters most: the wait, the location or the price. Then shortlist.",
+   "say": "Decide what matters most for the next launch: the wait, the location or the price. Then shortlist.",
    "cap": "*wait, location or price*. then shortlist",
    "scenes": [
     {
@@ -176,7 +176,7 @@
    ]
   }
  ],
- "source": "HDB via AsiaOne, The Straits Times. Waits are HDB estimates.",
- "caption": "Want a BTO but can't wait 4 or 5 years? Here's one with a 2 year 10 month wait. 🔑\n\nThis November, 1,310 flats in Sembawang come with that shorter wait. Bayshore and Tengah are about 3 years 2 months. And the BTO income ceiling is now $16,000.\n\nMost people pick the estate first and only check the wait later. Decide what matters most: the wait, the location or the price. Then shortlist.\n\nNot sure if you're on track? Comment CHECK 👇\n\nHDB, AsiaOne, The Straits Times, 1 Nov 2026. Waiting times are HDB estimates.",
- "hashtags": "#singaporeproperty #bto #hdb #sembawang #novbto #propertysg #sgproperty #tinysingapore"
+ "source": "HDB, Nov 2026 BTO. Waits are HDB estimates.",
+ "caption": "Want a BTO but can't wait 4 or 5 years? In November, one project had keys in 34 months. 🔑\n\nSembawang Anchor: 1,310 flats, the shortest wait of the seven projects. Toa Payoh Hillside was 45 months, and Bayshore Sails 44. And the BTO income ceiling is now $16,000.\n\nMost people pick the estate first and only check the wait later. Decide what matters most for the next launch: the wait, the location or the price. Then shortlist.\n\nNot sure if you're on track? Comment CHECK 👇\n\nHDB estimated waiting times, November 2026 BTO.",
+ "hashtags": "#singaporeproperty #bto #hdb #sembawang #waitingtime #propertysg #sgproperty #tinysingapore"
 }
