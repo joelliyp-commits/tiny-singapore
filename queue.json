@@ -1413,6 +1413,14 @@
    "pillar": "market insight",
    "script": "scripts/news_2026-11-08.md",
    "from_": "Daily pack 8 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v112",
+   "status": "idea",
+   "title": "14,800 new homes. Will prices drop?",
+   "pillar": "market insight",
+   "script": "scripts/news_2026-11-09.md",
+   "from_": "Daily pack 9 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
