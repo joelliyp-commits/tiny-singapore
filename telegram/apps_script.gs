@@ -151,7 +151,7 @@ function setupYouTube() {
   var store = PropertiesService.getScriptProperties();
   store.setProperty('YT_SEEN', JSON.stringify(seen));
   // The 3 most recent full videos already on the channel are re-shared one at a time, every 3 days.
-  var recentFull = vids.filter(function (v) { return !isShort_(v.id); }).slice(0, 3).reverse();
+  var recentFull = vids.filter(function (v) { return !v.short; }).slice(0, 3).reverse();
   store.setProperty('YT_BACKLOG', JSON.stringify(recentFull.map(function (v) { return v.id; })));
   store.setProperty('YT_BACKLOG_LAST', '0');
   // Twice a day, shortly before the 11am and 3pm posting slots (Singapore time).
@@ -162,22 +162,27 @@ function setupYouTube() {
 }
 
 function latestVideos_() {
+  // Uses the YouTube Data API advanced service (Services > YouTube Data API v3), signed in as Joel.
   var id = PropertiesService.getScriptProperties().getProperty('YT_CHANNEL_ID') || 'UCr1Ob6OOREGZQQ7C0daQGdw';
-  if (!id) throw new Error('Set YT_CHANNEL_ID in Script Properties first.');
-  var xml = UrlFetchApp.fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + id).getContentText();
-  var doc = XmlService.parse(xml), root = doc.getRootElement();
-  var atom = XmlService.getNamespace('http://www.w3.org/2005/Atom');
-  var yt = XmlService.getNamespace('yt', 'http://www.youtube.com/xml/schemas/2015');
-  var media = XmlService.getNamespace('media', 'http://search.yahoo.com/mrss/');
-  return root.getChildren('entry', atom).map(function (e) {
-    var group = e.getChild('group', media);
-    var desc = group && group.getChild('description', media) ? group.getChild('description', media).getText() : '';
-    var views = 0;
-    var comm = group && group.getChild('community', media);
-    var stats = comm && comm.getChild('statistics', media);
-    if (stats && stats.getAttribute('views')) views = Number(stats.getAttribute('views').getValue());
-    return { id: e.getChild('videoId', yt).getText(), title: e.getChild('title', atom).getText(), desc: desc, views: views };
+  var ch = YouTube.Channels.list('contentDetails', { id: id });
+  if (!ch.items || !ch.items.length) throw new Error('YouTube channel not found: ' + id);
+  var uploads = ch.items[0].contentDetails.relatedPlaylists.uploads;
+  var items = YouTube.PlaylistItems.list('snippet', { playlistId: uploads, maxResults: 25 }).items || [];
+  if (!items.length) return [];
+  var ids = items.map(function (it) { return it.snippet.resourceId.videoId; });
+  var info = {};
+  (YouTube.Videos.list('statistics,contentDetails', { id: ids.join(',') }).items || []).forEach(function (v) {
+    info[v.id] = { views: Number(v.statistics.viewCount || 0), secs: isoSecs_(v.contentDetails.duration) };
   });
+  return items.map(function (it) {
+    var vid = it.snippet.resourceId.videoId, x = info[vid] || { views: 0, secs: 0 };
+    return { id: vid, title: it.snippet.title, desc: it.snippet.description || '', views: x.views, short: x.secs > 0 && x.secs <= 180 };
+  });
+}
+
+function isoSecs_(d) {
+  var m = /PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/.exec(d || '') || [];
+  return (Number(m[1] || 0) * 3600) + (Number(m[2] || 0) * 60) + Number(m[3] || 0);
 }
 
 // Post text for a full video: bold title, first paragraph of the description (before the contact block), link.
@@ -199,11 +204,6 @@ function releaseBacklog_(vids, sh, store) {
   store.setProperty('YT_BACKLOG_LAST', String(Date.now()));
 }
 
-function isShort_(id) {
-  var res = UrlFetchApp.fetch('https://www.youtube.com/shorts/' + id, { followRedirects: false, muteHttpExceptions: true });
-  return res.getResponseCode() === 200;
-}
-
 function esc_(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
 function checkYouTube() {
@@ -214,7 +214,7 @@ function checkYouTube() {
   vids.forEach(function (v) {
     if (seen.indexOf(v.id) >= 0) return;
     seen.push(v.id);
-    if (isShort_(v.id)) return; // Shorts are clips of the main video; only full videos go to Telegram
+    if (v.short) return; // Shorts are clips of the main video; only full videos go to Telegram
     sh.appendRow(['yt_' + v.id, 'approved', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', videoPost_(v, 'New video: '), '', '', '', 'youtube']);
   });
   store.setProperty('YT_SEEN', JSON.stringify(seen.slice(-200)));
@@ -234,7 +234,7 @@ function boostShorts_(vids, sh, store) {
                   .sort(function (a, b) { return b.views - a.views; });
   for (var i = 0; i < cands.length && recent < BOOST_PER_WEEK; i++) {
     var v = cands[i];
-    if (!isShort_(v.id)) { boosted.push({ id: v.id, t: 0 }); continue; } // full videos are posted on upload, not boosted
+    if (!v.short) { boosted.push({ id: v.id, t: 0 }); continue; } // full videos are posted on upload, not boosted
     var full = (v.desc.match(/https?:\/\/(?:youtu\.be\/|www\.youtube\.com\/watch\?v=)[\w-]+/) || [])[0];
     var chan = 'https://www.youtube.com/channel/' + (store.getProperty('YT_CHANNEL_ID') || 'UCr1Ob6OOREGZQQ7C0daQGdw') + '/videos';
     var text = '<b>' + esc_(v.title) + '</b>\n\nOne of our most watched clips. ' +
