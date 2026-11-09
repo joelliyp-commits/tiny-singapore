@@ -163,7 +163,11 @@ function latestVideos_() {
   return root.getChildren('entry', atom).map(function (e) {
     var group = e.getChild('group', media);
     var desc = group && group.getChild('description', media) ? group.getChild('description', media).getText() : '';
-    return { id: e.getChild('videoId', yt).getText(), title: e.getChild('title', atom).getText(), desc: desc };
+    var views = 0;
+    var comm = group && group.getChild('community', media);
+    var stats = comm && comm.getChild('statistics', media);
+    if (stats && stats.getAttribute('views')) views = Number(stats.getAttribute('views').getValue());
+    return { id: e.getChild('videoId', yt).getText(), title: e.getChild('title', atom).getText(), desc: desc, views: views };
   });
 }
 
@@ -193,6 +197,32 @@ function checkYouTube() {
     sh.appendRow(['yt_' + v.id, 'approved', thumb, text, '', '', '', 'youtube']);
   });
   store.setProperty('YT_SEEN', JSON.stringify(seen.slice(-200)));
+  boostShorts_(vids, sh, store);
+}
+
+// Shorts that pass BOOST_MIN_VIEWS are shortlisted (status "pending") for Joel's one tap approval,
+// at most BOOST_PER_WEEK a week, each Short only once. The post points viewers to the full video.
+var BOOST_MIN_VIEWS = 300, BOOST_PER_WEEK = 2;
+function boostShorts_(vids, sh, store) {
+  var boosted = JSON.parse(store.getProperty('YT_BOOSTED') || '[]'); // [{id, t}]
+  var weekAgo = Date.now() - 7 * 24 * 3600 * 1000;
+  var recent = boosted.filter(function (b) { return b.t > weekAgo; }).length;
+  var done = boosted.map(function (b) { return b.id; });
+  var cands = vids.filter(function (v) { return v.views >= BOOST_MIN_VIEWS && done.indexOf(v.id) < 0; })
+                  .sort(function (a, b) { return b.views - a.views; });
+  for (var i = 0; i < cands.length && recent < BOOST_PER_WEEK; i++) {
+    var v = cands[i];
+    if (!isShort_(v.id)) { boosted.push({ id: v.id, t: 0 }); continue; } // full videos are posted on upload, not boosted
+    var full = (v.desc.match(/https?:\/\/(?:youtu\.be\/|www\.youtube\.com\/watch\?v=)[\w-]+/) || [])[0];
+    var chan = 'https://www.youtube.com/channel/' + store.getProperty('YT_CHANNEL_ID') + '/videos';
+    var text = '<b>' + esc_(v.title) + '</b>\n\nOne of our most watched clips this week. ' +
+               'If it got you thinking, the full video goes deeper into the numbers and the reasoning.\n\n' +
+               '\u25B6 Watch the clip: https://youtube.com/shorts/' + v.id + '\n' +
+               '\u25B6 Full video: ' + (full || chan);
+    sh.appendRow(['ytshort_' + v.id, 'pending', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', text, '', '', v.views + ' views', 'youtube_short']);
+    boosted.push({ id: v.id, t: Date.now() }); recent++;
+  }
+  store.setProperty('YT_BOOSTED', JSON.stringify(boosted.slice(-300)));
 }
 
 function findChannelId() {
