@@ -75,8 +75,12 @@ function postNext_(slot) {
     var channel = props_().channel;
     var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
     var rows = sh.getDataRange().getValues();
-    for (var i = 1; i < rows.length; i++) {
-      var r = rows[i];
+    // YouTube videos jump the queue: take the oldest approved yt_ row first, else the oldest approved row.
+    var order = [];
+    for (var j = 1; j < rows.length; j++) if (String(rows[j][1]).trim().toLowerCase() === 'approved' && /^yt_/.test(String(rows[j][0]))) order.push(j);
+    for (var k = 1; k < rows.length; k++) if (order.indexOf(k) < 0) order.push(k);
+    for (var n = 0; n < order.length; n++) {
+      var i = order[n], r = rows[i];
       if (String(r[1]).trim().toLowerCase() !== 'approved') continue;
       var photo = r[2], text = String(r[3]), source = String(r[4] || '');
       if (source) text += '\n\nSource: <a href="' + source + '">read the article</a>';
@@ -133,6 +137,62 @@ function installTrigger() {
   });
   ScriptApp.newTrigger('postApproved').timeBased().everyMinutes(5).create();
   Logger.log('Checking the queue every 5 minutes.');
+}
+
+// ---------- YouTube: new videos on Joel's channel go into the queue automatically ----------
+// Script Property YT_CHANNEL_ID = the channel id (UC...). Run setupYouTube once.
+function setupYouTube() {
+  ScriptApp.getProjectTriggers().forEach(function (t) {
+    if (t.getHandlerFunction() === 'checkYouTube') ScriptApp.deleteTrigger(t);
+  });
+  // Mark every video already on the channel as seen, so only new uploads are posted.
+  var seen = latestVideos_().map(function (v) { return v.id; });
+  PropertiesService.getScriptProperties().setProperty('YT_SEEN', JSON.stringify(seen));
+  ScriptApp.newTrigger('checkYouTube').timeBased().everyHours(1).create();
+  Logger.log('Watching YouTube hourly. Already on the channel: ' + seen.length + ' videos.');
+}
+
+function latestVideos_() {
+  var id = PropertiesService.getScriptProperties().getProperty('YT_CHANNEL_ID');
+  if (!id) throw new Error('Set YT_CHANNEL_ID in Script Properties first.');
+  var xml = UrlFetchApp.fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + id).getContentText();
+  var doc = XmlService.parse(xml), root = doc.getRootElement();
+  var atom = XmlService.getNamespace('http://www.w3.org/2005/Atom');
+  var yt = XmlService.getNamespace('yt', 'http://www.youtube.com/xml/schemas/2015');
+  var media = XmlService.getNamespace('media', 'http://search.yahoo.com/mrss/');
+  return root.getChildren('entry', atom).map(function (e) {
+    var group = e.getChild('group', media);
+    var desc = group && group.getChild('description', media) ? group.getChild('description', media).getText() : '';
+    return { id: e.getChild('videoId', yt).getText(), title: e.getChild('title', atom).getText(), desc: desc };
+  });
+}
+
+function isShort_(id) {
+  var res = UrlFetchApp.fetch('https://www.youtube.com/shorts/' + id, { followRedirects: false, muteHttpExceptions: true });
+  return res.getResponseCode() === 200;
+}
+
+function esc_(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+function checkYouTube() {
+  var store = PropertiesService.getScriptProperties();
+  var seen = JSON.parse(store.getProperty('YT_SEEN') || '[]');
+  var vids = latestVideos_().reverse(); // oldest first
+  var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
+  vids.forEach(function (v) {
+    if (seen.indexOf(v.id) >= 0) return;
+    seen.push(v.id);
+    if (isShort_(v.id)) return; // Shorts are clips of the main video; only full videos go to Telegram
+    // First paragraph of the description, before the contact block and hashtags.
+    var intro = v.desc.split(/\n\s*\n/)[0].replace(/#\S+/g, '').trim();
+    if (intro.length > 500) intro = intro.slice(0, 500).replace(/\s+\S*$/, '') + '...';
+    var url = 'https://youtu.be/' + v.id;
+    var text = '<b>New video: ' + esc_(v.title) + '</b>' + (intro ? '\n\n' + esc_(intro) : '') +
+               '\n\n\u25B6 Watch the full video: ' + url;
+    var thumb = 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg';
+    sh.appendRow(['yt_' + v.id, 'approved', thumb, text, '', '', '', 'youtube']);
+  });
+  store.setProperty('YT_SEEN', JSON.stringify(seen.slice(-200)));
 }
 
 function findChannelId() {

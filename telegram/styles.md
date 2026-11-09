@@ -26,3 +26,6 @@ Render with `python3 telegram/make_visual.py spec.json telegram/cards/<id>` (usa
 - Single image: the raw GitHub URL of the PNG.
 - Video: the raw GitHub URL of the MP4 (keep under 15 MB).
 - Carousel: the raw GitHub URLs of each slide PNG, one per line, in order. The post text becomes the caption of the first slide.
+
+## YouTube videos
+New full videos on Joel's YouTube channel are added to the queue automatically by the Apps Script (id yt_<videoId>, style "youtube", status approved). They take the next free slot ahead of everything else, using the video thumbnail and the first paragraph of the description. Shorts are skipped. Count them as one of the day's 2 posts when planning.
