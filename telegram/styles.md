@@ -28,5 +28,5 @@ Render with `python3 telegram/make_visual.py spec.json telegram/cards/<id>` (usa
 - Carousel: the raw GitHub URLs of each slide PNG, one per line, in order. The post text becomes the caption of the first slide.
 
 ## YouTube videos
-New full videos on Joel's YouTube channel are added to the queue automatically by the Apps Script (id yt_<videoId>, style "youtube", status approved). They take the next free slot ahead of everything else, using the video thumbnail and the first paragraph of the description. Shorts are skipped. Count them as one of the day's 2 posts when planning.
+New full videos on Joel's YouTube channel are added to the queue automatically by the Apps Script (checked twice daily, about 10.15am and 2.15pm) (id yt_<videoId>, style "youtube", status approved). They take the next free slot ahead of everything else, using the video thumbnail and the first paragraph of the description. Shorts are skipped. Count them as one of the day's 2 posts when planning.
 Shorts with 300+ views are shortlisted by the Apps Script as "pending" rows (id ytshort_<id>, style "youtube_short"), at most 2 a week, each once, linking to the full video. They appear in the 10:30am approval check like any other post and take normal queue order once approved.

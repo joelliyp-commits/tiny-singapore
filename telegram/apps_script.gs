@@ -154,8 +154,11 @@ function setupYouTube() {
   var recentFull = vids.filter(function (v) { return !isShort_(v.id); }).slice(0, 3).reverse();
   store.setProperty('YT_BACKLOG', JSON.stringify(recentFull.map(function (v) { return v.id; })));
   store.setProperty('YT_BACKLOG_LAST', '0');
-  ScriptApp.newTrigger('checkYouTube').timeBased().everyHours(1).create();
-  Logger.log('Watching YouTube hourly. Already on the channel: ' + seen.length + ' videos.');
+  // Twice a day, shortly before the 11am and 3pm posting slots (Singapore time).
+  [10, 14].forEach(function (h) {
+    ScriptApp.newTrigger('checkYouTube').timeBased().atHour(h).nearMinute(15).everyDays(1).inTimezone('Asia/Singapore').create();
+  });
+  Logger.log('Watching YouTube twice daily (about 10.15am and 2.15pm). Already on the channel: ' + seen.length + ' videos.');
 }
 
 function latestVideos_() {
