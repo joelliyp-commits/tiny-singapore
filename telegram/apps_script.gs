@@ -215,7 +215,7 @@ function boostShorts_(vids, sh, store) {
     if (!isShort_(v.id)) { boosted.push({ id: v.id, t: 0 }); continue; } // full videos are posted on upload, not boosted
     var full = (v.desc.match(/https?:\/\/(?:youtu\.be\/|www\.youtube\.com\/watch\?v=)[\w-]+/) || [])[0];
     var chan = 'https://www.youtube.com/channel/' + store.getProperty('YT_CHANNEL_ID') + '/videos';
-    var text = '<b>' + esc_(v.title) + '</b>\n\nOne of our most watched clips this week. ' +
+    var text = '<b>' + esc_(v.title) + '</b>\n\nOne of our most watched clips. ' +
                'If it got you thinking, the full video goes deeper into the numbers and the reasoning.\n\n' +
                '\u25B6 Watch the clip: https://youtube.com/shorts/' + v.id + '\n' +
                '\u25B6 Full video: ' + (full || chan);
