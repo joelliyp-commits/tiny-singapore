@@ -146,8 +146,14 @@ function setupYouTube() {
     if (t.getHandlerFunction() === 'checkYouTube') ScriptApp.deleteTrigger(t);
   });
   // Mark every video already on the channel as seen, so only new uploads are posted.
-  var seen = latestVideos_().map(function (v) { return v.id; });
-  PropertiesService.getScriptProperties().setProperty('YT_SEEN', JSON.stringify(seen));
+  var vids = latestVideos_();
+  var seen = vids.map(function (v) { return v.id; });
+  var store = PropertiesService.getScriptProperties();
+  store.setProperty('YT_SEEN', JSON.stringify(seen));
+  // The 3 most recent full videos already on the channel are re-shared one at a time, every 3 days.
+  var recentFull = vids.filter(function (v) { return !isShort_(v.id); }).slice(0, 3).reverse();
+  store.setProperty('YT_BACKLOG', JSON.stringify(recentFull.map(function (v) { return v.id; })));
+  store.setProperty('YT_BACKLOG_LAST', '0');
   ScriptApp.newTrigger('checkYouTube').timeBased().everyHours(1).create();
   Logger.log('Watching YouTube hourly. Already on the channel: ' + seen.length + ' videos.');
 }
@@ -171,6 +177,25 @@ function latestVideos_() {
   });
 }
 
+// Post text for a full video: bold title, first paragraph of the description (before the contact block), link.
+function videoPost_(v, prefix) {
+  var intro = v.desc.split(/\n\s*\n/)[0].replace(/#\S+/g, '').trim();
+  if (intro.length > 500) intro = intro.slice(0, 500).replace(/\s+\S*$/, '') + '...';
+  return '<b>' + prefix + esc_(v.title) + '</b>' + (intro ? '\n\n' + esc_(intro) : '') +
+         '\n\n\u25B6 Watch the full video: https://youtu.be/' + v.id;
+}
+
+// Re-share one of the 3 most recent existing full videos every 3 days, in normal queue order.
+function releaseBacklog_(vids, sh, store) {
+  var backlog = JSON.parse(store.getProperty('YT_BACKLOG') || '[]');
+  var last = Number(store.getProperty('YT_BACKLOG_LAST') || 0);
+  if (!backlog.length || Date.now() - last < 3 * 24 * 3600 * 1000) return;
+  var id = backlog.shift(), v = vids.filter(function (x) { return x.id === id; })[0];
+  if (v) sh.appendRow(['ytold_' + v.id, 'approved', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', videoPost_(v, 'Worth a watch: '), '', '', '', 'youtube']);
+  store.setProperty('YT_BACKLOG', JSON.stringify(backlog));
+  store.setProperty('YT_BACKLOG_LAST', String(Date.now()));
+}
+
 function isShort_(id) {
   var res = UrlFetchApp.fetch('https://www.youtube.com/shorts/' + id, { followRedirects: false, muteHttpExceptions: true });
   return res.getResponseCode() === 200;
@@ -187,16 +212,10 @@ function checkYouTube() {
     if (seen.indexOf(v.id) >= 0) return;
     seen.push(v.id);
     if (isShort_(v.id)) return; // Shorts are clips of the main video; only full videos go to Telegram
-    // First paragraph of the description, before the contact block and hashtags.
-    var intro = v.desc.split(/\n\s*\n/)[0].replace(/#\S+/g, '').trim();
-    if (intro.length > 500) intro = intro.slice(0, 500).replace(/\s+\S*$/, '') + '...';
-    var url = 'https://youtu.be/' + v.id;
-    var text = '<b>New video: ' + esc_(v.title) + '</b>' + (intro ? '\n\n' + esc_(intro) : '') +
-               '\n\n\u25B6 Watch the full video: ' + url;
-    var thumb = 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg';
-    sh.appendRow(['yt_' + v.id, 'approved', thumb, text, '', '', '', 'youtube']);
+    sh.appendRow(['yt_' + v.id, 'approved', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', videoPost_(v, 'New video: '), '', '', '', 'youtube']);
   });
   store.setProperty('YT_SEEN', JSON.stringify(seen.slice(-200)));
+  releaseBacklog_(vids, sh, store);
   boostShorts_(vids, sh, store);
 }
 
