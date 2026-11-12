@@ -83,18 +83,28 @@ function postNext_(slot) {
     var channel = props_().channel;
     var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
     var rows = sh.getDataRange().getValues();
-    // Mon, Wed and Fri 3pm belong to the week's YouTube Shorts; Shorts never take other slots.
+    // Column J (optional) = the slot a row is booked for, 'yyyy-MM-dd HH:mm' Singapore time.
+    // Booked rows never post before their slot. Mon, Wed and Fri 3pm belong to YouTube Shorts.
+    var nowKey = Utilities.formatDate(new Date(), 'Asia/Singapore', 'yyyy-MM-dd HH:mm');
     var shortSlot = isShortSlot_(slot);
     var isShort = function (r) { return /^ytshort_/.test(String(r[0])); };
-    // Order: Shorts first in a Short slot, then new YouTube videos (yt_), then everything else oldest first.
+    var when = function (r) {
+      var v = r[9];
+      if (!v) return '';
+      return v instanceof Date ? Utilities.formatDate(v, 'Asia/Singapore', 'yyyy-MM-dd HH:mm') : String(v).trim();
+    };
+    // Order: the row booked for this slot, then Shorts (in a Short slot), then new YouTube videos, then oldest first.
     var order = [];
-    if (shortSlot) for (var h = 1; h < rows.length; h++) if (isShort(rows[h])) order.push(h);
-    for (var j = 1; j < rows.length; j++) if (/^yt_/.test(String(rows[j][0]))) order.push(j);
-    for (var k = 1; k < rows.length; k++) if (order.indexOf(k) < 0) order.push(k);
+    var add = function (test) { for (var x = 1; x < rows.length; x++) if (order.indexOf(x) < 0 && test(rows[x])) order.push(x); };
+    if (slot) add(function (r) { return when(r) === slot; });
+    if (shortSlot) add(isShort);
+    add(function (r) { return /^yt_/.test(String(r[0])); });
+    add(function () { return true; });
     for (var n = 0; n < order.length; n++) {
       var i = order[n], r = rows[i];
       if (String(r[1]).trim().toLowerCase() !== 'approved') continue;
-      if (slot && !shortSlot && isShort(r)) continue;
+      if (when(r) && when(r) > nowKey) continue;            // booked for later
+      if (slot && !shortSlot && isShort(r)) continue;       // Shorts only in Short slots
       var photo = r[2], text = String(r[3]), source = String(r[4] || '');
       if (source) text += '\n\nSource: <a href="' + source + '">read the article</a>';
       try {
@@ -155,7 +165,7 @@ function installTrigger() {
 // ---------- YouTube: one weekly run (Sunday about 8pm Singapore time) ----------
 // 1. New full videos go into the queue (approved) and post in the next slot.
 // 2. One of the 3 most recent full videos is re-shared each week until all 3 are done.
-// 3. Three Shorts from one series are queued (approved) for Mon, Wed and Fri at 3pm.
+// 3. Shorts are booked (approved, column J) for Mon, Wed and Fri at 3pm, 3 in a row from one series.
 //    Series rotate weekly (least recently used first); a Short is never posted twice.
 // Series = the channel's playlists. Shorts in no playlist are grouped by title.
 // Run setupWeeklyYouTube once to switch from the old twice daily check.
@@ -171,8 +181,7 @@ function setupWeeklyYouTube() {
   });
   ScriptApp.newTrigger('weeklyYouTube').timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(20).nearMinute(0)
     .inTimezone('Asia/Singapore').create();
-  var plan = planShorts_(allVideos_(), seriesMap_(), PropertiesService.getScriptProperties());
-  Logger.log('Weekly YouTube run set for Sundays about 8pm. Twice daily check removed.\n' + plan.log);
+  Logger.log('Weekly YouTube run set for Sundays about 8pm. Twice daily check removed.');
 }
 
 // All uploads (up to 500), newest first.
@@ -291,18 +300,48 @@ function weeklyYouTube() {
     if (old) sh.appendRow(['ytold_' + old.id, 'approved', 'https://i.ytimg.com/vi/' + old.id + '/hqdefault.jpg', videoPost_(old, 'Worth a watch: '), '', '', '', 'youtube']);
     store.setProperty('YT_BACKLOG', JSON.stringify(backlog));
   }
-  // 3. Three Shorts from one series. Media column left blank so Telegram shows the playable YouTube preview.
-  var plan = planShorts_(vids, seriesMap_(), store);
-  var posted = JSON.parse(store.getProperty('YT_SHORTS_POSTED') || '[]');
-  var used = JSON.parse(store.getProperty('YT_SERIES_USED') || '{}');
-  plan.pick.forEach(function (p, i) {
-    sh.appendRow(['ytshort_' + p.v.id, 'approved', '', shortPost_(p, i + 1), '', '', p.v.views + ' views', 'youtube_short']);
-    posted.push(p.v.id);
+  // 3. Shorts: book every free Mon/Wed/Fri 3pm slot in the next 9 days, 3 at a time from one series.
+  Logger.log(fillShorts_(Date.now() + 9 * 24 * 3600 * 1000, vids));
+}
+
+// One off: book Shorts for every free Mon/Wed/Fri 3pm slot up to and including a date, e.g. fillShortsUntil('2026-11-30').
+function fillShortsUntil(day) {
+  Logger.log(fillShorts_(new Date((day || '2026-11-30') + 'T23:59:00+08:00').getTime(), allVideos_()));
+}
+
+function fillShorts_(untilMs, vids) {
+  var store = PropertiesService.getScriptProperties();
+  var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
+  var rows = sh.getDataRange().getValues(), taken = {};
+  rows.forEach(function (r) {
+    if (!/^ytshort_/.test(String(r[0])) || !r[9]) return;
+    taken[r[9] instanceof Date ? Utilities.formatDate(r[9], 'Asia/Singapore', 'yyyy-MM-dd HH:mm') : String(r[9]).trim()] = 1;
   });
-  plan.from.forEach(function (n) { used[n] = Date.now(); });
-  store.setProperty('YT_SHORTS_POSTED', JSON.stringify(posted));
-  store.setProperty('YT_SERIES_USED', JSON.stringify(used));
-  Logger.log(plan.log);
+  // Free Short slots from now until untilMs.
+  var free = [], nowKey = Utilities.formatDate(new Date(), 'Asia/Singapore', 'yyyy-MM-dd HH:mm');
+  for (var t = Date.now(); t <= untilMs; t += 24 * 3600 * 1000) {
+    var key = Utilities.formatDate(new Date(t), 'Asia/Singapore', 'yyyy-MM-dd') + ' ' + SHORT_TIME;
+    if (key > nowKey && isShortSlot_(key) && !taken[key] && free.indexOf(key) < 0) free.push(key);
+  }
+  var smap = seriesMap_(), out = [];
+  while (free.length) {
+    var plan = planShorts_(vids, smap, store);
+    if (!plan.pick.length) { out.push('No unposted Shorts left.'); break; }
+    var posted = JSON.parse(store.getProperty('YT_SHORTS_POSTED') || '[]');
+    var used = JSON.parse(store.getProperty('YT_SERIES_USED') || '{}');
+    plan.pick.forEach(function (p, i) {
+      if (!free.length) return;
+      var when = free.shift();
+      // Media column left blank so Telegram shows the playable YouTube preview.
+      sh.appendRow(['ytshort_' + p.v.id, 'approved', '', shortPost_(p, i + 1), '', '', p.v.views + ' views', 'youtube_short', '', when]);
+      posted.push(p.v.id);
+      out.push(when + ' | ' + p.series + ' | ' + p.v.title);
+    });
+    plan.from.forEach(function (n) { used[n] = Date.now(); });
+    store.setProperty('YT_SHORTS_POSTED', JSON.stringify(posted));
+    store.setProperty('YT_SERIES_USED', JSON.stringify(used));
+  }
+  return out.join('\n') || 'All Short slots already booked.';
 }
 
 function findChannelId() {

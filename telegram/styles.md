@@ -33,3 +33,6 @@ The Apps Script runs once a week (Sunday about 8pm SGT). It queues, all as appro
 - One of the 3 most recent full videos per week until all 3 are re-shared (id ytold_<videoId>), normal queue order.
 - 3 Shorts from one series (id ytshort_<videoId>, style "youtube_short"). Series = Joel's YouTube playlists; the series rotates weekly (least recently used first) and no Short is ever posted twice. Shorts post only at 3pm on Monday, Wednesday and Friday.
 So on Monday, Wednesday and Friday the daily pack makes only 1 news post (the 11am slot). Tip days (Tue, Thu, Sat) are unchanged.
+
+## Booked slots (column J)
+Column J holds the slot a row is booked for, as text 'yyyy-MM-dd HH:mm' (Singapore time), e.g. 2026-11-19 15:00. A booked row never posts before its slot, and posts first in that slot. Rows without J post in the next free slot, oldest first. Tip posts prepared ahead are booked for their Tue/Thu/Sat 3pm slot; Shorts are booked for Mon/Wed/Fri 3pm.
