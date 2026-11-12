@@ -266,3 +266,32 @@ function createInviteLink() {
   sh.getRange('I2').setValue(r.invite_link);
   Logger.log('Invite link saved to the sheet, cell I2.');
 }
+
+// Probe: lists the channel's playlists and its Shorts, to work out the series.
+function listSeries() {
+  var id = PropertiesService.getScriptProperties().getProperty('YT_CHANNEL_ID') || 'UCr1Ob6OOREGZQQ7C0daQGdw';
+  var out = [];
+  var tok = null;
+  do {
+    var r = YouTube.Playlists.list('snippet,contentDetails', { channelId: id, maxResults: 50, pageToken: tok });
+    (r.items || []).forEach(function (p) { out.push('PL ' + p.id + ' | ' + p.snippet.title + ' | ' + p.contentDetails.itemCount); });
+    tok = r.nextPageToken;
+  } while (tok);
+  var mine = YouTube.Channels.list('snippet', { mine: true }).items || [];
+  mine.forEach(function (c) { out.push('MINE ' + c.id + ' | ' + c.snippet.title); });
+  var ch = YouTube.Channels.list('contentDetails', { id: id });
+  var uploads = ch.items[0].contentDetails.relatedPlaylists.uploads, all = [];
+  tok = null;
+  do {
+    var p2 = YouTube.PlaylistItems.list('snippet', { playlistId: uploads, maxResults: 50, pageToken: tok });
+    all = all.concat(p2.items || []); tok = p2.nextPageToken;
+  } while (tok && all.length < 500);
+  for (var i = 0; i < all.length; i += 50) {
+    var ids = all.slice(i, i + 50).map(function (it) { return it.snippet.resourceId.videoId; });
+    (YouTube.Videos.list('snippet,contentDetails,statistics', { id: ids.join(',') }).items || []).forEach(function (v) {
+      var s = isoSecs_(v.contentDetails.duration);
+      out.push((s <= 180 ? 'SHORT ' : 'FULL ') + v.id + ' | ' + s + 's | ' + v.statistics.viewCount + 'v | ' + v.snippet.publishedAt.slice(0, 10) + ' | ' + v.snippet.title);
+    });
+  }
+  Logger.log(out.join('\n'));
+}
