@@ -54,6 +54,14 @@ function dueSlot_() {
   return null;
 }
 
+// Short slots: 3pm on Monday, Wednesday and Friday (ISO weekday 1, 3, 5).
+var SHORT_DAYS = [1, 3, 5], SHORT_TIME = '15:00';
+function isShortSlot_(slot) {
+  if (!slot || slot.slice(-5) !== SHORT_TIME) return false;
+  var d = new Date(slot.slice(0, 10) + 'T12:00:00+08:00');
+  return SHORT_DAYS.indexOf(Number(Utilities.formatDate(d, 'Asia/Singapore', 'u'))) >= 0;
+}
+
 function postApproved() {
   var slot = dueSlot_();
   if (!slot) return;
@@ -75,13 +83,18 @@ function postNext_(slot) {
     var channel = props_().channel;
     var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
     var rows = sh.getDataRange().getValues();
-    // YouTube videos jump the queue: take the oldest approved yt_ row first, else the oldest approved row.
+    // Mon, Wed and Fri 3pm belong to the week's YouTube Shorts; Shorts never take other slots.
+    var shortSlot = isShortSlot_(slot);
+    var isShort = function (r) { return /^ytshort_/.test(String(r[0])); };
+    // Order: Shorts first in a Short slot, then new YouTube videos (yt_), then everything else oldest first.
     var order = [];
-    for (var j = 1; j < rows.length; j++) if (String(rows[j][1]).trim().toLowerCase() === 'approved' && /^yt_/.test(String(rows[j][0]))) order.push(j);
+    if (shortSlot) for (var h = 1; h < rows.length; h++) if (isShort(rows[h])) order.push(h);
+    for (var j = 1; j < rows.length; j++) if (/^yt_/.test(String(rows[j][0]))) order.push(j);
     for (var k = 1; k < rows.length; k++) if (order.indexOf(k) < 0) order.push(k);
     for (var n = 0; n < order.length; n++) {
       var i = order[n], r = rows[i];
       if (String(r[1]).trim().toLowerCase() !== 'approved') continue;
+      if (slot && !shortSlot && isShort(r)) continue;
       var photo = r[2], text = String(r[3]), source = String(r[4] || '');
       if (source) text += '\n\nSource: <a href="' + source + '">read the article</a>';
       try {
@@ -139,45 +152,109 @@ function installTrigger() {
   Logger.log('Checking the queue every 5 minutes.');
 }
 
-// ---------- YouTube: new videos on Joel's channel go into the queue automatically ----------
-// Script Property YT_CHANNEL_ID = the channel id (UC...). Run setupYouTube once.
-function setupYouTube() {
+// ---------- YouTube: one weekly run (Sunday about 8pm Singapore time) ----------
+// 1. New full videos go into the queue (approved) and post in the next slot.
+// 2. One of the 3 most recent full videos is re-shared each week until all 3 are done.
+// 3. Three Shorts from one series are queued (approved) for Mon, Wed and Fri at 3pm.
+//    Series rotate weekly (least recently used first); a Short is never posted twice.
+// Series = the channel's playlists. Shorts in no playlist are grouped by title.
+// Run setupWeeklyYouTube once to switch from the old twice daily check.
+var YT_DEFAULT_CHANNEL = 'UCr1Ob6OOREGZQQ7C0daQGdw';
+var SHORTS_PER_WEEK = 3;
+
+function ytChannel_() { return PropertiesService.getScriptProperties().getProperty('YT_CHANNEL_ID') || YT_DEFAULT_CHANNEL; }
+
+function setupWeeklyYouTube() {
   ScriptApp.getProjectTriggers().forEach(function (t) {
-    if (t.getHandlerFunction() === 'checkYouTube') ScriptApp.deleteTrigger(t);
+    var f = t.getHandlerFunction();
+    if (f === 'checkYouTube' || f === 'weeklyYouTube') ScriptApp.deleteTrigger(t);
   });
-  // Mark every video already on the channel as seen, so only new uploads are posted.
-  var vids = latestVideos_();
-  var seen = vids.map(function (v) { return v.id; });
-  var store = PropertiesService.getScriptProperties();
-  store.setProperty('YT_SEEN', JSON.stringify(seen));
-  // The 3 most recent full videos already on the channel are re-shared one at a time, every 3 days.
-  var recentFull = vids.filter(function (v) { return !v.short; }).slice(0, 3).reverse();
-  store.setProperty('YT_BACKLOG', JSON.stringify(recentFull.map(function (v) { return v.id; })));
-  store.setProperty('YT_BACKLOG_LAST', '0');
-  // Twice a day, shortly before the 11am and 3pm posting slots (Singapore time).
-  [10, 14].forEach(function (h) {
-    ScriptApp.newTrigger('checkYouTube').timeBased().atHour(h).nearMinute(15).everyDays(1).inTimezone('Asia/Singapore').create();
-  });
-  Logger.log('Watching YouTube twice daily (about 10.15am and 2.15pm). Already on the channel: ' + seen.length + ' videos.');
+  ScriptApp.newTrigger('weeklyYouTube').timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(20).nearMinute(0)
+    .inTimezone('Asia/Singapore').create();
+  var plan = planShorts_(allVideos_(), seriesMap_(), PropertiesService.getScriptProperties());
+  Logger.log('Weekly YouTube run set for Sundays about 8pm. Twice daily check removed.\n' + plan.log);
 }
 
-function latestVideos_() {
-  // Uses the YouTube Data API advanced service (Services > YouTube Data API v3), signed in as Joel.
-  var id = PropertiesService.getScriptProperties().getProperty('YT_CHANNEL_ID') || 'UCr1Ob6OOREGZQQ7C0daQGdw';
-  var ch = YouTube.Channels.list('contentDetails', { id: id });
-  if (!ch.items || !ch.items.length) throw new Error('YouTube channel not found: ' + id);
-  var uploads = ch.items[0].contentDetails.relatedPlaylists.uploads;
-  var items = YouTube.PlaylistItems.list('snippet', { playlistId: uploads, maxResults: 25 }).items || [];
-  if (!items.length) return [];
-  var ids = items.map(function (it) { return it.snippet.resourceId.videoId; });
-  var info = {};
-  (YouTube.Videos.list('statistics,contentDetails', { id: ids.join(',') }).items || []).forEach(function (v) {
-    info[v.id] = { views: Number(v.statistics.viewCount || 0), secs: isoSecs_(v.contentDetails.duration) };
+// All uploads (up to 500), newest first.
+function allVideos_() {
+  var ch = YouTube.Channels.list('contentDetails', { id: ytChannel_() });
+  if (!ch.items || !ch.items.length) throw new Error('YouTube channel not found: ' + ytChannel_());
+  var uploads = ch.items[0].contentDetails.relatedPlaylists.uploads, items = [], tok = null;
+  do {
+    var r = YouTube.PlaylistItems.list('snippet', { playlistId: uploads, maxResults: 50, pageToken: tok });
+    items = items.concat(r.items || []); tok = r.nextPageToken;
+  } while (tok && items.length < 500);
+  var vids = [];
+  for (var i = 0; i < items.length; i += 50) {
+    var ids = items.slice(i, i + 50).map(function (it) { return it.snippet.resourceId.videoId; });
+    (YouTube.Videos.list('snippet,statistics,contentDetails', { id: ids.join(',') }).items || []).forEach(function (v) {
+      var secs = isoSecs_(v.contentDetails.duration);
+      vids.push({ id: v.id, title: v.snippet.title, desc: v.snippet.description || '', published: v.snippet.publishedAt,
+                  views: Number(v.statistics.viewCount || 0), short: secs > 0 && secs <= 180 });
+    });
+  }
+  return vids.sort(function (a, b) { return a.published < b.published ? 1 : -1; });
+}
+
+// { videoId: [series names] } from the channel's playlists.
+function seriesMap_() {
+  var map = {}, tok = null, lists = [];
+  do {
+    var r = YouTube.Playlists.list('snippet', { channelId: ytChannel_(), maxResults: 50, pageToken: tok });
+    lists = lists.concat(r.items || []); tok = r.nextPageToken;
+  } while (tok);
+  lists.forEach(function (pl) {
+    var t2 = null;
+    do {
+      var r2 = YouTube.PlaylistItems.list('snippet', { playlistId: pl.id, maxResults: 50, pageToken: t2 });
+      (r2.items || []).forEach(function (it) {
+        var id = it.snippet.resourceId.videoId;
+        (map[id] = map[id] || []).push(pl.snippet.title);
+      });
+      t2 = r2.nextPageToken;
+    } while (t2);
   });
-  return items.map(function (it) {
-    var vid = it.snippet.resourceId.videoId, x = info[vid] || { views: 0, secs: 0 };
-    return { id: vid, title: it.snippet.title, desc: it.snippet.description || '', views: x.views, short: x.secs > 0 && x.secs <= 180 };
+  return map;
+}
+
+// Fallback series name from a title: drop "Part 2", "Ep 3", hashtags, and anything after | or :
+function titleSeries_(t) {
+  return String(t).replace(/#\S+/g, '').split(/[|:]/)[0].replace(/\b(part|pt|ep|episode)\.?\s*\d+.*$/i, '').trim() || 'Other clips';
+}
+
+// Picks this week's Shorts: the least recently used series with unposted Shorts, oldest clip first.
+function planShorts_(vids, smap, store) {
+  var posted = JSON.parse(store.getProperty('YT_SHORTS_POSTED') || '[]');
+  var used = JSON.parse(store.getProperty('YT_SERIES_USED') || '{}'); // {series: timestamp}
+  var groups = {};
+  vids.filter(function (v) { return v.short && posted.indexOf(v.id) < 0; }).forEach(function (v) {
+    (smap[v.id] || [titleSeries_(v.title)]).forEach(function (sname) { (groups[sname] = groups[sname] || []).push(v); });
   });
+  var names = Object.keys(groups).sort(function (a, b) {
+    return ((used[a] || 0) - (used[b] || 0)) || (groups[b].length - groups[a].length);
+  });
+  var pick = [], from = [];
+  for (var i = 0; i < names.length && pick.length < SHORTS_PER_WEEK; i++) {
+    var clips = groups[names[i]].slice().reverse(); // oldest first, so a series plays in order
+    var took = 0;
+    clips.forEach(function (v) {
+      if (pick.length < SHORTS_PER_WEEK && pick.every(function (p) { return p.v.id !== v.id; })) { pick.push({ v: v, series: names[i] }); took++; }
+    });
+    if (took) from.push(names[i]);
+  }
+  var log = 'Series with unposted Shorts: ' + names.map(function (n) { return n + ' (' + groups[n].length + ')'; }).join(', ') +
+            '\nNext week: ' + pick.map(function (p) { return p.series + ': ' + p.v.title; }).join(' / ');
+  return { pick: pick, from: from, log: log };
+}
+
+function shortPost_(p, n) {
+  var v = p.v;
+  var full = (v.desc.match(/https?:\/\/(?:youtu\.be\/|www\.youtube\.com\/watch\?v=)[\w-]+/) || [])[0];
+  var chan = 'https://www.youtube.com/channel/' + ytChannel_() + '/videos';
+  return '<b>' + esc_(v.title.replace(/#\S+/g, '').trim()) + '</b>\n\n' +
+         'This week\'s clips: ' + esc_(p.series) + ' (' + n + ' of ' + SHORTS_PER_WEEK + ').\n\n' +
+         '▶ Watch the clip: https://youtube.com/shorts/' + v.id + '\n' +
+         '▶ Full video: ' + (full || chan);
 }
 
 function isoSecs_(d) {
@@ -190,61 +267,42 @@ function videoPost_(v, prefix) {
   var intro = v.desc.split(/\n\s*\n/)[0].replace(/#\S+/g, '').trim();
   if (intro.length > 500) intro = intro.slice(0, 500).replace(/\s+\S*$/, '') + '...';
   return '<b>' + prefix + esc_(v.title) + '</b>' + (intro ? '\n\n' + esc_(intro) : '') +
-         '\n\n\u25B6 Watch the full video: https://youtu.be/' + v.id;
-}
-
-// Re-share one of the 3 most recent existing full videos every 3 days, in normal queue order.
-function releaseBacklog_(vids, sh, store) {
-  var backlog = JSON.parse(store.getProperty('YT_BACKLOG') || '[]');
-  var last = Number(store.getProperty('YT_BACKLOG_LAST') || 0);
-  if (!backlog.length || Date.now() - last < 3 * 24 * 3600 * 1000) return;
-  var id = backlog.shift(), v = vids.filter(function (x) { return x.id === id; })[0];
-  if (v) sh.appendRow(['ytold_' + v.id, 'approved', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', videoPost_(v, 'Worth a watch: '), '', '', '', 'youtube']);
-  store.setProperty('YT_BACKLOG', JSON.stringify(backlog));
-  store.setProperty('YT_BACKLOG_LAST', String(Date.now()));
+         '\n\n▶ Watch the full video: https://youtu.be/' + v.id;
 }
 
 function esc_(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
-function checkYouTube() {
+function weeklyYouTube() {
   var store = PropertiesService.getScriptProperties();
-  var seen = JSON.parse(store.getProperty('YT_SEEN') || '[]');
-  var vids = latestVideos_().reverse(); // oldest first
   var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
-  vids.forEach(function (v) {
+  var vids = allVideos_();
+  // 1. New full videos.
+  var seen = JSON.parse(store.getProperty('YT_SEEN') || '[]');
+  vids.slice().reverse().forEach(function (v) {
     if (seen.indexOf(v.id) >= 0) return;
     seen.push(v.id);
-    if (v.short) return; // Shorts are clips of the main video; only full videos go to Telegram
-    sh.appendRow(['yt_' + v.id, 'approved', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', videoPost_(v, 'New video: '), '', '', '', 'youtube']);
+    if (!v.short) sh.appendRow(['yt_' + v.id, 'approved', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', videoPost_(v, 'New video: '), '', '', '', 'youtube']);
   });
-  store.setProperty('YT_SEEN', JSON.stringify(seen.slice(-200)));
-  releaseBacklog_(vids, sh, store);
-  boostShorts_(vids, sh, store);
-}
-
-// Shorts that pass BOOST_MIN_VIEWS are shortlisted (status "pending") for Joel's one tap approval,
-// at most BOOST_PER_WEEK a week, each Short only once. The post points viewers to the full video.
-var BOOST_MIN_VIEWS = 300, BOOST_PER_WEEK = 2;
-function boostShorts_(vids, sh, store) {
-  var boosted = JSON.parse(store.getProperty('YT_BOOSTED') || '[]'); // [{id, t}]
-  var weekAgo = Date.now() - 7 * 24 * 3600 * 1000;
-  var recent = boosted.filter(function (b) { return b.t > weekAgo; }).length;
-  var done = boosted.map(function (b) { return b.id; });
-  var cands = vids.filter(function (v) { return v.views >= BOOST_MIN_VIEWS && done.indexOf(v.id) < 0; })
-                  .sort(function (a, b) { return b.views - a.views; });
-  for (var i = 0; i < cands.length && recent < BOOST_PER_WEEK; i++) {
-    var v = cands[i];
-    if (!v.short) { boosted.push({ id: v.id, t: 0 }); continue; } // full videos are posted on upload, not boosted
-    var full = (v.desc.match(/https?:\/\/(?:youtu\.be\/|www\.youtube\.com\/watch\?v=)[\w-]+/) || [])[0];
-    var chan = 'https://www.youtube.com/channel/' + (store.getProperty('YT_CHANNEL_ID') || 'UCr1Ob6OOREGZQQ7C0daQGdw') + '/videos';
-    var text = '<b>' + esc_(v.title) + '</b>\n\nOne of our most watched clips. ' +
-               'If it got you thinking, the full video goes deeper into the numbers and the reasoning.\n\n' +
-               '\u25B6 Watch the clip: https://youtube.com/shorts/' + v.id + '\n' +
-               '\u25B6 Full video: ' + (full || chan);
-    sh.appendRow(['ytshort_' + v.id, 'pending', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', text, '', '', v.views + ' views', 'youtube_short']);
-    boosted.push({ id: v.id, t: Date.now() }); recent++;
+  store.setProperty('YT_SEEN', JSON.stringify(seen.slice(-500)));
+  // 2. One recent full video re-shared per week.
+  var backlog = JSON.parse(store.getProperty('YT_BACKLOG') || '[]');
+  if (backlog.length) {
+    var id = backlog.shift(), old = vids.filter(function (x) { return x.id === id; })[0];
+    if (old) sh.appendRow(['ytold_' + old.id, 'approved', 'https://i.ytimg.com/vi/' + old.id + '/hqdefault.jpg', videoPost_(old, 'Worth a watch: '), '', '', '', 'youtube']);
+    store.setProperty('YT_BACKLOG', JSON.stringify(backlog));
   }
-  store.setProperty('YT_BOOSTED', JSON.stringify(boosted.slice(-300)));
+  // 3. Three Shorts from one series. Media column left blank so Telegram shows the playable YouTube preview.
+  var plan = planShorts_(vids, seriesMap_(), store);
+  var posted = JSON.parse(store.getProperty('YT_SHORTS_POSTED') || '[]');
+  var used = JSON.parse(store.getProperty('YT_SERIES_USED') || '{}');
+  plan.pick.forEach(function (p, i) {
+    sh.appendRow(['ytshort_' + p.v.id, 'approved', '', shortPost_(p, i + 1), '', '', p.v.views + ' views', 'youtube_short']);
+    posted.push(p.v.id);
+  });
+  plan.from.forEach(function (n) { used[n] = Date.now(); });
+  store.setProperty('YT_SHORTS_POSTED', JSON.stringify(posted));
+  store.setProperty('YT_SERIES_USED', JSON.stringify(used));
+  Logger.log(plan.log);
 }
 
 function findChannelId() {
@@ -267,31 +325,3 @@ function createInviteLink() {
   Logger.log('Invite link saved to the sheet, cell I2.');
 }
 
-// Probe: lists the channel's playlists and its Shorts, to work out the series.
-function listSeries() {
-  var id = PropertiesService.getScriptProperties().getProperty('YT_CHANNEL_ID') || 'UCr1Ob6OOREGZQQ7C0daQGdw';
-  var out = [];
-  var tok = null;
-  do {
-    var r = YouTube.Playlists.list('snippet,contentDetails', { channelId: id, maxResults: 50, pageToken: tok });
-    (r.items || []).forEach(function (p) { out.push('PL ' + p.id + ' | ' + p.snippet.title + ' | ' + p.contentDetails.itemCount); });
-    tok = r.nextPageToken;
-  } while (tok);
-  var mine = YouTube.Channels.list('snippet', { mine: true }).items || [];
-  mine.forEach(function (c) { out.push('MINE ' + c.id + ' | ' + c.snippet.title); });
-  var ch = YouTube.Channels.list('contentDetails', { id: id });
-  var uploads = ch.items[0].contentDetails.relatedPlaylists.uploads, all = [];
-  tok = null;
-  do {
-    var p2 = YouTube.PlaylistItems.list('snippet', { playlistId: uploads, maxResults: 50, pageToken: tok });
-    all = all.concat(p2.items || []); tok = p2.nextPageToken;
-  } while (tok && all.length < 500);
-  for (var i = 0; i < all.length; i += 50) {
-    var ids = all.slice(i, i + 50).map(function (it) { return it.snippet.resourceId.videoId; });
-    (YouTube.Videos.list('snippet,contentDetails,statistics', { id: ids.join(',') }).items || []).forEach(function (v) {
-      var s = isoSecs_(v.contentDetails.duration);
-      out.push((s <= 180 ? 'SHORT ' : 'FULL ') + v.id + ' | ' + s + 's | ' + v.statistics.viewCount + 'v | ' + v.snippet.publishedAt.slice(0, 10) + ' | ' + v.snippet.title);
-    });
-  }
-  Logger.log(out.join('\n'));
-}
