@@ -98,7 +98,7 @@ function postNext_(slot) {
     var add = function (test) { for (var x = 1; x < rows.length; x++) if (order.indexOf(x) < 0 && test(rows[x])) order.push(x); };
     if (slot) add(function (r) { return when(r) === slot; });
     if (shortSlot) add(isShort);
-    add(function (r) { return /^yt_/.test(String(r[0])); });
+    add(function (r) { return /^(yt_|pin_)/.test(String(r[0])); });
     add(function () { return true; });
     for (var n = 0; n < order.length; n++) {
       var i = order[n], r = rows[i];
@@ -109,6 +109,8 @@ function postNext_(slot) {
       if (source) text += '\n\nSource: <a href="' + source + '">read the article</a>';
       try {
         var msg = sendMedia_(channel, String(photo || ''), text);
+        // pin_ rows are pinned in the channel after posting (bot needs the edit messages right).
+        if (/^pin_/.test(String(r[0]))) tg_('pinChatMessage', { chat_id: channel, message_id: msg.message_id, disable_notification: true });
         sh.getRange(i + 1, 2).setValue('posted');
         sh.getRange(i + 1, 6).setValue(new Date());
         sh.getRange(i + 1, 7).setValue('message ' + msg.message_id);
