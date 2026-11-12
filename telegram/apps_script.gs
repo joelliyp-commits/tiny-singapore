@@ -183,6 +183,11 @@ function setupWeeklyYouTube() {
   });
   ScriptApp.newTrigger('weeklyYouTube').timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(20).nearMinute(0)
     .inTimezone('Asia/Singapore').create();
+  // Mark every existing upload as seen, so only genuinely new videos are ever posted.
+  var store = PropertiesService.getScriptProperties();
+  var seen = JSON.parse(store.getProperty('YT_SEEN') || '[]');
+  allVideos_().forEach(function (v) { if (seen.indexOf(v.id) < 0) seen.push(v.id); });
+  store.setProperty('YT_SEEN', JSON.stringify(seen.slice(-500)));
   Logger.log('Weekly YouTube run set for Sundays about 8pm. Twice daily check removed.');
 }
 
@@ -292,7 +297,8 @@ function weeklyYouTube() {
   vids.slice().reverse().forEach(function (v) {
     if (seen.indexOf(v.id) >= 0) return;
     seen.push(v.id);
-    if (!v.short) sh.appendRow(['yt_' + v.id, 'approved', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', videoPost_(v, 'New video: '), '', '', '', 'youtube']);
+    var fresh = Date.now() - new Date(v.published).getTime() < 14 * 24 * 3600 * 1000; // safety: only uploads from the last 14 days
+    if (!v.short && fresh) sh.appendRow(['yt_' + v.id, 'approved', 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg', videoPost_(v, 'New video: '), '', '', '', 'youtube']);
   });
   store.setProperty('YT_SEEN', JSON.stringify(seen.slice(-500)));
   // 2. One recent full video re-shared per week.
