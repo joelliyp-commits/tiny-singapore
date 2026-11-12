@@ -91,7 +91,7 @@ function postNext_(slot) {
     var when = function (r) {
       var v = r[9];
       if (!v) return '';
-      return v instanceof Date ? Utilities.formatDate(v, 'Asia/Singapore', 'yyyy-MM-dd HH:mm') : String(v).trim();
+      return v instanceof Date ? Utilities.formatDate(v, 'Asia/Singapore', 'yyyy-MM-dd HH:mm') : String(v).trim().replace(/^'/, '');
     };
     // Order: the row booked for this slot, then Shorts (in a Short slot), then new YouTube videos, then oldest first.
     var order = [];
@@ -315,7 +315,7 @@ function fillShorts_(untilMs, vids) {
   var rows = sh.getDataRange().getValues(), taken = {};
   rows.forEach(function (r) {
     if (!/^ytshort_/.test(String(r[0])) || !r[9]) return;
-    taken[r[9] instanceof Date ? Utilities.formatDate(r[9], 'Asia/Singapore', 'yyyy-MM-dd HH:mm') : String(r[9]).trim()] = 1;
+    taken[r[9] instanceof Date ? Utilities.formatDate(r[9], 'Asia/Singapore', 'yyyy-MM-dd HH:mm') : String(r[9]).trim().replace(/^'/, '')] = 1;
   });
   // Free Short slots from now until untilMs.
   var free = [], nowKey = Utilities.formatDate(new Date(), 'Asia/Singapore', 'yyyy-MM-dd HH:mm');
