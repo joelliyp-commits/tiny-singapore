@@ -243,8 +243,13 @@ function planShorts_(vids, smap, store) {
   var posted = JSON.parse(store.getProperty('YT_SHORTS_POSTED') || '[]');
   var used = JSON.parse(store.getProperty('YT_SERIES_USED') || '{}'); // {series: timestamp}
   var groups = {};
+  var byId = {};
+  vids.forEach(function (v) { byId[v.id] = v; });
   vids.filter(function (v) { return v.short && posted.indexOf(v.id) < 0; }).forEach(function (v) {
-    (smap[v.id] || [titleSeries_(v.title)]).forEach(function (sname) { (groups[sname] = groups[sname] || []).push(v); });
+    // Series = the playlist the Short is in, else the full video it was clipped from, else its title.
+    var fullId = fullId_(v), full = fullId && byId[fullId];
+    var names = smap[v.id] || [full ? full.title : titleSeries_(v.title)];
+    names.forEach(function (sname) { (groups[sname] = groups[sname] || []).push(v); });
   });
   var names = Object.keys(groups).sort(function (a, b) {
     return ((used[a] || 0) - (used[b] || 0)) || (groups[b].length - groups[a].length);
@@ -263,14 +268,30 @@ function planShorts_(vids, smap, store) {
   return { pick: pick, from: from, log: log };
 }
 
+function fullId_(v) {
+  var m = /(?:youtu\.be\/|youtube\.com\/watch\?v=)([\w-]{11})/.exec(v.desc || '');
+  return m ? m[1] : null;
+}
+
 function shortPost_(p, n) {
-  var v = p.v;
-  var full = (v.desc.match(/https?:\/\/(?:youtu\.be\/|www\.youtube\.com\/watch\?v=)[\w-]+/) || [])[0];
+  var v = p.v, fid = fullId_(v);
   var chan = 'https://www.youtube.com/channel/' + ytChannel_() + '/videos';
   return '<b>' + esc_(v.title.replace(/#\S+/g, '').trim()) + '</b>\n\n' +
-         'This week\'s clips: ' + esc_(p.series) + ' (' + n + ' of ' + SHORTS_PER_WEEK + ').\n\n' +
-         '▶ Watch the clip: https://youtube.com/shorts/' + v.id + '\n' +
-         '▶ Full video: ' + (full || chan);
+         'A short clip from: ' + esc_(p.series.replace(/#\S+/g, '').trim()) + '\n\n' +
+         '\u25B6 Watch the clip: https://youtube.com/shorts/' + v.id + '\n' +
+         '\u25B6 Full video: ' + (fid ? 'https://youtu.be/' + fid : chan);
+}
+
+// One off: removes booked Shorts that have not posted yet and clears the Shorts memory, so they can be booked again.
+function resetShortsBooking() {
+  var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
+  var rows = sh.getDataRange().getValues();
+  for (var i = rows.length - 1; i >= 1; i--) {
+    if (/^ytshort_/.test(String(rows[i][0])) && String(rows[i][1]).toLowerCase() !== 'posted') sh.deleteRow(i + 1);
+  }
+  var store = PropertiesService.getScriptProperties();
+  store.deleteProperty('YT_SHORTS_POSTED'); store.deleteProperty('YT_SERIES_USED');
+  Logger.log('Unposted Shorts removed. Run fillShortsUntil next.');
 }
 
 function isoSecs_(d) {
