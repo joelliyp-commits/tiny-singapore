@@ -1429,6 +1429,30 @@
    "pillar": "finance",
    "script": "scripts/news_2026-11-11.md",
    "from_": "Daily pack 11 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v114",
+   "status": "idea",
+   "title": "40 applicants. 1 flat.",
+   "pillar": "hdb",
+   "script": "scripts/news_2026-11-15.md",
+   "from_": "Weekly pack 15 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v115",
+   "status": "idea",
+   "title": "Rates just ticked up. Again.",
+   "pillar": "finance",
+   "script": "scripts/news_2026-11-15.md",
+   "from_": "Weekly pack 15 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v116",
+   "status": "idea",
+   "title": "30% more to build. Cheaper to buy?",
+   "pillar": "market",
+   "script": "scripts/news_2026-11-15.md",
+   "from_": "Weekly pack 15 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {

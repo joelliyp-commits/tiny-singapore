@@ -119,7 +119,7 @@ function chartSVG(c){
   }
   const lx=i=>c.type==='bar'?L+w/n*i+w/n/2:L+(n===1?w/2:w*i/(n-1));
   const every=Math.ceil(n/8);
-  const xl=c.labels.map((t,i)=>(i%every===0||i===n-1)?`<text x="${lx(i)}" y="${H-18}" text-anchor="middle" font-size="20" fill="${C.mute}">${t}</text>`:'').join('');
+  const xl=c.labels.map((t,i)=>(i%every===0||i===n-1)?`<text x="${lx(i)}" y="${H-18}" text-anchor="${i===n-1&&n>2?'end':(i===0&&n>2?'start':'middle')}" font-size="20" fill="${C.mute}">${t}</text>`:'').join('');
   return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">${g}${body}${xl}</svg>`;
 }
 
