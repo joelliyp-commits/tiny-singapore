@@ -1354,17 +1354,21 @@
    "id": "v104",
    "title": "61 years left. Still a record.",
    "pillar": "news / HDB",
-   "status": "idea",
-   "script": "scripts/news_2026-11-04.md",
-   "from_": "Daily pack 4 Nov 2026 (awaiting Joel's script approval)"
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md",
+   "from_": "Daily pack 4 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-07 18:00"
   },
   {
    "id": "v105",
    "title": "Prime is only 19% more",
    "pillar": "news / private",
-   "status": "idea",
-   "script": "scripts/news_2026-11-04.md",
-   "from_": "Daily pack 4 Nov 2026 (awaiting Joel's script approval)"
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md",
+   "from_": "Daily pack 4 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-04 18:00"
   },
   {
    "id": "v106",
@@ -1386,25 +1390,31 @@
    "id": "v108",
    "title": "4,300 flats. Half are central.",
    "pillar": "news / HDB BTO",
-   "status": "idea",
-   "script": "scripts/news_2026-11-06.md",
-   "from_": "Daily pack 6 Nov 2026 (awaiting Joel's script approval)"
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md",
+   "from_": "Daily pack 6 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-03 14:00"
   },
   {
    "id": "v109",
    "title": "20% cheaper. Still a loss?",
    "pillar": "news / private",
-   "status": "idea",
-   "script": "scripts/news_2026-11-06.md",
-   "from_": "Daily pack 6 Nov 2026 (awaiting Joel's script approval)"
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md",
+   "from_": "Daily pack 6 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-07 14:00"
   },
   {
    "id": "v110",
-   "status": "idea",
+   "status": "script_pending_approval",
    "title": "238 flats. Is yours one?",
    "pillar": "market insight",
-   "script": "scripts/news_2026-11-07.md",
-   "from_": "Daily pack 7 Nov 2026 (awaiting Joel's script approval)"
+   "script": "scripts/batchF.md",
+   "from_": "Daily pack 7 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-03 18:00"
   },
   {
    "id": "v111",
@@ -1416,27 +1426,33 @@
   },
   {
    "id": "v112",
-   "status": "idea",
+   "status": "script_pending_approval",
    "title": "14,800 new homes. Will prices drop?",
    "pillar": "market insight",
-   "script": "scripts/news_2026-11-09.md",
-   "from_": "Daily pack 9 Nov 2026 (awaiting Joel's script approval)"
+   "script": "scripts/batchF.md",
+   "from_": "Daily pack 9 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-01 18:00"
   },
   {
    "id": "v113",
-   "status": "idea",
+   "status": "script_pending_approval",
    "title": "Fixed rates jumped. Lock in now?",
    "pillar": "finance",
-   "script": "scripts/news_2026-11-11.md",
-   "from_": "Daily pack 11 Nov 2026 (awaiting Joel's script approval)"
+   "script": "scripts/batchF.md",
+   "from_": "Daily pack 11 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-02 18:00"
   },
   {
    "id": "v114",
-   "status": "idea",
+   "status": "script_pending_approval",
    "title": "40 applicants. 1 flat.",
    "pillar": "hdb",
-   "script": "scripts/news_2026-11-15.md",
-   "from_": "Weekly pack 15 Nov 2026 (awaiting Joel's script approval)"
+   "script": "scripts/batchF.md",
+   "from_": "Weekly pack 15 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-06 18:00"
   },
   {
    "id": "v115",
@@ -1448,11 +1464,53 @@
   },
   {
    "id": "v116",
-   "status": "idea",
+   "status": "script_pending_approval",
    "title": "30% more to build. Cheaper to buy?",
    "pillar": "market",
-   "script": "scripts/news_2026-11-15.md",
-   "from_": "Weekly pack 15 Nov 2026 (awaiting Joel's script approval)"
+   "script": "scripts/batchF.md",
+   "from_": "Weekly pack 15 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "F",
+   "slot": "2026-12-05 18:00"
+  },
+  {
+   "id": "v117",
+   "title": "Your MOP starts later than you think",
+   "batch": "F",
+   "slot": "2026-12-05 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md"
+  },
+  {
+   "id": "v118",
+   "title": "Decoupling: the real costs",
+   "batch": "F",
+   "slot": "2026-12-06 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md"
+  },
+  {
+   "id": "v119",
+   "title": "The bank values it lower",
+   "batch": "F",
+   "slot": "2026-12-01 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md"
+  },
+  {
+   "id": "v120",
+   "title": "Resale condo: $75,000 in two weeks",
+   "batch": "F",
+   "slot": "2026-12-04 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md"
+  },
+  {
+   "id": "v121",
+   "title": "Selling and buying HDB: the order",
+   "batch": "F",
+   "slot": "2026-12-02 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchF.md"
   }
  ],
  "cta_system": {
