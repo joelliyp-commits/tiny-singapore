@@ -38,3 +38,10 @@ Source: Joel's 2nd Brain frameworks. Tip posts for the channel "Save With Proper
 - T19 Decoupling (F35). Joint owners can restructure so one can buy a second property as a first timer, without ABSD; BSD on the share transfer applies. Bridge: whether the sums work for their household.
 - T20 Watch your lease against the CPF threshold (Assessment B). As the lease shortens, fewer buyers can use full CPF, which narrows your future buyer pool. Bridge: where their lease stands.
 - T21 Macro before micro (F02, F04, F25). Read what government signals (GLS supply, policy changes, URA plans) are saying before choosing a project. Bridge: what today's signals mean for their next move.
+
+## Added Dec 2026 (from the same 2nd Brain frameworks)
+- T22 What an investor would pay (F17). Annual rent divided by the yield investors expect = roughly the most an investor buyer will pay later. Buy below it and the rent supports your price. Bridge: where a given unit sits. (Owning / investing)
+- T23 The sub-sale window (F26). Post TOP, before CSC: new quality, sold by owners who want out, for roughly a year. Bridge: which projects are in that window now. (Buying)
+- T24 Resale or new launch: the 4 year cost (F22, new vs resale calculator). At about $2.5M over 4 years, resale about $205K vs new launch about $223K including rent: under 10% apart, so the real choice is comfort now or room to grow. Bridge: both routes on their numbers. (Buying)
+- T25 Cheaper land next door is not a cheaper launch (F21). Building costs, developer style, site shape and plot ratio all change the launch price. Bridge: compare the current launch with the upcoming one. (Buying)
+- T26 The cost of staying (Signal 25). Moving costs are paid once and known; the cost of staying (a home that no longer fits, a sell window that closes) never shows on a bill. Bridge: both sides side by side. (Selling)
