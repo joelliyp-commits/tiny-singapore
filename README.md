@@ -20,3 +20,4 @@ Not in the repo: `out/` (finished videos), `work/` (frames), `node_modules/`, th
 
 ## Content rules (summary)
 UK English, no dashes, CEA safe wording, probability language, facts checked against 2 sources, never name convicted individuals, politically neutral. Two approvals per video (script, then video). No new comment keywords for now: CHECK, PLAN, WHY, "flat type and town".
+From batch F every script uses the YAP Triangle: Drop In (a specific "you" moment with the number, first 2s), Direction (one spoken promise of what they get by staying), Solve (2 or 3 steps), one concrete next step, then the CTA.
