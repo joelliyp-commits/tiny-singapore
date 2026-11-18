@@ -62,6 +62,16 @@ function isShortSlot_(slot) {
   return SHORT_DAYS.indexOf(Number(Utilities.formatDate(d, 'Asia/Singapore', 'u'))) >= 0;
 }
 
+// Column J value -> 'yyyy-MM-dd HH:mm'. Typed text is read by Sheets in the spreadsheet's time zone,
+// so a Date is formatted back in that zone (keep the spreadsheet set to Asia/Singapore).
+var SHEET_TZ_ = null;
+function slotKey_(v) {
+  if (!v) return '';
+  if (!SHEET_TZ_ && v instanceof Date) SHEET_TZ_ = SpreadsheetApp.openById(SHEET_ID).getSpreadsheetTimeZone();
+  if (v instanceof Date) return Utilities.formatDate(v, SHEET_TZ_, 'yyyy-MM-dd HH:mm');
+  return String(v).trim().replace(/^'/, '');
+}
+
 function postApproved() {
   var slot = dueSlot_();
   if (!slot) return;
@@ -88,11 +98,7 @@ function postNext_(slot) {
     var nowKey = Utilities.formatDate(new Date(), 'Asia/Singapore', 'yyyy-MM-dd HH:mm');
     var shortSlot = isShortSlot_(slot);
     var isShort = function (r) { return /^ytshort_/.test(String(r[0])); };
-    var when = function (r) {
-      var v = r[9];
-      if (!v) return '';
-      return v instanceof Date ? Utilities.formatDate(v, 'Asia/Singapore', 'yyyy-MM-dd HH:mm') : String(v).trim().replace(/^'/, '');
-    };
+    var when = function (r) { return slotKey_(r[9]); };
     // Order: the row booked for this slot, then Shorts (in a Short slot), then new YouTube videos, then oldest first.
     var order = [];
     var add = function (test) { for (var x = 1; x < rows.length; x++) if (order.indexOf(x) < 0 && test(rows[x])) order.push(x); };
@@ -338,13 +344,15 @@ function fillShortsUntil(day) {
   Logger.log(fillShorts_(new Date((day || '2026-11-30') + 'T23:59:00+08:00').getTime(), allVideos_()));
 }
 
+function fillShortsDecember() { fillShortsUntil('2026-12-31'); }
+
 function fillShorts_(untilMs, vids) {
   var store = PropertiesService.getScriptProperties();
   var sh = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_NAME);
   var rows = sh.getDataRange().getValues(), taken = {};
   rows.forEach(function (r) {
     if (!/^ytshort_/.test(String(r[0])) || !r[9]) return;
-    taken[r[9] instanceof Date ? Utilities.formatDate(r[9], 'Asia/Singapore', 'yyyy-MM-dd HH:mm') : String(r[9]).trim().replace(/^'/, '')] = 1;
+    taken[slotKey_(r[9])] = 1;
   });
   // Free Short slots from now until untilMs.
   var free = [], nowKey = Utilities.formatDate(new Date(), 'Asia/Singapore', 'yyyy-MM-dd HH:mm');
@@ -362,7 +370,7 @@ function fillShorts_(untilMs, vids) {
       if (!free.length) return;
       var when = free.shift();
       // Media column left blank so Telegram shows the playable YouTube preview.
-      sh.appendRow(['ytshort_' + p.v.id, 'approved', '', shortPost_(p, i + 1), '', '', p.v.views + ' views', 'youtube_short', '', when]);
+      sh.appendRow(['ytshort_' + p.v.id, 'approved', '', shortPost_(p, i + 1), '', '', p.v.views + ' views', 'youtube_short', '', "'" + when]);
       posted.push(p.v.id);
       out.push(when + ' | ' + p.series + ' | ' + p.v.title);
     });
