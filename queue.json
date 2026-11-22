@@ -1514,27 +1514,121 @@
   },
   {
    "id": "v122",
-   "status": "idea",
+   "status": "script_pending_approval",
    "title": "296 to 1,716. Should you rush?",
    "pillar": "market",
-   "script": "scripts/news_2026-11-22.md",
-   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)"
+   "script": "scripts/batchG.md",
+   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "G",
+   "slot": "2026-12-08 18:00"
   },
   {
    "id": "v123",
-   "status": "idea",
+   "status": "script_pending_approval",
    "title": "5 years or 10 years?",
    "pillar": "hdb",
-   "script": "scripts/news_2026-11-22.md",
-   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)"
+   "script": "scripts/batchG.md",
+   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "G",
+   "slot": "2026-12-10 18:00"
   },
   {
    "id": "v124",
-   "status": "idea",
+   "status": "script_pending_approval",
    "title": "910 dollars psf for the land alone",
    "pillar": "market",
-   "script": "scripts/news_2026-11-22.md",
-   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)"
+   "script": "scripts/batchG.md",
+   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)",
+   "batch": "G",
+   "slot": "2026-12-11 18:00"
+  },
+  {
+   "id": "v125",
+   "title": "HDB down, private up",
+   "batch": "G",
+   "slot": "2026-12-09 18:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v126",
+   "title": "Your loan is tested at 4%",
+   "batch": "G",
+   "slot": "2026-12-08 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v127",
+   "title": "30% of your income, not 55%",
+   "batch": "G",
+   "slot": "2026-12-12 18:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v128",
+   "title": "Buy first, sell later: 6 months",
+   "batch": "G",
+   "slot": "2026-12-10 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v129",
+   "title": "Sell within 4 years? Up to 16%",
+   "batch": "G",
+   "slot": "2026-12-12 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v130",
+   "title": "Your CPF comes back with interest",
+   "batch": "G",
+   "slot": "2026-12-11 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v131",
+   "title": "Your second loan is only 45%",
+   "batch": "G",
+   "slot": "2026-12-13 18:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v132",
+   "title": "Your lease and your CPF",
+   "batch": "G",
+   "slot": "2026-12-13 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v133",
+   "title": "HDB loan or bank loan?",
+   "batch": "G",
+   "slot": "2026-12-14 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v134",
+   "title": "Up to 120,000 dollars in grants",
+   "batch": "G",
+   "slot": "2026-12-09 14:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
+  },
+  {
+   "id": "v135",
+   "title": "Joint tenancy or tenancy in common?",
+   "batch": "G",
+   "slot": "2026-12-14 18:00",
+   "status": "script_pending_approval",
+   "script": "scripts/batchG.md"
   }
  ],
  "cta_system": {
