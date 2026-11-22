@@ -1511,6 +1511,30 @@
    "slot": "2026-12-02 14:00",
    "status": "script_pending_approval",
    "script": "scripts/batchF.md"
+  },
+  {
+   "id": "v122",
+   "status": "idea",
+   "title": "296 to 1,716. Should you rush?",
+   "pillar": "market",
+   "script": "scripts/news_2026-11-22.md",
+   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v123",
+   "status": "idea",
+   "title": "5 years or 10 years?",
+   "pillar": "hdb",
+   "script": "scripts/news_2026-11-22.md",
+   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)"
+  },
+  {
+   "id": "v124",
+   "status": "idea",
+   "title": "910 dollars psf for the land alone",
+   "pillar": "market",
+   "script": "scripts/news_2026-11-22.md",
+   "from_": "Weekly pack 22 Nov 2026 (awaiting Joel's script approval)"
   }
  ],
  "cta_system": {
